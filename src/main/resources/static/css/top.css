@@ -1,0 +1,377 @@
+.hiddentemp,header {
+    background-color: #fff
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #1d1d26;
+    text-decoration: none;
+    list-style: none
+}
+
+.lf {
+    float: left
+}
+
+.halfDivLayout {
+    width: 50%;
+    height: 100%;
+    float: left
+}
+
+.hiddentemp {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 69px;
+    z-index: 10006;
+    opacity: .5;
+    -moz-opacity: .5;
+    filter: alpha(opacity=50)
+}
+
+.Content_fgimg {
+    position: fixed;
+    float: left;
+    top: 50%
+}
+
+.Content_fgimga1 {
+    position: fixed;
+    top: 56.5%;
+    color: green!important;
+    font-size: 21px
+}
+
+.top,header {
+    position: relative
+}
+
+header {
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    z-index: 1
+}
+
+.top {
+    width: 1200px;
+    height: 69px;
+    margin: 0 auto
+}
+
+.top .logo {
+    float: left;
+    width: 360px;
+    height: 50px;
+    margin-top: 6px;
+    background: url(../images/fuil_03_02.png) no-repeat
+}
+
+.top .LR {
+    float: right;
+    margin-top: 17px
+}
+
+.top .LR li {
+    float: left;
+    height: 39px;
+    margin-left: 40px
+}
+
+.top .LR li a {
+    font-size: 14px;
+    line-height: 39px;
+    text-align: center;
+    color: #666
+}
+
+.top .LR li a.login:hover {
+    color: #01b76c
+}
+
+.top .LR li a.register {
+    color: #fff;
+    width: 152px;
+    height: 39px;
+    display: block;
+    background-color: #01b76c;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+
+.top .LR li a.register:hover {
+    background-color: #00a05e
+}
+
+.top .qun_tip {
+    position: absolute;
+    left: 750px;
+    top: 24px
+}
+
+.top .qun_tip a {
+    font-size: 16px;
+    color: #000
+}
+
+.top .qun_tip a:hover {
+    font-size: 16px;
+    color: red
+}
+
+.cl01b76c {
+    color: #01b76c!important
+}
+
+.clfdaa29 {
+    color: #fdaa29
+}
+
+.cl000 {
+    color: #000
+}
+
+.menu-select-icon {
+    line-height: normal
+}
+
+.menu-select-icon>p.user-name,.menu-select-icon>p.user-name2 {
+    margin-top: 14px;
+    line-height: 25px;
+    height: 25px;
+    font-size: 13px;
+    padding-left: 22px
+}
+
+.menu-select-icon>p.user-name2 {
+    background: url(../images/putong.png) 1px no-repeat
+}
+
+.menu-select-icon>p.user-name {
+    background: url(../images/huiyuan.png) 1px no-repeat
+}
+
+.menu-select-icon>p.user-tag {
+    font-size: 12px;
+    background-color: #01B76D;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 5px
+}
+
+.pos-rel {
+    position: relative;
+    height: 69px;
+    line-height: 69px
+}
+
+.menu-select-box {
+    display: none;
+    position: absolute;
+    top: 69px;
+    left: -1px;
+    z-index: 2001;
+    width: 240px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box
+}
+
+.menu-select-box li {
+    box-sizing: border-box;
+    margin-left: 0;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    text-align: left
+}
+
+.menu-select-box>li>p {
+    line-height: 28px
+}
+
+.menu-select-myCenter {
+    display: inline-block;
+    color: #fff;
+    background-color: #5AC2E7;
+    width: 80px;
+    text-align: center;
+    margin-left: 0!important
+}
+
+.pos-menu-select {
+    position: absolute;
+    right: 2px;
+    top: 23px
+}
+
+.pos-menu-select-novip {
+    position: absolute;
+    right: 6px;
+    top: 30px
+}
+
+.top .LR_USER {
+    float: right
+}
+
+.top .LR_USER>li {
+    float: left;
+    height: 69px;
+    line-height: 69px
+}
+
+.top .LR_USER>li>a {
+    display: inline-block;
+    font-size: 14px;
+    text-align: left;
+    color: #666;
+    padding: 0 20px
+}
+
+.top .LR_USER>li>a.login:hover {
+    color: #01b76c
+}
+
+.top .LR_USER>li>a.register {
+    color: #fff;
+    width: 152px;
+    height: 39px;
+    display: block;
+    background-color: #01b76c;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+
+.top .LR_USER>li>a.register:hover {
+    background-color: #00a05e
+}
+
+.menu-select-box>li>a {
+    float: left
+}
+
+.menu-select-box>li>a:last-child {
+    float: right
+}
+.menu-select-box:hover {
+    display: block;
+}
+.menu-select-a {
+    display: inline-block;
+    padding: 0 16px!important;
+    margin: 0!important;
+    width: 28px
+}
+
+.right-menu,.right-menu .bg {
+    width: 126px;
+    overflow: hidden
+}
+
+.right-menu {
+    position: fixed;
+    right: 30px;
+    top: 85px;
+    z-index: 1000
+}
+
+.right-menu #offKfqq {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.right-menu .bg {
+    background-color: #f8f8f8;
+    height: 640px;
+    text-align: center
+}
+
+.right-menu .bg .bg-img {
+    position: relative;
+    top: 20px;
+    z-index: 2
+}
+
+/*.right-menu .bg1 {*/
+.right-menu .bg1 {
+    height: 312px;
+    background: url(../images/yckf.png)
+}
+
+.right-menu-content {
+    border: 2px solid #F96503;
+    width: 105px;
+    position: relative;
+    margin: auto;
+    padding-top: 25px
+}
+
+.right-menu-content-top-img {
+    position: relative;
+    left: -8px
+}
+
+#onKfqq {
+    display: none;
+    position: fixed;
+    right: 51px;
+    top: 85px;
+    z-index: 999
+}
+
+.right-menu .right-menu-one a,.right-menu .right-menu-two a {
+    color: #333;
+    text-align: center;
+    margin-right: 18px;
+    display: block;
+    line-height: 28px;
+    font-size: 12px;
+    height: 28px
+}
+
+.right-menu .right-menu-one a:hover,.right-menu .right-menu-two a:hover {
+    color: #f60
+}
+
+.right-menu-one p {
+    padding: 8px
+}
+
+.right-menu-one>a>img,.right-menu-two>a>img {
+    vertical-align: middle
+}
+
+.menuTitleOne,.menuTitleTwo {
+    /*background: url(../static/images/yckfbtbg.gif) no-repeat;*/
+    background: url(../images/yckfbtbg.gif) no-repeat;
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 7px;
+    font-size: 12px
+}
+
+.bg1 .menuTitleOne {
+    top: 122px
+}
+
+.bg1 .menuTitleTwo {
+    top: 217px
+}
+
+.bg .clickAdd {
+    cursor: pointer;
+    line-height: 29px;
+    font-size: 15px;
+    color: #11ade2!important
+}

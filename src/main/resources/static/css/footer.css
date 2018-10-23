@@ -1,0 +1,20 @@
+.foot_div_div1,.foot_div_div_2 {
+    text-align: center
+}
+
+.foot_div {
+    background-color: #fff;
+    height: 87px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd
+}
+
+.foot_div_div1 {
+    overflow: hidden;
+    padding-top: 20px
+}
+
+.foot_div_div1_a1 {
+    color: #9d9b9b;
+    font-size: 12px
+}

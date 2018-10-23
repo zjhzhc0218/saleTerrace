@@ -1,0 +1,86 @@
+#Container,#Content,#Content-Left {
+    background: #F8F8F8
+}
+
+#Container,#Footer {
+    width: 100%
+}
+
+.topPrompt p,.topPrompt p a {
+    font-size: 12px;
+    line-height: 30px
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+#Container {
+    margin: 0 auto;
+    min-width: 1200px
+}
+
+#Content {
+    width: 1200px
+}
+
+#Content-Left {
+    width: 190px;
+    float: left
+}
+
+#Content-Space {
+    width: 0;
+    float: left;
+    height: 100%;
+    margin-right: 10px;
+    background-color: #FFF
+}
+
+#Content-Space-h,.Content-Space-h {
+    height: 25px;
+    width: 100%;
+    float: left;
+    background-color: #f8f8f8
+}
+
+#Content-Main {
+    width: 1000px;
+    float: right;
+    background: #F8F8F8
+}
+
+.Clear {
+    clear: both
+}
+
+.topPrompt {
+    width: 980px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #fff0d8;
+    z-index: 2000;
+    display: none
+}
+
+.topPrompt p {
+    float: left;
+    text-align: left;
+    padding-left: 40px;
+    background: url(/asserts/images/buyerimages/i16_dtts.gif) 18px center no-repeat
+}
+
+.topPrompt p a {
+    color: #57c4e6
+}
+
+.topPrompt i {
+    font-size: 20px;
+    line-height: 13px;
+    float: right;
+    font-style: normal;
+    height: 13px;
+    margin: 8px 10px 0 0;
+    cursor: pointer
+}
