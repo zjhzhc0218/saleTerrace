@@ -8,30 +8,30 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 		<meta http-equiv="description" content="this is my page">
-		<script type="text/javascript" src="../static/js/verdor/jquery/jquery-1.10.2.js"></script>
-		<script type="text/javascript" src="../static/js/verdor/jquery-loadTemplate/jquery.loadTemplate-1.4.4.js"></script>
-		<script type="text/javascript" src="../static/js/verdor/jquery-zclip/1.1.2/jquery.zclip.js"></script>
-		<script type="text/javascript" src="../static/js/common/common.js"></script>
-		<script type="text/javascript" src="../static/js/common/page.js"></script>
-		<script type="text/javascript" src="../static/js/verdor/jquery.form.js"></script>
-		<script type="text/javascript" src="../static/js/verdor/zebra_dialog/zebra_dialog.js"></script>
-		<script type="text/javascript" src="../static/js/common/popdg.js"></script>
-		<script type="text/javascript" src="../static/js/seller/bindStore.js"></script>
-		<script type="text/javascript" src="../static/js/common/cos-js-sdk-v4.js"></script>
-		<script type="text/javascript" src="../static/js/common/uploadImageCommon.js"></script>
-		<link rel="stylesheet" type="text/css" href="../static/css/zebra_dialog.css"/>
-		<link rel="stylesheet" type="text/css" href="../static/css/bindStore.css"/>
+		<script type="text/javascript" src="/saleterrace/js/verdor/jquery/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/verdor/jquery-loadTemplate/jquery.loadTemplate-1.4.4.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/verdor/jquery-zclip/1.1.2/jquery.zclip.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/common/common.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/common/page.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/verdor/jquery.form.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/verdor/zebra_dialog/zebra_dialog.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/common/popdg.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/seller/bindStore.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/common/cos-js-sdk-v4.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/common/uploadImageCommon.js"></script>
+		<link rel="stylesheet" type="text/css" href="/saleterrace/css/zebra_dialog.css"/>
+		<link rel="stylesheet" type="text/css" href="/saleterrace/css/bindStore.css"/>
 		<title>【试客多】-店铺管理</title>
 	</head>
 	<body>
 
-		<link rel="stylesheet" type="text/css" href="../static/css/top.css"/>
-		<script type="text/javascript" src="../static/js/verdor/jquery-first-event.js"></script>
-		<script type="text/javascript" src="../static/js/common/store+json2.min.js"></script>
-		<script type="text/javascript" src="../static/js/common/store.expire.js"></script>
-		<script type="text/javascript" src="../static/js/common/top.js"></script>
-		<script type="text/javascript" src="../static/js/dist/viewer.js"></script>
-		<link rel="stylesheet" type="text/css" href="../static/css/viewer.css"/>
+		<link rel="stylesheet" type="text/css" href="/saleterrace/css/top.css"/>
+		<script type="text/javascript" src="/saleterrace/js/verdor/jquery-first-event.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/common/store+json2.min.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/common/store.expire.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/common/top.js"></script>
+		<script type="text/javascript" src="/saleterrace/js/dist/viewer.js"></script>
+		<link rel="stylesheet" type="text/css" href="/saleterrace/css/viewer.css"/>
 
 		<style>
 			.contentBox {
@@ -378,8 +378,8 @@
 		<div id="Container" align="center">
 			<div id="Header">
 				<div class="headMenu" align="right">
-					<link rel="stylesheet" type="text/css" href="../static/css/layout.css"/>
-					<link rel="stylesheet" type="text/css" href="../static/css/header.css"/>
+					<link rel="stylesheet" type="text/css" href="/saleterrace/css/layout.css"/>
+					<link rel="stylesheet" type="text/css" href="/saleterrace/css/header.css"/>
 				</div>
 			</div>
 			<div class="Content-Space-h"></div>
@@ -387,7 +387,7 @@
 			<div id="Content">
 				<div id="Content-Left">
 
-					<link rel="stylesheet" type="text/css" href="../static/css/navigator.css"/>
+					<link rel="stylesheet" type="text/css" href="/saleterrace/css/navigator.css"/>
 
 					<ul class="left_menu" style="margin-bottom: 10px;">
 						<li class="menu_selected" href="index.htm">
@@ -1211,7 +1211,7 @@
 		</div>
 		<div id="Footer">
 
-			<link rel="stylesheet" type="text/css" href="../static/css/footer.css"/>
+			<link rel="stylesheet" type="text/css" href="/saleterrace/css/footer.css"/>
 			<div class="foot_div">
 
 				<div class="foot_div_div1">
