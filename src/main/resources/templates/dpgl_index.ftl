@@ -111,7 +111,7 @@
 			}
 			
 			.contentBox .content .noAgain i.active {
-				background: url(../static/images/gou.png) no-repeat center;
+				background: url(/saleterrace/images/gou.png) no-repeat center;
 			}
 		</style>
 		<div class='contentBox' onclick='closeImg2();'>
@@ -126,7 +126,7 @@
 		</div>
 
 		<a class="sImgJump" style=" margin: auto; display: block; ">
-			<img class="sTongZhi" src="../static/images/demo_01.jpg" alt="" style="display: block; width: 100%; height: 51px;">
+			<img class="sTongZhi" src="/saleterrace/images/demo_01.jpg" alt="" style="display: block; width: 100%; height: 51px;">
 		</a>
 
 		<a class="sImgJump" href="#" style=" margin: auto; display: block;text-align: center;color: red;font-style: italic;text-decoration: underline;font-size: 17px; background-color: bisque;line-height: 40px;">
@@ -134,7 +134,7 @@
 		</a>
 		<div class="top">
 
-			<a href="index.htm">
+			<a href="yhzx_index.ftl">
 				<div class="logo"></div>
 			</a>
 
@@ -146,7 +146,7 @@
 				<li class="pos-rel menu-box">
 
 					<a href="#" class="menu-select-icon">
-						<img src="../static/images/menu_select_icon.png" alt="" class="pos-menu-select">
+						<img src="/saleterrace/images/menu_select_icon.png" alt="" class="pos-menu-select">
 						<p class="user-name">
 							15355056891
 						</p>
@@ -166,9 +166,9 @@
 
 						</li>
 						<li style="padding-left: 20px; clear: both;">
-							<a href="accountmanage.htm?tab=2" class="cl000 menu-select-a">充值</a>
-							<a href="accountmanage.htm?tab=3" class="cl000 menu-select-a">提现</a>
-							<a href="orderVip.htm" target="_blank" class="menu-select-myCenter">缴纳保证金</a>
+							<a href="zjgl_index.ftl?tab=2" class="cl000 menu-select-a">充值</a>
+							<a href="zjgl_index.ftl?tab=3" class="cl000 menu-select-a">提现</a>
+							<a href="/saleterrace/jnbzj_index" target="_blank" class="menu-select-myCenter">缴纳保证金</a>
 
 						</li>
 					</ul>
@@ -185,7 +185,7 @@
 
 		<div class="right-menu">
 			<a href="javascript:void(0);" id="offKfqq">
-				<img src="../static/images/colsed-kfqq.png" alt="">
+				<img src="/saleterrace/images/colsed-kfqq.png" alt="">
 			</a>
 
 			<!--<div class="bg1">
@@ -202,36 +202,36 @@
                 </div>-->
 			<!--<div class="bg" style="display: none">-->
 			<div class="bg">
-				<img class="bg-img" src="../static/images/kfqq.png" alt="">
+				<img class="bg-img" src="/saleterrace/images/kfqq.png" alt="">
 				<div class="right-menu-content">
-					<a href="publish_mission.htm">
-						<img src="../static/images/sjscfd.png" class="right-menu-content-top-img" alt="">
+					<a href="syhd_release_index.ftl">
+						<img src="/saleterrace/images/sjscfd.png" class="right-menu-content-top-img" alt="">
 					</a>
 
 					<span class="menuTitleTwo">客服问题找我</span>
 					<div class="right-menu-two">
 						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368872">
-							<img src="../static/images/yckf_03.png" alt=""> 宝宝
+							<img src="/saleterrace/images/yckf_03.png" alt=""> 宝宝
 						</a>
 						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852365086">
-							<img src="../static/images/yckf_03.png" alt=""> 贝贝
+							<img src="/saleterrace/images/yckf_03.png" alt=""> 贝贝
 						</a>
 					</div>
 
 					<span class="menuTitleOne">活动发布找我</span>
 					<div class="right-menu-one">
 						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368900">
-							&nbsp;&nbsp;&nbsp;<img src="../static/images/yckf_03.png" alt=""> 高经理
+							&nbsp;&nbsp;&nbsp;<img src="/saleterrace/images/yckf_03.png" alt=""> 高经理
 						</a>
 						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852356150">
-							<img src="../static/images/yckf_03.png" alt=""> 安娜老师
+							<img src="/saleterrace/images/yckf_03.png" alt=""> 安娜老师
 						</a>
 
 						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852365085">
-							<img src="../static/images/yckf_03.png" alt=""> 周华老师
+							<img src="/saleterrace/images/yckf_03.png" alt=""> 周华老师
 						</a>
 						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852366295">
-							<img src="../static/images/yckf_03.png" alt=""> 毛经理
+							<img src="/saleterrace/images/yckf_03.png" alt=""> 毛经理
 						</a>
 					</div>
 					<span class="menuTitleOne">上班时间</span>
@@ -245,7 +245,7 @@
 				<div class="right-menu-content" style="padding-top: 0px;margin-top: 2px;">
 					<span>商家交流群</span>
 					<div class="right-menu-two">
-						<img src="../static/images/er.jpg" class="QRCode" style="width: 105px;">
+						<img src="/saleterrace/images/er.jpg" class="QRCode" style="width: 105px;">
 					</div>
 					<a class="clickAdd" target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575">点击加入</a>
 				</div>
@@ -254,7 +254,7 @@
 		</div>
 
 		<a href="javascript:void(0);" id="onKfqq">
-			<img src="../static/images/kfqqsmall.png" alt="">
+			<img src="/saleterrace/images/kfqqsmall.png" alt="">
 		</a>
 
 		<input type="hidden" id="imageRootPath" value="http://image-1254237507.image.myqcloud.com">
@@ -358,7 +358,7 @@
 					'<div class="shade-box" style="position: absolute;  left: 50%; width: 400px; height: 300px; z-index: 300;background-color: #fff; border-radius: 10px; margin-left: -200px;" >' +
 					'<a class="shade-close" style="font-size: 18px;float: right;margin: 6px 15px 0 0px;">X</a>' +
 					'<p style="clear:both; font-size: 16px; font-weight: bold; text-align: center; margin-top: 99px;">' + msg + '</p>' +
-					'<a href="orderVip.htm" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>' +
+					'<a href="/jnbzj_index.ftl" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>' +
 					'</div>';
 				var body = $("body")
 				body.append(html);
@@ -390,62 +390,58 @@
 					<link rel="stylesheet" type="text/css" href="/saleterrace/css/navigator.css"/>
 
 					<ul class="left_menu" style="margin-bottom: 10px;">
-						<li class="menu_selected" href="index.htm">
-							<i class="grxx"></i>
-							<span>用户中心</span>
-							<p></p>
+						<li class="menu_selected" >
+                            <a href="/saleterrace/yhzx_index"><i class="grxx"></i>
+                            <span>用户中心</span></a>
 						</li>
-						<li href="bindStore.htm">
-							<i class="dpbt"></i>
-							<span>店铺管理</span>
+                        <li>
+                            <a href="/saleterrace/dpgl_index"><i class="dpbt"></i>
+                            <span>店铺管理</span></a>
 						</li>
-						<li href="publish_mission.htm">
-							<i class="fbrw"></i>
-							<span>试用活动发布</span>
+						<li>
+                            <a href="/saleterrace/syhd_release_index"><i class="fbrw"></i>
+                            <span>试用活动发布</span></a>
 						</li>
-						<li href="zrwlb.htm">
-							<i class="yfbrw"></i>
-							<span>试用活动管理</span>
-						</li>
-
-						<li href="blacklist_index.htm">
-							<i class="hmd"></i>
-							<span>试客黑名单</span>
-							<div class="new" style="left:90px;"></div>
+						<li>
+                            <a  href="/saleterrace/syhd_management_index"><i class="yfbrw"></i>
+                            <span>试用活动管理</span></a>
 						</li>
 
-						<li href="accounthistory.htm">
-							<i class="ckzd"></i>
-							<span>查看账单</span>
-						</li>
-						<li href="accountmanage.htm">
-							<i class="zjgl"></i>
-							<span>资金管理</span>
-						</li>
-						<li href="seller_tariff_description.htm">
-							<i class="ckzz"></i>
-							<span>平台资费说明</span>
+						<li>
+                            <a href="/saleterrace/black_index"><i class="hmd"></i>
+                            <span>试客黑名单</span>
+                            <div class="new" style="left:90px;"></div></a>
 						</li>
 
-						<li href="recommendPage.htm">
-							<i class="rcd"></i>
-							<img src="../static/images/hot.gif" alt="" style="position: relative;top: -2px;left: 5px;">
-							<span>推荐赚金币</span>
+						<li>
+                            <a href="/saleterrace/ckzd_index"><i class="ckzd"></i>
+                            <span>查看账单</span></a>
+						</li>
+						<li>
+                            <a href="/saleterrace/zjgl_index"><i class="zjgl"></i>
+                            <span>资金管理</span></a
+						</li>
+						<li>
+                            <a  href="/saleterrace/ptzf_index"><i class="ckzz"></i>
+                            <span>平台资费说明</span></a>
+						</li>
+
+						<li>
+                            <a  href="/saleterrace/tjzjb_index"><i class="rcd"></i>
+							<img src="/saleterrace/images/hot.gif" alt="" style="position: relative;top: -2px;left: 5px;">
+                            <span>推荐赚金币</span></a>
 						</li>
 
 						<!--<li href="/popular/popular.htm?pg=task.pcFlow" target="_blank">-->
 						<li>
-							<i class="i16_brq" ></i>
+                            <a href="https://burenqi.com/task-pc-flow" target="_blank"><i class="i16_brq" ></i>补人气</a>
 							<!--<span>补人气</span>-->
-                            <a href="https://burenqi.com/task-pc-flow">补人气</a>
-
 						</li>
 
 						<li>
 							<a href="http://www.chapaiming.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">
 								<i class="i16_cpm"></i>
 								<span>查排名</span>
-
 							</a>
 						</li>
 
@@ -453,33 +449,31 @@
 							<a href="http://www.maijiabus.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">
 								<i class="i16_mjbs"></i>
 								<span>流量捕手</span>
-
 							</a>
 						</li>
 
 						<li>
-							<a href="seller_protocol.htm" target="_blank" style="overflow:hidden;display:block;margin:0;">
+							<a href="/saleterrace/sjxy_index" style="overflow:hidden;display:block;margin:0;">
 								<i class="i16_protocol"></i>
 								<span>商家电子协议</span>
-
 							</a>
 						</li>
 					</ul>
 					<a class="sLeftImgJump" target="_blank" style="float: left; margin: 10px 0 0 0;">
-						<img class="sLeft " src="../static/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">
+						<img class="sLeft " src="/saleterrace/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">
 					</a>
 					<input type="hidden" id="nav_hidden" value="1" />
 
-					<script>
-						$(document).ready(function() {
-							if(isGodChoose()) {
-								var gotoxiuba = $("#goto-xiuba-href");
-								if(gotoxiuba && gotoxiuba.length > 0) {
-									gotoxiuba.css("display", "inline-block");
-								}
-							}
-						});
-					</script>
+					<#--<script>-->
+						<#--$(document).ready(function() {-->
+							<#--if(isGodChoose()) {-->
+								<#--var gotoxiuba = $("#goto-xiuba-href");-->
+								<#--if(gotoxiuba && gotoxiuba.length > 0) {-->
+									<#--gotoxiuba.css("display", "inline-block");-->
+								<#--}-->
+							<#--}-->
+						<#--});-->
+					<#--</script>-->
 				</div>
 				<div id="Content-Space"></div>
 				<div id="Content-Main">
@@ -567,11 +561,11 @@
 											<li class="sendPic">
 												<i class="i4"></i>
 												<h2>店铺后台截图：</h2>
-												<img id="storeCheckImgShow" style="cursor: pointer;" src="../static/images/i88_img.png" alt="">
+												<img id="storeCheckImgShow" style="cursor: pointer;" src="/saleterrace/images/i88_img.png" alt="">
 												<p>（为避免恶意绑定他人店铺必须上传店铺的后台登录截图）</p>
 												<input type="file" id="picValue" name="storeCheckImgTemp" accept=".jpg,.jpeg,.gif,.png" onchange="jic.onchange(this,'bind',162036,successSetValueCallBack,successCallBack,errorCallBack,'')" />
 												<h3 id="selectPic">选择文件</h3>
-												<a id="picUrl" href="../static/images/dianpubangding02.png" target="_blank">查看示例图</a>
+												<a id="picUrl" href="/saleterrace/images/dianpubangding02.png" target="_blank">查看示例图</a>
 											</li>
 										</ul>
 										<input type="hidden" id="storeCheckImg" name="storeCheckImg">
@@ -608,7 +602,7 @@
 											<li class="sendPic">
 												<i class="i4"></i>
 												<span>店铺后台截图：</span>
-												<img id="storeCheckImgShowEdit" style="cursor: pointer;" src="../static/images/i88_img.png" alt="">
+												<img id="storeCheckImgShowEdit" style="cursor: pointer;" src="/saleterrace/images/i88_img.png" alt="">
 												<input type="file" style="display: none" id="picValueEdit" name="storeCheckImgTemp" accept=".jpg,.jpeg,.gif,.png" onchange="jic.onchange(this,'bind',162036,successEditSetValueCallBack,successCallBack,errorCallBack,'')" />
 											</li>
 										</ul>

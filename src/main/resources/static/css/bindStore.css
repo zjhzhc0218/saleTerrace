@@ -682,6 +682,7 @@ a.blue_span {
 
 .formInfor ul.title li i.i1 {
     background: url(../images/step1_icon.png) no-repeat
+    /*background: url(../images/step1_icon.png) no-repeat*/
 }
 
 .formInfor ul.title li i.i2 {

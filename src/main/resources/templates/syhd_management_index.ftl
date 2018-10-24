@@ -843,7 +843,7 @@
         var dg;
         var html = "<span style='font-size: 16px;display: block;margin-bottom: 10px;'>当前余额不足，请先充值。</span>";
         var okCallback = function () {
-            window.open("/account/accountmanage.htm");
+            window.open("/account/zjgl_index.ftl");
         };
         var cancelCallbak = function () {
             window.location.reload();

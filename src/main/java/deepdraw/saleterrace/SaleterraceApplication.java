@@ -8,5 +8,5 @@ public class SaleterraceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SaleterraceApplication.class, args);
-    }
+}
 }

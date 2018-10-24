@@ -696,13 +696,13 @@
                                     <a style="color:#FFF">充值货款</a>
                                     </div>
                                  <div class="Capitalrecord_transactionrecords1_middle1_topleft2" style="background-color:white">
-                                    <a style="color:black" href="accountmanage.htm?tab=2">资产转换</a>
+                                    <a style="color:black" href="zjgl_index.ftl?tab=2">资产转换</a>
                                 </div>
                                 <div class="Capitalrecord_transactionrecords1_middle1_topleft2 Capitalrecord_transactionrecords1_middle1_topleft3">
-                                    <a style="color:#000; background-color: #fff;" href="accountmanage.htm?tab=3">提现</a>
+                                    <a style="color:#000; background-color: #fff;" href="zjgl_index.ftl?tab=3">提现</a>
                                     </div>
                                 <div class="Capitalrecord_transactionrecords1_middle1_topleft2 Capitalrecord_transactionrecords1_middle1_topleft4" style="background-color:white">
-                                    <a style="color:black" href="accountmanage.htm?tab=4">账号管理</a>
+                                    <a style="color:black" href="zjgl_index.ftl?tab=4">账号管理</a>
                                 </div>
 
                             </div>
@@ -851,7 +851,7 @@
                         <div class="Withdrawals_div_middle1">
                             <div class="Withdrawals_div_middle1_But">
                                 <a class="Withdrawals_div_middle1_Buta1">+</a>
-                                <a href="accountmanage.htm?tab=4" class="Withdrawals_div_middle1_Buta2">绑定银行卡</a>
+                                <a href="zjgl_index.ftl?tab=4" class="Withdrawals_div_middle1_Buta2">绑定银行卡</a>
                             </div>
                             <!--<a class="Withdrawals_div_middle1_a1">您最多可绑定5个账号</a>
                             -->
@@ -1042,7 +1042,7 @@
                                 <div class="Fund_management_content_czhy_middle1">
                                     <div class="Fund_management_content_czhy_middle1_div Fund_management_content_czhy_middle1_div2">
                                         <a class="leftext"><span class="iconTh"></span>7*24小时 自动到账</a>
-                                        <a class="Fund_management_content_czhy_middle1_diva3" href="accounthistory.htm">查看充值记录></a>
+                                        <a class="Fund_management_content_czhy_middle1_diva3" href="ckzd_index.ftl">查看充值记录></a>
                                     </div>
                                 </div>
                                 
@@ -1131,7 +1131,7 @@
                         <a class="Fund_management_content_czhy_middle1_diva1">开通/续费会员</a>
                         <!--<a class="Fund_management_content_czhy_middle1_diva2  Fund_management_content_czhy_middle1_diva1_2">每增加一个月会员，赠送金币<span class="Fund_management_topa2_span1">5</span>个，且会员经验值+<span class="Fund_management_topa2_span1">20</span></a>
                         -->
-                        <a class="Fund_management_content_czhy_middle1_diva3" href="accounthistory.htm">查看充值记录></a>
+                        <a class="Fund_management_content_czhy_middle1_diva3" href="ckzd_index.ftl">查看充值记录></a>
                     </div>
                 </div>
                 <div class="Fund_management_content_czhy_middle2">
