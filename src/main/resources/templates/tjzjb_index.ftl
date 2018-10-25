@@ -4,7 +4,7 @@
     <script type="text/javascript" src="/saleterrace/js/verdor/jquery/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="/saleterrace/js/verdor/jquery-zclip.1.1.2/jquery.zclip.js"></script>
     <script type="text/javascript" src="/saleterrace/js/verdor/jquery-loadTemplate/jquery.loadTemplate-1.4.4.js"></script>
-    <script type="text/javascript" src="/saleterrace/js/verdor/jquery-jqPaginator/jqPaginator"></script>
+    <script type="text/javascript" src="/saleterrace/js/verdor/jquery-jqPaginator/jqPaginator.js"></script>
     <script type="text/javascript" src="/saleterrace/js/common/page.js"></script>
     <script type="text/javascript" src="/saleterrace/js/common/common.js"></script>
     <script type="text/javascript" src="/saleterrace/js/account/recommendPage.js"></script>
@@ -13,16 +13,13 @@
     <link rel="shortcut icon" href="/saleterrace/images/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
-
-
-<link rel="stylesheet" type="text/css" href="/saleterrace/css/top.css"/>
-<script type="text/javascript" src="/saleterrace/js/verdor/jquery-first-event.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/store+json2.min.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/store.expire.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/top.js"></script>
-<script type="text/javascript" src="/saleterrace/js/dist/viewer.js"></script>
-<link rel="stylesheet" type="text/css" href="/saleterrace/js/dist/viewer.css" />
-
+    <link rel="stylesheet" type="text/css" href="/saleterrace/css/top.css"/>
+    <script type="text/javascript" src="/saleterrace/js/verdor/jquery-first-event.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/store+json2.min.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/store.expire.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/top.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/dist/viewer.js"></script>
+    <link rel="stylesheet" type="text/css" href="/saleterrace/js/dist/viewer.css" />
 <script>
     if (window.location.hostname == '115.159.84.78') {
         window.location.href = "http://budingdan.com";
@@ -164,7 +161,7 @@
 </div>
 
 <a class="sImgJump" style=" margin: auto; display: block; ">
-    <img class="sTongZhi" src="" alt="" style="display: block; width: 100%; height: 51px;">
+    <img class="sTongZhi" src="/saleterrace/images/demo_01.jpg" alt="" style="display: block; width: 100%; height: 51px;">
 </a>
 
 
@@ -209,8 +206,8 @@
 
                 </li>
                 <li style="padding-left: 20px; clear: both;">
-                    <a href="zjgl_index.ftl?tab=2" class="cl000 menu-select-a">充值</a>
-                    <a href="zjgl_index.ftl?tab=3" class="cl000 menu-select-a">提现</a>
+                    <a href="/saleterrace/zjgl_index?tab=2" class="cl000 menu-select-a">充值</a>
+                    <a href="/saleterrace/zjgl_index?tab=3" class="cl000 menu-select-a">提现</a>
                     <a href="/saleterrace/jnbzj_index" target="_blank" class="menu-select-myCenter">缴纳保证金</a>
 
                 </li>
@@ -556,8 +553,7 @@
                     </li>
                     <li class="role">
                         <a>商家&nbsp;&nbsp;累计提成：<i id="sellerSum"></i> 金 &nbsp;&nbsp;<span id="sellerDetailsBtn">明细</span></a>
-                        <a>试客&nbsp;&nbsp;累计提成：<i id="buyerSum"></i> 金 &nbsp;&nbsp;<span
-                                id="buyerDetailsBtn">明细</span></a>
+                        <a>试客&nbsp;&nbsp;累计提成：<i id="buyerSum"></i> 金 &nbsp;&nbsp;<span id="buyerDetailsBtn">明细</span></a>
                     </li>
                 </ul>
                 <div class="unList">

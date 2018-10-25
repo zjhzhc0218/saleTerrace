@@ -74,6 +74,18 @@ public class ShopController {
         return mv;
     }
 
+    @RequestMapping("/yhzx_loginpwd")
+    public ModelAndView yhzx_loginpwd(ModelAndView mv) {
+        mv.setViewName("yhzx_loginpwd");
+        return mv;
+    }
+
+
+    @RequestMapping("/yhzx_zfpwd")
+    public ModelAndView yhzx_zfpwd(ModelAndView mv) {
+        mv.setViewName("yhzx_zfpwd");
+        return mv;
+    }
 
 }
 
