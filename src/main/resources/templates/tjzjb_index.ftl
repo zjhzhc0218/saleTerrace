@@ -1,35 +1,25 @@
 <html>
 <head>
     <title>【试客多】-推荐赚金币</title>
-    <script type="text/javascript" src="/asserts/js/vendor/jquery/jquery-1.10.2.js?rel=1539573213785"></script>
-    <script type="text/javascript"
-            src="/asserts/js/vendor/jquery-zclip/1.1.2/jquery.zclip.js?rel=1539573213785"></script>
-    <script type="text/javascript"
-            src="/asserts/js/vendor/jquery-loadTemplate/jquery.loadTemplate-1.4.4.js?rel=1539573213785"></script>
-    <script type="text/javascript"
-            src="/asserts/js/vendor/jquery-jqPaginator/jqPaginator.js?rel=1539573213785"></script>
-    <script type="text/javascript" src="/asserts/js/common/page.js?rel=1539573213785"></script>
-    <script type="text/javascript" src="/asserts/js/common/common.js?rel=1539573213785"></script>
-
-    <script type="text/javascript" src="/asserts/js/account/recommendPage.js?rel=1539573213785"></script>
-    <link rel="stylesheet" href="/asserts/css/account/recommendPage.css?rel=1539573213784">
-    <link rel="stylesheet" type="text/css" href="/asserts/css/vendor/paging.css?rel=1539573213784"/>
-    <link rel="shortcut icon" href="/asserts/images/favicon.ico" type="image/x-icon"/>
+    <script type="text/javascript" src="/saleterrace/js/verdor/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/verdor/jquery-zclip.1.1.2/jquery.zclip.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/verdor/jquery-loadTemplate/jquery.loadTemplate-1.4.4.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/verdor/jquery-jqPaginator/jqPaginator.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/page.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/common.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/account/recommendPage.js"></script>
+    <link rel="stylesheet" href="/saleterrace/css/recommendPage.css">
+    <link rel="stylesheet" type="text/css" href="/saleterrace/css/paging.css"/>
+    <link rel="shortcut icon" href="/saleterrace/images/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
-
-
-<link rel="stylesheet" type="text/css"
-      href="/asserts/css/top.css?rel=1539573213879"/>
-<script type="text/javascript" src="/asserts/js/vendor/jquery-first-event.js?rel=1539573213880"></script>
-<script type="text/javascript"
-        src="/asserts/js/common/store+json2.min.js?rel=1539573213880"></script>
-<script type="text/javascript"
-        src="/asserts/js/common/store.expire.js?rel=1539573213880"></script>
-<script type="text/javascript" src="/asserts/js/common/top.js?rel=1539573213880"></script>
-<script type="text/javascript" src="/asserts/js/dist/viewer.js?rel=1539573213880"></script>
-<link rel="stylesheet" type="text/css" href="/asserts/js/dist//viewer.css?rel=1539573213879"/>
-
+    <link rel="stylesheet" type="text/css" href="/saleterrace/css/top.css"/>
+    <script type="text/javascript" src="/saleterrace/js/verdor/jquery-first-event.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/store+json2.min.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/store.expire.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/top.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/dist/viewer.js"></script>
+    <link rel="stylesheet" type="text/css" href="/saleterrace/js/dist/viewer.css" />
 <script>
     if (window.location.hostname == '115.159.84.78') {
         window.location.href = "http://budingdan.com";
@@ -155,7 +145,7 @@
     }
 
     .contentBox .content .noAgain i.active {
-        background: url(/asserts/images/gou.png) no-repeat center;
+        background: url(/saleterrace/images/gou.png) no-repeat center;
     }
 </style>
 <div class='contentBox' onclick='closeImg2();'>
@@ -171,7 +161,7 @@
 </div>
 
 <a class="sImgJump" style=" margin: auto; display: block; ">
-    <img class="sTongZhi" src="" alt="" style="display: block; width: 100%; height: 51px;">
+    <img class="sTongZhi" src="/saleterrace/images/demo_01.jpg" alt="" style="display: block; width: 100%; height: 51px;">
 </a>
 
 
@@ -195,54 +185,38 @@
     <ul class="LR_USER">
         <li class="pos-rel menu-box">
 
-
             <a href="#" class="menu-select-icon">
-                <img src="/asserts/images/menu_select_icon.png" alt=""
-                     class="pos-menu-select">
-                <p
-
-                        class="user-name"
-
-
-                >
+                <img src="/saleterrace/images/menu_select_icon.png" alt="" class="pos-menu-select">
+                <p class="user-name">
                     15355056891
                 </p>
                 <p class="user-tag" style="text-align: center; line-height:normal;">
 
-
-                    VIP
-
-
-                    4
-                    天试用中
-
+                    VIP X 天试用中
 
                 </p>
             </a>
-
 
             </a>
 
             <ul class="menu-select-box">
                 <li style="background-color: #f3f3f3; padding-left: 20px">
-                    货款：<b class="clfdaa29" id="top_user_money"></b>元
-                    &nbsp;&nbsp;&nbsp;
-                    金币：<b class="clfdaa29" id="top_user_coin"></b>个
+                    货款：<b class="clfdaa29" id="top_user_money"></b>元 &nbsp;&nbsp;&nbsp; 金币：
+                    <b class="clfdaa29" id="top_user_coin"></b>个
 
                 </li>
                 <li style="padding-left: 20px; clear: both;">
-                    <a href="/account/accountmanage.htm?tab=2" class="cl000 menu-select-a">充值</a>
-                    <a href="/account/accountmanage.htm?tab=3" class="cl000 menu-select-a">提现</a>
-
-
-                    <a href="/seller/orderVip.htm" target="_blank" class="menu-select-myCenter">缴纳保证金</a>
-
+                    <a href="/saleterrace/zjgl_index?tab=2" class="cl000 menu-select-a">充值</a>
+                    <a href="/saleterrace/zjgl_index?tab=3" class="cl000 menu-select-a">提现</a>
+                    <a href="/saleterrace/jnbzj_index" target="_blank" class="menu-select-myCenter">缴纳保证金</a>
 
                 </li>
             </ul>
         </li>
-        <li><a href="javascript:logout();" class="cl01b76c">退出登陆
-        </a></li>
+        <li>
+            <a href="javascript:logout();" class="cl01b76c">退出登陆
+            </a>
+        </li>
 
     </ul>
     <input type="hidden" id="exam" value="0">
@@ -251,85 +225,76 @@
 
 <div class="right-menu">
     <a href="javascript:void(0);" id="offKfqq">
-        <img src="/asserts/images/colsed-kfqq.png" alt="">
+        <img src="/saleterrace/images/colsed-kfqq.png" alt="">
     </a>
 
-
     <!--<div class="bg1">
-        <span class="menuTitleOne">不会放单找我</span>
-        <span class="menuTitleTwo">其他问题找我</span>
-        <div class="right-menu-one">
-            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505269">小高</a>
-            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852382973">二珍</a>
-        </div>
-        <div class="right-menu-two">
-            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505268">玫瑰</a>
-            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505268">丁香</a>
-        </div>
-    </div>-->
+            <span class="menuTitleOne">不会放单找我</span>
+            <span class="menuTitleTwo">其他问题找我</span>
+            <div class="right-menu-one">
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505269">小高</a>
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852382973">二珍</a>
+            </div>
+            <div class="right-menu-two">
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505268">玫瑰</a>
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505268">丁香</a>
+            </div>
+        </div>-->
+    <!--<div class="bg" style="display: none">-->
     <div class="bg">
-        <img class="bg-img" src="/asserts/images/kfqq.png" alt="">
+        <img class="bg-img" src="/saleterrace/images/kfqq.png" alt="">
         <div class="right-menu-content">
-            <a href="/seller/publish/publish_mission.htm">
-                <img src="/asserts/images/sjscfd.png" class="right-menu-content-top-img" alt="">
+            <a href="syhd_release_index.ftl">
+                <img src="/saleterrace/images/sjscfd.png" class="right-menu-content-top-img" alt="">
             </a>
 
             <span class="menuTitleTwo">客服问题找我</span>
             <div class="right-menu-two">
                 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368872">
-                    <img src="/asserts/images/yckf_03.png" alt="">
-                    宝宝
+                    <img src="/saleterrace/images/yckf_03.png" alt=""> 宝宝
                 </a>
                 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852365086">
-                    <img src="/asserts/images/yckf_03.png" alt="">
-                    贝贝
+                    <img src="/saleterrace/images/yckf_03.png" alt=""> 贝贝
                 </a>
             </div>
 
             <span class="menuTitleOne">活动发布找我</span>
             <div class="right-menu-one">
                 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368900">
-                    &nbsp;&nbsp;&nbsp;<img src="/asserts/images/yckf_03.png" alt="">
-                    高经理
+                    &nbsp;&nbsp;&nbsp;<img src="/saleterrace/images/yckf_03.png" alt=""> 高经理
                 </a>
                 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852356150">
-                    <img src="/asserts/images/yckf_03.png" alt="">
-                    安娜老师
+                    <img src="/saleterrace/images/yckf_03.png" alt=""> 安娜老师
                 </a>
 
                 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852365085">
-                    <img src="/asserts/images/yckf_03.png" alt="">
-                    周华老师
+                    <img src="/saleterrace/images/yckf_03.png" alt=""> 周华老师
                 </a>
                 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852366295">
-                    <img src="/asserts/images/yckf_03.png" alt="">
-                    毛经理
+                    <img src="/saleterrace/images/yckf_03.png" alt=""> 毛经理
                 </a>
             </div>
             <span class="menuTitleOne">上班时间</span>
             <div class="right-menu-one">
                 <p style="font-size: 12px;">
                     周一至周日
-                    <br>
-                    9:00-18:00
+                    <br> 9:00-18:00
                 </p>
             </div>
         </div>
         <div class="right-menu-content" style="padding-top: 0px;margin-top: 2px;">
             <span>商家交流群</span>
             <div class="right-menu-two">
-                <img src="" class="QRCode" style="width: 105px;">
+                <img src="/saleterrace/images/er.jpg" class="QRCode" style="width: 105px;">
             </div>
-            <a class="clickAdd" target="_blank"
-               href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575">点击加入</a>
+            <a class="clickAdd" target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575">点击加入</a>
         </div>
     </div>
-
 
 </div>
 
 <a href="javascript:void(0);" id="onKfqq">
-    <img src="/asserts/images/kfqqsmall.png" alt="">
+    <img src="/saleterrace/images/kfqqsmall.png" alt="">
 </a>
 
 <input type="hidden" id="imageRootPath" value="http://image-1254237507.image.myqcloud.com">
@@ -456,104 +421,92 @@
 
 <div id="Container" align="center">
     <div id="Header">
-
-
-        <link rel="stylesheet" type="text/css"
-              href="/asserts/css/layout.css?rel=1539573213877"/>
-        <link rel="stylesheet" type="text/css"
-              href="/asserts/css/header.css?rel=1539573213877"/>
+        <div class="headMenu" align="right">
+            <link rel="stylesheet" type="text/css" href="/saleterrace/css/layout.css"/>
+            <link rel="stylesheet" type="text/css" href="/saleterrace/css/header.css"/>
+        </div>
     </div>
     <div class="Content-Space-h"></div>
+
     <div id="Content">
         <div id="Content-Left">
 
-
-            <link rel="stylesheet" type="text/css" href="/asserts/css/navigator.css?rel=1539573213878"/>
+            <link rel="stylesheet" type="text/css" href="/saleterrace/css/navigator.css"/>
 
             <ul class="left_menu" style="margin-bottom: 10px;">
-                <li class="menu_selected" href="/seller/index.htm">
-                    <i class="grxx"></i>
-                    <span>用户中心</span>
-                    <p></p>
+                <li class="menu_selected" >
+                    <a href="/saleterrace/yhzx_index"><i class="grxx"></i>
+                        <span>用户中心</span></a>
                 </li>
-                <li href="/seller/bindStore.htm?rt=n">
-                    <i class="dpbt"></i>
-                    <span>店铺管理</span>
+                <li>
+                    <a href="/saleterrace/dpgl_index"><i class="dpbt"></i>
+                        <span>店铺管理</span></a>
                 </li>
-                <li href="/seller/publish/publish_mission.htm">
-                    <i class="fbrw"></i>
-                    <span>试用活动发布</span>
+                <li>
+                    <a href="/saleterrace/syhd_release_index"><i class="fbrw"></i>
+                        <span>试用活动发布</span></a>
                 </li>
-                <li href="/seller/zrwlb.htm">
-                    <i class="yfbrw"></i>
-                    <span>试用活动管理</span>
-                </li>
-
-
-                <li href="/seller/blacklist/index.htm">
-                    <i class="hmd"></i>
-                    <span>试客黑名单</span>
-                    <div class="new" style="left:90px;"></div>
-                </li>
-
-                <li href="/account/accounthistory.htm">
-                    <i class="ckzd"></i>
-                    <span>查看账单</span>
-                </li>
-                <li href="/account/accountmanage.htm">
-                    <i class="zjgl"></i>
-                    <span>资金管理</span>
-                </li>
-                <li href="/seller/seller_tariff_description.htm">
-                    <i class="ckzz"></i>
-                    <span>平台资费说明</span>
-                </li>
-
-
-                <li href="/account/recommendPage.htm">
-                    <i class="rcd"></i>
-                    <img src="/asserts/images/hot.gif" alt="" style="position: relative;top: -2px;left: 5px;">
-                    <span>推荐赚金币</span>
-                </li>
-
-
-                <li href="/popular/popular.htm?pg=task.pcFlow" target="_blank">
-                    <i class="i16_brq"></i>
-                    <span>补人气</span>
-
+                <li>
+                    <a  href="/saleterrace/syhd_management_index"><i class="yfbrw"></i>
+                        <span>试用活动管理</span></a>
                 </li>
 
                 <li>
-                    <a href="http://www.chapaiming.com/" target="_blank"
-                       style="overflow:hidden;display:block;margin:0;">
-                        <i class="i16_cpm"></i>
-                        <span>查排名</span>
-
-                    </a>
+                    <a href="/saleterrace/black_index"><i class="hmd"></i>
+                        <span>试客黑名单</span>
+                        <div class="new" style="left:90px;"></div></a>
                 </li>
 
+                <li>
+                    <a href="/saleterrace/ckzd_index"><i class="ckzd"></i>
+                        <span>查看账单</span></a>
+                </li>
+                <li>
+                    <a href="/saleterrace/zjgl_index"><i class="zjgl"></i>
+                        <span>资金管理</span></a
+                </li>
+                <li>
+                    <a  href="/saleterrace/ptzf_index"><i class="ckzz"></i>
+                        <span>平台资费说明</span></a>
+                </li>
+
+                <li>
+                    <a  href="/saleterrace/tjzjb_index"><i class="rcd"></i>
+                        <img src="/saleterrace/images/hot.gif" alt="" style="position: relative;top: -2px;left: 5px;">
+                        <span>推荐赚金币</span></a>
+                </li>
+
+                <!--<li href="/popular/popular.htm?pg=task.pcFlow" target="_blank">-->
+                <li>
+                    <a href="https://burenqi.com/task-pc-flow" target="_blank"><i class="i16_brq" ></i>补人气</a>
+                    <!--<span>补人气</span>-->
+                </li>
+
+                <li>
+                    <a href="http://www.chapaiming.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">
+                        <i class="i16_cpm"></i>
+                        <span>查排名</span>
+                    </a>
+                </li>
 
                 <li>
                     <a href="http://www.maijiabus.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">
                         <i class="i16_mjbs"></i>
                         <span>流量捕手</span>
-
                     </a>
                 </li>
 
                 <li>
-                    <a href="/seller/seller_protocol.htm" target="_blank"
-                       style="overflow:hidden;display:block;margin:0;">
+                    <a href="/saleterrace/sjxy_index" style="overflow:hidden;display:block;margin:0;">
                         <i class="i16_protocol"></i>
                         <span>商家电子协议</span>
-
                     </a>
                 </li>
             </ul>
             <a class="sLeftImgJump" target="_blank" style="float: left; margin: 10px 0 0 0;">
-                <img class="sLeft " src="/asserts/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">
+                <img class="sLeft " src="/saleterrace/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">
             </a>
-            <input type="hidden" id="nav_hidden" value="1"/>
+            <input type="hidden" id="nav_hidden" value="1" />
 
 
             <script>
@@ -578,15 +531,13 @@
                         <p style="padding: 10px; font-weight: bold;">我的推荐用户</p>
                         <p>
                             <span class="left-content">已成功注册：</span>
-                            <span style="width: 465px;text-align: left;"> <i
-                                    class="recommend-seller-real-count cl58c3e5"></i> 个商家，<i
-                                    class="recommend-buyer-real-count cl58c3e5"></i> 个试客</span>
+                            <span style="width: 465px;text-align: left;"> <i class="recommend-seller-real-count cl58c3e5"></i> 个商家，
+                                <i class="recommend-buyer-real-count cl58c3e5"></i> 个试客</span>
                         </p>
                         <p>
                             <span class="left-content">已成功完成活动（确认收货）：</span>
                             <span>
-                                    <i class="recommend-seller-count cl58c3e5"></i> 个商家，<i
-                                    class="recommend-buyer-count cl58c3e5"></i> 个试客
+                                <i class="recommend-seller-count cl58c3e5"></i> 个商家，<i class="recommend-buyer-count cl58c3e5"></i> 个试客
                                 </span>
                             <span style="color: red;">（仅在试客确认收货获得赏金后，增加统计）</span>
                         </p>
@@ -602,8 +553,7 @@
                     </li>
                     <li class="role">
                         <a>商家&nbsp;&nbsp;累计提成：<i id="sellerSum"></i> 金 &nbsp;&nbsp;<span id="sellerDetailsBtn">明细</span></a>
-                        <a>试客&nbsp;&nbsp;累计提成：<i id="buyerSum"></i> 金 &nbsp;&nbsp;<span
-                                id="buyerDetailsBtn">明细</span></a>
+                        <a>试客&nbsp;&nbsp;累计提成：<i id="buyerSum"></i> 金 &nbsp;&nbsp;<span id="buyerDetailsBtn">明细</span></a>
                     </li>
                 </ul>
                 <div class="unList">
@@ -634,11 +584,11 @@
                 <ul id="pagination" class="pagination"></ul>
             </div>
             <div class="partOne">
-                <img src="/asserts/images/rcdBanner.png" alt="">
+                <img src="/saleterrace/images/rcdBanner.png" alt="">
 
                 <div class="beFrom" style="float: left;">
                     <ul>
-                        <li><img src="/asserts/images/seller.png" alt="" width="88" style="margin-top:12px"></li>
+                        <li><img src="/saleterrace/images/seller.png" alt="" width="88" style="margin-top:12px"></li>
                         <li>1.5%+￥10</li>
                     </ul>
                     <h3>受邀人是商家</h3>
@@ -697,8 +647,7 @@
 </div>
 <div id="Footer">
 
-    <link rel="stylesheet" type="text/css"
-          href="/asserts/css/footer.css?rel=1539573213876"/>
+    <link rel="stylesheet" type="text/css" href="/saleterrace/css/footer.css"/>
     <div class="foot_div">
 
         <div class="foot_div_div1">

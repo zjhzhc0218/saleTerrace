@@ -397,8 +397,8 @@
 
                         </li>
                         <li style="padding-left: 20px; clear: both;" >
-                            <a href="/account/accountmanage.htm?tab=2" class="cl000 menu-select-a">充值</a>
-                            <a href="/account/accountmanage.htm?tab=3" class="cl000 menu-select-a">提现</a>
+                            <a href="/saleterrace/zjgl_index?tab=2" class="cl000 menu-select-a">充值</a>
+                            <a href="/saleterrace/zjgl_index?tab=2" class="cl000 menu-select-a">提现</a>
 
 
 

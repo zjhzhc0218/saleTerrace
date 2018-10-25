@@ -1,0 +1,331 @@
+i {
+    font-style: normal
+}
+
+.makeMoney {
+    float: right;
+    width: 980px;
+    margin-left: 12px;
+    border: 1px solid #ddd;
+    background-color: #fff
+}
+
+.makeMoney h2 {
+    font-size: 18px;
+    color: #333;
+    line-height: 39px;
+    text-align: left;
+    padding-left: 20px;
+    height: 39px;
+    background-color: #ededed
+}
+
+.makeMoney .partOne,.makeMoney .partThree,.makeMoney .partTwo {
+    width: 940px;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.makeMoney .partTwo {
+    border-top: 3px solid #ddd;
+    border-bottom: 3px solid #ddd
+}
+
+.myLink i,.partOne .beFrom,.partThree ul,.table-box {
+    border: 1px solid #ddd
+}
+
+.partOne>img {
+    margin: 18px auto;
+    display: block
+}
+
+.partOne .beFrom {
+    float: left;
+    text-align: left;
+    width: 450px;
+    height: 172px;
+    margin-bottom: 40px;
+    background-color: #f8f8f8
+}
+
+.partOne .beFrom:last-child {
+    float: right
+}
+
+.beFrom ul {
+    float: left;
+    width: 150px;
+    text-align: center
+}
+
+.beFrom ul li:first-child {
+    height: 105px
+}
+
+.beFrom ul li:last-child {
+    font-size: 24px;
+    color: red;
+    line-height: 49px;
+    height: 49px
+}
+
+.beFrom h3 {
+    float: left;
+    font-size: 20px;
+    color: #333;
+    line-height: 50px;
+    width: 300px;
+    height: 50px
+}
+
+.beFrom p {
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    width: 280px
+}
+
+.partTwo {
+    padding-bottom: 60px
+}
+
+.partTwo h3 {
+    font-size: 18px;
+    line-height: 20px;
+    color: #333;
+    font-weight: 400;
+    height: 20px;
+    margin: 20px 0 60px
+}
+
+.myLink i,.myLink p {
+    float: left;
+    font-size: 14px;
+    color: #666
+}
+
+.partTwo .myLink {
+    float: left;
+    width: 650px
+}
+
+.myLink p {
+    line-height: 40px;
+    height: 40px
+}
+
+.myLink i {
+    line-height: 38px;
+    text-align: left;
+    width: 310px;
+    height: 38px;
+    padding-left: 10px;
+    margin: 0 10px
+}
+
+.myLink span,.share p {
+    font-size: 14px;
+    line-height: 40px
+}
+
+.myLink span,.share {
+    float: left;
+    height: 40px
+}
+
+.myLink span {
+    color: #fff;
+    width: 110px;
+    background-color: #58c3e5;
+    cursor: pointer
+}
+
+.share {
+    margin-left: 20px
+}
+
+.share p {
+    float: left;
+    color: #666;
+    margin-right: 15px
+}
+
+.partThree ul {
+    width: 938px;
+    margin-top: 43px
+}
+
+.partThree ul li {
+    line-height: 25px;
+    overflow: hidden
+}
+
+.partThree ul li.title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 14px
+}
+
+.partThree ul li.title>p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666
+}
+
+.partThree ul li.title>p.explain {
+    font-size: 12px;
+    color: #f03
+}
+
+.partThree ul li.title i {
+    font-size: 14px
+}
+
+.partThree ul li.title span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    display: inline-block
+}
+
+.partThree ul li.title span.left-content {
+    display: inline-block;
+    width: 300px;
+    text-align: right
+}
+
+.partThree ul li.role a {
+    float: left;
+    font-size: 16px;
+    line-height: 40px;
+    color: #666;
+    width: 468px;
+    height: 40px
+}
+
+.partThree ul li.role a span {
+    font-size: 16px;
+    color: #428BCA;
+    cursor: pointer
+}
+
+.partThree ul li.role a:first-child {
+    border-right: 1px solid #ddd
+}
+
+.partThree ul li a i {
+    font-size: 20px;
+    color: #58c3e5
+}
+
+.cl58c3e5 {
+    color: #58c3e5
+}
+
+.partThree .unList {
+    position: relative;
+    width: 780px;
+    height: 150px;
+    margin-top: 30px;
+    background: url(/asserts/images/unlistbg.png) center 20px no-repeat;
+    display: none
+}
+
+.unList p {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    font-size: 16px;
+    color: #666;
+    width: 100%
+}
+
+.partThree .userList {
+    line-height: 35px;
+    text-align: center;
+    width: 780px;
+    margin-top: 20px;
+    display: none
+}
+
+.table-box {
+    overflow: hidden;
+    padding-bottom: 30px;
+    display: none
+}
+
+.table-box .recommend-header {
+    font-size: 18px;
+    text-align: left;
+    padding: 20px;
+    border-bottom: 1px solid #000
+}
+
+.table-box .recommend-header i {
+    font-size: 18px
+}
+
+.table-box .recommend-header a {
+    margin-left: 50px;
+    font-size: 14px;
+    background-color: #58c3e5;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.table-box .buyer-top,.table-box .seller-top {
+    font-size: 18px;
+    text-align: left;
+    margin: 20px 0 0 78px;
+    display: none
+}
+
+.table-box .explain-top {
+    font-size: 14px;
+    color: red;
+    text-align: left;
+    margin-left: 78px;
+    margin-top: 10px;
+    display: none
+}
+
+.userList tbody tr {
+    border-top: 1px solid #ddd
+}
+
+.userList th {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    border: none
+}
+
+.userList td {
+    font-size: 14px;
+    color: #666;
+    border: none
+}
+
+.makeMoney>p {
+    font-size: 12px;
+    color: #999;
+    text-align: left;
+    height: 16px;
+    padding: 45px 0 30px 20px
+}
+
+.makeMoney p span {
+    color: red;
+    font-size: 16px
+}
+
+#pagingBar {
+    width: 780px;
+    text-align: right
+}

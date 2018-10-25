@@ -744,8 +744,8 @@
 
                 </li>
                 <li style="padding-left: 20px; clear: both;">
-                    <a href="/account/accountmanage.htm?tab=2" class="cl000 menu-select-a">充值</a>
-                    <a href="/account/accountmanage.htm?tab=3" class="cl000 menu-select-a">提现</a>
+                    <a href="/saleterrace/zjgl_index?tab=2" class="cl000 menu-select-a">充值</a>
+                    <a href="/saleterrace/zjgl_index?tab=3" class="cl000 menu-select-a">提现</a>
 
 
                     <a href="/seller/orderVip.htm" target="_blank" class="menu-select-myCenter">缴纳保证金</a>
@@ -948,7 +948,7 @@
             '<div class="shade-box" style="position: absolute;  left: 50%; width: 400px; height: 300px; z-index: 300;background-color: #fff; border-radius: 10px; margin-left: -200px;" >' +
             '<a class="shade-close" style="font-size: 18px;float: right;margin: 6px 15px 0 0px;">X</a>' +
             '<p style="clear:both; font-size: 16px; font-weight: bold; text-align: center; margin-top: 99px;">' + msg + '</p>' +
-            '<a href="/seller/orderVip.htm" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>' +
+            '<a href="/seller/jnbzj_index.ftl" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>' +
             '</div>';
         var body = $("body")
         body.append(html);
@@ -1095,7 +1095,7 @@
                     <div class="content_div">
                         <div class="tab_title">
                             <div class="datechooser">
-                                <form id="findCondition" action="accounthistory.htm">
+                                <form id="findCondition" action="ckzd_index.ftl">
                                     <div class="floatLeft">起止日期：<input name="startTime" id="dateStart" type="text"
                                                                        value=""
                                                                        class="date_input_text">

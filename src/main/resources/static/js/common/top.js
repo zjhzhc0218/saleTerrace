@@ -39,16 +39,15 @@ function readUserAccount() {
                 display: "none"
             })
         },
-        // error: function(a, b, c) {
-        //     alert(c)
-        // }
+        error: function(a, b, c) {
+            alert(c)
+        }
     })
 }
 function getQQGroup() {
     var a = "/getSellerGroup.htm"
       , b = "活动交流群";
-    $(".qun_for_buyer").size() > 0 && (a = "/getBuyerGroup.htm",
-    b = "试用交流群"),
+    $(".qun_for_buyer").size() > 0 && (a = "/getBuyerGroup.htm", b = "试用交流群"),
     ($(".qun_for_buyer").size() > 0 || $(".qun_for_seller").size() > 0) && $.ajax({
         type: "get",
         url: a,
@@ -58,9 +57,9 @@ function getQQGroup() {
             $(".QRCode").attr("src", getCosRootPath() + a.img + "!orgin75"),
             $(".clickAdd").attr("href", a.desc))
         },
-        // error: function(a, b, c) {
-        //     alert(c)
-        // }
+        error: function(a, b, c) {
+            alert(c)
+        }
     })
 }
 function getTongzhi() {
@@ -81,9 +80,9 @@ function getTongzhi() {
             $(".bPopupImgJump").attr("href", a.bPopupImgJump),
             $(".bLeftImgJump").attr("href", a.bLeftImgJump)) : $(".contentBox").remove()
         },
-        // error: function(a, b, c) {
-        //     alert(c)
-        // }
+        error: function(a, b, c) {
+            alert(c)
+        }
     })
 }
 function topRoleEvent() {
