@@ -1,0 +1,497 @@
+#Content-Main {
+    position: relative;
+    background-color: #fff!important;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    padding-bottom: 100px
+}
+
+#Container {
+    padding-bottom: 5px
+}
+
+b,h2,h3 {
+    font-weight: 400
+}
+
+.role h2 {
+    font-size: 20px;
+    color: #333;
+    line-height: 50px;
+    height: 50px;
+    padding-left: 30px;
+    border-bottom: 1px solid #efefef
+}
+
+.role .showBtn {
+    float: right;
+    font-size: 16px;
+    color: #1d1d26;
+    background: url(/saleterrace/images/i36_lmzk.png) 10px center no-repeat;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    margin-top: 5px;
+    padding-right: 20px
+}
+
+.role .roleText,.role .roleText2 {
+    width: 938px;
+    margin: 20px auto;
+    background-color: #f9f5e5;
+    border: 1px solid #f5c7bd
+}
+
+.role .roleText h3,.role .roleText2 h3 {
+    font-size: 16px;
+    line-height: 42px;
+    color: #999;
+    height: 42px;
+    padding-left: 20px;
+    border-bottom: 1px solid #f5c7bd
+}
+
+.role .roleText>div {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.role .roleText2>div {
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+.role .roleText p,.role .roleText2 p {
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+    padding: 0 20px
+}
+
+.role .roleText p span {
+    color: red
+}
+
+.role img {
+    display: block;
+    margin: 10px auto
+}
+
+.select h2 {
+    font-size: 18px;
+    line-height: 38px;
+    height: 38px;
+    padding-left: 30px;
+    background-color: #ddd;
+    overflow: hidden;
+    clear: both
+}
+
+.missonType,.shopType {
+    width: 940px;
+    margin: 0 auto
+}
+
+.missonType>p.remind {
+    color: red;
+    background-color: #F9F5E6;
+    margin: 0 0 20px 78px;
+    width: 700px;
+    font-size: 16px;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 10px
+}
+
+.missonType>p.remind>img {
+    vertical-align: middle;
+    margin-right: 5px
+}
+
+.missonType h3 {
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    height: 22px;
+    margin: 16px 0 16px 50px;
+    overflow: hidden
+}
+
+.missonType h3 span {
+    float: left;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    background-color: #9a9a9a;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%
+}
+
+.missonType ul.bigTag {
+    margin: 0 0 20px 80px;
+    overflow: hidden
+}
+
+.missonType ul.bigTag li {
+    font-size: 14px;
+    color: #5bbff3;
+    line-height: 32px;
+    float: left;
+    width: 178px;
+    height: 32px;
+    margin-right: 15px;
+    border: 1px solid #5bbff3;
+    cursor: pointer
+}
+
+.missonType ul.misson li,.shopType ul.shop li {
+    line-height: 30px;
+    clear: both;
+    cursor: pointer;
+    font-size: 14px
+}
+
+.missonType ul.bigTag li span {
+    float: left;
+    width: 13px;
+    height: 13px;
+    margin: 9px;
+    border: 1px solid #5bbff3;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%
+}
+
+.missonType ul.bigTag li.active {
+    color: #fff;
+    background-color: #5bbff3
+}
+
+.missonType ul.bigTag li.active span {
+    width: 8px;
+    height: 8px;
+    border: 3px solid #fff;
+    background-color: #5bbff3
+}
+
+.missonType ul.misson {
+    margin: 0 0 20px 80px;
+    display: none
+}
+
+.missonType ul.misson li {
+    font-weight: 700;
+    color: #333;
+    margin: 3px 0
+}
+
+.missonType ul.misson li i {
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%
+}
+
+.missonType ul.misson li span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999
+}
+
+.missonType ul.misson li b {
+    color: red
+}
+
+.missonType ul.misson li em {
+    font-size: 14px;
+    color: red;
+    font-style: normal
+}
+
+.missonType ul.misson li dl {
+    margin-left: 25px;
+    overflow: hidden;
+    display: none
+}
+
+.missonType ul.misson li dl dd {
+    float: left;
+    margin-right: 8px
+}
+
+.missonType ul.misson li i.active {
+    border: 1px solid #5bbff3;
+    background: url(/saleterrace/active.jpg) center no-repeat
+}
+
+.shopType ul.shop {
+    margin: 0 0 20px 10px
+}
+
+.shopType ul.shop li {
+    font-weight: 700;
+    color: #333;
+    margin: 3px 0
+}
+
+.shopType ul.shop li i {
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%
+}
+
+.shopType ul.shop li span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999
+}
+
+.shopType ul.shop li b {
+    color: red
+}
+
+.shopType ul.shop li em {
+    font-size: 14px;
+    color: red;
+    font-style: normal
+}
+
+.shopType ul.shop li dl {
+    margin-left: 25px;
+    overflow: hidden;
+    display: none
+}
+
+.shopType ul.shop li dl dd {
+    float: left;
+    margin-right: 8px
+}
+
+.shopType ul.shop li i.active {
+    border: 1px solid #5bbff3;
+    background: url(/saleterrace/images/fbrw/active.jpg) center no-repeat
+}
+
+.select ul.store {
+    margin: 40px 0 0 100px
+}
+
+.select ul.store li {
+    line-height: 35px;
+    margin-bottom: 25px;
+    overflow: hidden
+}
+
+.select ul.store li h3 {
+    float: left;
+    font-size: 16px
+}
+
+.select ul.store li .storeBox {
+    float: left;
+    font-size: 14px;
+    color: #999;
+    width: 385px;
+    height: 35px;
+    padding-left: 15px;
+    border: 1px solid #ccc
+}
+
+.select ul.store li a.addStore {
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    line-height: 35px;
+    width: 130px;
+    height: 35px;
+    margin-left: 10px;
+    background-color: #5bbff3
+}
+
+.select ul.store li a.addStore i.add {
+    font-size: 30px;
+    font-style: normal;
+    line-height: 30px;
+    float: left;
+    color: #fff;
+    margin: 0 10px 0 17px
+}
+
+.select ul.store li input[type=text] {
+    font-size: 14px;
+    width: 525px;
+    height: 35px;
+    padding-left: 15px;
+    border: 1px solid #ccc
+}
+
+#next {
+    font-size: 24px;
+    color: #fff;
+    width: 169px;
+    height: 45px;
+    border: 0;
+    background-color: #5ac2e7;
+    margin: auto;
+    display: inherit
+}
+
+.new_function {
+    position: absolute;
+    top: 9px;
+    width: 38px;
+    height: 16px;
+    background: url(/saleterrace/images/NEW.gif) no-repeat
+}
+
+.hot-img,.vip-img {
+    left: -45px;
+    width: 50px;
+    top: 9px;
+    height: 16px
+}
+
+.vip-select-box {
+    margin: 15px 0
+}
+
+.vip-select-box>ul>li {
+    position: relative
+}
+
+.vip-img {
+    position: absolute;
+    background: url(/saleterrace/images/viptq.gif) no-repeat;
+    display: none
+}
+
+.hot-img {
+    float: left;
+    margin-left: -88px;
+    margin-top: 7px;
+    background: url(/saleterrace/images/hot.gif) no-repeat
+}
+
+.diamond-img {
+    float: left;
+    margin-top: 6px;
+    margin-left: -20px;
+    width: 16px;
+    height: 16px;
+    background: url(/saleterrace/images/i_16_diamond3.png) no-repeat
+}
+
+.tuijian-img {
+    float: left;
+    margin-left: -34px;
+    margin-top: 7px;
+    top: 9px;
+    left: -87px;
+    width: 35px;
+    height: 16px;
+    background: url(/saleterrace/images/tuijian.gif) no-repeat
+}
+
+.search_item_list {
+    position: absolute;
+    margin-top: 2px;
+    border: 2px solid #3079ED;
+    border-radius: 7px;
+    z-index: 3;
+    background: #FFF;
+    margin-left: 79px
+}
+
+.search_item_list .last_page,.search_item_list .next_page,.search_item_list .search_lately {
+    height: 19px;
+    margin: 0;
+    line-height: 20px;
+    padding-left: 9px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #9B9BFF;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: left
+}
+
+.search_item_list .search_lately {
+    float: left
+}
+
+.search_item_list .last_page,.search_item_list .next_page {
+    font-size: 12px;
+    -moz-user-select: none
+}
+
+.search_item_list .close {
+    position: absolute;
+    z-index: 3;
+    top: -9px;
+    right: 1px;
+    font-size: 17px;
+    color: #9B9BFF;
+    font-weight: bolder;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px
+}
+
+.search_item_list .deleteKh {
+    position: absolute;
+    right: 5px;
+    z-index: 3;
+    color: #9B9BFF;
+    text-decoration: underline;
+    cursor: pointer;
+    top: 14px
+}
+
+.search_item_list ul {
+    list-style: none
+}
+
+.search_item_list ul li {
+    position: relative;
+    height: 40px;
+    padding-top: 5px;
+    line-height: normal!important;
+    padding-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #333;
+    text-align: left
+}
+
+.search_item_list ul li div span {
+    font-size: 12px
+}
+
+.search_item_list ul li img {
+    width: 35px;
+    height: 35px
+}
+
+.search_item_list ul li:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px
+}
+
+.search_item_list ul li:hover {
+    background-color: #D4E3FB
+}

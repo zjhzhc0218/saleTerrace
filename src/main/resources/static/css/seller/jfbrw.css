@@ -1,0 +1,843 @@
+b,div,input,span {
+    font-size: 14px;
+    font-family: 微软雅黑
+}
+
+a,b,div,input,span {
+    font-family: 微软雅黑
+}
+
+.input_text,select {
+    border: 1px solid #E8E8E8
+}
+
+.mission h2,b {
+    font-weight: 400
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    color: #10ace2;
+    text-decoration: none
+}
+
+.halfDiv {
+    width: 50%;
+    height: 100%
+}
+
+.shalfDiv {
+    width: 65%;
+    height: 100%
+}
+
+.fhalfDiv {
+    width: 35%;
+    height: 100%
+}
+
+.input_text {
+    height: 28px;
+    padding-left: 5px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #1d1d26;
+    margin-bottom: 19px
+}
+
+.tabsDiv ul.tabs_ul li,select {
+    font-size: 14px;
+    font-family: 微软雅黑
+}
+
+.floatLeft {
+    float: left
+}
+
+.wdrw_div {
+    width: 1000px;
+    background-color: #F8F8F8
+}
+
+.search_options,select {
+    background-color: #fff;
+    color: #1d1d26
+}
+
+.search_options {
+    width: 980px;
+    position: relative;
+    height: 230px;
+    line-height: 40px
+}
+
+.search_options span {
+    color: #1d1d26;
+    margin-left: 30px;
+    margin-right: 10px
+}
+
+.bbName,.ddbh,.msww,.rwbh {
+    width: 290px
+}
+
+.jsTime1,.jsTime2 {
+    width: 125px
+}
+
+.space_div {
+    width: 100%;
+    height: 20px
+}
+
+select {
+    height: 27px;
+    line-height: 27px;
+    width: 290px
+}
+
+.checkbox_button,.export_button,.search_button {
+    border: 1px solid #E8E8E8;
+    background-color: #5AC2E7;
+    color: #fff;
+    height: 29px;
+    cursor: pointer
+}
+
+.search_button {
+    width: 80px;
+    margin-left: 31px
+}
+
+.checkbox_button,.export_button {
+    margin-right: 20px;
+    width: 100px;
+    margin-left: 20px
+}
+
+.checkbox,.mission_ul {
+    margin-left: 30px
+}
+
+.tabsDiv {
+    width: 980px;
+    margin-top: 20px
+}
+
+.tabsDiv ul.tabs_ul {
+    width: 980px;
+    height: 50px;
+    list-style: none
+}
+
+.tabsDiv ul.tabs_ul li {
+    float: left;
+    cursor: pointer;
+    width: 108px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-right: 1px solid #F2F4F3;
+    border-top: 1px solid #F2F4F3;
+    border-bottom: 1px solid #F2F4F3
+}
+
+.tabsDiv ul.tabs_ul li#defualt {
+    width: 106px
+}
+
+.tabsDiv ul.tabs_ul li:hover {
+    background-color: #08C7B5;
+    color: #666
+}
+
+.tabsDiv div.content_div {
+    width: 980px;
+    margin-top: 10px;
+    border-bottom: 2px solid #F2F4F3
+}
+
+.tabsSeletedLi {
+    background-color: #5AC2E7;
+    color: #fff
+}
+
+.tabsUnSeletedLi {
+    background-color: #fff;
+    color: #1d1d26
+}
+
+.head_operate_div {
+    width: 978px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    border: 1px solid #F2F4F3
+}
+
+.lastPage_button,.nextPage_button {
+    width: 80px;
+    height: 27px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat
+}
+
+.nextPage_button {
+    background-image: url(/asserts/images/nextPage_bg.png);
+    color: #fff;
+    padding-right: 8px;
+    margin-right: 20px
+}
+
+.lastPage_button {
+    background-image: url(/asserts/images/lastPage_bg.png);
+    color: #1d1d26;
+    padding-left: 8px
+}
+
+.checkbox {
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-right: 5px
+}
+
+.list_div {
+    width: 980px;
+    margin-top: 10px
+}
+
+.mission_div {
+    height: 151px;
+    width: 978px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border: 1px solid #F2F4F3;
+    clear: both
+}
+
+.mission_head {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    border-bottom: 1px solid #EFF0F4
+}
+
+.mission_ul li {
+    float: left;
+    list-style-type: none;
+    color: #7b8da0;
+    height: 100px;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    line-height: 30px;
+    text-align: left
+}
+
+.mission_ul li .space_div {
+    width: 100%;
+    height: 15px
+}
+
+.bb_img {
+    width: 80px;
+    height: 80px;
+    background-color: #F3F3F3
+}
+
+.mission_ul b,a {
+    font-size: 12px
+}
+
+.mission_ul li.mission_li1 {
+    width: 90px;
+    text-align: left
+}
+
+.mission_ul li.mission_li1 .space_div {
+    height: 10px
+}
+
+.mission_ul li.mission_li2 {
+    width: 190px;
+    line-height: 20px
+}
+
+.mission_ul li.mission_li2 .space_div {
+    height: 20px
+}
+
+.mission_ul li.mission_li2 b {
+    color: #1d1d26
+}
+
+.mission_ul .mission_li3 {
+    text-align: center;
+    width: 100px
+}
+
+.mission_ul .mission_li4 {
+    text-align: center;
+    width: 50px
+}
+
+.mission_ul li.mission_li5 {
+    text-align: center;
+    width: 90px
+}
+
+.mission_ul li.mission_li5 img {
+    margin-right: 2px;
+    position: relative;
+    top: 2px
+}
+
+.mission_ul .mission_li6 {
+    text-align: center;
+    width: 110px
+}
+
+.mission_ul li.mission_li6 div.dpww_div {
+    width: 85px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #000;
+    margin-top: 7px
+}
+
+.mission_ul .mission_li7 {
+    text-align: center;
+    width: 120px
+}
+
+.mission_ul .mission_li7 img {
+    position: relative;
+    top: 3px;
+    margin-left: 4px
+}
+
+.mission_ul .mission_li8 {
+    text-align: center;
+    width: 112px
+}
+
+.mission_ul .mission_li9 {
+    text-align: center;
+    width: 70px
+}
+
+.mission_ul li.mission_li10 {
+    text-align: center;
+    line-height: 22px;
+    width: 75px
+}
+
+#cg_mission .mission_ul li.mission_li10,#sb_mission .mission_ul li.mission_li10,#yfk_mission .mission_ul li.mission_li10 {
+    line-height: 30px
+}
+
+.mission_ul li.mission_li10 .space_div {
+    height: 19px
+}
+
+#cg_mission .mission_ul li.mission_li10 .space_div,#sb_mission .mission_ul li.mission_li10 .space_div,#yfk_mission .mission_ul li.mission_li10 .space_div {
+    height: 15px
+}
+
+.mission_ul li.mission_li11 {
+    width: 30px;
+    text-align: center;
+    line-height: 15px;
+    border-left: 1px solid #EFF0F4
+}
+
+.mission_ul li.mission_li11 a {
+    color: #10ace2;
+    font-size: 12px;
+    position: relative;
+    top: 32px
+}
+
+.copy_button,.operation_button {
+    height: 21px;
+    color: #fff;
+    background-color: transparent
+}
+
+.flagImg {
+    margin-left: 5px;
+    margin-right: 10px;
+    cursor: pointer
+}
+
+.head_operate_div a {
+    font-size: 14px
+}
+
+.kd_charge_label {
+    font-size: 10px;
+    position: relative;
+    top: -8px
+}
+
+.copy_button {
+    width: 47px;
+    font-size: 14px;
+    background-image: url(/asserts/images/copy_bg.png);
+    border: 0;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 10px
+}
+
+.operation_button {
+    width: 61px;
+    font-size: 12px;
+    border: 0;
+    cursor: pointer
+}
+
+.number_button,.paging_button {
+    border: 0;
+    cursor: pointer;
+    font-size: 16px
+}
+
+.qrsh_button1 {
+    background-image: url(/asserts/images/buttonBg1.png)
+}
+
+.dfk_button,.qrsh_button2 {
+    background-image: url(/asserts/images/buttonBg2.png)
+}
+
+.paging {
+    height: 50px;
+    line-height: 50px;
+    width: 980px;
+    margin-top: 10px;
+    background-color: #fff;
+    margin-bottom: 20px
+}
+
+.number_button {
+    width: 19px;
+    height: 26px;
+    background-color: #fff;
+    color: #666
+}
+
+.number_button_chosen {
+    background-image: url(/asserts/images/wdrw/number_button.png);
+    color: #1d1d26
+}
+
+.paging_button {
+    width: 55px;
+    height: 27px;
+    background-image: url(/asserts/images/wdrw/paging_button.png);
+    background-color: transparent;
+    color: #fff
+}
+
+#finalPage {
+    margin-right: 10px
+}
+
+.paging a {
+    font-size: 14px
+}
+
+.disabled_a {
+    cursor: default;
+    color: #666
+}
+
+.left_menu img {
+    position: relative;
+    top: 8px
+}
+
+.wwidsp {
+    color: red;
+    font-size: 12px
+}
+
+.lists_info_ul {
+    clear: both;
+    background-color: #fff;
+    width: 980px;
+    height: 100px;
+    border-top: 1px solid #EFF0F4
+}
+
+.lists_info_ul li {
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    color: #384655;
+    font-family: 微软雅黑;
+    font-size: 12px
+}
+
+.no_data {
+    background-color: #FFF;
+    bottom: 0;
+    clear: both;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #1d1d26
+}
+
+.dist .detail {
+    font-size: 12px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 10;
+    width: 440px;
+    margin-left: -128px;
+    border: 1px solid #efefef;
+    display: none
+}
+
+.dist:hover .detail {
+    display: block
+}
+
+.tabsSeletedLi span {
+    background-color: #5AC2E7;
+    color: #fff
+}
+
+ul.tabs_ul li:hover span {
+    background-color: #08C7B5;
+    color: #666
+}
+
+span.order .detail {
+    padding: 15px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    color: #000;
+    line-height: 18px;
+    font-size: 14px;
+    position: absolute;
+    z-index: 10;
+    width: 280px;
+    margin-left: 78px;
+    margin-top: -85px;
+    display: none
+}
+
+span.order1 .detail1,span.order2 .detail2 {
+    padding: 15px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    line-height: 18px;
+    font-size: 14px;
+    z-index: 10;
+    margin-top: -103px;
+    color: #000
+}
+
+span.order:hover .detail {
+    display: block
+}
+
+span.order img {
+    position: relative;
+    top: 3px;
+    margin-left: 4px
+}
+
+span.order1 .detail1 {
+    position: absolute;
+    width: 415px;
+    margin-left: -54px;
+    display: none
+}
+
+span.order1:hover .detail1 {
+    display: block
+}
+
+span.order1 img {
+    position: relative;
+    top: 3px;
+    margin-left: 4px
+}
+
+span.order2 .detail2 {
+    position: absolute;
+    width: 306px;
+    margin-left: 53px;
+    display: none
+}
+
+span.order2:hover .detail2 {
+    display: block
+}
+
+span.order2 img {
+    position: relative;
+    top: 3px;
+    margin-left: 4px
+}
+
+#tabs>p {
+    font-size: 12px;
+    line-height: 42px;
+    color: #000;
+    text-align: center;
+    width: 980px;
+    height: 40px;
+    margin: 10px 0;
+    background-image: url(/asserts/images/wdrw/warnTip.png);
+    background-repeat: no-repeat;
+    background-color: #ffefd7;
+    display: none
+}
+
+#tabs>p.waitToDeliveredP {
+    background-position: 90px 12px
+}
+
+#tabs>p.waitCashP {
+    background-position: 210px 12px
+}
+
+.missionBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    z-index: 1001;
+    display: none
+}
+
+.missionBox .mission {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 800px;
+    height: 375px;
+    margin: -188px 0 0 -410px;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px
+}
+
+.mission .mclose {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: url(/asserts/images/wndMessBg.png) -144px -4px no-repeat
+}
+
+.mission span {
+    width: 88px;
+    height: 88px;
+    margin: 50px auto 10px;
+    display: block;
+    background: url(/asserts/images/buyerimages/i88_cg.png) no-repeat
+}
+
+.mission h2 {
+    font-size: 18px;
+    color: #000;
+    line-height: 30px;
+    height: 30px;
+    width: 180px;
+    margin: 0 auto 20px
+}
+
+.mission p {
+    font-size: 14px;
+    line-height: 25px;
+    width: 620px;
+    margin: 0 auto;
+    text-align: center
+}
+
+.mission a {
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    margin: 25px auto 0;
+    display: block;
+    background-color: #eb4f38;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px
+}
+
+.fk_outside_div_again {
+    width: 505px;
+    display: none
+}
+
+.fk_div_again {
+    width: 305px;
+    height: 100px;
+    border: 1px solid #1E1D25;
+    margin-top: 30px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10000;
+    line-height: 50px;
+    left: 45%;
+    top: 40%
+}
+
+.fk_div_again .confirm_button2 {
+    margin-right: 15px;
+    width: 79px;
+    height: 29px;
+    background-color: #FF7B00;
+    border: 1px solid #E8E8E8;
+    color: #fff;
+    cursor: pointer
+}
+
+.fk_div_again .cancel_button2 {
+    width: 64px;
+    height: 29px;
+    background-color: #fff;
+    border: 1px solid #E8E8E8;
+    color: #1d1d26;
+    cursor: pointer
+}
+
+.safety_check {
+    width: 560px;
+    height: 220px;
+    border: 2px solid #1D1D27;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10001;
+    display: none;
+    margin-left: -280px;
+    margin-top: -110px
+}
+
+.safety_check div.title {
+    width: 100%;
+    height: 23px;
+    line-height: 23px;
+    background-color: #1D1D27;
+    margin-bottom: 10px
+}
+
+.back_tjbb,.safety_cancel_button,.safety_submit_button,.submit_scjgTime {
+    width: 64px;
+    height: 29px;
+    border: 1px solid #E8E8E8;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    cursor: pointer
+}
+
+.safety_check div.title span {
+    color: #fff;
+    margin-left: 10px;
+    position: relative;
+    top: -2px
+}
+
+.safety_window_close {
+    cursor: pointer;
+    float: right;
+    position: relative;
+    top: 5px;
+    right: 10px
+}
+
+.safety_check span,.scjgTime_choose span {
+    color: #1d1d26;
+    margin-left: 10px
+}
+
+.safety_submit_button,.submit_scjgTime {
+    background-color: #FF7C00;
+    color: #fff
+}
+
+.safety_submit_button {
+    margin-left: 130px;
+    margin-top: 10px
+}
+
+.back_tjbb,.safety_cancel_button {
+    background-color: #FFF;
+    color: #1d1d26
+}
+
+.safety_check div,.warn span {
+    font-size: 12px
+}
+
+.pay_input_text {
+    width: 120px;
+    margin-bottom: 10px
+}
+
+.pwdm {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 18px;
+    height: 16px;
+    background: url(/asserts/images/i16_mclose.png) no-repeat #fff;
+    cursor: pointer
+}
+
+.warn {
+    line-height: 25px
+}
+
+.warn span {
+    color: red;
+    margin-left: 0
+}
+
+.tabsDiv ul.tabs_ul li.tabsSeletedLi p {
+    background-color: #5AC2E7;
+    color: #F2F4F3
+}
+
+ul.tabs_ul li:hover p {
+    background-color: #08C7B5!important;
+    color: #666!important
+}
+
+.tabsDiv ul.tabs_ul li p {
+    line-height: 10px
+}
+
+.batchAllSpan {
+    cursor: pointer
+}

@@ -134,7 +134,7 @@
 		</a>
 		<div class="top">
 
-			<a href="yhzx_index.ftl">
+			<a href="/saleterrace/yhzx_index">
 				<div class="logo"></div>
 			</a>
 
@@ -358,7 +358,7 @@
 					'<div class="shade-box" style="position: absolute;  left: 50%; width: 400px; height: 300px; z-index: 300;background-color: #fff; border-radius: 10px; margin-left: -200px;" >' +
 					'<a class="shade-close" style="font-size: 18px;float: right;margin: 6px 15px 0 0px;">X</a>' +
 					'<p style="clear:both; font-size: 16px; font-weight: bold; text-align: center; margin-top: 99px;">' + msg + '</p>' +
-					'<a href="/jnbzj_index.ftl" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>' +
+					'<a href="/saleterrace/jnbzj_index" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>' +
 					'</div>';
 				var body = $("body")
 				body.append(html);
@@ -654,22 +654,23 @@
 		<script type="text/html" id="jdstoreInfoRow">
 			<ul class="dp_info">
 				<li class="dp_li1">
-					<div data-content-text="shopName"></div>
+					<div data-content-text="shopName">泰嘉boy</div>
 				</li>
 				<li class="dp_li7">
-					<div data-content-text="wangwangid"></div>
+					<div data-content-text="wangwangid">小算珠婴童店</div>
 				</li>
-				<li class="dp_li2" data-content-text="bindtime"></li>
+				<li class="dp_li2" data-content-text="bindtime">2018-06-15</li>
 				<li class="dp_li7">
-					<div data-content="repurchaseDayText" style="position: relative" data-template-bind='[{"attribute": "itemId", "value": "id"}]' class="hbsst"></div>
+					<div data-content="repurchaseDayText" style="position: relative" data-template-bind='[{"attribute": "itemId", "value": "id"}]' class="hbsst">30天</div>
 				</li>
 				</li>
 
-				<li class="dp_li3" data-content="statusAlias"></li>
-				<li class="dp_li6" data-content="operator" style="position: relative"></li>
-				<li class="dp_hidden" column-id="id" data-value="id"></li>
-				<li class="dp_hidden" column-id="status" data-value="status"></li>
-				<li class="dp_hidden" column-id="version" data-value="version"></li>
+				<li class="dp_li3" data-content="statusAlias">已启用</li>
+				<li class="dp_li6" data-content="operator" style="position: relative"><img src="/saleterrace/images/start.png"><input type="hidden" id="storeType" value="2">
+                    <div style="position: absolute;top: 23px;left: 23px;color: #59C2E6;width: 110px;height: 0px"><a style="color: #59C2E6" href='javascript:editSendInfo(40999,"2")'>编辑</a></div></li>
+				<li class="dp_hidden" column-id="id" data-value="id" value="40999"></li>
+				<li class="dp_hidden" column-id="status" data-value="status" value="1"></li>
+				<li class="dp_hidden" column-id="version" data-value="version" value="14"></li>
 			</ul>
 		</script>
 		<script type="text/html" id="protocolTemplate">

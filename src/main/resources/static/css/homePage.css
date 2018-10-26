@@ -1,1 +1,184 @@
-a,b{font-family:微软雅黑;font-size:14px}.buyer,.jbxx_module,.jbxx_module img,.left_menu img{position:relative}*{margin:0;padding:0}b{font-weight:400}a{color:#11ade2;text-decoration:none}.floatLeft{float:left}.grxx_div{width:1000px;background-color:#F8F8F8}.module_div{width:978px;border:1px solid #EFF0F4;background-color:#fff;margin-top:10px}.jbxx_module{margin-top:0}.module_head{height:50px;line-height:50px}.module_head b{font-size:18px;color:#1d1d26;margin-left:20px}.buyer,.content_div span,.grxx_button{font-size:14px;font-family:微软雅黑}.grxx_button{width:84px;height:29px;border:1px solid #E8E8E8;background-color:#58C3E5;color:#fff;cursor:pointer;margin-left:10px}.content_div{line-height:35px;border-top:1px solid #EFF0F4}.content_div span{color:#7b8da0}.buyer{width:101px;height:28px;color:#384655;line-height:28px;text-align:center;top:5px;background-image:url(../../images/grxx/buyer_bg.png)}.marginLeft{margin-left:20px}.jbxx_module img{top:2px}span.set_label{color:#50d2c2;margin-left:3px}span.unset_label{color:#ff4977;margin-left:3px}.number_span{color:#ff4977!important;margin-left:0}#tradeRecord_button,#useRecord_button{width:154px}.kf_a{margin-left:320px}.tabsDiv{width:980px;height:230px;margin-top:10px}.tabsDiv ul{width:980px;height:40px;list-style:none;background-color:transparent}.tabsDiv ul li:hover{background-color:#08C7B5;color:#666}.tabsDiv ul li{float:left;cursor:pointer;text-align:center;width:100px;height:40px;line-height:40px;font-family:微软雅黑;font-size:18px;border:1px solid #EFF0F4;border-bottom:0}.tabsDiv div{width:978px;height:155px;background-color:#fff;border:1px solid #EFF0F4}.tabsSeletedLi{background-color:#5AC2E7;color:#fff}.tabsUnSeletedLi{background-color:#fff;color:#1d1d26}.space_div{width:100%;height:20px}.space_div2{width:100%;height:10px}.left_menu img{top:8px}.number_a{color:#7b8da0!important}
+a,b {
+    font-family: 微软雅黑;
+    font-size: 14px
+}
+
+.buyer,.jbxx_module,.jbxx_module img,.left_menu img {
+    position: relative
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+b {
+    font-weight: 400
+}
+
+a {
+    color: #11ade2;
+    text-decoration: none
+}
+
+.floatLeft {
+    float: left
+}
+
+.grxx_div {
+    width: 1000px;
+    background-color: #F8F8F8
+}
+
+.module_div {
+    width: 978px;
+    border: 1px solid #EFF0F4;
+    background-color: #fff;
+    margin-top: 10px
+}
+
+.jbxx_module {
+    margin-top: 0
+}
+
+.module_head {
+    height: 50px;
+    line-height: 50px
+}
+
+.module_head b {
+    font-size: 18px;
+    color: #1d1d26;
+    margin-left: 20px
+}
+
+.buyer,.content_div span,.grxx_button {
+    font-size: 14px;
+    font-family: 微软雅黑
+}
+
+.grxx_button {
+    width: 84px;
+    height: 29px;
+    border: 1px solid #E8E8E8;
+    background-color: #58C3E5;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px
+}
+
+.content_div {
+    line-height: 35px;
+    border-top: 1px solid #EFF0F4
+}
+
+.content_div span {
+    color: #7b8da0
+}
+
+.buyer {
+    width: 101px;
+    height: 28px;
+    color: #384655;
+    line-height: 28px;
+    text-align: center;
+    top: 5px;
+    background-image: url(/saleterrace/images/buyer_bg.png)
+}
+
+.marginLeft {
+    margin-left: 20px
+}
+
+.jbxx_module img {
+    top: 2px
+}
+
+span.set_label {
+    color: #50d2c2;
+    margin-left: 3px
+}
+
+span.unset_label {
+    color: #ff4977;
+    margin-left: 3px
+}
+
+.number_span {
+    color: #ff4977!important;
+    margin-left: 0
+}
+
+#tradeRecord_button,#useRecord_button {
+    width: 154px
+}
+
+.kf_a {
+    margin-left: 320px
+}
+
+.tabsDiv {
+    width: 980px;
+    height: 230px;
+    margin-top: 10px
+}
+
+.tabsDiv ul {
+    width: 980px;
+    height: 40px;
+    list-style: none;
+    background-color: transparent
+}
+
+.tabsDiv ul li:hover {
+    background-color: #08C7B5;
+    color: #666
+}
+
+.tabsDiv ul li {
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    border: 1px solid #EFF0F4;
+    border-bottom: 0
+}
+
+.tabsDiv div {
+    width: 978px;
+    height: 155px;
+    background-color: #fff;
+    border: 1px solid #EFF0F4
+}
+
+.tabsSeletedLi {
+    background-color: #5AC2E7;
+    color: #fff
+}
+
+.tabsUnSeletedLi {
+    background-color: #fff;
+    color: #1d1d26
+}
+
+.space_div {
+    width: 100%;
+    height: 20px
+}
+
+.space_div2 {
+    width: 100%;
+    height: 10px
+}
+
+.left_menu img {
+    top: 8px
+}
+
+.number_a {
+    color: #7b8da0!important
+}

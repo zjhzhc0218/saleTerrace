@@ -1,0 +1,62 @@
+.tabsSwitchDiv {
+    width: 980px;
+    border-bottom: 3px solid #ccc
+}
+
+.tabsSwitchDiv ul.tabsSwitch_ul {
+    width: 980px;
+    height: 34px;
+    list-style: none
+}
+
+.tabsSwitchDiv ul.tabsSwitch_ul li {
+    float: left;
+    cursor: pointer;
+    width: 186px;
+    line-height: 35px;
+    height: 32px;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    border-right: 1px solid #F2F4F3;
+    border-top: 1px solid #F2F4F3;
+    border-bottom: 1px solid #F2F4F3
+}
+
+.tabsSwitchUnSeletedLi {
+    background-color: #fff;
+    color: #999
+}
+
+.tabsSwitchSeletedLi {
+    background-color: #5AC2E7;
+    color: #fff
+}
+
+.tabsSwitchDiv ul.tabsSwitch_ul li:hover {
+    background-color: #08C7B5
+}
+
+.jd-level1,.jd-level2,.jd-level3,.jd-level4,.jd-level5 {
+    display: inline-block;
+    background: url(/saleterrace/images/jdhydj_rank2014.gif) no-repeat;
+    width: 17px;
+    height: 17px;
+    margin-top: 5px
+}
+
+.jd-level2 {
+    background-position: 0 -17px
+}
+
+.jd-level3 {
+    background-position: 0 -34px
+}
+
+.jd-level4 {
+    background-position: 0 -51px
+}
+
+.jd-level5 {
+    background-position: 0 -68px
+}

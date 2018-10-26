@@ -201,7 +201,7 @@
 		</a>
 		<div class="top">
 
-			<a href="yhzx_index.ftl">
+			<a href="/saleterrace/yhzx_index">
 				<div class="logo"></div>
 			</a>
 
@@ -232,7 +232,7 @@
 							<b class="clfdaa29" id="top_user_coin"></b>个
 
 						</li>
-						<li style="padding-left: 20px; clear: both;">
+					4	<li style="padding-left: 20px; clear: both;">
 							<a href="/saleterrace/zjgl_index?tab=2" class="cl000 menu-select-a">充值</a>
 							<a href="/saleterrace/zjgl_index?tab=3" class="cl000 menu-select-a">提现</a>
 
@@ -423,7 +423,7 @@
                 '<div class="shade-box" style="position: absolute;  left: 50%; width: 400px; height: 300px; z-index: 300;background-color: #fff; border-radius: 10px; margin-left: -200px;" >'+
                 '<a class="shade-close" style="font-size: 18px;float: right;margin: 6px 15px 0 0px;">X</a>'+
                 '<p style="clear:both; font-size: 16px; font-weight: bold; text-align: center; margin-top: 99px;">'+msg+'</p>'+
-                '<a href="/seller/jnbzj_index.ftl" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>'+
+                '<a href="/saleterrace/jnbzj_index" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>'+
                 '</div>';
         var body = $("body")
         body.append(html);
@@ -601,7 +601,7 @@
 								<a href="/saleterrace/yhzx_loginpwd">修改</a>
 							</span>
 
-							<span class="marginLeft">支付密码：<b class='setPaypwd'>已设置</b><a class='aSetPaypwd' href="/account/useraccountpwd.htm" target="_blank">修改</a></span>
+							<span class="marginLeft">支付密码：<b class='setPaypwd'>已设置</b><a class='aSetPaypwd' href="/saleterrace/yhzx_zfpwd" target="_blank">修改</a></span>
 							<span class="marginLeft">QQ：287811726<span class="qqNum"></span>
 								<a href="javascript:modifyQQ()">修改</a>
 							</span>
@@ -642,8 +642,8 @@
 						<div class="content_div">
 							<div class="space_div"></div>
 							<span class="marginLeft">货款账户<a href="/seller/seller_explain.htm?open_type=coin"><img src="/saleterrace/images/help-12-12.png"/> </a>：&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="lMoney">可用:0元   冻结:0元</span>
-							<a href="/account/accountmanage.htm?tab=1">{充值}</a>
-							<a href="/account/accountmanage.htm?tab=3">{提现}</a> <br>
+							<a href="/saleterrace/zjgl_index?tab=2">{充值}</a>
+							<a href="/saleterrace/zjgl_index?tab=3">{提现}</a> <br>
 							<span class="marginLeft">金币账户<a href="/seller/seller_explain.htm?open_type=coin"><img src="/saleterrace/images/help-12-12.png"/> </a>：&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="lCoin">可用:0元   冻结:0元</span>
                             <br> <span class="marginLeft">资金交易记录：</span>&nbsp;&nbsp;&nbsp;&nbsp; <input
 								type="button" class="grxx_button" id="tradeRecord_button"
