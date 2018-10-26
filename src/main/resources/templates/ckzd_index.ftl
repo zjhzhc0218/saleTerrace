@@ -1,23 +1,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <link rel="shortcut icon" href="/asserts/images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/saleterrace/images/favicon.ico" type="image/x-icon"/>
     <title>【试客多】-查看账单</title>
 
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="this is my page">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <script type="text/javascript"
-            src="/asserts/js/vendor/jquery/jquery-1.10.2.js?rel=1539573213776"></script>
-    <script type="text/javascript"
-            src="/asserts/js/vendor/datepicker/WdatePicker.js?rel=1539573213776"></script>
-    <script type="text/javascript" src="/asserts/js/common/common.js?rel=1539573213776"></script>
-    <script type="text/javascript" src="/asserts/js/common/page.js?rel=1539573213776"></script>
+    <script type="text/javascript" src="/saleterrace/js/verdor/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/verdor/datepicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/common.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/page.js"></script>
     <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
-    <script type="text/javascript"
-            src="/asserts/js/vendor/jquery/jquery-1.10.2.js?rel=1539573213776"></script>
-    <script type="text/javascript"
-            src="/asserts/js/vendor/datepicker/WdatePicker.js?rel=1539573213776"></script>
+    <script type="text/javascript" src="/saleterrace/js/vendor/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/verdor/datepicker/WdatePicker.js"></script>
 
 </head>
 <style>
@@ -151,7 +147,7 @@
         width: 66px;
         height: 27px;
         border: 0px;
-        background-image: url("../asserts/images/zjjl/date_option_s.png");
+        background-image: url("/saleterrace/images/date_option_s.png");
         background-color: transparent;
         color: #384655;
         cursor: pointer;
@@ -161,7 +157,7 @@
         width: 98px;
         height: 27px;
         border: 0px;
-        background-image: url("../asserts/images/zjjl/date_option_l.png");
+        background-image: url("/saleterrace/images/date_option_l.png");
         color: #384655;
         cursor: pointer;
         background-color: transparent;
@@ -171,7 +167,7 @@
         width: 66px;
         height: 20px;
         border: 0px;
-        background-image: url("../asserts/images/zjjl/option_s.png");
+        background-image: url("/saleterrace/images/zjjl/option_s.png");
         color: #384655;
         background-color: transparent;
         background-repeat: no-repeat;
@@ -182,7 +178,7 @@
         width: 82px;
         height: 20px;
         border: 0px;
-        background-image: url("../asserts/images/zjjl/option_l.png");
+        background-image: url("/saleterrace/images/option_l.png");
         color: #384655;
         background-color: transparent;
         cursor: pointer;
@@ -193,7 +189,7 @@
         width: 100px;
         height: 20px;
         border: 0px;
-        background-image: url("../asserts/images/zjjl/option_ll.png");
+        background-image: url("/saleterrace/images/option_ll.png");
         color: #384655;
         background-color: transparent;
         cursor: pointer;
@@ -339,7 +335,7 @@
         width: 55px;
         height: 27px;
         border: 0px;
-        background-image: url("../asserts/images/zjjl/paging_button.png");
+        background-image: url("/saleterrace/images/paging_button.png");
         background-color: transparent;
         cursor: pointer;
         font-size: 16px;
@@ -513,7 +509,7 @@
     }
 
     .options_div dl.dl_two dd i.current, .options_div dl.dl_two dt i.current {
-        background: url(/asserts/images/fbrw/dt_icon_point.png) no-repeat 1px 0;
+        background: url(/saleterrace/images/dt_icon_point.png) no-repeat 1px 0;
     }
 
     .options_div dl dd label {
@@ -531,17 +527,13 @@
 
 <body>
 
-
-<link rel="stylesheet" type="text/css"
-      href="/asserts/css/top.css?rel=1539573213879"/>
-<script type="text/javascript" src="/asserts/js/vendor/jquery-first-event.js?rel=1539573213880"></script>
-<script type="text/javascript"
-        src="/asserts/js/common/store+json2.min.js?rel=1539573213880"></script>
-<script type="text/javascript"
-        src="/asserts/js/common/store.expire.js?rel=1539573213880"></script>
-<script type="text/javascript" src="/asserts/js/common/top.js?rel=1539573213880"></script>
-<script type="text/javascript" src="/asserts/js/dist/viewer.js?rel=1539573213880"></script>
-<link rel="stylesheet" type="text/css" href="/asserts/js/dist//viewer.css?rel=1539573213879"/>
+<link rel="stylesheet" type="text/css" href="/saleterrace/css/top.css"/>
+<script type="text/javascript" src="/saleterrace/js/verdor/jquery-first-event.js"></script>
+<script type="text/javascript" src="/saleterrace/js/common/store+json2.min.js"></script>
+<script type="text/javascript" src="/saleterrace/js/common/store.expire.js"></script>
+<script type="text/javascript" src="/saleterrace/js/common/top.js"></script>
+<script type="text/javascript" src="/saleterrace/js/dist/viewer.js"></script>
+<link rel="stylesheet" type="text/css" href="/saleterrace/css/viewer.css"/>
 
 <script>
     if (window.location.hostname == '115.159.84.78') {
@@ -668,14 +660,14 @@
     }
 
     .contentBox .content .noAgain i.active {
-        background: url(/asserts/images/gou.png) no-repeat center;
+        background: url(/saleterrace/images/gou.png) no-repeat center;
     }
 </style>
 <div class='contentBox' onclick='closeImg2();'>
     <div class='content' style="width: 440px; height: 640px;">
 
         <a class="sPopupImgJump" target="_blank" style=" margin: auto; display: block; ">
-            <img class='sPopup' src='' alt='' style="position: absolute; left: 0; top: 0; width: 100%;">
+            <img class='sPopup' src='/saleterrace/images/demo_01.jpg' alt='' style="position: absolute; left: 0; top: 0; width: 100%;">
         </a>
 
 
@@ -694,68 +686,49 @@
 </a>
 <div class="top">
 
-    <a href="/seller/index.htm">
+    <a href="/saleterrace/yhzx_index">
         <div class="logo"></div>
     </a>
 
-
     <div class="qun_for_seller qun_tip">
-        <a href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575"
-           target="_blank">活动交流群：540995352</a>
+        <a href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575" target="_blank">活动交流群：540995352</a>
     </div>
-
 
     <ul class="LR_USER">
         <li class="pos-rel menu-box">
 
-
             <a href="#" class="menu-select-icon">
-                <img src="/asserts/images/menu_select_icon.png" alt=""
-                     class="pos-menu-select">
-                <p
-
-                        class="user-name"
-
-
-                >
+                <img src="/saleterrace/images/menu_select_icon.png" alt="" class="pos-menu-select">
+                <p class="user-name">
                     15355056891
                 </p>
                 <p class="user-tag" style="text-align: center; line-height:normal;">
 
-
-                    VIP
-
-
-                    4
-                    天试用中
-
+                    VIP X 天试用中
 
                 </p>
             </a>
-
 
             </a>
 
             <ul class="menu-select-box">
                 <li style="background-color: #f3f3f3; padding-left: 20px">
-                    货款：<b class="clfdaa29" id="top_user_money"></b>元
-                    &nbsp;&nbsp;&nbsp;
-                    金币：<b class="clfdaa29" id="top_user_coin"></b>个
+                    货款：<b class="clfdaa29" id="top_user_money"></b>元 &nbsp;&nbsp;&nbsp; 金币：
+                    <b class="clfdaa29" id="top_user_coin"></b>个
 
                 </li>
                 <li style="padding-left: 20px; clear: both;">
                     <a href="/saleterrace/zjgl_index?tab=2" class="cl000 menu-select-a">充值</a>
-                    <a href="/saleterrace/zjgl_index?tab=3" class="cl000 menu-select-a">提现</a>
-
-
-                    <a href="/seller/orderVip.htm" target="_blank" class="menu-select-myCenter">缴纳保证金</a>
-
+                    <a href="/saleterrace/zjgl_index?tab=2" class="cl000 menu-select-a">提现</a>
+                    <a href="/saleterrace/jnbzj_index" target="_blank" class="menu-select-myCenter">缴纳保证金</a>
 
                 </li>
             </ul>
         </li>
-        <li><a href="javascript:logout();" class="cl01b76c">退出登陆
-        </a></li>
+        <li>
+            <a href="javascript:logout();" class="cl01b76c">退出登陆
+            </a>
+        </li>
 
     </ul>
     <input type="hidden" id="exam" value="0">
@@ -764,85 +737,76 @@
 
 <div class="right-menu">
     <a href="javascript:void(0);" id="offKfqq">
-        <img src="/asserts/images/colsed-kfqq.png" alt="">
+        <img src="/saleterrace/images/colsed-kfqq.png" alt="">
     </a>
 
-
     <!--<div class="bg1">
-        <span class="menuTitleOne">不会放单找我</span>
-        <span class="menuTitleTwo">其他问题找我</span>
-        <div class="right-menu-one">
-            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505269">小高</a>
-            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852382973">二珍</a>
-        </div>
-        <div class="right-menu-two">
-            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505268">玫瑰</a>
-            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505268">丁香</a>
-        </div>
-    </div>-->
+            <span class="menuTitleOne">不会放单找我</span>
+            <span class="menuTitleTwo">其他问题找我</span>
+            <div class="right-menu-one">
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505269">小高</a>
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852382973">二珍</a>
+            </div>
+            <div class="right-menu-two">
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505268">玫瑰</a>
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505268">丁香</a>
+            </div>
+        </div>-->
+    <!--<div class="bg" style="display: none">-->
     <div class="bg">
-        <img class="bg-img" src="/asserts/images/kfqq.png" alt="">
+        <img class="bg-img" src="/saleterrace/images/kfqq.png" alt="">
         <div class="right-menu-content">
-            <a href="/seller/publish/publish_mission.htm">
-                <img src="/asserts/images/sjscfd.png" class="right-menu-content-top-img" alt="">
+            <a href="syhd_release_index.ftl">
+                <img src="/saleterrace/images/sjscfd.png" class="right-menu-content-top-img" alt="">
             </a>
 
             <span class="menuTitleTwo">客服问题找我</span>
             <div class="right-menu-two">
                 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368872">
-                    <img src="/asserts/images/yckf_03.png" alt="">
-                    宝宝
+                    <img src="/saleterrace/images/yckf_03.png" alt=""> 宝宝
                 </a>
                 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852365086">
-                    <img src="/asserts/images/yckf_03.png" alt="">
-                    贝贝
+                    <img src="/saleterrace/images/yckf_03.png" alt=""> 贝贝
                 </a>
             </div>
 
             <span class="menuTitleOne">活动发布找我</span>
             <div class="right-menu-one">
                 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368900">
-                    &nbsp;&nbsp;&nbsp;<img src="/asserts/images/yckf_03.png" alt="">
-                    高经理
+                    &nbsp;&nbsp;&nbsp;<img src="/saleterrace/images/yckf_03.png" alt=""> 高经理
                 </a>
                 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852356150">
-                    <img src="/asserts/images/yckf_03.png" alt="">
-                    安娜老师
+                    <img src="/saleterrace/images/yckf_03.png" alt=""> 安娜老师
                 </a>
 
                 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852365085">
-                    <img src="/asserts/images/yckf_03.png" alt="">
-                    周华老师
+                    <img src="/saleterrace/images/yckf_03.png" alt=""> 周华老师
                 </a>
                 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852366295">
-                    <img src="/asserts/images/yckf_03.png" alt="">
-                    毛经理
+                    <img src="/saleterrace/images/yckf_03.png" alt=""> 毛经理
                 </a>
             </div>
             <span class="menuTitleOne">上班时间</span>
             <div class="right-menu-one">
                 <p style="font-size: 12px;">
                     周一至周日
-                    <br>
-                    9:00-18:00
+                    <br> 9:00-18:00
                 </p>
             </div>
         </div>
         <div class="right-menu-content" style="padding-top: 0px;margin-top: 2px;">
             <span>商家交流群</span>
             <div class="right-menu-two">
-                <img src="" class="QRCode" style="width: 105px;">
+                <img src="/saleterrace/images/er.jpg" class="QRCode" style="width: 105px;">
             </div>
-            <a class="clickAdd" target="_blank"
-               href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575">点击加入</a>
+            <a class="clickAdd" target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575">点击加入</a>
         </div>
     </div>
-
 
 </div>
 
 <a href="javascript:void(0);" id="onKfqq">
-    <img src="/asserts/images/kfqqsmall.png" alt="">
+    <img src="/saleterrace/images/kfqqsmall.png" alt="">
 </a>
 
 <input type="hidden" id="imageRootPath" value="http://image-1254237507.image.myqcloud.com">
@@ -948,7 +912,7 @@
             '<div class="shade-box" style="position: absolute;  left: 50%; width: 400px; height: 300px; z-index: 300;background-color: #fff; border-radius: 10px; margin-left: -200px;" >' +
             '<a class="shade-close" style="font-size: 18px;float: right;margin: 6px 15px 0 0px;">X</a>' +
             '<p style="clear:both; font-size: 16px; font-weight: bold; text-align: center; margin-top: 99px;">' + msg + '</p>' +
-            '<a href="/seller/jnbzj_index.ftl" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>' +
+            '<a href="/saleterrace/jnbzj_index" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>' +
             '</div>';
         var body = $("body")
         body.append(html);
@@ -969,105 +933,88 @@
 
 <div id="Container" align="center">
     <div id="Header">
-
-
-        <link rel="stylesheet" type="text/css"
-              href="/asserts/css/layout.css?rel=1539573213877"/>
-        <link rel="stylesheet" type="text/css"
-              href="/asserts/css/header.css?rel=1539573213877"/>
+        <link rel="stylesheet" type="text/css" href="/saleterrace/css/layout.css"/>
+        <link rel="stylesheet" type="text/css" href="/saleterrace/css/header.css"/>
     </div>
     <div id="Content-Space-h"></div>
     <div id="Content">
         <div id="Content-Left">
-
-
-            <link rel="stylesheet" type="text/css" href="/asserts/css/navigator.css?rel=1539573213878"/>
+            <link rel="stylesheet" type="text/css" href="/saleterrace/css/navigator.css"/>
 
             <ul class="left_menu" style="margin-bottom: 10px;">
-                <li class="menu_selected" href="/seller/index.htm">
-                    <i class="grxx"></i>
-                    <span>用户中心</span>
-                    <p></p>
+                <li class="menu_selected" >
+                    <a href="/saleterrace/yhzx_index"><i class="grxx"></i>
+                        <span>用户中心</span></a>
                 </li>
-                <li href="/seller/bindStore.htm?rt=n">
-                    <i class="dpbt"></i>
-                    <span>店铺管理</span>
+                <li>
+                    <a href="/saleterrace/dpgl_index"><i class="dpbt"></i>
+                        <span>店铺管理</span></a>
                 </li>
-                <li href="/seller/publish/publish_mission.htm">
-                    <i class="fbrw"></i>
-                    <span>试用活动发布</span>
+                <li>
+                    <a href="/saleterrace/syhd_release_index"><i class="fbrw"></i>
+                        <span>试用活动发布</span></a>
                 </li>
-                <li href="/seller/zrwlb.htm">
-                    <i class="yfbrw"></i>
-                    <span>试用活动管理</span>
-                </li>
-
-
-                <li href="/seller/blacklist/index.htm">
-                    <i class="hmd"></i>
-                    <span>试客黑名单</span>
-                    <div class="new" style="left:90px;"></div>
-                </li>
-
-                <li href="/account/accounthistory.htm">
-                    <i class="ckzd"></i>
-                    <span>查看账单</span>
-                </li>
-                <li href="/account/accountmanage.htm">
-                    <i class="zjgl"></i>
-                    <span>资金管理</span>
-                </li>
-                <li href="/seller/seller_tariff_description.htm">
-                    <i class="ckzz"></i>
-                    <span>平台资费说明</span>
-                </li>
-
-
-                <li href="/account/recommendPage.htm">
-                    <i class="rcd"></i>
-                    <img src="/asserts/images/hot.gif" alt="" style="position: relative;top: -2px;left: 5px;">
-                    <span>推荐赚金币</span>
-                </li>
-
-
-                <li href="/popular/popular.htm?pg=task.pcFlow" target="_blank">
-                    <i class="i16_brq"></i>
-                    <span>补人气</span>
-
+                <li>
+                    <a  href="/saleterrace/syhd_management_index"><i class="yfbrw"></i>
+                        <span>试用活动管理</span></a>
                 </li>
 
                 <li>
-                    <a href="http://www.chapaiming.com/" target="_blank"
-                       style="overflow:hidden;display:block;margin:0;">
-                        <i class="i16_cpm"></i>
-                        <span>查排名</span>
-
-                    </a>
+                    <a href="/saleterrace/black_index"><i class="hmd"></i>
+                        <span>试客黑名单</span>
+                        <div class="new" style="left:90px;"></div></a>
                 </li>
 
+                <li>
+                    <a href="/saleterrace/ckzd_index"><i class="ckzd"></i>
+                        <span>查看账单</span></a>
+                </li>
+                <li>
+                    <a href="/saleterrace/zjgl_index"><i class="zjgl"></i>
+                        <span>资金管理</span></a
+                </li>
+                <li>
+                    <a  href="/saleterrace/ptzf_index"><i class="ckzz"></i>
+                        <span>平台资费说明</span></a>
+                </li>
+
+                <li>
+                    <a  href="/saleterrace/tjzjb_index"><i class="rcd"></i>
+                        <img src="/saleterrace/images/hot.gif" alt="" style="position: relative;top: -2px;left: 5px;">
+                        <span>推荐赚金币</span></a>
+                </li>
+
+                <!--<li href="/popular/popular.htm?pg=task.pcFlow" target="_blank">-->
+                <li>
+                    <a href="https://burenqi.com/task-pc-flow" target="_blank"><i class="i16_brq" ></i>补人气</a>
+                    <!--<span>补人气</span>-->
+                </li>
+
+                <li>
+                    <a href="http://www.chapaiming.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">
+                        <i class="i16_cpm"></i>
+                        <span>查排名</span>
+                    </a>
+                </li>
 
                 <li>
                     <a href="http://www.maijiabus.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">
                         <i class="i16_mjbs"></i>
                         <span>流量捕手</span>
-
                     </a>
                 </li>
 
                 <li>
-                    <a href="/seller/seller_protocol.htm" target="_blank"
-                       style="overflow:hidden;display:block;margin:0;">
+                    <a href="/saleterrace/sjxy_index" style="overflow:hidden;display:block;margin:0;">
                         <i class="i16_protocol"></i>
                         <span>商家电子协议</span>
-
                     </a>
                 </li>
             </ul>
             <a class="sLeftImgJump" target="_blank" style="float: left; margin: 10px 0 0 0;">
-                <img class="sLeft " src="/asserts/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">
+                <img class="sLeft " src="/saleterrace/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">
             </a>
-            <input type="hidden" id="nav_hidden" value="1"/>
-
+            <input type="hidden" id="nav_hidden" value="1" />
 
             <script>
                 $(document).ready(function () {
@@ -1095,57 +1042,22 @@
                     <div class="content_div">
                         <div class="tab_title">
                             <div class="datechooser">
-                                <form id="findCondition" action="ckzd_index.ftl">
-                                    <div class="floatLeft">起止日期：<input name="startTime" id="dateStart" type="text"
-                                                                       value=""
-                                                                       class="date_input_text">
-                                        到<input name="endTime" id="dateEnd" type="text" class="date_input_text"
-                                                value=""></div>
-                                    <input id="payTpyeId" type="hidden" name="payType"
-                                           value=""/>
-                                    <input id="timeTypeId" type="hidden" name="timeType"
-                                           value="LAST_MONTH"/>
-                                    <input id="pageId" type="hidden" name="page.page"
-                                           value="1"/>
+                                <form id="findCondition" action="/saleterrace/ckzd_index">
+                                    <div class="floatLeft">起止日期：<input name="startTime" id="dateStart" type="text" value="" class="date_input_text">
+                                        到<input name="endTime" id="dateEnd" type="text" class="date_input_text" value=""></div>
+                                    <input id="payTpyeId" type="hidden" name="payType" value=""/>
+                                    <input id="timeTypeId" type="hidden" name="timeType" value="LAST_MONTH"/>
+                                    <input id="pageId" type="hidden" name="page.page" value="1"/>
                                     <input id="childTaskNum" type="hidden" name="childTaskNum" value=""/>
 
                                     <input id="transactionTypes" type="hidden" name="transactionTypes"
                                            value="BANK_CARD,INNER_CHANGE,INNER_CHANGE_TASK,BANK_CARD_RECHARGE,INNER_CHANGE_RECHARGE_BKKK,INNER_CHANGE_YU_E_JIN_BI,INNER_CHANGE_JIN_BI_YU_E,BANK_CARD_TI_XIAN,INNER_CHANGE_RETURN,INNER_CHANGE_FIRST_GIFT,INNER_CHANGE_SYSTEM,INNER_CHANGE_HBS,INNER_CHANGE_OTHER,INNER_CHANGE_RECOMMEND,INNER_CHANGE_VIP_RECHARGE_BKKK">
                                 </form>
                                 <ul class="options_ul floatLeft">
-
-                                    <li><input type="button" value="今天" class="option_button date_option_s
-								
-									hide_chosen_button
-								
-							"
-
-                                               onclick="findSomeDateResult('TODAY')"
-
-                                    ></li>
-                                    <li><input type="button" value="昨天" class="option_button date_option_s
-								
-									hide_chosen_button
-								
-							"
-
-                                               onclick="findSomeDateResult('YESTERDAY')"
-
-                                    ></li>
-                                    <li><input type="button" value="最近一个月" class="option_button date_option_l
-								
-							 "
-
-                                    ></li>
-                                    <li><input type="button" value="全部" class="option_button date_option_s
-								
-									hide_chosen_button
-								
-							"
-
-                                               onclick="findSomeDateResult('ALL')"
-
-                                    ></li>
+                                    <li><input type="button" value="今天" class="option_button date_option_shide_chosen_button" onclick="findSomeDateResult('TODAY')"></li>
+                                    <li><input type="button" value="昨天" class="option_button date_option_shide_chosen_button" onclick="findSomeDateResult('YESTERDAY')"></li>
+                                    <li><input type="button" value="最近一个月" class="option_button date_option_l"></li>
+                                    <li><input type="button" value="全部" class="option_button date_option_shide_chosen_button" onclick="findSomeDateResult('ALL')"></li>
                                 </ul>
                             </div>
                             <div class="options_div">
@@ -1155,80 +1067,67 @@
                                     </dt>
                                     <dd style="width:60px;">
                                         <i class="current" groupId="INNER_CHANGE_TASK">
-                                            <span name="catColumn" groupId="INNER_CHANGE_TASK" value="INNER_CHANGE_TASK"
-                                                  id="INNER_CHANGE_TASK"/>
+                                            <span name="catColumn" groupId="INNER_CHANGE_TASK" value="INNER_CHANGE_TASK" id="INNER_CHANGE_TASK"/>
                                         </i>
                                         <label class="mColumn" for="INNER_CHANGE_TASK">活动</label>
                                     </dd>
                                     <dd style="width:80px;">
                                         <i class="current" groupId="INNER_CHANGE_RECOMMEND">
-                                            <span name="catColumn" groupId="INNER_CHANGE_RECOMMEND"
-                                                  value="INNER_CHANGE_RECOMMEND" id="INNER_CHANGE_RECOMMEND"/>
+                                            <span name="catColumn" groupId="INNER_CHANGE_RECOMMEND" value="INNER_CHANGE_RECOMMEND" id="INNER_CHANGE_RECOMMEND"/>
                                         </i>
                                         <label class="mColumn" for="INNER_CHANGE_RECOMMEND">推荐奖励</label>
                                     </dd>
                                     <dd style="width:60px;">
                                         <i class="current" groupId="BANK_CARD_RECHARGE">
-                                            <span name="catColumn" groupId="BANK_CARD_RECHARGE"
-                                                  value="BANK_CARD_RECHARGE,INNER_CHANGE_RECHARGE_BKKK"
-                                                  id="BANK_CARD_RECHARGE"/>
+                                            <span name="catColumn" groupId="BANK_CARD_RECHARGE" value="BANK_CARD_RECHARGE,INNER_CHANGE_RECHARGE_BKKK" id="BANK_CARD_RECHARGE"/>
                                         </i>
                                         <label class="mColumn" for="BANK_CARD_RECHARGE">充值</label>
                                     </dd>
                                     <dd style="width:90px;">
                                         <i class="current" groupId="INNER_CHANGE_YU_E_JIN_BI">
-                                            <span name="catColumn" groupId="INNER_CHANGE_YU_E_JIN_BI"
-                                                  value="INNER_CHANGE_YU_E_JIN_BI" id="INNER_CHANGE_YU_E_JIN_BI"/>
+                                            <span name="catColumn" groupId="INNER_CHANGE_YU_E_JIN_BI" value="INNER_CHANGE_YU_E_JIN_BI" id="INNER_CHANGE_YU_E_JIN_BI"/>
                                         </i>
                                         <label class="mColumn" for="INNER_CHANGE_YU_E_JIN_BI">货款转金币</label>
                                     </dd>
                                     <dd style="width:90px;">
                                         <i class="current" groupId="INNER_CHANGE_JIN_BI_YU_E">
-                                            <span name="catColumn" groupId="INNER_CHANGE_JIN_BI_YU_E"
-                                                  value="INNER_CHANGE_JIN_BI_YU_E" id="INNER_CHANGE_JIN_BI_YU_E"/>
+                                            <span name="catColumn" groupId="INNER_CHANGE_JIN_BI_YU_E" value="INNER_CHANGE_JIN_BI_YU_E" id="INNER_CHANGE_JIN_BI_YU_E"/>
                                         </i>
                                         <label class="mColumn" for="INNER_CHANGE_JIN_BI_YU_E">金币转货款</label>
                                     </dd>
                                     <dd style="width:60px;">
                                         <i class="current" groupId="BANK_CARD_TI_XIAN">
-                                            <span name="catColumn" groupId="BANK_CARD_TI_XIAN"
-                                                  value="BANK_CARD_TI_XIAN,INNER_CHANGE_RETURN" id="BANK_CARD_TI_XIAN"/>
+                                            <span name="catColumn" groupId="BANK_CARD_TI_XIAN" value="BANK_CARD_TI_XIAN,INNER_CHANGE_RETURN" id="BANK_CARD_TI_XIAN"/>
                                         </i>
                                         <label class="mColumn" for="BANK_CARD_TI_XIAN">提现</label>
                                     </dd>
                                     <dd style="width:90px;">
                                         <i class="current" groupId="INNER_CHANGE_HBS">
-                                            <span name="catColumn" groupId="INNER_CHANGE_HBS" value="INNER_CHANGE_HBS"
-                                                  id="INNER_CHANGE_HBS"/>
+                                            <span name="catColumn" groupId="INNER_CHANGE_HBS" value="INNER_CHANGE_HBS" id="INNER_CHANGE_HBS"/>
                                         </i>
                                         <label class="mColumn" for="INNER_CHANGE_HBS">好帮手赏金</label>
                                     </dd>
                                     <dd style="width:80px;">
                                         <i class="current" groupId="INNER_CHANGE_FIRST_GIFT">
-                                            <span name="catColumn" groupId="INNER_CHANGE_FIRST_GIFT"
-                                                  value="INNER_CHANGE_FIRST_GIFT" id="INNER_CHANGE_FIRST_GIFT"/>
+                                            <span name="catColumn" groupId="INNER_CHANGE_FIRST_GIFT" value="INNER_CHANGE_FIRST_GIFT" id="INNER_CHANGE_FIRST_GIFT"/>
                                         </i>
                                         <label class="mColumn" for="INNER_CHANGE_FIRST_GIFT">首单赠送</label>
                                     </dd>
                                     <dd style="width:90px;">
                                         <i class="current" groupId="INNER_CHANGE_SYSTEM">
-                                            <span name="catColumn" groupId="INNER_CHANGE_SYSTEM"
-                                                  value="INNER_CHANGE_SYSTEM" id="INNER_CHANGE_SYSTEM"/>
+                                            <span name="catColumn" groupId="INNER_CHANGE_SYSTEM" value="INNER_CHANGE_SYSTEM" id="INNER_CHANGE_SYSTEM"/>
                                         </i>
                                         <label class="mColumn" for="INNER_CHANGE_SYSTEM">系统加减款</label>
                                     </dd>
                                     <dd style="width:80px;">
                                         <i class="current" groupId="INNER_CHANGE_VIP_RECHARGE_BKKK">
-                                            <span name="catColumn" groupId="INNER_CHANGE_VIP_RECHARGE_BKKK"
-                                                  value="INNER_CHANGE_VIP_RECHARGE_BKKK"
-                                                  id="INNER_CHANGE_VIP_RECHARGE_BKKK"/>
+                                            <span name="catColumn" groupId="INNER_CHANGE_VIP_RECHARGE_BKKK" value="INNER_CHANGE_VIP_RECHARGE_BKKK" id="INNER_CHANGE_VIP_RECHARGE_BKKK"/>
                                         </i>
                                         <label class="mColumn" for="INNER_CHANGE_SYSTEM">保证金充值</label>
                                     </dd>
                                     <dd style="width:80px;">
                                         <i class="current" groupId="INNER_CHANGE_OTHER">
-                                            <span name="catColumn" groupId="INNER_CHANGE_OTHER"
-                                                  value="INNER_CHANGE_OTHER" id="INNER_CHANGE_OTHER"/>
+                                            <span name="catColumn" groupId="INNER_CHANGE_OTHER" value="INNER_CHANGE_OTHER" id="INNER_CHANGE_OTHER"/>
                                         </i>
                                         <label class="mColumn" for="INNER_CHANGE_SYSTEM">其他</label>
                                     </dd>
@@ -1245,159 +1144,94 @@
                         <div class="tab_title" style="margin-top: 5px;">
                             <div class="options_div" style="height: 80px;line-height: 20px;">
                                 <span style="margin-left: 15px;">
-                                
-                                
-                                
-                                
-                                
-                                    最近一个月
-                                
-                                
-                                    的交易汇总
+                                    最近一个月的交易汇总
                                 </span>
                                 <ul class="options_ul jylx_ul">
                                     <li class="hidden" style="display:block;">
                                         <span>活动：</span>货款
-
-
                                         <span>0</span>
-
                                         ,
                                         金币
-
-
                                         <span>0</span>
-
                                         。
                                     </li>
                                     <li class="hidden" style="display:block;">
                                         <span>推荐奖励：</span>货款
-
-
                                         <span>0</span>
-
                                         ,
                                         金币
-
-
                                         <span>0</span>
-
                                         。
                                     </li>
                                     <li class="hidden" style="display:block;">
                                         <span>充值：</span>货款
-
-
                                         <span>0</span>
-
                                         ,
                                         金币
-
-
                                         <span>0</span>
-
                                         。
                                     </li>
                                     <li class="hidden" style="display:block;">
                                         <span>货款转金币：</span>
                                         货款
-
-
                                         <span>0</span>
-
                                         ,
                                         金币
-
-
                                         <span>0</span>
-
                                         。
                                     </li>
                                     <li class="hidden" style="display:block;">
                                         <span>金币转货款：</span>
                                         货款
-
-
                                         <span>0</span>
-
                                         ,
                                         金币
-
-
                                         <span>0</span>
-
                                         。
                                     </li>
                                     <li class="hidden" style="display:block;">
                                         <span>提现：</span>
                                         货款
-
-
                                         <span>0</span>
-
                                         ,
                                         金币
-
-
                                         <span>0</span>
-
                                         。
                                     </li>
                                     <li class="hidden" style="display:block;">
                                         <span>好帮手赏金：</span>
                                         金币
-
-
                                         <span>0</span>
-
                                         。
                                     </li>
                                     <li class="hidden" style="display:block;">
                                         <span>首单赠送：</span>
                                         金币
-
-
                                         <span>0</span>
-
                                         。
                                     </li>
                                     <li class="hidden" style="display:block;">
                                         <span>系统加减款：</span>
                                         货款
-
-
                                         <span>0</span>
-
                                         ,
                                         金币
-
-
                                         <span>0</span>
-
                                         。
                                     </li>
                                     <li class="hidden">
                                         <span>保证金充值：</span>
                                         货款
-
-
                                         <span>0</span>
-
                                         。
                                     </li>
                                     <li class="hidden" style="display:block;">
                                         <span>其他：</span>
                                         货款
-
-
                                         <span>0</span>
-
                                         ,
                                         金币
-
-
                                         <span>0</span>
-
                                         。
                                     </li>
                                 </ul>
@@ -1415,16 +1249,9 @@
 
                         <div class="paging" align="right">
                             <input type="button" class="paging_button" id="firstPage" value="首页" onclick="go(1)"/>
-                            <input type="button" class="paging_button" id="lastPage" value="上页"
-
-                            />
-
-
-                            <input type="button" class="paging_button" id="nextPage" value="下页"
-
-                            />
-                            <input type="button" class="paging_button" id="finalPage" value="尾页"
-                                   onclick="go(0)"/>
+                            <input type="button" class="paging_button" id="lastPage" value="上页"/>
+                            <input type="button" class="paging_button" id="nextPage" value="下页" />
+                            <input type="button" class="paging_button" id="finalPage" value="尾页" onclick="go(0)"/>
                         </div>
                         <!-- <div class="foot_div"></div> -->
                     </div>
@@ -1437,8 +1264,7 @@
     <div class="Clear"><!--如何你上面用到float,下面布局开始前最好清除一下。--></div>
     <div id="Footer">
 
-        <link rel="stylesheet" type="text/css"
-              href="/asserts/css/footer.css?rel=1539573213876"/>
+        <link rel="stylesheet" type="text/css" href="/saleterrace/css/footer.css"/>
         <div class="foot_div">
 
             <div class="foot_div_div1">
