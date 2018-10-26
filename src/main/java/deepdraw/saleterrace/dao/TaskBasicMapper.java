@@ -1,7 +1,9 @@
 package deepdraw.saleterrace.dao;
 
 import deepdraw.saleterrace.entity.shop.TaskBasic;
+import org.springframework.stereotype.Component;
 
+@Component
 public interface TaskBasicMapper {
     /**
      *
