@@ -2,212 +2,250 @@
 
 <html>
 	<head>
+        <title>【试客多】-店铺管理</title>
 		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 		<meta http-equiv="description" content="this is my page">
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 		<meta http-equiv="description" content="this is my page">
-		<script type="text/javascript" src="/saleterrace/js/verdor/jquery/jquery-1.10.2.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/verdor/jquery-loadTemplate/jquery.loadTemplate-1.4.4.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/verdor/jquery-zclip/1.1.2/jquery.zclip.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/common/common.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/common/page.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/verdor/jquery.form.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/verdor/zebra_dialog/zebra_dialog.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/common/popdg.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/seller/bindStore.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/common/cos-js-sdk-v4.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/common/uploadImageCommon.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="/saleterrace/css/top.css"/>
+        <link rel="stylesheet" type="text/css" href="/saleterrace/css/viewer.css"/>
 		<link rel="stylesheet" type="text/css" href="/saleterrace/css/zebra_dialog.css"/>
 		<link rel="stylesheet" type="text/css" href="/saleterrace/css/bindStore.css"/>
-		<title>【试客多】-店铺管理</title>
+        <link rel="stylesheet" type="text/css" href="/saleterrace/css/footer.css"/>
+        <link rel="stylesheet" type="text/css" href="/saleterrace/css/layout.css"/>
+        <link rel="stylesheet" type="text/css" href="/saleterrace/css/header.css"/>
 	</head>
 	<body>
+    <style>
+        .contentBox {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .6);
+            z-index: 1000;
+            display: none;
+        }
 
-		<link rel="stylesheet" type="text/css" href="/saleterrace/css/top.css"/>
-		<script type="text/javascript" src="/saleterrace/js/verdor/jquery-first-event.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/common/store+json2.min.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/common/store.expire.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/common/top.js"></script>
-		<script type="text/javascript" src="/saleterrace/js/dist/viewer.js"></script>
-		<link rel="stylesheet" type="text/css" href="/saleterrace/css/viewer.css"/>
+        .contentBox .content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            padding: 15px;
+            margin-left: -220px;
+            margin-top: -300px;
+        }
 
-		<style>
-			.contentBox {
-				position: fixed;
-				width: 100%;
-				height: 100%;
-				background-color: rgba(0, 0, 0, .6);
-				z-index: 1000;
-				display: none;
-			}
-			
-			.contentBox .content {
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				padding: 15px;
-				margin-left: -220px;
-				margin-top: -300px;
-			}
-			
-			.contentBox .content span {
-				position: absolute;
-				right: 23px;
-				top: 20px;
-				width: 15px;
-				height: 15px;
-				font-size: 15px;
-				line-height: 15px;
-				text-align: center;
-				cursor: pointer;
-			}
-			
-			.contentBox .content h2 {
-				font-size: 24px;
-				font-weight: normal;
-				color: rgb(255, 51, 1);
-				text-align: center;
-				margin: 20px 0 35px 0;
-			}
-			
-			.contentBox .content p {
-				font-size: 14px;
-				line-height: 25px;
-				text-align: justify;
-				width: 480px;
-				margin: 0 auto 30px;
-				text-indent: 30px;
-			}
-			
-			.contentBox .content p i {
-				font-size: 14px;
-				color: #ff3300;
-				font-style: normal;
-			}
-			
-			.contentBox .content h3 {
-				text-align: right;
-				font-weight: normal;
-				font-size: 14px;
-				color: rgb(71, 195, 136);
-				margin-right: 15px;
-			}
-			
-			.contentBox .content .noAgain {
-				position: absolute;
-				right: 50px;
-				top: 20px;
-			}
-			
-			.contentBox .content .noAgain i {
-				float: left;
-				width: 10px;
-				height: 10px;
-				border: 1px solid #999;
-				cursor: pointer;
-				margin: 2px;
-			}
-			
-			.contentBox .content .noAgain i.active {
-				background: url(/saleterrace/images/gou.png) no-repeat center;
-			}
-		</style>
+        .contentBox .content span {
+            position: absolute;
+            right: 23px;
+            top: 20px;
+            width: 15px;
+            height: 15px;
+            font-size: 15px;
+            line-height: 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .contentBox .content h2 {
+            font-size: 24px;
+            font-weight: normal;
+            color: rgb(255, 51, 1);
+            text-align: center;
+            margin: 20px 0 35px 0;
+        }
+
+        .contentBox .content p {
+            font-size: 14px;
+            line-height: 25px;
+            text-align: justify;
+            width: 480px;
+            margin: 0 auto 30px;
+            text-indent: 30px;
+        }
+
+        .contentBox .content p i {
+            font-size: 14px;
+            color: #ff3300;
+            font-style: normal;
+        }
+
+        .contentBox .content h3 {
+            text-align: right;
+            font-weight: normal;
+            font-size: 14px;
+            color: rgb(71, 195, 136);
+            margin-right: 15px;
+        }
+
+        .contentBox .content .noAgain {
+            position: absolute;
+            right: 50px;
+            top: 20px;
+        }
+
+        .contentBox .content .noAgain i {
+            float: left;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #999;
+            cursor: pointer;
+            margin: 2px;
+        }
+
+        .contentBox .content .noAgain i.active {
+            background: url(/saleterrace/images/gou.png) no-repeat center;
+        }
+         .protocol-main .bottom_c h1 {
+             text-align: center;
+             font-size: 35px;
+             font-weight: 500;
+             margin-bottom: 60px;
+             margin-top: 60px;
+         }
+
+        .protocol-main .bottom_c td {
+            text-align: left;
+            background-color: #FFFFFF;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .protocol-main .bottom_c table {
+            background-color: black;
+            border-collapse: collapse;
+        }
+
+        .protocol-main .pt20 {
+            padding-top: 20px;
+        }
+
+        .protocol-main .tc {
+            text-align: center;
+        }
+
+        .protocol-main .tr {
+            text-align: right;
+        }
+
+        .protocol-main .f16 {
+            font-size: 16px;
+        }
+
+        .protocol-main h1 {
+            text-align: center;
+            font-size: 35px;
+            font-weight: 500;
+        }
+
+        .protocol-main h2 {
+            font-size: 24px;
+        }
+
+        .protocol-main h3 {
+            font-size: 20px;
+            padding-top: 20px;
+        }
+
+        .protocol-main p {
+            line-height: 29px;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+
+        .protocol-main dl {
+            padding-top: 10px;
+        }
+
+        .protocol-main dl dt {
+            font-size: 16px;
+            line-height: 29px;
+            padding-bottom: 5px;
+            text-align: left;
+        }
+
+        .protocol-main dl dd {
+            font-size: 14px;
+            line-height: 29px;
+            text-align: left;
+        }
+
+        .protocol-main .cc_list dt {
+            font-size: 14px;
+        }
+
+        .protocol-main .cc_list dd {
+            padding-left: 35px;
+        }
+
+        .protocol-main td {
+            border: 1px solid #ddd !important;
+        }
+
+        .protocol-main ul,
+        li {
+            text-align: left;
+        }
+    </style>
+
 		<div class='contentBox' onclick='closeImg2();'>
 			<div class='content' style="width: 440px; height: 640px;">
-
 				<a class="sPopupImgJump" target="_blank" style=" margin: auto; display: block; ">
 					<img class='sPopup' src='' alt='' style="position: absolute; left: 0; top: 0; width: 100%;">
 				</a>
-
 				<span onclick='closeImg();' style='color: #999;right: 50px;'>X</span>
 			</div>
 		</div>
-
 		<a class="sImgJump" style=" margin: auto; display: block; ">
 			<img class="sTongZhi" src="/saleterrace/images/demo_01.jpg" alt="" style="display: block; width: 100%; height: 51px;">
 		</a>
-
-		<a class="sImgJump" href="#" style=" margin: auto; display: block;text-align: center;color: red;font-style: italic;text-decoration: underline;font-size: 17px; background-color: bisque;line-height: 40px;">
-			本站所有赏金均由商家提供，旨在激励试客生成优质的买家秀内容，本站从中不获取任何盈利！
-		</a>
+		<a class="sImgJump" href="#" style=" margin: auto; display: block;text-align: center;color: red;font-style: italic;text-decoration: underline;font-size: 17px; background-color: bisque;line-height: 40px;">本站所有赏金均由商家提供，旨在激励试客生成优质的买家秀内容，本站从中不获取任何盈利！</a>
 		<div class="top">
-
 			<a href="/saleterrace/yhzx_index">
 				<div class="logo"></div>
 			</a>
-
 			<div class="qun_for_seller qun_tip">
 				<a href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575" target="_blank">活动交流群：540995352</a>
 			</div>
-
 			<ul class="LR_USER">
 				<li class="pos-rel menu-box">
-
 					<a href="#" class="menu-select-icon">
 						<img src="/saleterrace/images/menu_select_icon.png" alt="" class="pos-menu-select">
-						<p class="user-name">
-							15355056891
-						</p>
-						<p class="user-tag" style="text-align: center; line-height:normal;">
-
-							VIP X 天试用中
-
-						</p>
+						<p class="user-name">15355056891</p>
+						<p class="user-tag" style="text-align: center; line-height:normal;">VIP X 天试用中</p>
 					</a>
-
-					</a>
-
 					<ul class="menu-select-box">
 						<li style="background-color: #f3f3f3; padding-left: 20px">
-							货款：<b class="clfdaa29" id="top_user_money"></b>元 &nbsp;&nbsp;&nbsp; 金币：
+							货款：<b class="clfdaa29" id="top_user_money">100</b>元 &nbsp;&nbsp;&nbsp;金币：100
 							<b class="clfdaa29" id="top_user_coin"></b>个
-
 						</li>
 						<li style="padding-left: 20px; clear: both;">
 							<a href="/saleterrace/zjgl_index?tab=2" class="cl000 menu-select-a">充值</a>
 							<a href="/saleterrace/zjgl_index?tab=2" class="cl000 menu-select-a">提现</a>
 							<a href="/saleterrace/jnbzj_index" target="_blank" class="menu-select-myCenter">缴纳保证金</a>
-
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="javascript:logout();" class="cl01b76c">退出登陆
-					</a>
+					<a href="javascript:logout();" class="cl01b76c">退出登陆</a>
 				</li>
-
 			</ul>
 			<input type="hidden" id="exam" value="0">
-
 		</div>
-
 		<div class="right-menu">
 			<a href="javascript:void(0);" id="offKfqq">
 				<img src="/saleterrace/images/colsed-kfqq.png" alt="">
 			</a>
-
-			<!--<div class="bg1">
-                    <span class="menuTitleOne">不会放单找我</span>
-                    <span class="menuTitleTwo">其他问题找我</span>
-                    <div class="right-menu-one">
-                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505269">小高</a>
-                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852382973">二珍</a>
-                    </div>
-                    <div class="right-menu-two">
-                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505268">玫瑰</a>
-                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505268">丁香</a>
-                    </div>
-                </div>-->
-			<!--<div class="bg" style="display: none">-->
 			<div class="bg">
 				<img class="bg-img" src="/saleterrace/images/kfqq.png" alt="">
 				<div class="right-menu-content">
 					<a href="syhd_release_index.ftl">
 						<img src="/saleterrace/images/sjscfd.png" class="right-menu-content-top-img" alt="">
 					</a>
-
 					<span class="menuTitleTwo">客服问题找我</span>
 					<div class="right-menu-two">
 						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368872">
@@ -217,7 +255,6 @@
 							<img src="/saleterrace/images/yckf_03.png" alt=""> 贝贝
 						</a>
 					</div>
-
 					<span class="menuTitleOne">活动发布找我</span>
 					<div class="right-menu-one">
 						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368900">
@@ -236,10 +273,7 @@
 					</div>
 					<span class="menuTitleOne">上班时间</span>
 					<div class="right-menu-one">
-						<p style="font-size: 12px;">
-							周一至周日
-							<br> 9:00-18:00
-						</p>
+						<p style="font-size: 12px;">周一至周日<br> 9:00-18:00</p>
 					</div>
 				</div>
 				<div class="right-menu-content" style="padding-top: 0px;margin-top: 2px;">
@@ -250,145 +284,23 @@
 					<a class="clickAdd" target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575">点击加入</a>
 				</div>
 			</div>
-
 		</div>
-
-		<a href="javascript:void(0);" id="onKfqq">
-			<img src="/saleterrace/images/kfqqsmall.png" alt="">
-		</a>
-
+		<a href="javascript:void(0);" id="onKfqq"><img src="/saleterrace/images/kfqqsmall.png" alt=""></a>
 		<input type="hidden" id="imageRootPath" value="http://image-1254237507.image.myqcloud.com">
 		<input type="hidden" id="cosAppId" value="1254237507">
 		<input type="hidden" id="cosBucketName" value="image">
 		<input type="hidden" id="cosDownRootPath" value="http://image-1254237507.cosgz.myqcloud.com">
 		<input type="hidden" id="currentDate" value="20181021">
 		<input type="hidden" id="userRole" value="true">
-		<script type="text/javascript" src="https://js.users.51.la/19492995.js"></script>
-		<script>
-			function closeImg() {
-				$(".contentBox").remove();
-				if($('#userRole').val()) {
-					pddexpires();
-				}
-			}
-
-			function closeImg2() {
-				$(".contentBox").remove();
-			}
-			/*function tongzhi(obj){
-        var str = "<div class='contentBox'  onclick='closeImg();'>" +
-                "<div class='content' style='height:400px;width: 470px;'>" +
-                "<div class='noAgain'><i></i>不再提示</div>"+
-                "<span onclick='closeImg();'></span>" +
-                "<p style='width: 600px;margin-bottom:0px;margin-left:150px;margin-top: 10px;font-size: 17px;' >公告：</p>"+
-                "<p style='width: 600px;margin-bottom:0px;margin-left:0px;margin-top: 50px;' >亲，平台将于16日23:30-17日8:00进行数据库升级，</p>"+
-                "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >届时网站将停止访问，请大家提前做好活动安排 </p>"+
-                /!*"<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >试客多平台双11吞吐量上限10万单</p>"+
-                "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >目前已被各大商家提前预定7万单，仅剩3万单的额度</p>"+
-                "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >资源非常紧张，请马上联系我提前落位，时间就是金钱！</p>"+
-                "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >还有几个小时就要开始了，请马上联系我预登记单量</p>"+
-                "<p style='width: 650px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >人满即止，额度非常有限! </p>" +
-                "<p style='width: 650px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >不要跟钱过不去，抓紧机会,避免踏空！</p>" +
-                "<p style='width: 650px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >毛经理：QQ：2852366295  TEL：17557296910 </p>" +*!/
-//                "<p style='width: 650px;margin-bottom:0px;margin-left:0px;margin-top: 10px;' >非常感谢各位商家一直以来对试客多的支持，祝大家放单愉快！</p>" +
-                /!*"<p style='width: 650px;margin-bottom:0px;margin-left:-15px; '>3.平台新增复购活动，提高宝贝回购率，做好老客户维护权重；</p>" +
-                "<p style='width: 650px;margin-bottom:0px;margin-left:-15px; '>4.试用间隔时间自定义设置（店铺管理），根据类目情况设置间隔时间，合理布局复购率，提高补单</p>" +
-                "<p style='width: 650px;margin-bottom:0px;margin-left:-3px; '>安全性。</p>" +*!/
-                "<p></p>"+
-                "<p></p>"+
-                "<p></p>"+
-                "<p></p>"+
-                "<p></p>"+
-                "<p></p>"+
-                "<p></p>"+
-                "</div>" +
-                "</div>";
-        $('body').prepend(str);
-        $(".content").css({
-            "width":"750x",
-            // "height":"280px",
-            "margin":"-210px 0 0 -275px",
-            "background":"url(/asserts/images/roleBg2.png) no-repeat"
-        });
-        $(".content").click(function(){
-            return false;
-        });
-        $(".noAgain").click(function(){
-            var keep = new Date();
-            var active = $(this).find("i").hasClass("active");
-            if(active){
-                $(this).find("i").removeClass("active");
-                store.set("isShow",'');
-            }else{
-                $(this).find("i").addClass("active");
-                store.set("isShow",keep.getTime());
-            }
-        });
-    }*/
-
-			function pddexpires() {
-				//        var str = ;
-				//        $('body').prepend(str);
-				$(".contentBox").show();
-				$(".content").css({
-					"width": "750x",
-					// "height":"280px",
-					"margin": "-320px 0 0 -215px",
-					//"background":"url(/asserts/images/pddtip.jpg) no-repeat",
-					"background-size": "400px 600px"
-				});
-				$(".content").click(function() {
-					return false;
-				});
-				$(".noAgain").click(function() {
-					var keep = new Date();
-					var active = $(this).find("i").hasClass("active");
-					if(active) {
-						$(this).find("i").removeClass("active");
-						store.set("isShow", '');
-					} else {
-						$(this).find("i").addClass("active");
-						store.set("isShow", keep.getTime());
-					}
-				});
-			}
-			//vip弹框
-			function showVipAlert(msg) {
-				var html = '<div class="shade" style="position: absolute;top: 0; left: 0;width: 100%;background: #000;opacity: 0.5; "></div>' +
-					'<div class="shade-box" style="position: absolute;  left: 50%; width: 400px; height: 300px; z-index: 300;background-color: #fff; border-radius: 10px; margin-left: -200px;" >' +
-					'<a class="shade-close" style="font-size: 18px;float: right;margin: 6px 15px 0 0px;">X</a>' +
-					'<p style="clear:both; font-size: 16px; font-weight: bold; text-align: center; margin-top: 99px;">' + msg + '</p>' +
-					'<a href="/saleterrace/jnbzj_index" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>' +
-					'</div>';
-				var body = $("body")
-				body.append(html);
-				$(".shade").height(body.height());
-				$(".shade-box").css({
-					top: (document.body.offsetHeight) / 2 + document.body.scrollTop - 400 + 'px'
-				});
-				$(".shade-box a").css({
-					cursor: 'pointer'
-				});
-				$(".shade-close").on("click", function() {
-					$(".shade, .shade-box").remove();
-				})
-			}
-		</script>
-
 		<div id="Container" align="center">
 			<div id="Header">
 				<div class="headMenu" align="right">
-					<link rel="stylesheet" type="text/css" href="/saleterrace/css/layout.css"/>
-					<link rel="stylesheet" type="text/css" href="/saleterrace/css/header.css"/>
 				</div>
 			</div>
 			<div class="Content-Space-h"></div>
-
 			<div id="Content">
 				<div id="Content-Left">
-
 					<link rel="stylesheet" type="text/css" href="/saleterrace/css/navigator.css"/>
-
 					<ul class="left_menu" style="margin-bottom: 10px;">
 						<li class="menu_selected" >
                             <a href="/saleterrace/yhzx_index"><i class="grxx"></i>
@@ -431,27 +343,23 @@
 							<img src="/saleterrace/images/hot.gif" alt="" style="position: relative;top: -2px;left: 5px;">
                             <span>推荐赚金币</span></a>
 						</li>
-
 						<!--<li href="/popular/popular.htm?pg=task.pcFlow" target="_blank">-->
 						<li>
                             <a href="https://burenqi.com/task-pc-flow" target="_blank"><i class="i16_brq" ></i>补人气</a>
 							<!--<span>补人气</span>-->
 						</li>
-
 						<li>
 							<a href="http://www.chapaiming.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">
 								<i class="i16_cpm"></i>
 								<span>查排名</span>
 							</a>
 						</li>
-
 						<li>
 							<a href="http://www.maijiabus.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">
 								<i class="i16_mjbs"></i>
 								<span>流量捕手</span>
 							</a>
 						</li>
-
 						<li>
 							<a href="/saleterrace/sjxy_index" style="overflow:hidden;display:block;margin:0;">
 								<i class="i16_protocol"></i>
@@ -463,17 +371,6 @@
 						<img class="sLeft " src="/saleterrace/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">
 					</a>
 					<input type="hidden" id="nav_hidden" value="1" />
-
-					<#--<script>-->
-						<#--$(document).ready(function() {-->
-							<#--if(isGodChoose()) {-->
-								<#--var gotoxiuba = $("#goto-xiuba-href");-->
-								<#--if(gotoxiuba && gotoxiuba.length > 0) {-->
-									<#--gotoxiuba.css("display", "inline-block");-->
-								<#--}-->
-							<#--}-->
-						<#--});-->
-					<#--</script>-->
 				</div>
 				<div id="Content-Space"></div>
 				<div id="Content-Main">
@@ -481,11 +378,9 @@
 					<div class="mainDiv" align="center">
 						<div class="dp_list_div">
 							<div class="addDp_div" align="left">
-
 								<input type="button" class="addDp_button" value="添加淘宝新店铺" onclick="addStore('other')">
 								<input type="button" class="addDp_button" value="添加京东新店铺" onclick="addStore('jd')" style="left: 95px">
 								<input type="button" class="addDp_button" value="添加拼多多新店铺" onclick="addStore('pdd')" style="left: 165px">
-
 							</div>
 							<div class="dp_div" align="left">
 								<div class="dp_title_div">
@@ -504,7 +399,6 @@
 									<li class="dp_li7">店铺名称</li>
 									<li class="dp_li2">绑定时间</li>
 									<li class="dp_li7">试用间隔时间设置</li>
-
 									<li class="dp_li3">状态</li>
 									<li class="dp_li6">操作</li>
 								</ul>
@@ -513,15 +407,30 @@
 									<li class="dp_li7"></li>
 									<li class="dp_li2">绑定时间</li>
 									<li class="dp_li7">试用间隔时间设置</li>
-
 									<li class="dp_li3">状态</li>
 									<li class="dp_li6">操作</li>
 								</ul>
 								<div id="storeInfo">
+                                    <ul class="dp_info">
+                                        <li class="dp_li1"><div>泰嘉boy</div></li>
+                                        <li class="dp_li7"><div>小算珠婴童店</div></li>
+                                        <li class="dp_li2">2018-06-15</li>
+                                        <li class="dp_li7"><div><span>30天</span><button class="repurchaseDay" onclick="setRepurchaseDay(40999,&quot;30&quot;)">设置</button></div></li>
+                                        <li class="dp_li3"><span class="statusStart">已启用</span></li>
+                                        <li class="dp_li6" style="position: relative">
+                                            <img src="/saleterrace/images/start.png">
+                                            <input type="hidden" id="storeType" value="2">
+                                            <div style="position: absolute;top: 23px;left: 23px;color: #59C2E6;width: 110px;height: 0px">
+                                                <a style="color: #59C2E6" href="javascript:editSendInfo(40999,"2")">编辑</a>
+                                            </div>
+                                        </li>
+                                        <li class="dp_hidden" column-id="status" value="1"></li>
+                                        <li class="dp_hidden" column-id="version" value="18" ></li>
+
+                                    </ul>
 								</div>
 							</div>
 						</div>
-
 						<ul class="bindWay">
 							<li class="current">
 								<span class="screenshot"></span>
@@ -529,7 +438,6 @@
 								<i></i>
 							</li>
 						</ul>
-
 						<div class="screenBox">
 							<div class="new_dp_title" align="left">
 								<div class="floatLeft halfDiv">
@@ -1051,162 +959,12 @@
 				</div>
 			</div>
 		</script>
-		<style>
-			.protocol-main .bottom_c h1 {
-				text-align: center;
-				font-size: 35px;
-				font-weight: 500;
-				margin-bottom: 60px;
-				margin-top: 60px;
-			}
-			
-			.protocol-main .bottom_c td {
-				text-align: left;
-				background-color: #FFFFFF;
-				height: 40px;
-				padding: 10px;
-				border: 1px solid #ddd;
-			}
-			
-			.protocol-main .bottom_c table {
-				background-color: black;
-				border-collapse: collapse;
-			}
-			
-			.protocol-main .pt20 {
-				padding-top: 20px;
-			}
-			
-			.protocol-main .tc {
-				text-align: center;
-			}
-			
-			.protocol-main .tr {
-				text-align: right;
-			}
-			
-			.protocol-main .f16 {
-				font-size: 16px;
-			}
-			
-			.protocol-main h1 {
-				text-align: center;
-				font-size: 35px;
-				font-weight: 500;
-			}
-			
-			.protocol-main h2 {
-				font-size: 24px;
-			}
-			
-			.protocol-main h3 {
-				font-size: 20px;
-				padding-top: 20px;
-			}
-			
-			.protocol-main p {
-				line-height: 29px;
-				padding-bottom: 10px;
-				text-align: left;
-			}
-			
-			.protocol-main dl {
-				padding-top: 10px;
-			}
-			
-			.protocol-main dl dt {
-				font-size: 16px;
-				line-height: 29px;
-				padding-bottom: 5px;
-				text-align: left;
-			}
-			
-			.protocol-main dl dd {
-				font-size: 14px;
-				line-height: 29px;
-				text-align: left;
-			}
-			
-			.protocol-main .cc_list dt {
-				font-size: 14px;
-			}
-			
-			.protocol-main .cc_list dd {
-				padding-left: 35px;
-			}
-			
-			.protocol-main td {
-				border: 1px solid #ddd !important;
-			}
-			
-			.protocol-main ul,
-			li {
-				text-align: left;
-			}
-		</style>
-		<script>
-			//协议弹框
-            // protocolTemplate
-			function showProtocolAlert() {
-				var html = '<div class="protocol-shade" style="position: absolute;top: 0; left: 0;width: 100%;background: #000;opacity: 0.5; height: 300%; z-index: 1099;"></div>' +
-					'<div class="protocol-shade-box" style="position: absolute; top: 10%; left: 50%; width: 700px;  z-index: 1100;background-color: #fff; border-radius: 10px; margin-left: -350px;" >' +
-					'<p style="font-size: 12px; clear: both; padding:20px;">请先自己阅读并接受协议：</p>' +
-					'<h2 style="text-align: center;">试客多服务协议（商家版）</h2>' +
-					'<div class="protocol-shade-box-text" style="width: 610px; border: 1px solid #ddd; height: 300px; padding: 10px; overflow-y: scroll; overflow-x:hidden;  margin: 30px auto;"></div>' +
-					'<div style="padding: 20px;">' +
-					'<label for="protocolAgree" >' +
-					'<input type="radio"  value="1" id="protocolAgree" name="protocolAgree" style="vertical-align: -1px; margin: 0 5px;">' +
-					'我已仔细阅读并同意以上条款和条件' +
-					'</label>' +
-					'<span class="protocol-agree-tip" style="color: red; display: none; padding-left: 40px;">请仔细阅读并选中</span>' +
-					'</div>' +
-					'<div style="padding: 10px 20px 30px 20px; text-align: center;">' +
-					'<button id="protocolAgreeBtn" type="button" style="border-radius: 5px; padding: 5px 20px;  margin-right: 30px; outline: none;">同意</button>' +
-					'<button type="button" style="border-radius: 5px; padding: 5px 20px;  margin-left: 30px; outline: none;">不同意</button>' +
-					'</div>' +
-					'</div>';
-				var body = $("body");
-				var protocolTemplate = $("#protocolTemplate").html();
-				body.append(html).css({
-					overflow: 'hidden',
-				});
-				$(".protocol-shade-box-text").html(protocolTemplate);
-				$(".protocol-shade-box").css({
-					top: '10%',
-				});
-				$(".protocol-shade-box a").css({
-					cursor: 'pointer'
-				});
 
-				$("#protocolAgreeBtn").on("click", function() {
-					if($('input:radio[name="protocolAgree"]:checked').val()) {
-						$("body").css({
-							overflow: 'auto',
-						});
-						$(".protocol-shade, .protocol-shade-box").remove();
-						store.set("protocol", "1");
-					} else {
-						$(".protocol-agree-tip").show();
-					}
-
-				});
-
-			}
-			$(function() {
-				var newVar = request("new");
-				var protocol = store.get('protocol');
-				if(newVar && newVar === "1" && !protocol) {
-					showProtocolAlert();
-				}
-			})
-		</script>
 		<div class="Content-Space-h"></div>
 		<div class="Clear">
 			<!--如何你上面用到float,下面布局开始前最好清除一下。-->
 		</div>
 		<div id="Footer">
-
-			<link rel="stylesheet" type="text/css" href="/saleterrace/css/footer.css"/>
 			<div class="foot_div">
 
 				<div class="foot_div_div1">
@@ -1218,7 +976,188 @@
 
 			</div>
 		</div>
+        <script>
+            function closeImg() {
+                $(".contentBox").remove();
+                if($('#userRole').val()) {
+                    pddexpires();
+                }
+            }
 
+            function closeImg2() {
+                $(".contentBox").remove();
+            }
+            /*function tongzhi(obj){
+        var str = "<div class='contentBox'  onclick='closeImg();'>" +
+                "<div class='content' style='height:400px;width: 470px;'>" +
+                "<div class='noAgain'><i></i>不再提示</div>"+
+                "<span onclick='closeImg();'></span>" +
+                "<p style='width: 600px;margin-bottom:0px;margin-left:150px;margin-top: 10px;font-size: 17px;' >公告：</p>"+
+                "<p style='width: 600px;margin-bottom:0px;margin-left:0px;margin-top: 50px;' >亲，平台将于16日23:30-17日8:00进行数据库升级，</p>"+
+                "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >届时网站将停止访问，请大家提前做好活动安排 </p>"+
+                /!*"<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >试客多平台双11吞吐量上限10万单</p>"+
+                "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >目前已被各大商家提前预定7万单，仅剩3万单的额度</p>"+
+                "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >资源非常紧张，请马上联系我提前落位，时间就是金钱！</p>"+
+                "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >还有几个小时就要开始了，请马上联系我预登记单量</p>"+
+                "<p style='width: 650px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >人满即止，额度非常有限! </p>" +
+                "<p style='width: 650px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >不要跟钱过不去，抓紧机会,避免踏空！</p>" +
+                "<p style='width: 650px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >毛经理：QQ：2852366295  TEL：17557296910 </p>" +*!/
+//                "<p style='width: 650px;margin-bottom:0px;margin-left:0px;margin-top: 10px;' >非常感谢各位商家一直以来对试客多的支持，祝大家放单愉快！</p>" +
+                /!*"<p style='width: 650px;margin-bottom:0px;margin-left:-15px; '>3.平台新增复购活动，提高宝贝回购率，做好老客户维护权重；</p>" +
+                "<p style='width: 650px;margin-bottom:0px;margin-left:-15px; '>4.试用间隔时间自定义设置（店铺管理），根据类目情况设置间隔时间，合理布局复购率，提高补单</p>" +
+                "<p style='width: 650px;margin-bottom:0px;margin-left:-3px; '>安全性。</p>" +*!/
+                "<p></p>"+
+                "<p></p>"+
+                "<p></p>"+
+                "<p></p>"+
+                "<p></p>"+
+                "<p></p>"+
+                "<p></p>"+
+                "</div>" +
+                "</div>";
+        $('body').prepend(str);
+        $(".content").css({
+            "width":"750x",
+            // "height":"280px",
+            "margin":"-210px 0 0 -275px",
+            "background":"url(/asserts/images/roleBg2.png) no-repeat"
+        });
+        $(".content").click(function(){
+            return false;
+        });
+        $(".noAgain").click(function(){
+            var keep = new Date();
+            var active = $(this).find("i").hasClass("active");
+            if(active){
+                $(this).find("i").removeClass("active");
+                store.set("isShow",'');
+            }else{
+                $(this).find("i").addClass("active");
+                store.set("isShow",keep.getTime());
+            }
+        });
+    }*/
+
+            function pddexpires() {
+                //        var str = ;
+                //        $('body').prepend(str);
+                $(".contentBox").show();
+                $(".content").css({
+                    "width": "750x",
+                    // "height":"280px",
+                    "margin": "-320px 0 0 -215px",
+                    //"background":"url(/asserts/images/pddtip.jpg) no-repeat",
+                    "background-size": "400px 600px"
+                });
+                $(".content").click(function() {
+                    return false;
+                });
+                $(".noAgain").click(function() {
+                    var keep = new Date();
+                    var active = $(this).find("i").hasClass("active");
+                    if(active) {
+                        $(this).find("i").removeClass("active");
+                        store.set("isShow", '');
+                    } else {
+                        $(this).find("i").addClass("active");
+                        store.set("isShow", keep.getTime());
+                    }
+                });
+            }
+            //vip弹框
+            function showVipAlert(msg) {
+                var html = '<div class="shade" style="position: absolute;top: 0; left: 0;width: 100%;background: #000;opacity: 0.5; "></div>' +
+                        '<div class="shade-box" style="position: absolute;  left: 50%; width: 400px; height: 300px; z-index: 300;background-color: #fff; border-radius: 10px; margin-left: -200px;" >' +
+                        '<a class="shade-close" style="font-size: 18px;float: right;margin: 6px 15px 0 0px;">X</a>' +
+                        '<p style="clear:both; font-size: 16px; font-weight: bold; text-align: center; margin-top: 99px;">' + msg + '</p>' +
+                        '<a href="/saleterrace/jnbzj_index" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>' +
+                        '</div>';
+                var body = $("body")
+                body.append(html);
+                $(".shade").height(body.height());
+                $(".shade-box").css({
+                    top: (document.body.offsetHeight) / 2 + document.body.scrollTop - 400 + 'px'
+                });
+                $(".shade-box a").css({
+                    cursor: 'pointer'
+                });
+                $(".shade-close").on("click", function() {
+                    $(".shade, .shade-box").remove();
+                })
+            }
+
+            //协议弹框
+            // protocolTemplate
+            function showProtocolAlert() {
+                var html = '<div class="protocol-shade" style="position: absolute;top: 0; left: 0;width: 100%;background: #000;opacity: 0.5; height: 300%; z-index: 1099;"></div>' +
+                        '<div class="protocol-shade-box" style="position: absolute; top: 10%; left: 50%; width: 700px;  z-index: 1100;background-color: #fff; border-radius: 10px; margin-left: -350px;" >' +
+                        '<p style="font-size: 12px; clear: both; padding:20px;">请先自己阅读并接受协议：</p>' +
+                        '<h2 style="text-align: center;">试客多服务协议（商家版）</h2>' +
+                        '<div class="protocol-shade-box-text" style="width: 610px; border: 1px solid #ddd; height: 300px; padding: 10px; overflow-y: scroll; overflow-x:hidden;  margin: 30px auto;"></div>' +
+                        '<div style="padding: 20px;">' +
+                        '<label for="protocolAgree" >' +
+                        '<input type="radio"  value="1" id="protocolAgree" name="protocolAgree" style="vertical-align: -1px; margin: 0 5px;">' +
+                        '我已仔细阅读并同意以上条款和条件' +
+                        '</label>' +
+                        '<span class="protocol-agree-tip" style="color: red; display: none; padding-left: 40px;">请仔细阅读并选中</span>' +
+                        '</div>' +
+                        '<div style="padding: 10px 20px 30px 20px; text-align: center;">' +
+                        '<button id="protocolAgreeBtn" type="button" style="border-radius: 5px; padding: 5px 20px;  margin-right: 30px; outline: none;">同意</button>' +
+                        '<button type="button" style="border-radius: 5px; padding: 5px 20px;  margin-left: 30px; outline: none;">不同意</button>' +
+                        '</div>' +
+                        '</div>';
+                var body = $("body");
+                var protocolTemplate = $("#protocolTemplate").html();
+                body.append(html).css({
+                    overflow: 'hidden',
+                });
+                $(".protocol-shade-box-text").html(protocolTemplate);
+                $(".protocol-shade-box").css({
+                    top: '10%',
+                });
+                $(".protocol-shade-box a").css({
+                    cursor: 'pointer'
+                });
+
+                $("#protocolAgreeBtn").on("click", function() {
+                    if($('input:radio[name="protocolAgree"]:checked').val()) {
+                        $("body").css({
+                            overflow: 'auto',
+                        });
+                        $(".protocol-shade, .protocol-shade-box").remove();
+                        store.set("protocol", "1");
+                    } else {
+                        $(".protocol-agree-tip").show();
+                    }
+
+                });
+
+            }
+
+            function function1() {
+                var newVar = request("new");
+                var protocol = store.get('protocol');
+                if(newVar && newVar === "1" && !protocol) {
+                    showProtocolAlert();
+                }
+            }
+        </script>
 	</body>
-
+    <script type="text/javascript" src="/saleterrace/js/verdor/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/verdor/jquery-loadTemplate/jquery.loadTemplate-1.4.4.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/verdor/jquery-zclip/1.1.2/jquery.zclip.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/common.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/page.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/verdor/jquery.form.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/verdor/zebra_dialog/zebra_dialog.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/popdg.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/seller/bindStore.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/cos-js-sdk-v4.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/uploadImageCommon.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/verdor/jquery-first-event.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/store+json2.min.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/store.expire.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/common/top.js"></script>
+    <script type="text/javascript" src="/saleterrace/js/dist/viewer.js"></script>
+    <script type="text/javascript" src="https://js.users.51.la/19492995.js"></script>
 </html>
