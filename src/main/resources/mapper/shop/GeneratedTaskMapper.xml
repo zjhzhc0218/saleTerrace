@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="deepdraw.saleterrace.dao.GeneratedTaskMapper" >
+  <resultMap id="BaseResultMap" type="deepdraw.saleterrace.entity.shop.GeneratedTask" >
+    <id column="task_id" property="taskId" jdbcType="BIGINT" />
+    <result column="generated_technologyBounty" property="generatedTechnologybounty" jdbcType="DECIMAL" />
+    <result column="generated_usingActivity" property="generatedUsingactivity" jdbcType="DECIMAL" />
+    <result column="generated_guestTag" property="generatedGuesttag" jdbcType="DECIMAL" />
+    <result column="generated_wwRequire" property="generatedWwrequire" jdbcType="DECIMAL" />
+    <result column="generated_technicalServiceCharge" property="generatedTechnicalservicecharge" jdbcType="DECIMAL" />
+    <result column="generated_singular" property="generatedSingular" jdbcType="INTEGER" />
+    <result column="generated_everySingleLoan" property="generatedEverysingleloan" jdbcType="DECIMAL" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    task_id, generated_technologyBounty, generated_usingActivity, generated_guestTag, 
+    generated_wwRequire, generated_technicalServiceCharge, generated_singular, generated_everySingleLoan
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from generated_task
+    where task_id = #{taskId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from generated_task
+    where task_id = #{taskId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="deepdraw.saleterrace.entity.shop.GeneratedTask" >
+    insert into generated_task (task_id, generated_technologyBounty, 
+      generated_usingActivity, generated_guestTag, 
+      generated_wwRequire, generated_technicalServiceCharge, 
+      generated_singular, generated_everySingleLoan
+      )
+    values (#{taskId,jdbcType=BIGINT}, #{generatedTechnologybounty,jdbcType=DECIMAL}, 
+      #{generatedUsingactivity,jdbcType=DECIMAL}, #{generatedGuesttag,jdbcType=DECIMAL}, 
+      #{generatedWwrequire,jdbcType=DECIMAL}, #{generatedTechnicalservicecharge,jdbcType=DECIMAL}, 
+      #{generatedSingular,jdbcType=INTEGER}, #{generatedEverysingleloan,jdbcType=DECIMAL}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="deepdraw.saleterrace.entity.shop.GeneratedTask" >
+    insert into generated_task
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="taskId != null" >
+        task_id,
+      </if>
+      <if test="generatedTechnologybounty != null" >
+        generated_technologyBounty,
+      </if>
+      <if test="generatedUsingactivity != null" >
+        generated_usingActivity,
+      </if>
+      <if test="generatedGuesttag != null" >
+        generated_guestTag,
+      </if>
+      <if test="generatedWwrequire != null" >
+        generated_wwRequire,
+      </if>
+      <if test="generatedTechnicalservicecharge != null" >
+        generated_technicalServiceCharge,
+      </if>
+      <if test="generatedSingular != null" >
+        generated_singular,
+      </if>
+      <if test="generatedEverysingleloan != null" >
+        generated_everySingleLoan,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="taskId != null" >
+        #{taskId,jdbcType=BIGINT},
+      </if>
+      <if test="generatedTechnologybounty != null" >
+        #{generatedTechnologybounty,jdbcType=DECIMAL},
+      </if>
+      <if test="generatedUsingactivity != null" >
+        #{generatedUsingactivity,jdbcType=DECIMAL},
+      </if>
+      <if test="generatedGuesttag != null" >
+        #{generatedGuesttag,jdbcType=DECIMAL},
+      </if>
+      <if test="generatedWwrequire != null" >
+        #{generatedWwrequire,jdbcType=DECIMAL},
+      </if>
+      <if test="generatedTechnicalservicecharge != null" >
+        #{generatedTechnicalservicecharge,jdbcType=DECIMAL},
+      </if>
+      <if test="generatedSingular != null" >
+        #{generatedSingular,jdbcType=INTEGER},
+      </if>
+      <if test="generatedEverysingleloan != null" >
+        #{generatedEverysingleloan,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="deepdraw.saleterrace.entity.shop.GeneratedTask" >
+    update generated_task
+    <set >
+      <if test="generatedTechnologybounty != null" >
+        generated_technologyBounty = #{generatedTechnologybounty,jdbcType=DECIMAL},
+      </if>
+      <if test="generatedUsingactivity != null" >
+        generated_usingActivity = #{generatedUsingactivity,jdbcType=DECIMAL},
+      </if>
+      <if test="generatedGuesttag != null" >
+        generated_guestTag = #{generatedGuesttag,jdbcType=DECIMAL},
+      </if>
+      <if test="generatedWwrequire != null" >
+        generated_wwRequire = #{generatedWwrequire,jdbcType=DECIMAL},
+      </if>
+      <if test="generatedTechnicalservicecharge != null" >
+        generated_technicalServiceCharge = #{generatedTechnicalservicecharge,jdbcType=DECIMAL},
+      </if>
+      <if test="generatedSingular != null" >
+        generated_singular = #{generatedSingular,jdbcType=INTEGER},
+      </if>
+      <if test="generatedEverysingleloan != null" >
+        generated_everySingleLoan = #{generatedEverysingleloan,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where task_id = #{taskId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="deepdraw.saleterrace.entity.shop.GeneratedTask" >
+    update generated_task
+    set generated_technologyBounty = #{generatedTechnologybounty,jdbcType=DECIMAL},
+      generated_usingActivity = #{generatedUsingactivity,jdbcType=DECIMAL},
+      generated_guestTag = #{generatedGuesttag,jdbcType=DECIMAL},
+      generated_wwRequire = #{generatedWwrequire,jdbcType=DECIMAL},
+      generated_technicalServiceCharge = #{generatedTechnicalservicecharge,jdbcType=DECIMAL},
+      generated_singular = #{generatedSingular,jdbcType=INTEGER},
+      generated_everySingleLoan = #{generatedEverysingleloan,jdbcType=DECIMAL}
+    where task_id = #{taskId,jdbcType=BIGINT}
+  </update>
+</mapper>

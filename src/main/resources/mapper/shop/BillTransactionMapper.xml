@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="deepdraw.saleterrace.dao.BillTransactionMapper" >
+  <resultMap id="BaseResultMap" type="deepdraw.saleterrace.entity.shop.BillTransaction" >
+    <id column="transaction_serialNumber" property="transactionSerialnumber" jdbcType="BIGINT" />
+    <result column="transaction_counterpartyA" property="transactionCounterpartya" jdbcType="BIGINT" />
+    <result column="transaction_counterpartyB" property="transactionCounterpartyb" jdbcType="BIGINT" />
+    <result column="transaction_type" property="transactionType" jdbcType="INTEGER" />
+    <result column="transaction_bankAccount" property="transactionBankaccount" jdbcType="VARCHAR" />
+    <result column="transaction_number" property="transactionNumber" jdbcType="DECIMAL" />
+    <result column="transaction_state" property="transactionState" jdbcType="INTEGER" />
+    <result column="transaction_remark" property="transactionRemark" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    transaction_serialNumber, transaction_counterpartyA, transaction_counterpartyB, transaction_type, 
+    transaction_bankAccount, transaction_number, transaction_state, transaction_remark
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from bill_transaction
+    where transaction_serialNumber = #{transactionSerialnumber,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from bill_transaction
+    where transaction_serialNumber = #{transactionSerialnumber,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="deepdraw.saleterrace.entity.shop.BillTransaction" >
+    insert into bill_transaction (transaction_serialNumber, transaction_counterpartyA, 
+      transaction_counterpartyB, transaction_type, 
+      transaction_bankAccount, transaction_number, 
+      transaction_state, transaction_remark)
+    values (#{transactionSerialnumber,jdbcType=BIGINT}, #{transactionCounterpartya,jdbcType=BIGINT}, 
+      #{transactionCounterpartyb,jdbcType=BIGINT}, #{transactionType,jdbcType=INTEGER}, 
+      #{transactionBankaccount,jdbcType=VARCHAR}, #{transactionNumber,jdbcType=DECIMAL}, 
+      #{transactionState,jdbcType=INTEGER}, #{transactionRemark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="deepdraw.saleterrace.entity.shop.BillTransaction" >
+    insert into bill_transaction
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="transactionSerialnumber != null" >
+        transaction_serialNumber,
+      </if>
+      <if test="transactionCounterpartya != null" >
+        transaction_counterpartyA,
+      </if>
+      <if test="transactionCounterpartyb != null" >
+        transaction_counterpartyB,
+      </if>
+      <if test="transactionType != null" >
+        transaction_type,
+      </if>
+      <if test="transactionBankaccount != null" >
+        transaction_bankAccount,
+      </if>
+      <if test="transactionNumber != null" >
+        transaction_number,
+      </if>
+      <if test="transactionState != null" >
+        transaction_state,
+      </if>
+      <if test="transactionRemark != null" >
+        transaction_remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="transactionSerialnumber != null" >
+        #{transactionSerialnumber,jdbcType=BIGINT},
+      </if>
+      <if test="transactionCounterpartya != null" >
+        #{transactionCounterpartya,jdbcType=BIGINT},
+      </if>
+      <if test="transactionCounterpartyb != null" >
+        #{transactionCounterpartyb,jdbcType=BIGINT},
+      </if>
+      <if test="transactionType != null" >
+        #{transactionType,jdbcType=INTEGER},
+      </if>
+      <if test="transactionBankaccount != null" >
+        #{transactionBankaccount,jdbcType=VARCHAR},
+      </if>
+      <if test="transactionNumber != null" >
+        #{transactionNumber,jdbcType=DECIMAL},
+      </if>
+      <if test="transactionState != null" >
+        #{transactionState,jdbcType=INTEGER},
+      </if>
+      <if test="transactionRemark != null" >
+        #{transactionRemark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="deepdraw.saleterrace.entity.shop.BillTransaction" >
+    update bill_transaction
+    <set >
+      <if test="transactionCounterpartya != null" >
+        transaction_counterpartyA = #{transactionCounterpartya,jdbcType=BIGINT},
+      </if>
+      <if test="transactionCounterpartyb != null" >
+        transaction_counterpartyB = #{transactionCounterpartyb,jdbcType=BIGINT},
+      </if>
+      <if test="transactionType != null" >
+        transaction_type = #{transactionType,jdbcType=INTEGER},
+      </if>
+      <if test="transactionBankaccount != null" >
+        transaction_bankAccount = #{transactionBankaccount,jdbcType=VARCHAR},
+      </if>
+      <if test="transactionNumber != null" >
+        transaction_number = #{transactionNumber,jdbcType=DECIMAL},
+      </if>
+      <if test="transactionState != null" >
+        transaction_state = #{transactionState,jdbcType=INTEGER},
+      </if>
+      <if test="transactionRemark != null" >
+        transaction_remark = #{transactionRemark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where transaction_serialNumber = #{transactionSerialnumber,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="deepdraw.saleterrace.entity.shop.BillTransaction" >
+    update bill_transaction
+    set transaction_counterpartyA = #{transactionCounterpartya,jdbcType=BIGINT},
+      transaction_counterpartyB = #{transactionCounterpartyb,jdbcType=BIGINT},
+      transaction_type = #{transactionType,jdbcType=INTEGER},
+      transaction_bankAccount = #{transactionBankaccount,jdbcType=VARCHAR},
+      transaction_number = #{transactionNumber,jdbcType=DECIMAL},
+      transaction_state = #{transactionState,jdbcType=INTEGER},
+      transaction_remark = #{transactionRemark,jdbcType=VARCHAR}
+    where transaction_serialNumber = #{transactionSerialnumber,jdbcType=BIGINT}
+  </update>
+</mapper>

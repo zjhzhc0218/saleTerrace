@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="deepdraw.saleterrace.dao.BillMapper" >
+  <resultMap id="BaseResultMap" type="deepdraw.saleterrace.entity.shop.Bill" >
+    <id column="merchant_id" property="merchantId" jdbcType="BIGINT" />
+    <result column="bill_money" property="billMoney" jdbcType="DECIMAL" />
+    <result column="bill_loans" property="billLoans" jdbcType="DECIMAL" />
+    <result column="bill_gold" property="billGold" jdbcType="DECIMAL" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    merchant_id, bill_money, bill_loans, bill_gold
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from bill
+    where merchant_id = #{merchantId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from bill
+    where merchant_id = #{merchantId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="deepdraw.saleterrace.entity.shop.Bill" >
+    insert into bill (merchant_id, bill_money, bill_loans, 
+      bill_gold)
+    values (#{merchantId,jdbcType=BIGINT}, #{billMoney,jdbcType=DECIMAL}, #{billLoans,jdbcType=DECIMAL}, 
+      #{billGold,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="deepdraw.saleterrace.entity.shop.Bill" >
+    insert into bill
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="merchantId != null" >
+        merchant_id,
+      </if>
+      <if test="billMoney != null" >
+        bill_money,
+      </if>
+      <if test="billLoans != null" >
+        bill_loans,
+      </if>
+      <if test="billGold != null" >
+        bill_gold,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="merchantId != null" >
+        #{merchantId,jdbcType=BIGINT},
+      </if>
+      <if test="billMoney != null" >
+        #{billMoney,jdbcType=DECIMAL},
+      </if>
+      <if test="billLoans != null" >
+        #{billLoans,jdbcType=DECIMAL},
+      </if>
+      <if test="billGold != null" >
+        #{billGold,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="deepdraw.saleterrace.entity.shop.Bill" >
+    update bill
+    <set >
+      <if test="billMoney != null" >
+        bill_money = #{billMoney,jdbcType=DECIMAL},
+      </if>
+      <if test="billLoans != null" >
+        bill_loans = #{billLoans,jdbcType=DECIMAL},
+      </if>
+      <if test="billGold != null" >
+        bill_gold = #{billGold,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where merchant_id = #{merchantId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="deepdraw.saleterrace.entity.shop.Bill" >
+    update bill
+    set bill_money = #{billMoney,jdbcType=DECIMAL},
+      bill_loans = #{billLoans,jdbcType=DECIMAL},
+      bill_gold = #{billGold,jdbcType=DECIMAL}
+    where merchant_id = #{merchantId,jdbcType=BIGINT}
+  </update>
+</mapper>

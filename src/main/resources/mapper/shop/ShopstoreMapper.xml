@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="deepdraw.saleterrace.dao.ShopstoreMapper" >
+  <resultMap id="BaseResultMap" type="deepdraw.saleterrace.entity.shop.Shopstore" >
+    <id column="shop_id" property="shopId" jdbcType="BIGINT" />
+    <result column="shop_type" property="shopType" jdbcType="INTEGER" />
+    <result column="shop_shopkeeper" property="shopShopkeeper" jdbcType="BIGINT" />
+    <result column="shop_order" property="shopOrder" jdbcType="INTEGER" />
+    <result column="shop_shopkeeperName" property="shopShopkeepername" jdbcType="VARCHAR" />
+    <result column="shop_storeName" property="shopStorename" jdbcType="VARCHAR" />
+    <result column="shop_img" property="shopImg" jdbcType="VARCHAR" />
+    <result column="shop_creationTime" property="shopCreationtime" jdbcType="TIMESTAMP" />
+    <result column="shop_changeTime" property="shopChangetime" jdbcType="TIMESTAMP" />
+    <result column="shop_trialInterval" property="shopTrialinterval" jdbcType="INTEGER" />
+    <result column="shop_ban" property="shopBan" jdbcType="VARCHAR" />
+    <result column="shop_states" property="shopStates" jdbcType="INTEGER" />
+    <result column="shop_feedback" property="shopFeedback" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    shop_id, shop_type, shop_shopkeeper, shop_order, shop_shopkeeperName, shop_storeName, 
+    shop_img, shop_creationTime, shop_changeTime, shop_trialInterval, shop_ban, shop_states, 
+    shop_feedback
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from shopstore
+    where shop_id = #{shopId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from shopstore
+    where shop_id = #{shopId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="deepdraw.saleterrace.entity.shop.Shopstore" >
+    insert into shopstore (shop_id, shop_type, shop_shopkeeper, 
+      shop_order, shop_shopkeeperName, shop_storeName, 
+      shop_img, shop_creationTime, shop_changeTime, 
+      shop_trialInterval, shop_ban, shop_states, 
+      shop_feedback)
+    values (#{shopId,jdbcType=BIGINT}, #{shopType,jdbcType=INTEGER}, #{shopShopkeeper,jdbcType=BIGINT}, 
+      #{shopOrder,jdbcType=INTEGER}, #{shopShopkeepername,jdbcType=VARCHAR}, #{shopStorename,jdbcType=VARCHAR}, 
+      #{shopImg,jdbcType=VARCHAR}, #{shopCreationtime,jdbcType=TIMESTAMP}, #{shopChangetime,jdbcType=TIMESTAMP}, 
+      #{shopTrialinterval,jdbcType=INTEGER}, #{shopBan,jdbcType=VARCHAR}, #{shopStates,jdbcType=INTEGER}, 
+      #{shopFeedback,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="deepdraw.saleterrace.entity.shop.Shopstore" >
+    insert into shopstore
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="shopId != null" >
+        shop_id,
+      </if>
+      <if test="shopType != null" >
+        shop_type,
+      </if>
+      <if test="shopShopkeeper != null" >
+        shop_shopkeeper,
+      </if>
+      <if test="shopOrder != null" >
+        shop_order,
+      </if>
+      <if test="shopShopkeepername != null" >
+        shop_shopkeeperName,
+      </if>
+      <if test="shopStorename != null" >
+        shop_storeName,
+      </if>
+      <if test="shopImg != null" >
+        shop_img,
+      </if>
+      <if test="shopCreationtime != null" >
+        shop_creationTime,
+      </if>
+      <if test="shopChangetime != null" >
+        shop_changeTime,
+      </if>
+      <if test="shopTrialinterval != null" >
+        shop_trialInterval,
+      </if>
+      <if test="shopBan != null" >
+        shop_ban,
+      </if>
+      <if test="shopStates != null" >
+        shop_states,
+      </if>
+      <if test="shopFeedback != null" >
+        shop_feedback,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="shopId != null" >
+        #{shopId,jdbcType=BIGINT},
+      </if>
+      <if test="shopType != null" >
+        #{shopType,jdbcType=INTEGER},
+      </if>
+      <if test="shopShopkeeper != null" >
+        #{shopShopkeeper,jdbcType=BIGINT},
+      </if>
+      <if test="shopOrder != null" >
+        #{shopOrder,jdbcType=INTEGER},
+      </if>
+      <if test="shopShopkeepername != null" >
+        #{shopShopkeepername,jdbcType=VARCHAR},
+      </if>
+      <if test="shopStorename != null" >
+        #{shopStorename,jdbcType=VARCHAR},
+      </if>
+      <if test="shopImg != null" >
+        #{shopImg,jdbcType=VARCHAR},
+      </if>
+      <if test="shopCreationtime != null" >
+        #{shopCreationtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="shopChangetime != null" >
+        #{shopChangetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="shopTrialinterval != null" >
+        #{shopTrialinterval,jdbcType=INTEGER},
+      </if>
+      <if test="shopBan != null" >
+        #{shopBan,jdbcType=VARCHAR},
+      </if>
+      <if test="shopStates != null" >
+        #{shopStates,jdbcType=INTEGER},
+      </if>
+      <if test="shopFeedback != null" >
+        #{shopFeedback,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="deepdraw.saleterrace.entity.shop.Shopstore" >
+    update shopstore
+    <set >
+      <if test="shopType != null" >
+        shop_type = #{shopType,jdbcType=INTEGER},
+      </if>
+      <if test="shopShopkeeper != null" >
+        shop_shopkeeper = #{shopShopkeeper,jdbcType=BIGINT},
+      </if>
+      <if test="shopOrder != null" >
+        shop_order = #{shopOrder,jdbcType=INTEGER},
+      </if>
+      <if test="shopShopkeepername != null" >
+        shop_shopkeeperName = #{shopShopkeepername,jdbcType=VARCHAR},
+      </if>
+      <if test="shopStorename != null" >
+        shop_storeName = #{shopStorename,jdbcType=VARCHAR},
+      </if>
+      <if test="shopImg != null" >
+        shop_img = #{shopImg,jdbcType=VARCHAR},
+      </if>
+      <if test="shopCreationtime != null" >
+        shop_creationTime = #{shopCreationtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="shopChangetime != null" >
+        shop_changeTime = #{shopChangetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="shopTrialinterval != null" >
+        shop_trialInterval = #{shopTrialinterval,jdbcType=INTEGER},
+      </if>
+      <if test="shopBan != null" >
+        shop_ban = #{shopBan,jdbcType=VARCHAR},
+      </if>
+      <if test="shopStates != null" >
+        shop_states = #{shopStates,jdbcType=INTEGER},
+      </if>
+      <if test="shopFeedback != null" >
+        shop_feedback = #{shopFeedback,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where shop_id = #{shopId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="deepdraw.saleterrace.entity.shop.Shopstore" >
+    update shopstore
+    set shop_type = #{shopType,jdbcType=INTEGER},
+      shop_shopkeeper = #{shopShopkeeper,jdbcType=BIGINT},
+      shop_order = #{shopOrder,jdbcType=INTEGER},
+      shop_shopkeeperName = #{shopShopkeepername,jdbcType=VARCHAR},
+      shop_storeName = #{shopStorename,jdbcType=VARCHAR},
+      shop_img = #{shopImg,jdbcType=VARCHAR},
+      shop_creationTime = #{shopCreationtime,jdbcType=TIMESTAMP},
+      shop_changeTime = #{shopChangetime,jdbcType=TIMESTAMP},
+      shop_trialInterval = #{shopTrialinterval,jdbcType=INTEGER},
+      shop_ban = #{shopBan,jdbcType=VARCHAR},
+      shop_states = #{shopStates,jdbcType=INTEGER},
+      shop_feedback = #{shopFeedback,jdbcType=VARCHAR}
+    where shop_id = #{shopId,jdbcType=BIGINT}
+  </update>
+</mapper>
