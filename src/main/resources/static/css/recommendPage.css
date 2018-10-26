@@ -231,7 +231,7 @@ i {
     width: 780px;
     height: 150px;
     margin-top: 30px;
-    background: url(/asserts/images/unlistbg.png) center 20px no-repeat;
+    background: url(../images/unlistbg.png) center 20px no-repeat;
     display: none
 }
 

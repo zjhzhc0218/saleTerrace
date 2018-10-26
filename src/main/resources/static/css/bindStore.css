@@ -39,7 +39,7 @@ input,span {
 .addDp_button {
     width: 145px;
     height: 40px;
-    background-image: url(/saleterrace/images/addNew_bg.png);
+    background-image: url(../images/addNew_bg.png);
     border: 0;
     background-color: transparent;
     position: relative;
@@ -549,11 +549,11 @@ a.blue_span {
 }
 
 .bindWay li span.screenshot {
-    background: url(/saleterrace/images/i36_dpjt02.png) 0 center no-repeat
+    background: url(../images/i36_dpjt02.png) 0 center no-repeat
 }
 
 .bindWay li span.identCode {
-    background: url(/saleterrace/images/i36_dpyzm02.png) 0 center no-repeat
+    background: url(../images/i36_dpyzm02.png) 0 center no-repeat
 }
 
 .bindWay li.current {
@@ -604,11 +604,11 @@ a.blue_span {
 }
 
 .bindWay li.current span.screenshot {
-    background: url(/saleterrace/images/i36_dpjt01.png) 0 center no-repeat
+    background: url(../images/i36_dpjt01.png) 0 center no-repeat
 }
 
 .bindWay li.current span.identCode {
-    background: url(/saleterrace/images/i36_dpyzm01.png) 0 center no-repeat
+    background: url(../images/i36_dpyzm01.png) 0 center no-repeat
 }
 
 .bindWay li.current i {
@@ -681,20 +681,20 @@ a.blue_span {
 }
 
 .formInfor ul.title li i.i1 {
-    background: url(/saleterrace/images/step1_icon.png) no-repeat
+    background: url(../images/step1_icon.png) no-repeat
     /*background: url(../images/step1_icon.png) no-repeat*/
 }
 
 .formInfor ul.title li i.i2 {
-    background: url(/saleterrace/images/step2_icon.png) no-repeat
+    background: url(../images/step2_icon.png) no-repeat
 }
 
 .formInfor ul.title li i.i3 {
-    background: url(/saleterrace/images/step3_icon.png) no-repeat
+    background: url(../images/step3_icon.png) no-repeat
 }
 
 .formInfor ul.title li i.i4 {
-    background: url(/saleterrace/images/step4_icon.png) no-repeat
+    background: url(../images/step4_icon.png) no-repeat
 }
 
 .formInfor ul.title li h2 {

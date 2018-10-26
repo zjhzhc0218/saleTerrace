@@ -83,7 +83,7 @@ a {
     line-height: 28px;
     text-align: center;
     top: 5px;
-    background-image: url(/saleterrace/images/buyer_bg.png)
+    background-image: url(../images/buyer_bg.png)
 }
 
 .marginLeft {
