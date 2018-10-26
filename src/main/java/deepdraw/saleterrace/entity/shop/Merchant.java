@@ -4,14 +4,14 @@ import java.util.Date;
 
 public class Merchant {
     /**
-     * 生成某个固定id,用于商家系统的id关联处理【不可以进行修改】商家ID 数据库字段是：merchant_id  <br>
-     */
-    private Long merchantId;
-
-    /**
      * 账号（手机号不可以修改） 数据库字段是：merchant_account  <br>
      */
     private String merchantAccount;
+
+    /**
+     * 生成某个固定id,用于商家系统的id关联处理【不可以进行修改】商家ID 数据库字段是：merchant_id  <br>
+     */
+    private Long merchantId;
 
     /**
      * 登陆密码 数据库字段是：merchant_password  <br>
