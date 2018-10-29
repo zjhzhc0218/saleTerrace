@@ -1,7 +1,9 @@
 package deepdraw.saleterrace.dao;
 
 import deepdraw.saleterrace.entity.shop.BillTransaction;
+import org.springframework.stereotype.Component;
 
+@Component
 public interface BillTransactionMapper {
     /**
      *
