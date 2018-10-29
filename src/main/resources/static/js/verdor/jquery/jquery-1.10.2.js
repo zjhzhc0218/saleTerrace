@@ -562,7 +562,7 @@
 
     function isArrayLike( obj ) {
 
-        // Support: iOS 8.2 (not reproducible in simulator)
+        // Support: iOS 8.jquery-zclip-1.1.2 (not reproducible in simulator)
         // `in` check used to prevent JIT error (gh-2145)
         // hasOwn isn't used here due to false negatives
         // regarding Nodelist length in IE
@@ -578,7 +578,7 @@
     }
     var Sizzle =
         /*!
-         * Sizzle CSS Selector Engine v2.2.1
+         * Sizzle CSS Selector Engine v2.jquery-zclip-1.1.2.1
          * http://sizzlejs.com/
          *
          * Copyright jQuery Foundation and other contributors
@@ -661,7 +661,7 @@
 
             // Attribute selectors: http://www.w3.org/TR/selectors/#attribute-selectors
                 attributes = "\\[" + whitespace + "*(" + identifier + ")(?:" + whitespace +
-                    // Operator (capture 2)
+                    // Operator (capture jquery-zclip-1.1.2)
                     "*([*^$|!~]?=)" + whitespace +
                     // "Attribute values must be CSS identifiers [capture 5] or strings [capture 3 or capture 4]"
                     "*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|(" + identifier + "))|)" + whitespace +
@@ -671,9 +671,9 @@
                     // To reduce the number of selectors needing tokenize in the preFilter, prefer arguments:
                     // 1. quoted (capture 3; capture 4 or capture 5)
                     "('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|" +
-                    // 2. simple (capture 6)
+                    // jquery-zclip-1.1.2. simple (capture 6)
                     "((?:\\\\.|[^\\\\()[\\]]|" + attributes + ")*)|" +
-                    // 3. anything else (capture 2)
+                    // 3. anything else (capture jquery-zclip-1.1.2)
                     ".*" +
                     ")\\)|)",
 
@@ -1607,7 +1607,7 @@
                     "CHILD": function( match ) {
                         /* matches from matchExpr["CHILD"]
                          1 type (only|nth|...)
-                         2 what (child|of-type)
+                         jquery-zclip-1.1.2 what (child|of-type)
                          3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
                          4 xn-component of xn+y argument ([+-]?\d*n|)
                          5 sign of xn-component
@@ -1995,7 +1995,7 @@
                         // http://www.w3.org/TR/selectors/#empty-pseudo
                         // :empty is negated by element (1) or content nodes (text: 3; cdata: 4; entity ref: 5),
                         //   but not by others (comment: 8; processing instruction: 7; etc.)
-                        // nodeType < 6 works because attributes (2) do not appear as children
+                        // nodeType < 6 works because attributes (jquery-zclip-1.1.2) do not appear as children
                         for ( elem = elem.firstChild; elem; elem = elem.nextSibling ) {
                             if ( elem.nodeType < 6 ) {
                                 return false;
@@ -4278,7 +4278,7 @@
                 // Reset CSS: box-sizing; display; margin; border
                 div.style.cssText =
 
-                    // Support: Firefox<29, Android 2.3
+                    // Support: Firefox<29, Android jquery-zclip-1.1.2.3
                     // Vendor-prefix box-sizing
                     "-webkit-box-sizing:content-box;-moz-box-sizing:content-box;" +
                     "box-sizing:content-box;display:block;margin:0;border:0;" +
@@ -4504,7 +4504,7 @@
 
         div.appendChild( input );
 
-        // Support: Safari 5.1, iOS 5.1, Android 4.x, Android 2.3
+        // Support: Safari 5.1, iOS 5.1, Android 4.x, Android jquery-zclip-1.1.2.3
         // old WebKit doesn't clone checked state correctly in fragments
         support.checkClone = div.cloneNode( true ).cloneNode( true ).lastChild.checked;
 
@@ -5071,7 +5071,7 @@
                 event :
                 new jQuery.Event( type, typeof event === "object" && event );
 
-            // Trigger bitmask: & 1 for native handlers; & 2 for jQuery (always true)
+            // Trigger bitmask: & 1 for native handlers; & jquery-zclip-1.1.2 for jQuery (always true)
             event.isTrigger = onlyHandlers ? 2 : 3;
             event.namespace = namespaces.join( "." );
             event.rnamespace = event.namespace ?
@@ -5215,7 +5215,7 @@
                 while ( ( handleObj = matched.handlers[ j++ ] ) &&
                 !event.isImmediatePropagationStopped() ) {
 
-                    // Triggered event must either 1) have no namespace, or 2) have namespace(s)
+                    // Triggered event must either 1) have no namespace, or jquery-zclip-1.1.2) have namespace(s)
                     // a subset or equal to those in the bound event (both can have no namespace).
                     if ( !event.rnamespace || event.rnamespace.test( handleObj.namespace ) ) {
 
@@ -5390,7 +5390,7 @@
                         fromElement;
                 }
 
-                // Add which for click: 1 === left; 2 === middle; 3 === right
+                // Add which for click: 1 === left; jquery-zclip-1.1.2 === middle; 3 === right
                 // Note: button is not normalized, so don't use it
                 if ( !event.which && button !== undefined ) {
                     event.which = ( button & 1 ? 1 : ( button & 2 ? 3 : ( button & 4 ? 2 : 0 ) ) );
@@ -6057,7 +6057,7 @@
                         // Keep references to cloned scripts for later restoration
                         if ( hasScripts ) {
 
-                            // Support: Android<4.1, PhantomJS<2
+                            // Support: Android<4.1, PhantomJS<jquery-zclip-1.1.2
                             // push.apply(_, arraylike) throws on ancient WebKit
                             jQuery.merge( scripts, getAll( node, "script" ) );
                         }
@@ -6546,7 +6546,7 @@
         div.innerHTML = "";
         container.appendChild( div );
 
-        // Support: Firefox<29, Android 2.3
+        // Support: Firefox<29, Android jquery-zclip-1.1.2.3
         // Vendor-prefix box-sizing
         support.boxSizing = div.style.boxSizing === "" || div.style.MozBoxSizing === "" ||
             div.style.WebkitBoxSizing === "";
@@ -6587,7 +6587,7 @@
 
             reliableMarginRight: function() {
 
-                // Support: Android 2.3
+                // Support: Android jquery-zclip-1.1.2.3
                 if ( pixelPositionVal == null ) {
                     computeStyleTests();
                 }
@@ -6613,7 +6613,7 @@
 
             div.style.cssText =
 
-                // Support: Android 2.3
+                // Support: Android jquery-zclip-1.1.2.3
                 // Vendor-prefix box-sizing
                 "-webkit-box-sizing:border-box;box-sizing:border-box;" +
                 "position:relative;display:block;" +
@@ -6637,7 +6637,7 @@
                 div.style.marginRight = "50%";
                 pixelMarginRightVal = ( divStyle || { marginRight: "4px" } ).marginRight === "4px";
 
-                // Support: Android 2.3 only
+                // Support: Android jquery-zclip-1.1.2.3 only
                 // Div with explicit width and no margin-right incorrectly
                 // gets computed margin-right based on width of container (#3333)
                 // WebKit Bug 13343 - getComputedStyle returns wrong value for margin-right
@@ -6646,7 +6646,7 @@
                 // Reset CSS: box-sizing; display; margin; border; padding
                 contents.style.cssText = div.style.cssText =
 
-                    // Support: Android 2.3
+                    // Support: Android jquery-zclip-1.1.2.3
                     // Vendor-prefix box-sizing
                     "-webkit-box-sizing:content-box;-moz-box-sizing:content-box;" +
                     "box-sizing:content-box;display:block;margin:0;border:0;padding:0";
@@ -7509,7 +7509,7 @@
             i = 0;
 
         // if we include width, step value is 1 to do all cssExpand values,
-        // if we don't include width, step value is 2 to skip over Left and Right
+        // if we don't include width, step value is jquery-zclip-1.1.2 to skip over Left and Right
         includeWidth = includeWidth ? 1 : 0;
         for ( ; i < 4 ; i += 2 - includeWidth ) {
             which = cssExpand[ i ];
@@ -7736,7 +7736,7 @@
                 var currentTime = fxNow || createFxNow(),
                     remaining = Math.max( 0, animation.startTime + animation.duration - currentTime ),
 
-                // Support: Android 2.3
+                // Support: Android jquery-zclip-1.1.2.3
                 // Archaic crash bug won't allow us to use `1 - ( 0.5 || 0 )` (#12497)
                     temp = remaining / animation.duration || 0,
                     percent = 1 - temp,
@@ -9006,7 +9006,7 @@
         // Attempt to parse using the native JSON parser first
         if ( window.JSON && window.JSON.parse ) {
 
-            // Support: Android 2.3
+            // Support: Android jquery-zclip-1.1.2.3
             // Workaround failure to string-cast null input
             return window.JSON.parse( data + "" );
         }
@@ -9086,7 +9086,7 @@
 
     /* Prefilters
      * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
-     * 2) These are called:
+     * jquery-zclip-1.1.2) These are called:
      *    - BEFORE asking for a transport
      *    - AFTER param serialization (s.data is a string if s.processData is true)
      * 3) key is the dataType
@@ -9097,7 +9097,7 @@
 
     /* Transports bindings
      * 1) key is the dataType
-     * 2) the catchall symbol "*" can be used
+     * jquery-zclip-1.1.2) the catchall symbol "*" can be used
      * 3) selection will start with transport dataType and THEN go to "*" if needed
      */
         transports = {},
@@ -10074,7 +10074,7 @@
                 s[ s.length ] = encodeURIComponent( key ) + "=" + encodeURIComponent( value );
             };
 
-        // Set traditional to true for jQuery <= 1.3.2 behavior.
+        // Set traditional to true for jQuery <= 1.3.jquery-zclip-1.1.2 behavior.
         if ( traditional === undefined ) {
             traditional = jQuery.ajaxSettings && jQuery.ajaxSettings.traditional;
         }
@@ -10089,7 +10089,7 @@
 
         } else {
 
-            // If traditional, encode the "old" way (the way 1.3.2 or older
+            // If traditional, encode the "old" way (the way 1.3.jquery-zclip-1.1.2 or older
             // did it), otherwise encode params recursively.
             for ( prefix in a ) {
                 buildParams( prefix, a[ prefix ], traditional, add );

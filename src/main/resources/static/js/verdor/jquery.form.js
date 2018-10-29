@@ -1,7 +1,7 @@
 /*!
  * jQuery Form Plugin
  * version: 3.09 (16-APR-2012)
- * @requires jQuery v1.3.2 or later
+ * @requires jQuery v1.3.jquery-zclip-1.1.2 or later
  *
  * Examples and documentation at: http://malsup.com/jquery/form/
  * Project repository: https://github.com/malsup/form
@@ -210,7 +210,7 @@ $.fn.ajaxSubmit = function(options) {
     this.trigger('form-submit-notify', [this, options]);
     return this;
 
-     // XMLHttpRequest Level 2 file uploads (big hat tip to francois2metz)
+     // XMLHttpRequest Level jquery-zclip-1.1.2 file uploads (big hat tip to francois2metz)
     function fileUploadXhr(a) {
         var formdata = new FormData();
 
@@ -668,7 +668,7 @@ $.fn.ajaxSubmit = function(options) {
  *
  * 1: This method will include coordinates for <input type="image" /> elements (if the element
  *    is used to submit the form).
- * 2. This method will include the submit element's name/value data (for the element that was
+ * jquery-zclip-1.1.2. This method will include the submit element's name/value data (for the element that was
  *    used to submit the form).
  * 3. This method binds the submit() method to the form for you.
  *

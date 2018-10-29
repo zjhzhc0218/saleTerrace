@@ -568,8 +568,18 @@
 								<li class="dp_li3">状态</li>
 								<li class="dp_li6">操作</li>
 							</ul>
-							<div id="blacklist">
-							</div>
+                            <div id="blacklist">
+                                <ul class="dp_info">
+                                <li class="dp_li1"><div>淘宝/天猫</div></li>
+                                <li class="dp_li1"><div>zero</div></li>
+                                <li class="dp_li7"><div>未绑定</div></li>
+
+                                <li class="dp_li4"><div>2018-10-26 16:21:49</div></li>
+                                <li class="dp_li3" style="display:table;"><div style="display:table-cell;vertical-align: middle;line-height: normal;color: #7b8da0;font-size: 14px;">评价被删除</div></li>
+                                <li class="dp_li8"><div>有效黑名单</div></li>
+                                <li class="dp_li6"><a style="color: #6EC9EA" href='javascript:removeBlacklist(144496,"zero")'>删除黑名单</a></li>
+                                </ul>
+                            </div>
 						</div>
 				  	</div>
 				  </div>

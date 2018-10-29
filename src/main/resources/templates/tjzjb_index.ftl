@@ -531,20 +531,20 @@
                         <p style="padding: 10px; font-weight: bold;">我的推荐用户</p>
                         <p>
                             <span class="left-content">已成功注册：</span>
-                            <span style="width: 465px;text-align: left;"> <i class="recommend-seller-real-count cl58c3e5"></i> 个商家，
-                                <i class="recommend-buyer-real-count cl58c3e5"></i> 个试客</span>
+                            <span style="width: 465px;text-align: left;"> <i class="recommend-seller-real-count cl58c3e5">1</i> 个商家，
+                                <i class="recommend-buyer-real-count cl58c3e5">1</i> 个试客</span>
                         </p>
                         <p>
                             <span class="left-content">已成功完成活动（确认收货）：</span>
                             <span>
-                                <i class="recommend-seller-count cl58c3e5"></i> 个商家，<i class="recommend-buyer-count cl58c3e5"></i> 个试客
+                                <i class="recommend-seller-count cl58c3e5">1</i> 个商家，<i class="recommend-buyer-count cl58c3e5">1</i> 个试客
                                 </span>
                             <span style="color: red;">（仅在试客确认收货获得赏金后，增加统计）</span>
                         </p>
                         <p>
                             <span class="left-content">已累积获得奖励： </span>
                             <span>
-                                    已获取奖励 <i class="recommend-sum cl58c3e5"></i> 金币
+                                    已获取奖励 <i class="recommend-sum cl58c3e5">100</i> 金币
                                 </span>
                             <span style="color: red;">（仅在试客确认收货获得赏金后，增加统计）</span>
                         </p>
@@ -552,8 +552,8 @@
                         <p class="explain">(仅在受邀商家和试客完成活动时，增加统计。只发布活动或接手活动而未完成，则不增加统计)</p>-->
                     </li>
                     <li class="role">
-                        <a>商家&nbsp;&nbsp;累计提成：<i id="sellerSum"></i> 金 &nbsp;&nbsp;<span id="sellerDetailsBtn">明细</span></a>
-                        <a>试客&nbsp;&nbsp;累计提成：<i id="buyerSum"></i> 金 &nbsp;&nbsp;<span id="buyerDetailsBtn">明细</span></a>
+                        <a>商家&nbsp;&nbsp;累计提成：<i id="sellerSum">10</i> 金 &nbsp;&nbsp;<span id="sellerDetailsBtn">明细</span></a>
+                        <a>试客&nbsp;&nbsp;累计提成：<i id="buyerSum">10</i> 金 &nbsp;&nbsp;<span id="buyerDetailsBtn">明细</span></a>
                     </li>
                 </ul>
                 <div class="unList">
@@ -561,11 +561,10 @@
                 </div>
                 <div class="table-box">
                     <p class="recommend-header"><i></i> <a id="recommendBackBtn">返回</a></p>
-                    <p class="seller-top">累计邀请商家 <span class="recommend-seller-count"></span> 名,累计获得赏金 <span
-                            class="recommend-money"></span> 金币，累计获得注册接单奖励 <span
-                            class="recommend-register-seller"></span> 金币</p>
-                    <p class="buyer-top">累计邀请试客 <span class="recommend-buyer-count"></span> 名,累计获得赏金 <span
-                            class="recommend-money"></span> 金币，累计获得注册接单奖励 <span class="recommend-register"></span> 金币
+                    <p class="seller-top">累计邀请商家 <span class="recommend-seller-count">1</span> 名,累计获得赏金 <span class="recommend-money">10</span> 金币，累计获得注册接单奖励
+                        <span class="recommend-register-seller">15</span> 金币</p>
+                    <p class="buyer-top">累计邀请试客 <span class="recommend-buyer-count">1</span> 名,累计获得赏金 <span class="recommend-money">15</span> 金币，累计获得注册接单奖励
+                        <span class="recommend-register">20</span> 金币
                     </p>
                     <p class="explain-top">(奖励赏金在活动结束时结算，即在活动刚发布或接手时不产生奖励)</p>
                     <table class="userList" border="1" bordercolor="#ddd" style="border-collapse:collapse;">
@@ -612,7 +611,6 @@
 
                 <div class="bdsharebuttonbox" data-tag="share_2" style="float:left;height:40px;margin-top:-3px;">
                     <div class="sp">
-
                         <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
                         <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
                         <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>

@@ -162,7 +162,7 @@ function getStatusString(a, b) {
             case 8:
             case 9:
             case 10:
-                return g ? f ? 1 != i || h || 9 == d ? (0 != a.money && 0 != a.coin ? "货佣待返" : 0 == a.money && 0 != a.coin ? "赏金待返" : "货款待返") + '<br><input type="button" class="operation_button qrsh_button2" onclick="operaButton(' + e + ',2);" value="返款"><br><a class="aOpeara" href="/seller/sellerTaskDetails.htm?id=' + e + '">查看详情</a> ' : '待追评<br><a class="aOpeara" href="/seller/sellerTaskDetails.htm?id=' + e + '">查看详情</a>' : '待收货<br> <a class="aOpeara" href="/seller/sellerTaskDetails.htm?id=' + e + '">查看详情</a>' : '买家已付款 <br> <input type="button" class="operation_button qrsh_button2" onclick="operaButton(' + e + ',3);" value="商家发货"><br> <a class="aOpeara" href="/seller/sellerTaskDetails.htm?id=' + e + '">查看详情</a>';
+                return g ? f ? 1 != i || h || 9 == d ? (0 != a.money && 0 != a.coin ? "货佣待返" : 0 == a.money && 0 != a.coin ? "赏金待返" : "货款待返") + '<br><input type="button" class="operation_button qrsh_button2" onclick="operaButton(' + e + ',jquery-zclip-1.1.2);" value="返款"><br><a class="aOpeara" href="/seller/sellerTaskDetails.htm?id=' + e + '">查看详情</a> ' : '待追评<br><a class="aOpeara" href="/seller/sellerTaskDetails.htm?id=' + e + '">查看详情</a>' : '待收货<br> <a class="aOpeara" href="/seller/sellerTaskDetails.htm?id=' + e + '">查看详情</a>' : '买家已付款 <br> <input type="button" class="operation_button qrsh_button2" onclick="operaButton(' + e + ',3);" value="商家发货"><br> <a class="aOpeara" href="/seller/sellerTaskDetails.htm?id=' + e + '">查看详情</a>';
             case 11:
                 return '交易成功<br> <a class="aOpeara" href="/seller/sellerTaskDetails.htm?id=' + e + '">查看详情</a>';
             case 12:
@@ -205,7 +205,7 @@ function bindCopyEvent() {
 }
 function copyEvent(a) {
     a.zclip({
-        path: getRootPath() + "/asserts/js/vendor/jquery-zclip/1.1.2/ZeroClipboard.swf",
+        path: getRootPath() + "/asserts/js/vendor/jquery-zclip/1.1.jquery-zclip-1.1.2/ZeroClipboard.swf",
         copy: function() {
             return a.prev("b").children("span").text()
         },

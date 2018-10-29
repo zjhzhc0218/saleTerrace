@@ -654,11 +654,78 @@
                             src="/saleterrace/images/checkbox_unselected.png" class="checkbox checkbox_selectAll"
                             style="margin:0 10px 0 32px" value="0" alt=""><span class="batchAllSpan">全选</span><input
                             type="button" class="checkbox_button" value="批量发货" onclick="bacthSendOrBack(5)"></div>
-                    <div value="7" class="batch" style="display: none;background-color: #ffffff;"><img
-                            src="/saleterrace/images/checkbox_unselected.png" class="checkbox checkbox_selectAll"
-                            style="margin:0 10px 0 32px" value="0" alt=""><span class="batchAllSpan">全选</span><input
+                    <div value="7" class="batch" style="display: none;background-color: #ffffff;"><img src="/saleterrace/images/checkbox_unselected.png" class="checkbox checkbox_selectAll" style="margin:0 10px 0 32px" value="0" alt=""><span class="batchAllSpan">全选</span><input
                             type="button" class="checkbox_button" value="批量返款" onclick="bacthSendOrBack(7)"></div>
-                    <div class="content_div"></div>
+                    <div class="content_div">
+                        <div class="list_div">
+                            <div class="mission_div">
+                                <div class="mission_head">
+                                    <div class="floatLeft shalfDiv" align="left">
+                                        <img src="/saleterrace/images/checkbox_selected.png" class="checkbox" value="0" id="6456939">
+                                        <b>子活动编号：162036-1536043819001-02201</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <b id="taskTypeTime">发布时间：2018-09-04 14:52:38</b>
+                                    </div><div class="floatLeft fhalfDiv" align="right">
+                                    <b>订单编号：<span>212299761238037050</span></b>
+                                    <input type="button" value="复制" class="copy_button">
+                                    <img src="/saleterrace/images/flag.png" class="flagImg" title="添加弹框">
+                                </div>
+                            </div>
+                                <ul class="mission_ul">
+                                    <li class="mission_li1">
+                                        <div class="space_div"></div>
+                                        <div class="bb_img">
+                                            <img class="bb_img" src="/saleterrace/images/11.jpg"></div>
+                                    </li>
+                                    <li class="mission_li5">
+                                        <div class="space_div"></div>
+                                        <img src="/saleterrace/images/mobile_icon2.png">手机端<br>手机淘宝
+                                    </li>
+                                    <li class="mission_li7">
+                                        <div class="space_div"></div>
+                                        店铺名称<br>
+                                        <a title="thinklittle旗舰店" style="color: #7b8da0;">thinklittle旗...</a>
+                                        <img src="/saleterrace/images/tmail_icon.png" class="sjTypeImg">
+                                    </li>
+                                    <li class="mission_li4">
+                                        <div class="space_div"></div>
+                                        下单数量<br>1
+                                    </li>
+                                    <li class="mission_li8" style="width:100px;">
+                                        <div class="space_div"></div>
+                                        垫付货款<br>39.9<br>
+                                    </li>
+                                    <li class="mission_li9">
+                                        <div class="space_div"></div>
+                                        活动总赏金<br>17.20
+                                    </li>
+                                    <li class="mission_li3">
+                                        <div class="space_div"></div>
+                                        买号要求<br>
+                                        <img src="/saleterrace/images/b_blue_1.gif" alt="买家信誉">
+                                    </li>
+                                    <li class="mission_li8" style="width:128px;">
+                                        <div class="space_div"></div>
+                                        <img style="margin-bottom: 2px" src="/saleterrace/images/jsrw.png"><br>
+                                        <img src="/saleterrace/images/zhu.png" title="主宝贝浏览见底">
+                                        <img src="/saleterrace/images/ping.png" title="评价浏览">
+                                        <img src="/saleterrace/images/liao.png" title="旺旺聊天">
+                                        <img src="/saleterrace/images/scbb.png" title="收藏宝贝">
+                                        <img src="/saleterrace/images/tjgwc.png" title="加入购物车"><br>
+                                    </li>
+                                    <li class="mission_li6">
+                                        <div class="space_div"></div>
+                                        试客旺旺<br>
+                                        <span style="color: red">cradlekl</span>
+                                        <br><img src="/saleterrace/images/b_blue_3.gif" alt="买家信誉">
+                                    </li>
+                                    <li class="mission_li10">
+                                        交易成功<br>
+                                        <a class="aOpeara" href="/seller/sellerTaskDetails.htm?id=6456939">查看详情</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     <div id="infoRows">
 
                     </div>

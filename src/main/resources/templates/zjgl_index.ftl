@@ -159,7 +159,7 @@
     if ('SELLER' == "BUYER") {
         var tab = request("tab");
         if (!tab) {
-            window.location.href = "accountmanage.htm?tab=2";
+            window.location.href = "accountmanage.htm?tab=jquery-zclip-1.1.2";
         }
     }
 </script>

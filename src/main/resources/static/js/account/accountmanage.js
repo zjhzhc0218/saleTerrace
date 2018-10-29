@@ -10,7 +10,7 @@ function tonglianPayTip() {
         overlay_close: !1,
         show_close_button: !1
     };
-    a = _showDialog("confirmation", "支付小贴士：", "<span style='font-size: 16px;display: block;margin-bottom: 10px;'>1，若无支付页弹出，请单击浏览器地址栏最右边的带红x按钮，选择“始终允许弹出”。</span><span style='font-size: 16px;display: block;margin-bottom: 10px;'>2，如果银行页面没有打开，请您设置您的浏览器为允许弹出，并确保已经安装了银行的 ActiveX 安全控件，然后点击下面的“返回重新选择支付方式”。</span>", "返回重新选择支付方式", b, "已完成充值", c, d)
+    a = _showDialog("confirmation", "支付小贴士：", "<span style='font-size: 16px;display: block;margin-bottom: 10px;'>1，若无支付页弹出，请单击浏览器地址栏最右边的带红x按钮，选择“始终允许弹出”。</span><span style='font-size: 16px;display: block;margin-bottom: 10px;'>jquery-zclip-1.1.2，如果银行页面没有打开，请您设置您的浏览器为允许弹出，并确保已经安装了银行的 ActiveX 安全控件，然后点击下面的“返回重新选择支付方式”。</span>", "返回重新选择支付方式", b, "已完成充值", c, d)
 }
 function sendSMS(a, b) {
     $.ajax({
@@ -125,7 +125,7 @@ function bindAccount() {
         success: function(a) {
             console.log(a),
                 "0" == a.code ? (alert("添加成功！"),
-                    window.location.href = "/account/accountmanage.htm") : alert(a.msg)
+                    window.location.href = "/saleterrace/zjgl_index") : alert(a.msg)
         },
         error: function(a, b, c) {
             alert("出错了")
@@ -144,7 +144,7 @@ function del(a, b) {
         dataType: "json",
         success: function(a) {
             console.log(a),
-                window.location.href = "/account/accountmanage.htm"
+                window.location.href = "/saleterrace/zjgl_index"
         },
         error: function(a, b, c) {
             alert("出错了")
@@ -187,7 +187,7 @@ function updataAccount(a) {
         success: function(a) {
             console.log(a),
                 "0" == a.code ? (alert("修改成功！"),
-                    window.location.href = "/account/accountmanage.htm") : alert(a.msg)
+                    window.location.href = "/saleterrace/zjgl_index") : alert(a.msg)
         },
         error: function(a, b, c) {
             alert("出错了")
@@ -567,17 +567,17 @@ $(function() {
                 success: function(a) {
                     function b() {
                         window.open("http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368898", "_BLANK"),
-                            window.location.href = "/account/accountmanage.htm"
+                            window.location.href = "/saleterrace/zjgl_index"
                     }
                     function c() {
-                        window.location.href = "/account/accountmanage.htm"
+                        window.location.href = "/saleterrace/zjgl_index"
                     }
                     a.flag ? showImportDialog("提示", "已成功提交，如果15分钟之后没有到账请联系客服处理", b, c) : (alert(a.msg),
                         $("#moneyUnionPayBtn").removeAttr("disabled"))
                 },
                 error: function(a, b, c) {
                     alert("出错了"),
-                        window.location.href = "/account/accountmanage.htm"
+                        window.location.href = "/saleterrace/zjgl_index"
                 }
             }) : (alert("请输入正确充值金额！"),
                 void $("#moneyUnionPayBtn").removeAttr("disabled")) : (alert("请选择支付渠道"),

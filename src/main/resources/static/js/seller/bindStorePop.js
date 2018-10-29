@@ -180,7 +180,7 @@ function removeStep4Img() {
 }
 $(function() {
     $("#copy_btn").zclip({
-        path: getRootPath() + "/asserts/js/vendor/jquery-zclip/1.1.2/ZeroClipboard.swf",
+        path: getRootPath() + "/asserts/js/vendor/jquery-zclip/1.1.jquery-zclip-1.1.2/ZeroClipboard.swf",
         copy: function() {
             return $(".tb_valid_code").text()
         },

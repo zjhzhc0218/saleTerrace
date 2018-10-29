@@ -1,17 +1,21 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-<meta http-equiv="description" content="this is my page">
-<script src="../static/js/verdor/jquery/jquery-1.10.2.js"></script>
-<script src="../static/js/common/common.js"></script>
-<script src="../static/js/common/page.js"></script>
-<script src="../static/js/common/store.min.js"></script>
-<link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="../static/css/zebra_dialog.css"/>
-<script type="text/javascript" src="../static/js/verdor/zebra_dialog/zebra_dialog.js"></script>
-<script type="text/javascript" src="../static/js/common/popdg.js"></script>
-<title>【试客多】-用户中心</title>
+    <title>【试客多】-用户中心</title>
+    <link rel="shortcut icon" href="/saleterrace/images/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+
+    <link rel="stylesheet" type="text/css" href="/saleterrace/css/zebra_dialog.css"/>
+    <link rel="stylesheet" type="text/css" href="/saleterrace/css/top.css"/>
+    <link rel="stylesheet" type="text/css" href="/saleterrace/css/viewer.css" />
+    <link rel="stylesheet" type="text/css" href="/saleterrace/css/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="/saleterrace/css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="/saleterrace/css/navigator.css" />
+    <link rel="stylesheet" type="text/css" href="/saleterrace/css/navigator.css"/>
+    <link rel="stylesheet" type="text/css" href="/saleterrace/css/footer.css"/>
+
 	<style>
 		.order-vip-box{
 			background-color: #fff;
@@ -134,7 +138,7 @@
 			padding: 5px 20px;
 			margin-left: 32px;
 		}
-		#renewalsSubmit{
+        #renewalsSubmit{
 			background-color: #59c2e6;
 			border: 1px solid #e8e8e8;
 			color: #FFF;
@@ -145,73 +149,14 @@
 			padding: 5px 20px;
 			margin-left: 32px;
 		}
-	</style>
-</head>
-
-<body>
-<link rel="stylesheet" type="text/css" href="../static/css/top.css"/>
-<script type="text/javascript" src="../static/js/verdor/jquery-first-event.js"></script>
-<script type="text/javascript" src="../static/js/common/store+json2.min.js"></script>
-<script type="text/javascript" src="../static/js/common/store.expire.js"></script>
-<script type="text/javascript" src="../static/js/common/top.js"></script>
-<script type="text/javascript" src="/asserts/js/dist/viewer.js?rel=1539573213880"></script>
-<link rel="stylesheet" type="text/css" href="../static/css/viewer.css" />
-
-    <script>
-        if(window.location.hostname=='115.159.84.78'){
-            window.location.href="http://budingdan.com";
-        }
-        <!-- 百度统计 -->
-//        var _hmt = _hmt || [];
-//        (function() {
-//            var hm = document.createElement("script");
-//            hm.src = "https://hm.baidu.com/hm.js?4e62b0120a2ce8478d446718527ae0ce";
-//            var s = document.getElementsByTagName("script")[0];
-//            s.parentNode.insertBefore(hm, s);
-//        })();
-
-
-        if (!store.enabled) {
-            alert('您的浏览器不支持使用！！ 请关闭浏览器的"隐私模式"或者升级到主流浏览器已达到最佳体验');
-        }
-    </script>
-
-    <script>
-        var uid = 162036;
-        //用户是否登录
-        function isLogin() {
-            return uid != null ? true : false;
-        }
-
-        //上帝是否选择了你^_^ 可以提前看到一些东西
-        function isGodChoose(){
-            //id结尾为0的，大概为10分之一几率
-            var lastNumber = Math.abs(uid)%10;
-            return uid!=null?lastNumber<=9:false;
-//            return true;
-        }
-
-        //移除所有input和textarea的前后空格
-        function removeSpaceFunction() {
-            $('input[type=text], textarea').each(function(){
-                $(this).val(jQuery.trim($(this).val()));
-            });
-        }
-
-        //绑定可能是按钮触发的click事件，将该event插入到第一位，在点击后第一时间将所有的前后空格去除
-        $(window).load(function () {
-            $("input").firstOn("click",removeSpaceFunction);
-        });
-    </script>
-    <style>
         .contentBox{
-            position:fixed;
-            width:100%;
-            height:100%;
-            background-color:rgba(0,0,0,.6);
-            z-index:1000;
-            display: none;
-        }
+             position:fixed;
+             width:100%;
+             height:100%;
+             background-color:rgba(0,0,0,.6);
+             z-index:1000;
+             display: none;
+         }
         .contentBox .content{
             position:absolute;
             left:50%;
@@ -275,491 +220,200 @@
             background: url(../static/images/gou.png) no-repeat center;
         }
     </style>
+</head>
+<body>
     <div class='contentBox'  onclick='closeImg2();'>
         <div class='content' style="width: 440px; height: 640px;">
-
-                <a class="sPopupImgJump" target="_blank" style=" margin: auto; display: block; ">
-                    <img class='sPopup' src='' alt='' style="position: absolute; left: 0; top: 0; width: 100%;">
-                </a>
-
-
-
-            <span onclick='closeImg();' style='color: #999;right: 50px;'>X</span>
+                 <a class="sPopupImgJump" target="_blank" style=" margin: auto; display: block; "><img class='sPopup' src='' alt='' style="position: absolute; left: 0; top: 0; width: 100%;"></a>
+                <span onclick='closeImg();' style='color: #999;right: 50px;'>X</span>
         </div>
     </div>
+        <a class="sImgJump" style=" margin: auto; display: block; "><img class="sTongZhi" src="/saleterrace/images/demo_01.jpg" alt="" style="display: block; width: 100%; height: 51px;"></a>
 
-        <a class="sImgJump" style=" margin: auto; display: block; ">
-            <img class="sTongZhi" src="" alt="" style="display: block; width: 100%; height: 51px;">
-        </a>
-
-
-<a class="sImgJump" href="#" style=" margin: auto; display: block;text-align: center;color: red;font-style: italic;text-decoration: underline;font-size: 17px; background-color: bisque;line-height: 40px;">
-    本站所有赏金均由商家提供，旨在激励试客生成优质的买家秀内容，本站从中不获取任何盈利！
-</a>
+    <a class="sImgJump" href="#" style=" margin: auto; display: block;text-align: center;color: red;font-style: italic;text-decoration: underline;font-size: 17px; background-color: bisque;line-height: 40px;">本站所有赏金均由商家提供，旨在激励试客生成优质的买家秀内容，本站从中不获取任何盈利！</a>
     <div class="top">
-
-            <a href="/seller/index.htm">
-                <div class="logo"></div>
-            </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div class="qun_for_seller qun_tip">
-                    <a href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575" target="_blank">活动交流群：540995352</a>
-                </div>
-
-
-            <ul class="LR_USER">
-                <li class="pos-rel menu-box">
-
-
-
-
-
-
-
-                                    <a href="#" class="menu-select-icon">
-                                        <img src="/asserts/images/menu_select_icon.png" alt=""
-                                             class="pos-menu-select">
-                                        <p
-
-                                                    class="user-name"
-
-
-                                        >
-                                            15355056891
-                                        </p>
-                                        <p class="user-tag"  style="text-align: center; line-height:normal;">
-
-
-
-
-                                                            VIP
-
-
-
-                                                                    3
-                                                                    天试用中
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                        </p>
-                                    </a>
-
-
-
-
-                    </a>
-
-                    <ul class="menu-select-box">
-                        <li style="background-color: #f3f3f3; padding-left: 20px">
-                                货款：<b class="clfdaa29" id="top_user_money"></b>元
-                                    &nbsp;&nbsp;&nbsp;
-                                金币：<b class="clfdaa29" id="top_user_coin"></b>个
-
-                        </li>
-                        <li style="padding-left: 20px; clear: both;" >
-                            <a href="/saleterrace/zjgl_index?tab=2" class="cl000 menu-select-a">充值</a>
-                            <a href="/saleterrace/zjgl_index?tab=2" class="cl000 menu-select-a">提现</a>
-
-
-
-
-
-                                        <a href="/seller/orderVip.htm" target="_blank" class="menu-select-myCenter">缴纳保证金</a>
-
-
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="javascript:logout();" class="cl01b76c">退出登陆
-                    </a></li>
-
-            </ul>
-            <input type="hidden" id="exam" value="0">
-
+        <a href="/saleterrace/yhzx_index">
+            <div class="logo"></div>
+        </a>
+        <div class="qun_for_seller qun_tip">
+            <a href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575" target="_blank">活动交流群：540995352</a>
+        </div>
+        <ul class="LR_USER">
+            <li class="pos-rel menu-box">
+                <a href="#" class="menu-select-icon">
+                    <img src="/saleterrace/images/menu_select_icon.png" alt="" class="pos-menu-select">
+                    <p class="user-name">15355056891</p>
+                    <p class="user-tag" style="text-align: center; line-height:normal;">VIP X 天试用中</p>
+                </a>
+                <ul class="menu-select-box">
+                    <li style="background-color: #f3f3f3; padding-left: 20px">
+                        货款：<b class="clfdaa29" id="top_user_money">100</b>元 &nbsp;&nbsp;&nbsp;金币：100
+                        <b class="clfdaa29" id="top_user_coin"></b>个
+                    </li>
+                    <li style="padding-left: 20px; clear: both;">
+                        <a href="/saleterrace/zjgl_index?tab=2" class="cl000 menu-select-a">充值</a>
+                    <#--<a href="./zjgl_index.ftl?tab=jquery-zclip-1.1.2" class="cl000 menu-select-a">充值</a>-->
+                        <a href="/saleterrace/zjgl_index?tab=4" class="cl000 menu-select-a">提现</a>
+                    <#--<a href="./zjgl_index.ftl?tab=jquery-zclip-1.1.2" class="cl000 menu-select-a">提现</a>-->
+                        <a href="/saleterrace/jnbzj_index" target="_blank" class="menu-select-myCenter">缴纳保证金</a>
+                    <#--<a href="./zjgl_index.ftl" target="_blank" class="menu-select-myCenter">缴纳保证金</a>-->
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:logout();" class="cl01b76c">退出登陆</a>
+            </li>
+        </ul>
+        <input type="hidden" id="exam" value="0">
     </div>
-
     <div class="right-menu">
         <a href="javascript:void(0);" id="offKfqq">
-            <img src="/asserts/images/colsed-kfqq.png" alt="">
+            <img src="/saleterrace/images/colsed-kfqq.png" alt="">
         </a>
-
-
-
-                <!--<div class="bg1">
-                    <span class="menuTitleOne">不会放单找我</span>
-                    <span class="menuTitleTwo">其他问题找我</span>
-                    <div class="right-menu-one">
-                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505269">小高</a>
-                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852382973">二珍</a>
-                    </div>
-                    <div class="right-menu-two">
-                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505268">玫瑰</a>
-                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852505268">丁香</a>
-                    </div>
-                </div>-->
-                <div class="bg">
-                    <img class="bg-img" src="/asserts/images/kfqq.png" alt="">
-                    <div class="right-menu-content">
-                        <a href="/seller/publish/publish_mission.htm" >
-                            <img src="/asserts/images/sjscfd.png" class="right-menu-content-top-img" alt="">
-                        </a>
-
-                        <span class="menuTitleTwo">客服问题找我</span>
-                        <div class="right-menu-two">
-                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368872">
-                                <img src="/asserts/images/yckf_03.png" alt="">
-                                宝宝
-                            </a>
-                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852365086">
-                                <img src="/asserts/images/yckf_03.png" alt="">
-                                贝贝
-                            </a>
-                        </div>
-
-                        <span class="menuTitleOne">活动发布找我</span>
-                        <div class="right-menu-one">
-                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368900">
-                                &nbsp;&nbsp;&nbsp;<img src="/asserts/images/yckf_03.png" alt="">
-                                高经理
-                            </a>
-                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852356150">
-                                <img src="/asserts/images/yckf_03.png" alt="">
-                                安娜老师
-                            </a>
-
-                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852365085">
-                                <img src="/asserts/images/yckf_03.png" alt="">
-                                周华老师
-                            </a>
-                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852366295">
-                                <img src="/asserts/images/yckf_03.png" alt="">
-                                毛经理
-                            </a>
-                        </div>
-                        <span class="menuTitleOne">上班时间</span>
-                        <div class="right-menu-one">
-                            <p style="font-size: 12px;">
-                                周一至周日
-                                <br>
-                                9:00-18:00
-                            </p>
-                        </div>
-                    </div>
-                    <div class="right-menu-content" style="padding-top: 0px;margin-top: 2px;">
-                        <span >商家交流群</span>
-                        <div class="right-menu-two">
-                            <img src="" class="QRCode" style="width: 105px;">
-                        </div>
-                        <a class="clickAdd" target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575">点击加入</a>
-                    </div>
-                </div>
-
-
-
-
-    </div>
-
-    <a href="javascript:void(0);" id="onKfqq">
-        <img src="/asserts/images/kfqqsmall.png" alt="">
-    </a>
-
-<input type="hidden" id="imageRootPath" value="http://image-1254237507.image.myqcloud.com">
-<input type="hidden" id="cosAppId" value="1254237507">
-<input type="hidden" id="cosBucketName" value="image">
-<input type="hidden" id="cosDownRootPath" value="http://image-1254237507.cosgz.myqcloud.com">
-<input type="hidden" id="currentDate" value="20181022">
-<input type="hidden" id="userRole" value="true">
-<script type="text/javascript" src="https://js.users.51.la/19492995.js"></script>
-<script>
-    function closeImg(){
-        $(".contentBox").remove();
-        if($('#userRole').val()){
-            pddexpires();
-        }
-    }
-    function closeImg2(){
-        $(".contentBox").remove();
-    }
-    /*function tongzhi(obj){
-        var str = "<div class='contentBox'  onclick='closeImg();'>" +
-                "<div class='content' style='height:400px;width: 470px;'>" +
-                "<div class='noAgain'><i></i>不再提示</div>"+
-                "<span onclick='closeImg();'></span>" +
-                "<p style='width: 600px;margin-bottom:0px;margin-left:150px;margin-top: 10px;font-size: 17px;' >公告：</p>"+
-                "<p style='width: 600px;margin-bottom:0px;margin-left:0px;margin-top: 50px;' >亲，平台将于16日23:30-17日8:00进行数据库升级，</p>"+
-                "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >届时网站将停止访问，请大家提前做好活动安排 </p>"+
-                /!*"<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >试客多平台双11吞吐量上限10万单</p>"+
-                "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >目前已被各大商家提前预定7万单，仅剩3万单的额度</p>"+
-                "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >资源非常紧张，请马上联系我提前落位，时间就是金钱！</p>"+
-                "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >还有几个小时就要开始了，请马上联系我预登记单量</p>"+
-                "<p style='width: 650px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >人满即止，额度非常有限! </p>" +
-                "<p style='width: 650px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >不要跟钱过不去，抓紧机会,避免踏空！</p>" +
-                "<p style='width: 650px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >毛经理：QQ：2852366295  TEL：17557296910 </p>" +*!/
-//                "<p style='width: 650px;margin-bottom:0px;margin-left:0px;margin-top: 10px;' >非常感谢各位商家一直以来对试客多的支持，祝大家放单愉快！</p>" +
-                /!*"<p style='width: 650px;margin-bottom:0px;margin-left:-15px; '>3.平台新增复购活动，提高宝贝回购率，做好老客户维护权重；</p>" +
-                "<p style='width: 650px;margin-bottom:0px;margin-left:-15px; '>4.试用间隔时间自定义设置（店铺管理），根据类目情况设置间隔时间，合理布局复购率，提高补单</p>" +
-                "<p style='width: 650px;margin-bottom:0px;margin-left:-3px; '>安全性。</p>" +*!/
-                "<p></p>"+
-                "<p></p>"+
-                "<p></p>"+
-                "<p></p>"+
-                "<p></p>"+
-                "<p></p>"+
-                "<p></p>"+
-                "</div>" +
-                "</div>";
-        $('body').prepend(str);
-        $(".content").css({
-            "width":"750x",
-            // "height":"280px",
-            "margin":"-210px 0 0 -275px",
-            "background":"url(/asserts/images/roleBg2.png) no-repeat"
-        });
-        $(".content").click(function(){
-            return false;
-        });
-        $(".noAgain").click(function(){
-            var keep = new Date();
-            var active = $(this).find("i").hasClass("active");
-            if(active){
-                $(this).find("i").removeClass("active");
-                store.set("isShow",'');
-            }else{
-                $(this).find("i").addClass("active");
-                store.set("isShow",keep.getTime());
-            }
-        });
-    }*/
-
-    function pddexpires(){
-//        var str = ;
-//        $('body').prepend(str);
-        $(".contentBox").show();
-        $(".content").css({
-            "width":"750x",
-            // "height":"280px",
-            "margin":"-320px 0 0 -215px",
-            //"background":"url(/asserts/images/pddtip.jpg) no-repeat",
-            "background-size":"400px 600px"
-        });
-        $(".content").click(function(){
-            return false;
-        });
-        $(".noAgain").click(function(){
-            var keep = new Date();
-            var active = $(this).find("i").hasClass("active");
-            if(active){
-                $(this).find("i").removeClass("active");
-                store.set("isShow",'');
-            }else{
-                $(this).find("i").addClass("active");
-                store.set("isShow",keep.getTime());
-            }
-        });
-    }
-    //vip弹框
-    function showVipAlert(msg) {
-        var html = '<div class="shade" style="position: absolute;top: 0; left: 0;width: 100%;background: #000;opacity: 0.5; "></div>'+
-                '<div class="shade-box" style="position: absolute;  left: 50%; width: 400px; height: 300px; z-index: 300;background-color: #fff; border-radius: 10px; margin-left: -200px;" >'+
-                '<a class="shade-close" style="font-size: 18px;float: right;margin: 6px 15px 0 0px;">X</a>'+
-                '<p style="clear:both; font-size: 16px; font-weight: bold; text-align: center; margin-top: 99px;">'+msg+'</p>'+
-                '<a href="/seller/orderVip.htm" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>'+
-                '</div>';
-        var body = $("body")
-        body.append(html);
-        $(".shade").height(body.height());
-        $(".shade-box").css({
-            top: (document.body.offsetHeight  )/2 + document.body.scrollTop - 400 + 'px'
-        });
-        $(".shade-box a").css({
-            cursor: 'pointer'
-        });
-        $(".shade-close").on("click",function () {
-            $(".shade, .shade-box").remove();
-        })
-    }
-
-
-
-</script>
-
-	<div id="Container" align="center">
-		<div id="Header">
-
-
-<link rel="stylesheet" type="text/css" href="../static/css/layout.css"/>
-<link rel="stylesheet" type="text/css" href="../static/css/header.css"/>
-		</div>
-		<div class="Content-Space-h"></div>
-		<div id="Content">
-			<div id="Content-Left">
-
-
-
-
-<link rel="stylesheet" type="text/css" href="../static/css/navigator.css" />
-
-		<ul class="left_menu" style="margin-bottom: 10px;">
-			<li class="menu_selected" href="/seller/index.htm">
-				<i class="grxx"></i>
-				<span>用户中心</span>
-				<p></p>
-			</li>
-			<li href="/seller/bindStore.htm?rt=n">
-				<i class="dpbt"></i>
-				<span>店铺管理</span>
-			</li>
-			<li href="/seller/publish/publish_mission.htm">
-				<i class="fbrw"></i>
-				<span>试用活动发布</span>
-			</li>
-			<li href="/seller/zrwlb.htm">
-				<i class="yfbrw"></i>
-				<span>试用活动管理</span>
-			</li>
-
-
-
-
-
-			<li href="/seller/blacklist/index.htm">
-				<i class="hmd"></i>
-				<span>试客黑名单</span>
-				<div class="new" style="left:90px;"></div>
-			</li>
-
-			<li href="/account/accounthistory.htm">
-				<i class="ckzd"></i>
-				<span>查看账单</span>
-			</li>
-			<li href="/account/accountmanage.htm">
-				<i class="zjgl"></i>
-				<span>资金管理</span>
-			</li>
-			<li href="/seller/seller_tariff_description.htm">
-				<i class="ckzz"></i>
-				<span>平台资费说明</span>
-			</li>
-
-
-
-
-			<li href="/account/recommendPage.htm">
-				<i class="rcd"></i>
-				<img src="/asserts/images/hot.gif" alt="" style="position: relative;top: -2px;left: 5px;">
-				<span>推荐赚金币</span>
-			</li>
-
-
-
-
-			<li href="/popular/popular.htm?pg=task.pcFlow" target="_blank">
-				<i class="i16_brq"></i>
-				<span>补人气</span>
-
-			</li>
-
-			<li>
-                <a href="http://www.chapaiming.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">
-                    <i class="i16_cpm"></i>
-                    <span>查排名</span>
-
+        <div class="bg">
+            <img class="bg-img" src="/saleterrace/images/kfqq.png" alt="">
+            <div class="right-menu-content">
+                <a href="syhd_release_index.ftl">
+                    <img src="/saleterrace/images/sjscfd.png" class="right-menu-content-top-img" alt="">
                 </a>
-			</li>
+                <span class="menuTitleTwo">客服问题找我</span>
+                <div class="right-menu-two">
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368872">
+                        <img src="/saleterrace/images/yckf_03.png" alt=""> 宝宝
+                    </a>
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852365086">
+                        <img src="/saleterrace/images/yckf_03.png" alt=""> 贝贝
+                    </a>
+                </div>
+                <span class="menuTitleOne">活动发布找我</span>
+                <div class="right-menu-one">
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368900">
+                        &nbsp;&nbsp;&nbsp;<img src="/saleterrace/images/yckf_03.png" alt=""> 高经理
+                    </a>
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852356150">
+                        <img src="/saleterrace/images/yckf_03.png" alt=""> 安娜老师
+                    </a>
+
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852365085">
+                        <img src="/saleterrace/images/yckf_03.png" alt=""> 周华老师
+                    </a>
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852366295">
+                        <img src="/saleterrace/images/yckf_03.png" alt=""> 毛经理
+                    </a>
+                </div>
+                <span class="menuTitleOne">上班时间</span>
+                <div class="right-menu-one">
+                    <p style="font-size: 12px;">周一至周日<br> 9:00-18:00</p>
+                </div>
+            </div>
+            <div class="right-menu-content" style="padding-top: 0px;margin-top: 2px;">
+                <span>商家交流群</span>
+                <div class="right-menu-two">
+                    <img src="/saleterrace/images/er.jpg" class="QRCode" style="width: 105px;">
+                </div>
+                <a class="clickAdd" target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575">点击加入</a>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:void(0);" id="onKfqq"><img src="/saleterrace/images/kfqqsmall.png" alt=""></a>
+
+    <input type="hidden" id="imageRootPath" value="http://image-1254237507.image.myqcloud.com">
+    <input type="hidden" id="cosAppId" value="1254237507">
+    <input type="hidden" id="cosBucketName" value="image">
+    <input type="hidden" id="cosDownRootPath" value="http://image-1254237507.cosgz.myqcloud.com">
+    <input type="hidden" id="currentDate" value="20181022">
+    <input type="hidden" id="userRole" value="true">
 
 
-			<li>
-				<a href="http://www.maijiabus.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">
-					<i class="i16_mjbs"></i>
-					<span>流量捕手</span>
+    <div id="Container" align="center">
+        <div id="Header">
+            <div class="headMenu" align="right">
+            </div>
+        </div>
+        <div class="Content-Space-h"></div>
+        <div id="Content">
+            <div id="Content-Left">
+                <ul class="left_menu" style="margin-bottom: 10px;">
+                    <li class="menu_selected" >
+                        <a href="/saleterrace/yhzx_index"><i class="grxx"></i>
+                            <span>用户中心</span></a>
+                    </li>
+                    <li>
+                        <a href="/saleterrace/dpgl_index"><i class="dpbt"></i>
+                            <span>店铺管理</span></a>
+                    </li>
+                    <li>
+                        <a href="/saleterrace/syhd_release_index"><i class="fbrw"></i>
+                            <span>试用活动发布</span></a>
+                    </li>
+                    <li>
+                        <a  href="/saleterrace/syhd_management_index"><i class="yfbrw"></i>
+                            <span>试用活动管理</span></a>
+                    </li>
 
-				</a>
-			</li>
+                    <li>
+                        <a href="/saleterrace/black_index"><i class="hmd"></i>
+                            <span>试客黑名单</span>
+                            <div class="new" style="left:90px;"></div></a>
+                    </li>
 
-			<li>
-				<a href="/seller/seller_protocol.htm" target="_blank" style="overflow:hidden;display:block;margin:0;">
-					<i class="i16_protocol"></i>
-					<span>商家电子协议</span>
+                    <li>
+                        <a href="/saleterrace/ckzd_index"><i class="ckzd"></i>
+                            <span>查看账单</span></a>
+                    </li>
+                    <li>
+                        <a href="/saleterrace/zjgl_index"><i class="zjgl"></i>
+                            <span>资金管理</span></a
+                    </li>
+                    <li>
+                        <a  href="/saleterrace/ptzf_index"><i class="ckzz"></i>
+                            <span>平台资费说明</span></a>
+                    </li>
 
-				</a>
-			</li>
-		</ul>
-		<a class="sLeftImgJump" target="_blank" style="float: left; margin: 10px 0 0 0;">
-			<img class="sLeft " src="/asserts/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">
-		</a>
-		<input type="hidden" id="nav_hidden" value="1" />
+                    <li>
+                        <a  href="/saleterrace/tjzjb_index"><i class="rcd"></i>
+                            <img src="/saleterrace/images/hot.gif" alt="" style="position: relative;top: -2px;left: 5px;">
+                            <span>推荐赚金币</span></a>
+                    </li>
+                    <!--<li href="/popular/popular.htm?pg=task.pcFlow" target="_blank">-->
+                    <li>
+                        <a href="https://burenqi.com/task-pc-flow" target="_blank"><i class="i16_brq" ></i>补人气</a>
+                        <!--<span>补人气</span>-->
+                    </li>
+                    <li>
+                        <a href="http://www.chapaiming.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">
+                            <i class="i16_cpm"></i>
+                            <span>查排名</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.maijiabus.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">
+                            <i class="i16_mjbs"></i>
+                            <span>流量捕手</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/saleterrace/sjxy_index" style="overflow:hidden;display:block;margin:0;">
+                            <i class="i16_protocol"></i>
+                            <span>商家电子协议</span>
+                        </a>
+                    </li>
+                </ul>
+                <a class="sLeftImgJump" target="_blank" style="float: left; margin: 10px 0 0 0;">
+                    <img class="sLeft " src="/saleterrace/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">
+                </a>
+                <input type="hidden" id="nav_hidden" value="1" />
+            </div>
 
-
-
-
-
-
-
-<script>
-    $(document).ready(function() {
-        if(isGodChoose()) {
-            var gotoxiuba = $("#goto-xiuba-href");
-            if (gotoxiuba&&gotoxiuba.length>0){
-                gotoxiuba.css("display","inline-block");
-            }
-        }
-    });
-</script>
-			</div>
 			<div id="Content-Space"></div>
 			<div id="Content-Main">
 				<div class="order-vip-box">
-					<img src="/asserts/images/order-vip/vip-banner.png" alt="">
-					<img src="/asserts/images/order-vip/explain.png" alt="" style="    margin-top: 10px;    margin-bottom: 30px;">
-
-					<p>
-						一次性缴纳的保证金越多，权限时间越长，优惠力度越大<br>
-
-					</p>
+					<img src="/saleterrace/images/vip-banner.png" alt="">
+					<img src="/saleterrace/images/explain.png" alt="" style="    margin-top: 10px;    margin-bottom: 30px;">
+					<p>一次性缴纳的保证金越多，权限时间越长，优惠力度越大<br></p>
 					<div class="sel-order-box" id="selectPrice">
 						<a id="alongMonth" style="margin-left: 171px" class="active">
-							<p class="title" style="height: 50px;line-height: 60px">
-								永久权限&nbsp;&nbsp;  <span class="price">8998</span>   &nbsp;&nbsp;
+							<p class="title" style="height: 50px;line-height: 60px"> 永久权限&nbsp;&nbsp;  <span class="price">8998</span>   &nbsp;&nbsp;
 								<span class="vipLevelEnum" style="display: none">MONTH_ALONG</span>
 							</p>
 							<p class="small">
@@ -771,9 +425,6 @@
 								两年权限&nbsp;&nbsp;  <span class="price">2398</span>   &nbsp;&nbsp;
 								<span class="vipLevelEnum" style="display: none">MONTH_TWENTY_FOUR</span>
 							</p>
-
-
-
 							<p class="small">
 								同平台店铺可绑定<b style="color: red;">10</b>家
 							</p>
@@ -783,9 +434,6 @@
 								一年权限&nbsp;&nbsp;  <span class="price">1798</span>   &nbsp;&nbsp;
 								<span class="vipLevelEnum" style="display: none">MONTH_TWELVE</span>
 							</p>
-
-
-
 							<p class="small">
 								同平台店铺可绑定<b style="color: red;">5</b>家
 							</p>
@@ -795,9 +443,6 @@
 								半年权限&nbsp;&nbsp;  <span class="price">1398</span>   &nbsp;&nbsp;
 								<span class="vipLevelEnum" style="display: none">MONTH_SIX</span>
 							</p>
-
-
-
 							<p class="small">
 								同平台店铺可绑定<b style="color: red;">3</b>家
 							</p>
@@ -812,23 +457,11 @@
 							</p>
 						</a>
 					</div>
-
-
-
-
-
-
 					<div class="click-order-box">
-
-
-
-
-                                <a id="handControlBtn"  style="margin-left: 210px">
-                                    <p class="title">转账联系客服手动缴纳保证金</p>
-                                    <p class="small">周一至周日9:00-18:00</p>
-                                </a>
-
-
+                        <a id="handControlBtn"  style="margin-left: 210px">
+                            <p class="title">转账联系客服手动缴纳保证金</p>
+                            <p class="small">周一至周日9:00-18:00</p>
+                        </a>
 					</div>
 				</div>
 			</div>
@@ -839,7 +472,7 @@
 			<!--如何你上面用到float,下面布局开始前最好清除一下。-->
 		</div>
 		<div id="Footer">
-<link rel="stylesheet" type="text/css" href="../static/css/footer.css"/>
+
 <div class="foot_div">
 
     <div class="foot_div_div1">
@@ -1013,6 +646,7 @@
 
 		</div>
 	</div>
+
 	<script>
 		$(function () {
 			var vipOrderPrice = [1188,888,688,488];
@@ -1200,8 +834,181 @@
 			});
 		});
 
+        if(window.location.hostname=='115.159.84.78'){
+            window.location.href="http://budingdan.com";
+        }
+        <!-- 百度统计 -->
+        //        var _hmt = _hmt || [];
+        //        (function() {
+        //            var hm = document.createElement("script");
+        //            hm.src = "https://hm.baidu.com/hm.js?4e62b0120a2ce8478d446718527ae0ce";
+        //            var s = document.getElementsByTagName("script")[0];
+        //            s.parentNode.insertBefore(hm, s);
+        //        })();
 
 
-	</script>
+        if (!store.enabled) {
+            alert('您的浏览器不支持使用！！ 请关闭浏览器的"隐私模式"或者升级到主流浏览器已达到最佳体验');
+        }
+        var uid = 162036;
+        //用户是否登录
+        function isLogin() {
+            return uid != null ? true : false;
+        }
+
+        //上帝是否选择了你^_^ 可以提前看到一些东西
+        function isGodChoose(){
+            //id结尾为0的，大概为10分之一几率
+            var lastNumber = Math.abs(uid)%10;
+            return uid!=null?lastNumber<=9:false;
+//            return true;
+        }
+
+        //移除所有input和textarea的前后空格
+        function removeSpaceFunction() {
+            $('input[type=text], textarea').each(function(){
+                $(this).val(jQuery.trim($(this).val()));
+            });
+        }
+
+        //绑定可能是按钮触发的click事件，将该event插入到第一位，在点击后第一时间将所有的前后空格去除
+        $(window).load(function () {
+            $("input").firstOn("click",removeSpaceFunction);
+        });
+
+        $(document).ready(function() {
+            if(isGodChoose()) {
+                var gotoxiuba = $("#goto-xiuba-href");
+                if (gotoxiuba&&gotoxiuba.length>0){
+                    gotoxiuba.css("display","inline-block");
+                }
+            }
+        });
+
+        function closeImg(){
+            $(".contentBox").remove();
+            if($('#userRole').val()){
+                pddexpires();
+            }
+        }
+
+        function closeImg2(){
+            $(".contentBox").remove();
+        }
+        /*function tongzhi(obj){
+            var str = "<div class='contentBox'  onclick='closeImg();'>" +
+                    "<div class='content' style='height:400px;width: 470px;'>" +
+                    "<div class='noAgain'><i></i>不再提示</div>"+
+                    "<span onclick='closeImg();'></span>" +
+                    "<p style='width: 600px;margin-bottom:0px;margin-left:150px;margin-top: 10px;font-size: 17px;' >公告：</p>"+
+                    "<p style='width: 600px;margin-bottom:0px;margin-left:0px;margin-top: 50px;' >亲，平台将于16日23:30-17日8:00进行数据库升级，</p>"+
+                    "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >届时网站将停止访问，请大家提前做好活动安排 </p>"+
+                    /!*"<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >试客多平台双11吞吐量上限10万单</p>"+
+                    "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >目前已被各大商家提前预定7万单，仅剩3万单的额度</p>"+
+                    "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >资源非常紧张，请马上联系我提前落位，时间就是金钱！</p>"+
+                    "<p style='width: 600px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >还有几个小时就要开始了，请马上联系我预登记单量</p>"+
+                    "<p style='width: 650px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >人满即止，额度非常有限! </p>" +
+                    "<p style='width: 650px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >不要跟钱过不去，抓紧机会,避免踏空！</p>" +
+                    "<p style='width: 650px;margin-bottom:0px;margin-left:10px;margin-top: 10px;' >毛经理：QQ：2852366295  TEL：17557296910 </p>" +*!/
+    //                "<p style='width: 650px;margin-bottom:0px;margin-left:0px;margin-top: 10px;' >非常感谢各位商家一直以来对试客多的支持，祝大家放单愉快！</p>" +
+                    /!*"<p style='width: 650px;margin-bottom:0px;margin-left:-15px; '>3.平台新增复购活动，提高宝贝回购率，做好老客户维护权重；</p>" +
+                    "<p style='width: 650px;margin-bottom:0px;margin-left:-15px; '>4.试用间隔时间自定义设置（店铺管理），根据类目情况设置间隔时间，合理布局复购率，提高补单</p>" +
+                    "<p style='width: 650px;margin-bottom:0px;margin-left:-3px; '>安全性。</p>" +*!/
+                    "<p></p>"+
+                    "<p></p>"+
+                    "<p></p>"+
+                    "<p></p>"+
+                    "<p></p>"+
+                    "<p></p>"+
+                    "<p></p>"+
+                    "</div>" +
+                    "</div>";
+            $('body').prepend(str);
+            $(".content").css({
+                "width":"750x",
+                // "height":"280px",
+                "margin":"-210px 0 0 -275px",
+                "background":"url(/asserts/images/roleBg2.png) no-repeat"
+            });
+            $(".content").click(function(){
+                return false;
+            });
+            $(".noAgain").click(function(){
+                var keep = new Date();
+                var active = $(this).find("i").hasClass("active");
+                if(active){
+                    $(this).find("i").removeClass("active");
+                    store.set("isShow",'');
+                }else{
+                    $(this).find("i").addClass("active");
+                    store.set("isShow",keep.getTime());
+                }
+            });
+        }*/
+
+        function pddexpires(){
+//        var str = ;
+//        $('body').prepend(str);
+            $(".contentBox").show();
+            $(".content").css({
+                "width":"750x",
+                // "height":"280px",
+                "margin":"-320px 0 0 -215px",
+                //"background":"url(/asserts/images/pddtip.jpg) no-repeat",
+                "background-size":"400px 600px"
+            });
+            $(".content").click(function(){
+                return false;
+            });
+            $(".noAgain").click(function(){
+                var keep = new Date();
+                var active = $(this).find("i").hasClass("active");
+                if(active){
+                    $(this).find("i").removeClass("active");
+                    store.set("isShow",'');
+                }else{
+                    $(this).find("i").addClass("active");
+                    store.set("isShow",keep.getTime());
+                }
+            });
+        }
+
+        //vip弹框
+        function showVipAlert(msg) {
+            var html = '<div class="shade" style="position: absolute;top: 0; left: 0;width: 100%;background: #000;opacity: 0.5; "></div>'+
+                    '<div class="shade-box" style="position: absolute;  left: 50%; width: 400px; height: 300px; z-index: 300;background-color: #fff; border-radius: 10px; margin-left: -200px;" >'+
+                    '<a class="shade-close" style="font-size: 18px;float: right;margin: 6px 15px 0 0px;">X</a>'+
+                    '<p style="clear:both; font-size: 16px; font-weight: bold; text-align: center; margin-top: 99px;">'+msg+'</p>'+
+                    '<a href="/saleterrace/jnbzj_index" target="_blank" style="background-color: #5AC2E7;padding: 9px 31px;float: left;margin-top: 48px;margin-left: 132px;color: #fff;border-radius: 5px;font-size: 16px;">去缴纳保证金</a>'+
+                    '</div>';
+            var body = $("body")
+            body.append(html);
+            $(".shade").height(body.height());
+            $(".shade-box").css({
+                top: (document.body.offsetHeight  )/2 + document.body.scrollTop - 400 + 'px'
+            });
+            $(".shade-box a").css({
+                cursor: 'pointer'
+            });
+            $(".shade-close").on("click",function () {
+                $(".shade, .shade-box").remove();
+            })
+        }
+
+    </script>
 </body>
+
+<script src="/saleterrace/js/verdor/jquery/jquery-1.10.2.js"></script>
+<script src="/saleterrace/js/common/common.js"></script>
+<script src="/saleterrace/js/common/page.js"></script>
+<script src="/saleterrace/js/common/store.min.js"></script>
+<script type="text/javascript" src="/saleterrace/js/verdor/zebra_dialog/zebra_dialog.js"></script>
+<script type="text/javascript" src="/saleterrace/js/common/popdg.js"></script>
+<script type="text/javascript" src="/saleterrace/js/verdor/jquery-first-event.js"></script>
+<script type="text/javascript" src="/saleterrace/js/common/store+json2.min.js"></script>
+<script type="text/javascript" src="/saleterrace/js/common/store.expire.js"></script>
+<script type="text/javascript" src="/saleterrace/js/common/top.js"></script>
+<script type="text/javascript" src="/saleterrace/js/dist/viewer.js"></script>
+<script type="text/javascript" src="https://js.users.51.la/19492995.js"></script>
+
 </html>

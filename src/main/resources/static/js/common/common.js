@@ -101,7 +101,7 @@ function JTrim(a) {
 }
 function copyEvent(a) {
     a.zclip({
-        path: getRootPath() + "/asserts/js/vendor/jquery-zclip/1.1.2/ZeroClipboard.swf",
+        path: getRootPath() + "/asserts/js/vendor/jquery-zclip/1.1.jquery-zclip-1.1.2/ZeroClipboard.swf",
         copy: function() {
             return a.siblings("b").children("span").text()
         },

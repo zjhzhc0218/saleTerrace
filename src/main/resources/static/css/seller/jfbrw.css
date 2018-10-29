@@ -189,14 +189,14 @@ select {
 }
 
 .nextPage_button {
-    background-image: url(/asserts/images/nextPage_bg.png);
+    background-image: url(../../images/nextPage_bg.png);
     color: #fff;
     padding-right: 8px;
     margin-right: 20px
 }
 
 .lastPage_button {
-    background-image: url(/asserts/images/lastPage_bg.png);
+    background-image: url(../../images/lastPage_bg.png);
     color: #1d1d26;
     padding-left: 8px
 }
@@ -389,7 +389,7 @@ select {
 .copy_button {
     width: 47px;
     font-size: 14px;
-    background-image: url(/asserts/images/copy_bg.png);
+    background-image: url(../../images/copy_bg.png);
     border: 0;
     cursor: pointer;
     margin-right: 15px;
@@ -410,11 +410,11 @@ select {
 }
 
 .qrsh_button1 {
-    background-image: url(/asserts/images/buttonBg1.png)
+    background-image: url(../../images/buttonBg1.png)
 }
 
 .dfk_button,.qrsh_button2 {
-    background-image: url(/asserts/images/buttonBg2.png)
+    background-image: url(../../images/buttonBg2.png)
 }
 
 .paging {
@@ -434,14 +434,14 @@ select {
 }
 
 .number_button_chosen {
-    background-image: url(/asserts/images/wdrw/number_button.png);
+    background-image: url(../../images/number_button.png);
     color: #1d1d26
 }
 
 .paging_button {
     width: 55px;
     height: 27px;
-    background-image: url(/asserts/images/wdrw/paging_button.png);
+    background-image: url(../../images/paging_button.png);
     background-color: transparent;
     color: #fff
 }
@@ -605,7 +605,7 @@ span.order2 img {
     width: 980px;
     height: 40px;
     margin: 10px 0;
-    background-image: url(/asserts/images/wdrw/warnTip.png);
+    background-image: url(../../images/warnTip.png);
     background-repeat: no-repeat;
     background-color: #ffefd7;
     display: none
@@ -650,7 +650,7 @@ span.order2 img {
     width: 16px;
     height: 16px;
     cursor: pointer;
-    background: url(/asserts/images/wndMessBg.png) -144px -4px no-repeat
+    background: url(../../images/wndMessBg.png) -144px -4px no-repeat
 }
 
 .mission span {
@@ -658,7 +658,7 @@ span.order2 img {
     height: 88px;
     margin: 50px auto 10px;
     display: block;
-    background: url(/asserts/images/buyerimages/i88_cg.png) no-repeat
+    background: url(../../images/i88_cg.png) no-repeat
 }
 
 .mission h2 {
@@ -811,7 +811,7 @@ span.order2 img {
     top: 7px;
     width: 18px;
     height: 16px;
-    background: url(/asserts/images/i16_mclose.png) no-repeat #fff;
+    background: url(../../images/i16_mclose.png) no-repeat #fff;
     cursor: pointer
 }
 

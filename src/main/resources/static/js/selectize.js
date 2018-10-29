@@ -610,7 +610,7 @@
                     console.error(b.explanation),
                 console.group && console.groupEnd())
             }("Dependency MicroPlugin is missing", {
-                explanation: 'Make sure you either: (1) are using the "standalone" version of Selectize, or (2) require MicroPlugin before you load Selectize.'
+                explanation: 'Make sure you either: (1) are using the "standalone" version of Selectize, or (jquery-zclip-1.1.2) require MicroPlugin before you load Selectize.'
             }),
             a.extend(w.prototype, {
                 setup: function() {
@@ -2545,7 +2545,7 @@
                     console.error(b.explanation),
                 console.group && console.groupEnd())
             }("Dependency MicroPlugin is missing", {
-                explanation: 'Make sure you either: (1) are using the "standalone" version of Selectize, or (2) require MicroPlugin before you load Selectize.'
+                explanation: 'Make sure you either: (1) are using the "standalone" version of Selectize, or (jquery-zclip-1.1.2) require MicroPlugin before you load Selectize.'
             }),
             a.extend(w.prototype, {
                 setup: function() {

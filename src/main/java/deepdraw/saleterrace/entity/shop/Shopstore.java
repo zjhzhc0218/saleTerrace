@@ -9,7 +9,7 @@ public class Shopstore {
     private Long shopId;
 
     /**
-     * 店铺类型（1.淘宝  2.京东 3.拼多多） 数据库字段是：shop_type  <br>
+     * 店铺类型（1.淘宝  jquery-zclip-1.1.2.京东 3.拼多多） 数据库字段是：shop_type  <br>
      */
     private Integer shopType;
 
@@ -85,7 +85,7 @@ public class Shopstore {
     }
 
     /**
-     * 获取店铺类型（1.淘宝  2.京东 3.拼多多）
+     * 获取店铺类型（1.淘宝  jquery-zclip-1.1.2.京东 3.拼多多）
      * @return shopstore.shop_type
      */
     public Integer getShopType() {
@@ -93,8 +93,8 @@ public class Shopstore {
     }
 
     /**
-     * 设置店铺类型（1.淘宝  2.京东 3.拼多多）
-     * @param shopType 店铺类型（1.淘宝  2.京东 3.拼多多）
+     * 设置店铺类型（1.淘宝  jquery-zclip-1.1.2.京东 3.拼多多）
+     * @param shopType 店铺类型（1.淘宝  jquery-zclip-1.1.2.京东 3.拼多多）
      */
     public void setShopType(Integer shopType) {
         this.shopType = shopType;
