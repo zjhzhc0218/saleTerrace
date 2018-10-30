@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+
+
+<script type="text/javascript" src="/saleterrace/js/verdor/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="/saleterrace/js/verdor/jquery.form.js"></script>
+<script type="text/javascript" src="/saleterrace/js/verdor/jquery-first-event.js"></script>
+<script type="text/javascript" src="/saleterrace/js/verdor/datepicker/WdatePicker.js"></script>
+<script type="text/javascript" src="/saleterrace/js/verdor/jquery-jqPaginator/jqPaginator.js"></script>
+<script type="text/javascript" src="/saleterrace/js/verdor/jquery-loadTemplate/jquery.loadTemplate-1.4.4.js"></script>
+<script type="text/javascript" src="/saleterrace/js/verdor/jquery-zclip-1.1.2/jquery.zclip.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/saleterrace/js/account/accountmanage.js"></script>
 <script type="text/javascript" src="/saleterrace/js/account/yhzx_loginpwd.js"></script>
 <script type="text/javascript" src="/saleterrace/js/account/yhzx_zfpwd.js"></script>
-
+<script type="text/javascript" src="https://js.users.51.la/19492995.js"></script>
 <script type="text/javascript" src="/saleterrace/js/common/common.js"></script>
 <script type="text/javascript" src="/saleterrace/js/common/cos-js-sdk-v4.js"></script>
 <script type="text/javascript" src="/saleterrace/js/common/homePage.js"></script>
@@ -31,18 +34,9 @@
 <script type="text/javascript" src="/saleterrace/js/seller/jfbrw.js"></script>
 <script type="text/javascript" src="/saleterrace/js/seller/newPrefbrw.js"></script>
 
-<script type="text/javascript" src="/saleterrace/js/verdor/jquery.form.js"></script>
-<script type="text/javascript" src="/saleterrace/js/verdor/jquery-first-event.js"></script>
-<script type="text/javascript" src="/saleterrace/js/verdor/datepicker/WdatePicker.js"></script>
-<script type="text/javascript" src="/saleterrace/js/verdor/jquery/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="/saleterrace/js/verdor/jquery-jqPaginator/jqPaginator.js"></script>
-<script type="text/javascript" src="/saleterrace/js/verdor/jquery-loadTemplate/jquery.loadTemplate-1.4.4.js"></script>
-<script type="text/javascript" src="/saleterrace/js/verdor/jquery-zclip-1.1.2/jquery.zclip.js"></script>
-
 <script type="text/javascript" src="/saleterrace/js/verdor/zebra_dialog/zebra_dialog.js"></script>
 
 <script type="text/javascript" src="/saleterrace/js/selectize.js"></script>
-</body>
 <script>
     function closeImg() {
         $(".contentBox").remove();
@@ -209,7 +203,6 @@ $(".noAgain").click(function(){
         }
     }
 
-    <script>
     if(window.location.hostname=='115.159.84.78'){
         window.location.href="http://budingdan.com";
     }
@@ -292,10 +285,486 @@ $(".noAgain").click(function(){
         }
     });
 
-    $("#yhzx").click(function () {
-        $('grxx_div').show()
-        $('mainDiv').hide()
+    $(document).ready(function () {
+        if (isGodChoose()) {
+            var gotoxiuba = $("#goto-xiuba-href");
+            if (gotoxiuba && gotoxiuba.length > 0) {
+                gotoxiuba.css("display", "inline-block");
+            }
+        }
     });
+    $(".content").click(function () {
+        return false;
+    });
+    $(".noAgain").click(function () {
+        var keep = new Date();
+        var active = $(this).find("i").hasClass("active");
+        if (active) {
+            $(this).find("i").removeClass("active");
+            store.set("isShow", '');
+        } else {
+            $(this).find("i").addClass("active");
+            store.set("isShow", keep.getTime());
+        }
+        var body = $("body")
+        body.append(html);
+        $(".shade").height(body.height());
+        $(".shade-box").css({
+            top: (document.body.offsetHeight) / 2 + document.body.scrollTop - 400 + 'px'
+        });
+        $(".shade-box a").css({
+            cursor: 'pointer'
+        });
+        $(".shade-close").on("click", function () {
+            $(".shade, .shade-box").remove();
+        })
+    });
+    $(document).ready(function () {
+        if (isGodChoose()) {
+            var gotoxiuba = $("#goto-xiuba-href");
+            if (gotoxiuba && gotoxiuba.length > 0) {
+                gotoxiuba.css("display", "inline-block");
+            }
+        }
+    });
+    function payTip() {
+        var dg;
+        var html = "<span style='font-size: 16px;display: block;margin-bottom: 10px;'>请前往充值页面进行充值</span>";
+        var okCallback = function () {
+            dg.close();
+        };
+        var cancelCallbak = function () {
+            window.location.reload();
+        };
+        var options = {
+            width: 400,
+            overlay_close: false,
+            show_close_button: false,
+            center_buttons: true
+        };
+        dg = _showDialog('confirmation', "支付小贴士：", html, "充值遇到问题", okCallback, "已完成充值", cancelCallbak, options);
+    }
+
+    function payTip2() {
+        var dg;
+        var html = "<span style='font-size: 16px;display: block;margin-bottom: 10px;'>当前余额不足，请先充值。</span>";
+        var okCallback = function () {
+            window.open("/saleterrace/zjgl_index");
+        };
+        var cancelCallbak = function () {
+            window.location.reload();
+        };
+        var options = {
+            width: 400,
+            overlay_close: false,
+            show_close_button: false,
+            center_buttons: true
+        };
+        dg = _showDialog('confirmation', "支付小贴士：", html, "马上去充值", okCallback, "已完成充值", cancelCallbak, options);
+    }
+    $(".finding_ways .remember_finding").click(function(){
+        $(".set_payPwd").removeClass("hidden");
+        $(".finding_ways").addClass("hidden");
+        $(".title_div2 img").attr("src","/saleterrace/images/step2.png");
+        $(".title_div2 b").text("设置新登录密码");
+    });
+    if(request("type")=="buyer_admin"){
+        $(".finding_ways .remember_finding").click();
+        $(".reset_payPwd_div .title_div2").hide();
+    }
+    $(function(){
+        /*$(".finding_ways .remember_finding").click(function(){
+            $(".set_payPwd").removeClass("hidden");
+            $(".finding_ways").addClass("hidden");
+            $(".title_div2 img").attr("src","/asserts/images/fbrw/step2.png");
+            $(".title_div2 b").text("设置新登录密码");
+        });*/
+        $(".finding_ways .forget_finding").click(function(){
+            $(".finding_ways").addClass("hidden");
+            $(".safety_check").removeClass("hidden");
+
+            $(".title_div2 img").attr("src","/saleterrace/images/step2.png");
+            $(".title_div2 b").text("进行安全验证");
+            $("#passwordF2").removeClass("hidden")
+        });
+        $("#otherway").click(function(){
+            $(".finding_ways").removeClass("hidden");
+            $(".safety_check").addClass("hidden");
+            $(".title_div2 img").attr("src","/saleterrace/images/step1.png");
+            $(".title_div2 b").text("选择重置方式");
+        });
+        $(".safety_check .next_step_button").click(function(){
+            var code=$("#verifyCode").val();
+            if(!code){
+                alert("请填写图片验证码");
+                return;
+            }
+            var phoneNo=parseInt($.trim($("#phoneNoId").val()));
+            var phoneReg=/^1[0-9]{10}/;
+            if(phoneNo==null||!phoneReg.test(phoneNo)){
+                alert("请填写正确的手机号码");
+                return;
+            }
+            var checkCode = $("#checkW").val();
+            if(!checkCode||checkCode.length<6){
+                alert("请输入短信验证码");
+                return;
+            }
+            $.ajax({
+                type: "POST",
+                url: "/checkSms.htm",
+                data: "phoneNo=" + phoneNo + "&smsCode=" + checkCode,
+                success: function(msg){
+                    if (msg.checkResult == "true") {
+                        $("#checkW_id").val($("#checkW").val());
+                        $(".set_newPwd").removeClass("hidden");
+                        $(".safety_check").addClass("hidden");
+                        $(".title_div2 img").attr("src","/saleterrace/images/step3.png");
+                        $(".title_div2 b").text("设置新登录密码");
+                    } else{
+                        alert("短信验证码有误！");
+                    }
+                }
+            });
+
+        });
+        $(".prev_step_button").click(function () {
+            $(".finding_ways").removeClass("hidden");
+            $("#passwordF2").addClass("hidden");
+        });
+        $("#passwordPrv2").click(function () {
+            $(".set_newPwd").addClass("hidden");
+            $(".safety_check").removeClass("hidden");
+        })
+        $("#passwordPrv").click(function () {
+            $(".finding_ways").removeClass("hidden");
+            $(".set_payPwd").addClass("hidden");
+        });
+    });
+    var code ; //在全局 定义验证码
+    function createCode(){
+        code = new Array();
+        var codeLength = 4;//验证码的长度
+        var checkCode = document.getElementById("checkCode");
+        checkCode.value = "";
+
+        var selectChar = new Array(2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','J','K','L','M','N','P','Q','R','S','T','U','V','W','X','Y','Z');
+
+        for(var i=0;i<codeLength;i++) {
+            var charIndex = Math.floor(Math.random()*32);
+            code +=selectChar[charIndex];
+        }
+        if(code.length != codeLength){
+            createCode();
+        }
+        checkCode.value = code;
+    }
+    function changeImg() {
+        var imgSrc = $("#imgObj");
+        var src = imgSrc.attr("src");
+        imgSrc.attr("src", chgUrl(src));
+    }
+    function chgUrl(url) {
+        var timestamp = (new Date()).valueOf();
+        // url = url.substring(0, 17);
+        if ((url.indexOf("&") >= 0)) {
+            url = url + "×tamp=" + timestamp;
+        } else {
+            url = url + "?timestamp=" + timestamp;
+        }
+        return url;
+    }
+
+    $(function(){
+        /* $(".getCode_button").click(function(){
+            var obj=$(this);
+            if($(this).val()=="获取短信验证码"){
+                var seconds=60;
+                $(this).css("cursor","default");
+                int=setInterval(function(){
+                    if(seconds>=1){
+                        obj.val("已发送("+--seconds+")");
+                    }else{
+                        clearInterval(int);
+                        obj.val("获取短信验证码");
+                        $(this).css("cursor","pointer");
+                    }
+                },1000);
+            }
+        }); */
+        $(".finding_ways .remember_finding").click(function(){
+            $(".set_payPwd").removeClass("hidden");
+            $(".finding_ways").addClass("hidden");
+            $(".title_div2 img").attr("src","/saleterrace/images/step2.png");
+            $(".title_div2 b").text("设置新支付密码");
+        });
+        $(".finding_ways .forget_finding").click(function(){
+            $(".finding_ways").addClass("hidden");
+            $(".safety_check").removeClass("hidden");
+
+            $(".title_div2 img").attr("src","/saleterrace/images/step2.png");
+            $(".title_div2 b").text("进行安全验证");
+            $("#passwordF2").removeClass("hidden")
+        });
+        $("#otherway").click(function(){
+            $(".finding_ways").removeClass("hidden");
+            $(".safety_check").addClass("hidden");
+            $(".title_div2 img").attr("src","/saleterrace/images/step1.png");
+            $(".title_div2 b").text("选择重置方式");
+        });
+        $(".safety_check .next_step_button").click(function(){
+            var phoneNo=parseInt($.trim($("#phoneNoId").val()));
+            var checkCode = $("#smsCode").val();
+            if(!checkCode){
+                alert("请输入短信验证码");
+                return;
+            }
+            if(checkCode.length<6){
+                alert("短信验证码有误！");
+                return;
+            }
+            $.ajax({
+                type: "POST",
+                url: "/checkSms.htm",
+                data: "phoneNo=" + phoneNo + "&smsCode=" + checkCode,
+                success: function(msg){
+                    if (msg.checkResult == "true") {
+                        $(".set_newPwd").removeClass("hidden");
+                        $(".safety_check").addClass("hidden");
+                        $(".title_div2 img").attr("src","/saleterrace/images/step3.png");
+                        $(".title_div2 b").text("设置新支付密码");
+                    } else{
+                        alert("短信验证码有误！");
+                    }
+                }
+            });
+        });
+        $(".prev_step_button").click(function () {
+            $(".finding_ways").removeClass("hidden");
+            $("#passwordF2").addClass("hidden");
+        });
+        $("#passwordPrv2").click(function () {
+            $(".set_newPwd").addClass("hidden");
+            $(".safety_check").removeClass("hidden");
+        })
+        $("#passwordPrv").click(function () {
+            $(".finding_ways").removeClass("hidden");
+            $(".set_payPwd").addClass("hidden");
+        });
+    });
+    var code ; //在全局 定义验证码
+    function createCode(){
+        code = new Array();
+        var codeLength = 4;//验证码的长度
+        var checkCode = document.getElementById("checkCode");
+        checkCode.value = "";
+
+        var selectChar = new Array(2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','J','K','L','M','N','P','Q','R','S','T','U','V','W','X','Y','Z');
+
+        for(var i=0;i<codeLength;i++) {
+            var charIndex = Math.floor(Math.random()*32);
+            code +=selectChar[charIndex];
+        }
+        if(code.length != codeLength){
+            createCode();
+        }
+        checkCode.value = code;
+    }
+    function changeImg() {
+        var imgSrc = $("#imgObj");
+        var src = imgSrc.attr("src");
+        imgSrc.attr("src", chgUrl(src));
+    }
+    function chgUrl(url) {
+        var timestamp = (new Date()).valueOf();
+        // url = url.substring(0, 17);
+        if ((url.indexOf("&") >= 0)) {
+            url = url + "×tamp=" + timestamp;
+        } else {
+            url = url + "?timestamp=" + timestamp;
+        }
+        return url;
+    }
 </script>
+<script>
+    $(function () {
+        (function ($) {
+            $.fn.tabs = function (options) {
+                var defualts = {switchingMode: "click"};
+                var opts = $.extend({}, defualts, options);
+                var obj = $(this);
+                var clickIndex = 0;
+                obj.addClass("tabsDiv");
+                $(".tabs_ul li:first", obj).addClass("tabsSeletedLi");
+                $(".tabs_ul li:first", obj).css("border-right", "0px");
+                $(".tabs_ul li", obj).not(":first").addClass("tabsUnSeletedLi");
+                $(".content_div", obj).not(":first").hide();
+                $(".tabs_ul li", obj).css("display", "block");
+                $(".tabs_ul li", obj).bind(opts.switchingMode, function () {
+// 					if (clickIndex != $("ul li", obj).index($(this))) {
+// 						clickIndex = $("ul li", obj).index($(this));
+// 						$(".tabsSeletedLi", obj).removeClass("tabsSeletedLi").addClass("tabsUnSeletedLi");
+// 						$(this).removeClass("tabsUnSeletedLi").addClass("tabsSeletedLi");
+// 						$(".content_div", obj).hide();
+// 						$(".content_div", obj).eq(clickIndex).show();
+// 					};
+                    clickIndex = $("ul li", obj).index($(this));
+                    if (clickIndex == 1) {
+                        location.href = "withdrawhistory.htm"
+                    }
+                });
+            };
+        })(jQuery);
+        //------------执行方法
+        $("#zjjl_tabs").tabs();
+        $("#zjjl_tabs").css("visibility", "visible")
+        $(".option_button").click(function () {
+            if ($(this).attr("class").indexOf("hide_chosen_button") > 0) {
+                $(this).parent().parent().find(".option_button").addClass("hide_chosen_button");
+                $(this).removeClass("hide_chosen_button");
+            }
+        });
+        $(".number_button").click(function () {
+            $(".number_button").removeClass("number_button_chosen");
+            $(this).addClass("number_button_chosen");
+        });
+    });
+
+    $("#dateStart").click(function () {
+        WdatePicker({
+            readOnly: true,
+            dateFmt: 'yyyy-MM-dd HH:mm:ss',
+            maxDate: '#F{$dp.$D(\'dateEnd\',{d:0});}',
+            onpicked: function () {
+                /*findByDate()*/
+            }
+        });
+    });
+
+    $("#dateEnd").click(function () {
+        WdatePicker({
+            readOnly: true,
+            dateFmt: 'yyyy-MM-dd HH:mm:ss',
+            minDate: '#F{$dp.$D(\'dateStart\',{d:0});}',
+            onpicked: function () {
+                /*findByDate()*/
+            }
+        });
+    });
+    $(".nextDetailBtn").click(function () {
+        if ($(this).parent().parent().next().css("display") == "none") {
+            $(".nextDetailBtn").parent().parent().next().hide();
+            $(this).parent().parent().next().show();
+        } else {
+            $(this).parent().parent().next().hide();
+        }
+    });
+
+    function findResult(payType) {
+        $("#payTpyeId").val(payType)
+        $("#pageId").val(1)
+        submitForm();
+    }
+
+    function submitForm() {
+        $('input, textarea').each(function () {
+            $(this).val(jQuery.trim($(this).val()));
+        });
+        $("#findCondition").submit();
+    }
+
+    function searchTask() {
+        $("#pageId").val(1);
+        var ctno = $("#_ctaskno").val();
+        $("#childTaskNum").val(ctno);
+        submitForm();
+    }
+
+    function exportExcel() {
+        $("#export").attr("disabled", "disabled");
+        var ctno = $("#_ctaskno").val();
+        $("#childTaskNum").val(ctno);
+        $('input, textarea').each(function () {
+            $(this).val(jQuery.trim($(this).val()));
+        });
+        var params = $("#findCondition").serialize();
+        window.open("/account/exportAccountHistory.htm?" + params);
+        $("#export").removeAttr("disabled");
+    }
+
+    function findSomeDateResult(payType) {
+        //  $("#pageId").val(1)
+        $("#timeTypeId").val(payType)
+        $("#dateStart,#dateEnd").val("")
+        //submitForm();
+    }
+
+    function go(page) {
+        $("#pageId").val(page)
+        submitForm();
+    }
+
+    function findByDate() {
+        if ($("#dateStart").val() && $("#dateStart").val()) {
+            $("#pageId").val(1)
+            submitForm();
+        }
+    }
+
+    function init() {
+        $("#Content").height($(".zjjl_div").height() + 40);
+        headerStyle(1);
+        var type = $("#nav_hidden").val();
+        if (type == 1) {
+            navigatorStyle(5);
+        } else if (type == 2) {
+            navigatorStyle(6);
+        }
+    }
+
+    /*复选点击事件*/
+    $(".dl_two dd i").on("click", function () {
+        if ($(this).attr("disabled") != "disabled") {
+            if ($(this).hasClass("current")) {
+                if ($("dd i.current", $(this).parent("dd").parent(".dl_two")).size() <= 1) {
+                    alert("最少选择一个交易类型。");
+                } else {
+                    $(this).removeClass("current");
+                }
+            } else {
+                $(this).addClass("current");
+            }
+        }
+        transactionTypes();
+        return false;
+    });
+    $(".mColumn").on("click", function () {
+        if ($(this).prev("i").attr("disabled") != "disabled") {
+            if ($(this).prev("i").hasClass("current")) {
+                if ($("dd i.current", $(this).parent("dd").parent(".dl_two")).size() <= 1) {
+                    //提示
+                    alert("最少选择一个交易类型。");
+                } else {
+                    $(this).prev("i").removeClass("current");
+//                $("dt i",$(this).parent("dd").parent(".dl_two")).removeClass("current");
+                }
+            } else {
+                $(this).prev("i").addClass("current");
+            }
+        }
+        transactionTypes();
+        return false;
+    });
+
+    function transactionTypes() {
+        var transactionTypes = "";
+        $("dd i.current span", $(".dl_two")).each(function (i) {
+            if (i == 0) {
+                transactionTypes = $(this).attr("value");
+            } else {
+                transactionTypes = transactionTypes + "," + $(this).attr("value");
+            }
+        });
+        $("#transactionTypes").val(transactionTypes);
+    }
 </script>
-</html>

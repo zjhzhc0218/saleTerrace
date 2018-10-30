@@ -23,7 +23,7 @@ function closeShowAdd() {
         $(".screenBox").show(),
         $(".new_dp").addClass("hidden"))
 }
-function dpyzBtnClick() {
+/*function dpyzBtnClick() {
     $("input, textarea").each(function() {
         $(this).val(jQuery.trim($(this).val()))
     });
@@ -88,7 +88,7 @@ function bindSendAddr() {
             alert(c)
         }
     })
-}
+}**/
 function shopBind(a) {
     "tb" == a ? ($("#bindImg").attr("href", "/asserts/images/dpbd/dianpubangding02.png"),
         $("#storeType").val(""),
