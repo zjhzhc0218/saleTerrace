@@ -199,4 +199,49 @@
       merchant_level = #{merchantLevel,jdbcType=INTEGER}
     where merchant_account = #{merchantAccount,jdbcType=VARCHAR}
   </update>
+  <update id="updataUser" parameterType="deepdraw.saleterrace.entity.shop.Merchant" >
+    update merchant
+    <set >
+      <if test="merchantId != null" >
+        merchant_id = #{merchantId,jdbcType=BIGINT},
+      </if>
+      <if test="merchantPassword != null" >
+        merchant_password = #{merchantPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantPaycode != null" >
+        merchant_paycode = #{merchantPaycode,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantQq != null" >
+        merchant_qq = #{merchantQq,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantPhone != null" >
+        merchant_phone = #{merchantPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantLogintime != null" >
+        merchant_logintime = now(),
+      </if>
+      <if test="merchantLogincount != null" >
+        merchant_logincount = merchant_logincount+1，
+      </if>
+      <if test="merchantSalt != null" >
+        merchant_salt = #{merchantSalt,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantInvitecode != null" >
+        merchant_inviteCode = #{merchantInvitecode,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantInvitecodeOne != null" >
+        merchant_inviteCode_One = #{merchantInvitecodeOne,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantInvitecodeTwo != null" >
+        merchant_inviteCode_Two = #{merchantInvitecodeTwo,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantBan != null" >
+        merchant_ban = #{merchantBan,jdbcType=INTEGER},
+      </if>
+      <if test="merchantLevel != null" >
+        merchant_level = #{merchantLevel,jdbcType=INTEGER},
+      </if>
+    </set>
+    where merchant_account = #{merchantAccount,jdbcType=VARCHAR}
+  </update>
 </mapper>

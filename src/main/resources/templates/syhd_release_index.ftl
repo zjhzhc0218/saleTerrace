@@ -251,7 +251,6 @@
                             <li id="shopUrl">
                                 <i class="i3"></i>
                                 <h2>店铺首页网址：</h2>
-                                <input type="text" id="" name="">
                                 <p>（<span>*</span>店铺地址绑定后不可更改）</p>
                             </li>
                             <li class="sendPic">
@@ -317,15 +316,12 @@
                     <div class="ww_input">
                         <img src="/saleterrace/images/step1_icon.png">
                         <span>请输入掌柜旺旺：</span>
-                        <input type="text" class="input_text ww_input_text" id="">
                         <span>（<b>*</b>店铺旺旺绑定后不可更改）</span>
                     </div>
                     <div class="yzm_input">
                         <img src="/saleterrace/images/step2_icon.png">
                         <span>请输入宝贝链接：</span>
-                        <input type="text" id="goodUrl" class="input_text bb_url_input_text"
-                               placeholder="请将标题中已添加了验证码的宝贝链接粘贴于此"><b class="star">*</b>
-                    </div>
+                        </div>
                     <input type="button" class="dpyz_button" onclick="dpyzBtnClick()" value="提交店铺验证">
                 </div>
                 <p>提示：绑定成功之后可以随时修改宝贝标题删除该验证码。</p>
