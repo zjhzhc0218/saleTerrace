@@ -1,5 +1,5 @@
 <!DOCTYPE >
-<html>
+<html ng-app="saleterrace">
 	<head>
         <title>【试客多】-店铺管理</title>
 		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
@@ -199,7 +199,7 @@
 			    <div id="Content-Space"></div>
 				<div id="Content-Main"  class="tab-content container" >
 					<!-- center begin -->
-                    <div  role="tabpanel" class="tab-pane active"class="content" class="mainDiv" align="center"  id="mainDiv">
+                    <div  ng-controller="shopController"  role="tabpanel" class="tab-pane active"class="content" class="mainDiv" align="center"  id="mainDiv">
                         <div class="dp_list_div">
                             <div class="addDp_div" align="left">
                                 <input type="button" class="addDp_button" value="添加淘宝新店铺" onclick="addStore('other')">
@@ -274,7 +274,6 @@
                                             <li>
                                                 <i class="i1"></i>
                                                 <h2 id="changeType1">请输入掌柜旺旺：</h2>
-                                                <input type="text" id="wwId" name="wangwangid" maxlength="50">
                                                 <p id="changeType2">（<span>*</span>店铺旺旺绑定后不可更改）</p>
                                             </li>
                                             <li id="otherShop">
@@ -286,7 +285,6 @@
                                             <li id="shopUrl">
                                                 <i class="i3"></i>
                                                 <h2>店铺网址：</h2>
-                                                <input type="text" id="" name="">
                                                 <p>（<span>*</span>店铺地址绑定后不可更改）</p>
                                             </li>
                                             <li class="sendPic">

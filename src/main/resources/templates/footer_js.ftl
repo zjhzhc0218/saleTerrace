@@ -1,6 +1,7 @@
 
 
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="/saleterrace/js/angular/angular.js"></script>
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery.form.js"></script>
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery-first-event.js"></script>
 <script type="text/javascript" src="/saleterrace/js/verdor/datepicker/WdatePicker.js"></script>
@@ -37,6 +38,14 @@
 <script type="text/javascript" src="/saleterrace/js/verdor/zebra_dialog/zebra_dialog.js"></script>
 
 <script type="text/javascript" src="/saleterrace/js/selectize.js"></script>
+
+<!--angularJs-->
+<script type="text/javascript" src="/saleterrace/js/controller/saleterrace.js"></script>
+<script type="text/javascript" src="/saleterrace/js/controller/shop/shopController.js"></script>
+
+
+
+
 <script>
     function closeImg() {
         $(".contentBox").remove();
