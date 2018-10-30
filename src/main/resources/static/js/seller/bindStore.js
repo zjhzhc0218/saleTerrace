@@ -144,7 +144,7 @@ function storeInfo(a) {
                     f.repurchaseDayText = "<span>" + m + "天</span><button class='repurchaseDay' onclick='setRepurchaseDay(" + f.id + ',"' + f.repurchaseDay + "\")'>设置</button>"
             }
             4 == b || 5 == b ? $("#storeInfo").loadTemplate("#jdstoreInfoRow", a) : $("#storeInfo").loadTemplate("#storeInfoRow", a),
-                bindStoreOperator(),
+                Operator(),
                 $("#Content").height($(".mainDiv").height())
         },
         error: function(a, b, c) {
