@@ -38,5 +38,12 @@ public interface MerchantService {
      */
     String banChange(String id,Integer ban);
 
+    /**
+     * 修改商家表数据
+     * @param merchant
+     * @return
+     */
+    String update(Merchant merchant);
+
 
 }
