@@ -1,3 +1,5 @@
+<#include "//modal.ftl">
+<#include "//modal_js.ftl">
 <div  role="tabpanel" class="tab-pane "class="content" class="grxx_div" align="center" id="grxx_div">
     <div class="module_div jbxx_module" align="left">
         <div class="leadBox"></div>
@@ -13,13 +15,13 @@
             <a href="/saleterrace/dpgl_index?rt=n" class = "bindStores">&lt;&lt;点我认证</a>
                 <!-- <span class="marginLeft">剩余发布活动数：<span>10</span></span> --><br>
             <span class="marginLeft">账号：15355056891<span class="username"></span></span><span class="marginLeft">登录密码：
-            <img src="/saleterrace/images/set_icon.png"><b class="setPwd">已设置</b><a href="javascript:modify_dlpwd()">修改</a></span>
-            <span class="marginLeft">支付密码：<b class='setPaypwd'>已设置</b><a class='aSetPaypwd' href="javascript:modify_zfpwd()" target="_blank">修改</a></span>
+            <img src="/saleterrace/images/set_icon.png"><b class="setPwd">已设置</b><a onclick="searchLogin('myModal')">修改</a></span>
+            <span class="marginLeft">支付密码：<b class='setPaypwd'>已设置</b><a onclick="searchLogin('myModal_zf')">修改</a></span>
             <span class="marginLeft">QQ：287811726<span class="qqNum"></span>
-                <a href="javascript:modifyQQ()">修改</a>
+                <a onclick="searchLogin('myModal_qq')">修改</a>
             </span>
             <span class="marginLeft">紧急联系人：13706827563<span class="emergency"></span>
-                <a href="javascript:modifyEmergency()">修改</a>
+                <a onclick="searchLogin('myModal_phone')">修改</a>
             </span>
             </span>
             <br>
