@@ -15,9 +15,19 @@ b,h2,h3 {
     font-weight: 400
 }
 
+.role {
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #5bbff3;
+}
+
+
+
+
 .role h2 {
     font-size: 20px;
-    color: #333;
+    /*color: #333;*/
     line-height: 50px;
     height: 50px;
     padding-left: 30px;
@@ -28,7 +38,8 @@ b,h2,h3 {
     float: right;
     font-size: 16px;
     color: #1d1d26;
-    background: url(/saleterrace/images/i36_lmzk.png) 10px center no-repeat;
+    /*background: url(../images/i36_lmzk.png) 10px center no-repeat;*/
+    background: url(../../images/i36_lmzk.png) 10px center no-repeat;
     cursor: pointer;
     width: 36px;
     height: 36px;
@@ -84,8 +95,13 @@ b,h2,h3 {
     height: 38px;
     padding-left: 30px;
     background-color: #ddd;
-    overflow: hidden;
-    clear: both
+    /*overflow: hidden;*/
+    /*clear: both;*/
+    /*margin-top: 10px;*/
+    margin-bottom: 0px;
+    /*float: left;*/
+    margin-left: -750px;
+    width: 220px;
 }
 
 .missonType,.shopType {
@@ -114,8 +130,9 @@ b,h2,h3 {
     color: #333;
     line-height: 22px;
     height: 22px;
-    margin: 16px 0 16px 50px;
-    overflow: hidden
+    margin: 16px 0 16px -700px;
+    overflow: hidden;
+    width: 125px;
 }
 
 .missonType h3 span {
@@ -174,8 +191,8 @@ b,h2,h3 {
 }
 
 .missonType ul.bigTag li.active span {
-    width: 8px;
-    height: 8px;
+    width: 14px;
+    height: 14px;
     border: 3px solid #fff;
     background-color: #5bbff3
 }
@@ -231,7 +248,7 @@ b,h2,h3 {
 
 .missonType ul.misson li i.active {
     border: 1px solid #5bbff3;
-    background: url(/saleterrace/active.jpg) center no-repeat
+    background: url(../../images/active.jpg) center no-repeat
 }
 
 .shopType ul.shop {
@@ -284,7 +301,7 @@ b,h2,h3 {
 
 .shopType ul.shop li i.active {
     border: 1px solid #5bbff3;
-    background: url(/saleterrace/images/fbrw/active.jpg) center no-repeat
+    background: url(../../images/active.jpg) center no-repeat
 }
 
 .select ul.store {
@@ -356,7 +373,7 @@ b,h2,h3 {
     top: 9px;
     width: 38px;
     height: 16px;
-    background: url(/saleterrace/images/NEW.gif) no-repeat
+    background: url(../../images/NEW.gif) no-repeat
 }
 
 .hot-img,.vip-img {
@@ -376,7 +393,7 @@ b,h2,h3 {
 
 .vip-img {
     position: absolute;
-    background: url(/saleterrace/images/viptq.gif) no-repeat;
+    background: url(../../images/viptq.gif) no-repeat;
     display: none
 }
 
@@ -384,7 +401,7 @@ b,h2,h3 {
     float: left;
     margin-left: -88px;
     margin-top: 7px;
-    background: url(/saleterrace/images/hot.gif) no-repeat
+    background: url(../../images/hot.gif) no-repeat
 }
 
 .diamond-img {
@@ -393,7 +410,7 @@ b,h2,h3 {
     margin-left: -20px;
     width: 16px;
     height: 16px;
-    background: url(/saleterrace/images/i_16_diamond3.png) no-repeat
+    background: url(../../images/i_16_diamond3.png) no-repeat
 }
 
 .tuijian-img {
@@ -404,7 +421,7 @@ b,h2,h3 {
     left: -87px;
     width: 35px;
     height: 16px;
-    background: url(/saleterrace/images/tuijian.gif) no-repeat
+    background: url(../../images/tuijian.gif) no-repeat
 }
 
 .search_item_list {
