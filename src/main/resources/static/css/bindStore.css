@@ -39,7 +39,7 @@ input,span {
 .addDp_button {
     width: 145px;
     height: 40px;
-    background-image: url(../images/addNew_bg.png);
+    /*background-image: url(../images/addNew_bg.png);*/
     border: 0;
     background-color: transparent;
     position: relative;
@@ -94,24 +94,29 @@ input,span {
     border-top: 1px solid #EDF1F4
 }
 
-li.dp_li1 {
-    width: 195px;
-    padding-left: 30px
-}
+/*li.dp_li1 {*/
+    /*!*text-align:center;*!*/
+    /*padding-left: 30px;*/
+/*}*/
 
 li.dp_li2 {
+    /*text-align:center;*/
     width: 125px
 }
 
 li.dp_li3 {
-    width: 110px
+    /*text-align:center;*/
+    width: 110px;
+    /*margin-left: 50px*/
 }
 
 li.dp_li4 {
+    /*text-align:center;*/
     width: 320px
 }
 
 li.dp_li5 {
+    /*text-align:center;*/
     width: 220px
 }
 
@@ -130,7 +135,7 @@ li.dp_li1 div,li.dp_li4 div,li.dp_li7 div {
 }
 
 li.dp_li1 div {
-    width: 135px
+    width: 255px
 }
 
 li.dp_li4 div {
@@ -153,7 +158,8 @@ li.dp_li6 img:hover {
 }
 
 li.dp_li7 {
-    width: 180px
+    width: 180px;
+    /*margin-left: -40px*/
 }
 
 li.dp_li7 div {
@@ -574,9 +580,9 @@ a.blue_span {
 .tabsSwitchDiv1 ul.tabsSwitch_ul li {
     float: left;
     cursor: pointer;
-    width: 210px;
-    line-height: 35px;
-    height: 32px;
+    width: 310px;
+    line-height: 45px;
+    height: 43px;
     text-align: center;
     font-family: 微软雅黑;
     font-size: 14px;
@@ -681,8 +687,8 @@ a.blue_span {
 }
 
 .formInfor ul.title li i.i1 {
-    background: url(../images/step1_icon.png) no-repeat
     /*background: url(../images/step1_icon.png) no-repeat*/
+    background: url(../images/step1_icon.png) no-repeat
 }
 
 .formInfor ul.title li i.i2 {

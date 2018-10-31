@@ -1,8 +1,8 @@
 
 <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/saleterrace/css/bindStore.css"/>
 <link rel="stylesheet" type="text/css" href="/saleterrace/css/homePage.css"/>
 <link rel="stylesheet" type="text/css" href="/saleterrace/css/zebra_dialog.css"/>
-<link rel="stylesheet" type="text/css" href="/saleterrace/css/bindStore.css"/>
 <link rel="stylesheet" type="text/css" href="/saleterrace/css/seller/bindStorePop.css"/>
 <link rel="stylesheet" type="text/css" href="/saleterrace/css/recommendPage.css"/>
 <link rel="stylesheet" type="text/css" href="/saleterrace/css/seller/jfbrw.css"/>
@@ -21,9 +21,15 @@
 <link rel="stylesheet" type="text/css" href="/saleterrace/css/header.css"/>
 <link rel="stylesheet" type="text/css" href="/saleterrace/css/navigator.css"/>
 <link rel="stylesheet" type="text/css" href="/saleterrace/css/footer.css"/>
-<link rel="stylesheet" type="text/css" href="/saleterrace/css/WdatePicker.css"/>
+<#--<link rel="stylesheet" type="text/css" href="/saleterrace/css/WdatePicker.css"/>-->
 
 <style>
+    #Content-Left ul .add {
+        background-color: #b3b3b3;
+    }
+    #Content-Left ul .add span {
+        color: #fff;
+    }
     .contentBox {
         position: fixed;
         width: 100%;

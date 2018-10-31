@@ -242,6 +242,10 @@
     background: url(../images/NEW.gif) no-repeat
 }
 
+/*.menu_selected:focus {*/
+    /*color: red;*/
+/*}*/
+
 .left_menu .line_li {
     height: 1px;
     width: 155px;

@@ -30,11 +30,11 @@
 }
 
 .bindWay li span.screenshot {
-    background: url(/asserts/images/i36_dpjt02.png) 0 center no-repeat
+    background: url(./static/images/i36_dpjt02.png) 0 center no-repeat
 }
 
 .bindWay li span.identCode {
-    background: url(/asserts/images/i36_dpyzm02.png) 0 center no-repeat
+    background: url(./static/images/i36_dpyzm02.png) 0 center no-repeat
 }
 
 .bindWay li.current {
@@ -46,11 +46,11 @@
 }
 
 .bindWay li.current span.screenshot {
-    background: url(/asserts/images/i36_dpjt01.png) 0 center no-repeat
+    background: url(./static/images/i36_dpjt01.png) 0 center no-repeat
 }
 
 .bindWay li.current span.identCode {
-    background: url(/asserts/images/i36_dpyzm01.png) 0 center no-repeat
+    background: url(./static/images/i36_dpyzm01.png) 0 center no-repeat
 }
 
 .bindWay li.current i {
@@ -157,19 +157,20 @@
 }
 
 .formInfor ul.title li i.i1 {
-    background: url(/asserts/images/step1_icon.png) no-repeat
+    background: url(./static/images/step1_icon.png) no-repeat
 }
 
 .formInfor ul.title li i.i2 {
-    background: url(/asserts/images/step2_icon.png) no-repeat
+    background: url(./static/images/step2_icon.png) no-repeat
 }
 
 .formInfor ul.title li i.i3 {
-    background: url(/asserts/images/step3_icon.png) no-repeat
+    background: url(./static/images/step3_icon.png) no-repeat
 }
 
 .formInfor ul.title li i.i4 {
-    background: url(/asserts/images/step4_icon.png) no-repeat
+    /*background: url(../images/step4_icon.png) no-repeat*/
+    background: url(./static/images/step4_icon.png) no-repeat
 }
 
 .formInfor ul.title li h2 {

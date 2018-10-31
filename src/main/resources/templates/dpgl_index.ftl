@@ -126,33 +126,34 @@
 			<div id="Content">
 				<div id="Content-Left">
 					<ul class="left_menu" style="margin-bottom: 10px;">
-						<li class="menu_selected" >
+						<#--<li class="menu_selected">-->
+						<li class="menu_li">
                             <a href="#grxx_div" role="tab" data-toggle="tab" ><i class="grxx"></i>
                             <span>用户中心</span></a>
 						</li>
-                        <li>
+                        <li class="menu_li add">
                             <a class="active"  role="tab" data-toggle="tab" href="#mainDiv" id="dpgl"><i class="dpbt"></i>
                             <span>店铺管理</span></a>
 						</li>
-						<li>
-                            <a href="#Content-Main-syhd" role="tab" data-toggle="tab""><i class="fbrw"></i>
+						<li class="menu_li">
+                            <a href="#Content-Main-syhd" role="tab" data-toggle="tab"><i class="fbrw"></i>
                             <span>试用活动发布</span></a>
 						</li>
-						<li>
+						<li class="menu_li">
                             <a  href="#Content-Main-syhdgl"  role="tab" data-toggle="tab" ><i class="yfbrw"></i>
                             <span>试用活动管理</span></a>
 						</li>
 
-						<li>
-                            <a href="#mainDivblack"  role="tab" data-toggle="tab" ><i class="hmd"></i>
+						<li class="menu_li">
+                            <a href="#black_div"  role="tab" data-toggle="tab" ><i class="hmd"></i>
                             <span>试客黑名单</span>
                             <div class="new" style="left:90px;"></div></a>
 						</li>
 
-						<li>
-                            <a href="/saleterrace/ckzd_index" id="ckzd"><i class="ckzd"></i>
-                            <span>查看账单</span></a>
-						</li>
+						<#--<li  onclick="change_color(this)">-->
+                            <#--<a href="/saleterrace/ckzd_index" id="ckzd"><i class="ckzd"></i>-->
+                            <#--<span>查看账单</span></a>-->
+						<#--</li>-->
 						<#--<li>-->
                             <#--<a href="/saleterrace/zjgl_index"><i class="zjgl"></i>-->
                             <#--<span>资金管理</span></a-->
@@ -199,162 +200,66 @@
 			    <div id="Content-Space"></div>
 				<div id="Content-Main"  class="tab-content container" >
 					<!-- center begin -->
-                    <div  ng-controller="shopController"  role="tabpanel" class="tab-pane active"class="content" class="mainDiv" align="center"  id="mainDiv">
+                    <div  ng-controller="shopController"  role="tabpanel" class="tab-pane active" class="content" class="mainDiv" id="mainDiv">
                         <div class="dp_list_div">
-                            <div class="addDp_div" align="left">
-                                <input type="button" class="addDp_button" value="添加淘宝新店铺" onclick="addStore('other')">
-                                <input type="button" class="addDp_button" value="添加京东新店铺" onclick="addStore('jd')" style="left: 95px">
-                                <input type="button" class="addDp_button" value="添加拼多多新店铺" onclick="addStore('pdd')" style="left: 165px">
+                            <div class="addDp_div" style="height: 60px;margin-top: 40px">
+                                ;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style="width: 360px;display: inline;margin-left: -150px"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px" href="#myModal_tb" role="tab" data-toggle="tab">添加淘宝新店铺</a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div style="width: 360px;display: inline"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px" href="#myModal_jd" role="tab" data-toggle="tab" >添加京东新店铺</a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div style="width: 360px;display: inline"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px"  href="#myModal_pdd" role="tab" data-toggle="tab" >添加拼多多新店铺</a></div>
+                                <#--<input type="button" class="addDp_button" value="添加京东新店铺" onclick="addStore('jd')" style="left: 95px">-->
+                                <#--<input type="button" class="addDp_button" value="添加拼多多新店铺" onclick="addStore('pdd')" style="left: 165px">-->
+                                <#--<input type="button" class="addDp_button" value="添加拼多多新店铺" onclick="addStore('pdd')" style="left: 165px">-->
                             </div>
                             <div class="dp_div" align="left">
                                 <div class="dp_title_div">
                                     <div>
-                                        <div id="tabsSwitch1" align="left" class="tabsSwitchDiv1" style="margin-top: 0px">
-                                            <ul class="tabsSwitch_ul">
-                                                <li value="0" class="tabsSwitchSeletedLi" id="tbStore">管理淘宝店铺</li>
-                                                <li value="1" class="tabsSwitchUnSeletedLi" id="jdStore">管理京东店铺</li>
-                                                <li value="2" class="tabsSwitchUnSeletedLi" id="pddStore">管理拼多多店铺</li>
-                                            </ul>
+                                        <div id="tabsSwitch1" align="left" class="tabsSwitchDiv1" style="margin-top: 0px;height: 34px">
+                                                <ul class="tabsSwitch_ul">
+                                                    <li value="0" class="tabsSwitchSeletedLi" id="tbStore">管理淘宝店铺</li>
+                                                    <li value="1" class="tabsSwitchUnSeletedLi" id="jdStore">管理京东店铺</li>
+                                                    <li value="2" class="tabsSwitchUnSeletedLi" id="pddStore">管理拼多多店铺</li>
+                                                </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <ul class="dp_head">
-                                    <li class="dp_li1">掌柜旺旺</li>
-                                    <li class="dp_li7">店铺名称</li>
-                                    <li class="dp_li2">绑定时间</li>
-                                    <li class="dp_li7">试用间隔时间设置</li>
-                                    <li class="dp_li3">状态</li>
-                                    <li class="dp_li6">操作</li>
+                                    <li class="dp_li1" style="width: 195px;">掌柜旺旺</li>
+                                    <li class="dp_li7" style="width: 180px" >店铺名称</li>
+                                    <li class="dp_li2" style="width: 125px">绑定时间</li>
+                                    <li class="dp_li7" style="width: 180px">试用间隔时间设置</li>
+                                    <li class="dp_li3" style="width: 110px">状态</li>
+                                    <li class="dp_li6" style="width: 160px;text-align: center">操作</li>
                                 </ul>
                                 <ul class="dp_headJD" style="display: none">
-                                    <li class="dp_li1">店铺名称</li>
-                                    <li class="dp_li7"></li>
-                                    <li class="dp_li2">绑定时间</li>
-                                    <li class="dp_li7">试用间隔时间设置</li>
-                                    <li class="dp_li3">状态</li>
-                                    <li class="dp_li6">操作</li>
+                                    <li class="dp_li1" style="width: 195px;">店铺名称</li>
+                                    <li class="dp_li7" style="width: 180px"></li>
+                                    <li class="dp_li2" style="width: 125px">绑定时间</li>
+                                    <li class="dp_li7" style="width: 180px">试用间隔时间设置</li>
+                                    <li class="dp_li3" style="width: 110px">状态</li>
+                                    <li class="dp_li6" style="width: 160px;text-align: center">操作</li>
                                 </ul>
                                 <div id="storeInfo">
                                     <ul class="dp_info">
-                                        <li class="dp_li1"><div>泰嘉boy</div></li>
-                                        <li class="dp_li7"><div>小算珠婴童店</div></li>
-                                        <li class="dp_li2">2018-06-15</li>
-                                        <li class="dp_li7"><div><span>30天</span><button class="repurchaseDay" onclick="setRepurchaseDay(40999,&quot;30&quot;)">设置</button></div></li>
-                                        <li class="dp_li3"><span class="statusStart">已启用</span></li>
-                                        <li class="dp_li6" style="position: relative">
+                                        <li class="dp_li1" style="width: 195px;padding-left: 30px"><div>泰嘉boy</div></li>
+                                        <li class="dp_li7" style="width: 180px;"><div>小算珠婴童店</div></li>
+                                        <li class="dp_li2" style="width: 125px;">2018-06-15</li>
+                                        <li class="dp_li7" style="width: 180px;"><div><span>30天</span><button class="repurchaseDay" onclick="setRepurchaseDay(40999,&quot;30&quot;)">设置</button></div></li>
+                                        <li class="dp_li3" style="width: 110px;"><span class="statusStart">已启用</span></li>
+                                        <li class="dp_li6" style="position: relative;width: 160px;">
                                             <img src="/saleterrace/images/start.png">
                                             <input type="hidden" id="storeType" value="2">
                                             <div style="position: absolute;top: 23px;left: 23px;color: #59C2E6;width: 110px;height: 0px">
-                                                <a style="color: #59C2E6" href="javascript:editSendInfo(40999,"2")">编辑</a>
+                                                <a href="#myModal_dpname" role="tab" data-toggle="tab" style="color: #59C2E6;">编辑</a>
                                             </div>
                                         </li>
                                         <li class="dp_hidden" column-id="status" value="1"></li>
                                         <li class="dp_hidden" column-id="version" value="18" ></li>
-
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <ul class="bindWay">
-                            <li class="current">
-                                <span class="screenshot"></span>
-                                <p>截图绑定（人工审核）</p>
-                                <i></i>
-                            </li>
-                        </ul>
-                        <div class="screenBox">
-                            <div class="new_dp_title" align="left">
-                                <div class="floatLeft halfDiv">
-                                    <p>绑定店铺并认证<span>（仅接手活动的试客可以看到，不会被泄露）</span></p>
-                                </div>
-                            </div>
-                            <div class="screen">
-                                    <div class="ormInfor">
-                                        <ul class="title">
-                                            <li>
-                                                <i class="i1"></i>
-                                                <h2 id="changeType1">请输入掌柜旺旺：</h2>
-                                                <p id="changeType2">（<span>*</span>店铺旺旺绑定后不可更改）</p>
-                                            </li>
-                                            <li id="otherShop">
-                                                <i class="i2"></i>
-                                                <h2>请输入店铺名称：</h2>
-                                                <input type="text" id="shopName" name="shopName" maxlength="100">
-                                                <p>（务必与宝贝显示的店铺名一致）</p>
-                                            </li>
-                                            <li id="shopUrl">
-                                                <i class="i3"></i>
-                                                <h2>店铺网址：</h2>
-                                                <p>（<span>*</span>店铺地址绑定后不可更改）</p>
-                                            </li>
-                                            <li class="sendPic">
-                                                <i class="i4"></i>
-                                                <h2>店铺后台截图：</h2>
-                                                <img id="storeCheckImgShow" style="cursor: pointer;" src="/saleterrace/images/i88_img.png" alt="">
-                                                <p>（为避免恶意绑定他人店铺必须上传店铺的后台登录截图）</p>
-                                                <input type="file" id="picValue" name="storeCheckImgTemp" accept=".jpg,.jpeg,.gif,.png" onchange="jic.onchange(this,'bind',162036,successSetValueCallBack,successCallBack,errorCallBack,'')" />
-                                                <h3 id="selectPic">选择文件</h3>
-                                                <a id="picUrl" href="/saleterrace/images/dianpubangding02.png" target="_blank">查看示例图</a>
-                                            </li>
-                                        </ul>
-                                        <input type="hidden" id="storeCheckImg" name="storeCheckImg">
-                                        <input type="hidden" id="ignoreCheckStore" name="ignoreCheckStore" value="">
-                                        <input type="hidden" id="id" name="id">
-                                        <input id="doSubmitCheck" type="button" value="提交店铺审核" onclick="doSubmit()">
-                                    </div>
-                                <p>提示：店铺绑定审核时间1个工作日左右，若超过一个工作日请联系客服！</p>
-                            </div>
-                        </div>
-
-                        <div class="new_dp hidden">
-                            <div class="new_dp_title" align="left">
-                                <div class="floatLeft halfDiv">
-                                    <p>绑定店铺并认证<span>（仅接手活动的试客可以看到，不会被泄露）</span></p>
-                                </div>
-                            </div>
-                            <div class="dp_check hidden" align="left">
-                                <div class="check_title_div">
-                                    <p>验证成功！请确认您的店铺信息</p>
-                                </div>
-                                <div class="dp_detail">
-                                    <span id="zgww">掌柜旺旺：<b class="dp_account">&nbsp;</b></span>
-
-                                    <div class="detail_address">
-                                        <ul class="title">
-                                            <li id="otherShopEdit">
-                                                <i class="i2"></i>
-                                                <span>请输入店铺名称：</span>
-                                                <input type="text" id="shopNameEdit" style="width: 230px;height: 25px;border: 1px solid #e1e1e1;margin-right: 10px;" name="shopNameEdit" maxlength="100">
-                                                <p>（务必与宝贝显示的店铺名一致）</p>
-                                            </li>
-                                            <li class="sendPic">
-                                                <i class="i4"></i>
-                                                <span>店铺后台截图：</span>
-                                                <img id="storeCheckImgShowEdit" style="cursor: pointer;" src="/saleterrace/images/i88_img.png" alt="">
-                                                <input type="file" style="display: none" id="picValueEdit" name="storeCheckImgTemp" accept=".jpg,.jpeg,.gif,.png" onchange="jic.onchange(this,'bind',162036,successEditSetValueCallBack,successCallBack,errorCallBack,'')" />
-                                            </li>
-                                        </ul>
-                                        <div class="floatLeft">
-                                            <br>
-                                            <input type="button" class="bd_button" value="确认绑定">
-                                            <input type="hidden" id="storeCheckImgEdit" name="storeCheckImgEdit">
-                                            <input type="hidden" id="bsid" value="" />
-                                            <input type="hidden" id="bsstatus" value="" />
-                                            <input type="hidden" id="bsversion" value="" />
-                                            <input type="hidden" id="sendInfoId" value="" />
-                                            <input type="hidden" id="sendInfoVersion" value="" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>
-                                    1、这里设置的发货地址将做为平台空包时的默认发货地址<br/> 2、您也可在发送平台快递的时候更改
-                                </p>
-                            </div>
-                        </div>
-
                     </div>
                     <!-- center end -->
-
                 <#--用户中心-->
                     <#include "//yhzx_index.ftl">
                 <#--试用活动发布-->
@@ -363,6 +268,7 @@
                 	<#include "//syhd_management_index.ftl">
 					<#--试客黑名单-->
                     <#include "//black_index.ftl">
+
                 </div>
             </div>
 		</div>
@@ -387,7 +293,6 @@
 				<li class="dp_hidden" column-id="version" data-value="version"></li>
 			</ul>
 		</script>
-
 
 		<script type="text/html" id="jdstoreInfoRow">
 			<ul class="dp_info">

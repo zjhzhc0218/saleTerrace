@@ -1,8 +1,11 @@
+<#--<#include "//modal.ftl">-->
+<#--<#include "//modal_js.ftl">-->
 <!-- center begin -->
-<div id="mainDivblack" align="center"  role="tabpanel" class="tab-pane "class="content" >
+<div id="black_div" align="center"  role="tabpanel" class="tab-pane "class="content" >
     <div class="dp_list_div">
         <div class="addDp_div" align="left">
             <input type="button" class="addDp_button" value="添加黑名单">
+            <#--<a href="#myModal_black" class="addDp_button">添加黑名单</a>-->
             <p>提示：添加黑名单旺旺号，该旺旺号所属账号将永远无法接手自己发布的活动（包括试用活动和浏览活动）。</p>
         </div>
         <div class="dp_div" align="left">
@@ -175,6 +178,7 @@
         <div style="width: 340px;height: 40px;">
             <img id="tbkBlackCheckImgShow" style="cursor: pointer;	"
                  src="/saleterrace/images/i88_img.png" alt="">
+                 <#--src="../saleterrace/images/i88_img.png" alt="">-->
             <input type="file" id="tbkPicValue" name="tbkBlackCheckImgTemp" accept=".jpg,.jpeg,.gif,.png" onchange="jic.onchange(this,'bind',162036,successTbkSetValueCallBack,successTbkCallBack,errorCallBack,'');" style="display: none"/>
             <h3 id="selectTbkPic">上传截图</h3>
             <a href="/saleterrace/images/tk_slt.png" target="_blank">*示例图</a>

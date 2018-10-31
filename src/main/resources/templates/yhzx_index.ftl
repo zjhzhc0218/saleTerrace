@@ -1,5 +1,13 @@
 <#include "//modal.ftl">
 <#include "//modal_js.ftl">
+
+<style type="text/css">
+    .pointer{
+        cursor: pointer;
+    }
+</style>
+
+
 <div  role="tabpanel" class="tab-pane "class="content" class="grxx_div" align="center" id="grxx_div">
     <div class="module_div jbxx_module" align="left">
         <div class="leadBox"></div>
@@ -12,16 +20,16 @@
         </div>
         <div class="content_div">
             <div class="floatLeft buyer marginLeft"><img src="/saleterrace/images/v.png">认证商家</div>
-            <a href="/saleterrace/dpgl_index?rt=n" class = "bindStores">&lt;&lt;点我认证</a>
+            <a href="/saleterrace/dpgl_index?rt=n" class = "bindStores" class="pointer">&lt;&lt;点我认证</a>
                 <!-- <span class="marginLeft">剩余发布活动数：<span>10</span></span> --><br>
             <span class="marginLeft">账号：15355056891<span class="username"></span></span><span class="marginLeft">登录密码：
-            <img src="/saleterrace/images/set_icon.png"><b class="setPwd">已设置</b><a onclick="searchLogin('myModal')">修改</a></span>
-            <span class="marginLeft">支付密码：<b class='setPaypwd'>已设置</b><a onclick="searchLogin('myModal_zf')">修改</a></span>
+            <img src="/saleterrace/images/set_icon.png"><b class="setPwd">已设置</b><a onclick="searchLogin('myModal')" class="pointer">修改</a></span>
+            <span class="marginLeft">支付密码：<b class='setPaypwd'>已设置</b><a onclick="searchLogin('myModal_zf')" class="pointer">修改</a></span>
             <span class="marginLeft">QQ：287811726<span class="qqNum"></span>
-                <a onclick="searchLogin('myModal_qq')">修改</a>
+                <a onclick="searchLogin('myModal_qq')" class="pointer">修改</a>
             </span>
             <span class="marginLeft">紧急联系人：13706827563<span class="emergency"></span>
-                <a onclick="searchLogin('myModal_phone')">修改</a>
+                <a onclick="searchLogin('myModal_phone')" class="pointer">修改</a>
             </span>
             </span>
             <br>
@@ -38,13 +46,13 @@
         </div>
         <div class="content_div">
             <div class="space_div2"></div>
-            <a href="/saleterrace/syhd_management_index?n=1" class="marginLeft number_a">待接手活动（<span class="number_span waitPay">0</span>）
+            <a href="/saleterrace/syhd_management_index?n=1" class="marginLeft number_a"  class="pointer">待接手活动（<span class="number_span waitPay">0</span>）
             </a>
-            <a href="/saleterrace/syhd_management_index?n=3" class="marginLeft number_a">待发货（<span class="number_span waitSendGood">0</span>）
+            <a href="/saleterrace/syhd_management_index?n=3" class="marginLeft number_a" class="pointer">待发货（<span class="number_span waitSendGood">0</span>）
             </a>
-            <a href="/saleterrace/syhd_management_index?n=5" class="marginLeft number_a">待返款（<span class="number_span waitBack">0</span>）
+            <a href="/saleterrace/syhd_management_index?n=5" class="marginLeft number_a" class="pointer">待返款（<span class="number_span waitBack">0</span>）
             </a>
-            <a href="/saleterrace/syhd_management_index?n=7" class="marginLeft number_a">失败活动（<span class="number_span failTask">0</span>）
+            <a href="/saleterrace/syhd_management_index?n=7" class="marginLeft number_a" class="pointer">失败活动（<span class="number_span failTask">0</span>）
             </a>
             <div class="space_div2"></div>
         </div>
@@ -56,10 +64,10 @@
         <div class="content_div">
             <div class="space_div"></div>
             <span class="marginLeft">货款账户<a href="/seller/seller_explain.htm?open_type=coin"><img src="/saleterrace/images/help-12-12.png"/> </a>：&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="lMoney">可用:0元   冻结:0元</span>
-            <a href="/saleterrace/zjgl_index?tab=2">{充值}</a>
-            <a href="/saleterrace/zjgl_index?tab=3">{提现}</a> <br>
+            <a href="/saleterrace/zjgl_index?tab=2"  class="pointer">{充值}</a>
+            <a href="/saleterrace/zjgl_index?tab=3"  class="pointer">{提现}</a> <br>
             <span class="marginLeft">金币账户
-                <a href="/seller/seller_explain.htm?open_type=coin">
+                <a href="/seller/seller_explain.htm?open_type=coin"  class="pointer">
                     <img src="/saleterrace/images/help-12-12.png"/>
                 </a>：&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <span class="lCoin">可用:0元   冻结:0元</span>
