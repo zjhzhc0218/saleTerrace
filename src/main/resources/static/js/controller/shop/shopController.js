@@ -20,7 +20,7 @@ _saleterrace.controller('shopController',['$scope','$http','$sce','$filter', fun
                 method: 'POST',
                 url: 'getShopRecords',
                 data: {
-                    'id': '11'
+                    'id': '1'
                 },
                 success: function (response) {
                     console.log(response);

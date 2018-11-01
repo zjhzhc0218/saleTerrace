@@ -192,7 +192,7 @@
     select
     <include refid="Base_Column_List" />
     from shopstore
-    where shopShopkeeper = #{id}
+    where shop_shopkeeper = #{id,jdbcType=BIGINT}
   </select>
 
 </mapper>
