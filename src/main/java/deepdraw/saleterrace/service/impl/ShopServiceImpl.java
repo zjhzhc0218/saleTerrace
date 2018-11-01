@@ -24,7 +24,7 @@ public class ShopServiceImpl implements ShopService {
 
     @Override
     public String getShopRecords(String id) {
-        List<Shopstore> shopRecords = shopstoreMapper.getShopRecords(id);
+        List<Shopstore> shopRecords = shopstoreMapper.getShopRecords(Long.valueOf(id));
         return JsonUtil.object2Json(shopRecords);
     }
 }

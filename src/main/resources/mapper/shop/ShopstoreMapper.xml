@@ -188,10 +188,11 @@
   </update>
   
   
-  <select id="getShopRecords" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+  <select id="getShopRecords"  resultType="deepdraw.saleterrace.entity.shop.Shopstore" >
     select
     <include refid="Base_Column_List" />
     from shopstore
-    where shopShopkeeper = #{id,jdbcType=BIGINT}
+    where shopShopkeeper = #{id}
   </select>
+
 </mapper>

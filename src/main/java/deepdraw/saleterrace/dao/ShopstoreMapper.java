@@ -1,6 +1,7 @@
 package deepdraw.saleterrace.dao;
 
 import deepdraw.saleterrace.entity.shop.Shopstore;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -11,7 +12,7 @@ public interface ShopstoreMapper {
      *
      * @mbggenerated 2018-10-25
      */
-    int deleteByPrimaryKey(Long shopId);
+    int deleteByPrimaryKey(@Param("id")Long shopId);
 
     /**
      *
@@ -29,7 +30,7 @@ public interface ShopstoreMapper {
      *
      * @mbggenerated 2018-10-25
      */
-    Shopstore selectByPrimaryKey(Long shopId);
+    Shopstore selectByPrimaryKey(@Param("id") Long id);
 
     /**
      *
@@ -44,5 +45,5 @@ public interface ShopstoreMapper {
     int updateByPrimaryKey(Shopstore record);
 
 
-    List<Shopstore> getShopRecords(String id);
+    List<Shopstore> getShopRecords(@Param("id") Long id);
 }
