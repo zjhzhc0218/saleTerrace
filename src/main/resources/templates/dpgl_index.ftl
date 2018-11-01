@@ -192,9 +192,9 @@
 							<#--</a>-->
 						<#--</li>-->
 					</ul>
-					<a class="sLeftImgJump" target="_blank" style="float: left; margin: 10px 0 0 0;">
-						<img class="sLeft " src="/saleterrace/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">
-					</a>
+					<#--<a class="sLeftImgJump" target="_blank" style="float: left; margin: 10px 0 0 0;">-->
+						<#--<img class="sLeft " src="/saleterrace/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">-->
+					<#--</a>-->
 					<input type="hidden" id="nav_hidden" value="1" />
 				</div>
 			    <div id="Content-Space"></div>

@@ -316,24 +316,24 @@ $(function() {
                 store.set("safeSupple", !1)) : (a(!0),
                 store.set("safeSupple", !0))
         }),
-        $("#next").on("click", function() {
-            $("body").append('<div id="agreeShade" style="background-color: #666; opacity: .5;position: fixed; top: 0; left:0; width: 100%; height: 100%;"></div><div id="agreeBox" style="border-radius: 5px; font-size: 14px; position: fixed; background: #fff; z-index: jquery-zclip-1.1.2; width: 600px; height: 400px; left: 50%; top: 50%; margin-left: -300px;margin-top: -300px; padding: 20px;"><p style="font-size: 18px; text-align: center;">活动须知</p><p style="line-height: 30px; font-size: 14px; margin-top: 10px;">近期有商家反应试客使用淘宝客、村淘下单，导致损失大量的返利赏金，在此平台特此说明：<br>1.平台所有的单子都是人工操作的，试客手机的环境不同浏览器软件劫持不一样，这也是没有办法用技术攻克的问题，请各位商家谅解。<br>jquery-zclip-1.1.2.建议商家在发布试用活动期间的商品暂停淘客推广，平台后续对淘宝客问题不予处理。<br>3.由于处理淘宝客容易引起买家商家之间的纠纷，一些买家会存在报复心理，投诉店铺、追加差评，恶意退款等问题，给商家带来无尽的麻烦，且会给添加平台客服工作量，所以淘宝下单的平台不再负责追回损失，请各位商家体谅。<br>4.关于村淘服务 淘宝所有村淘扣除的服务费都是由淘宝所得，并非试客赚取。<br>服务再次提醒：平台不再负责追回淘宝客、返利赏金及村淘问题，请商家参加试用活动商品自行关闭相应推广。<br></p><p><b id="agreeBtn" style="cursor: pointer; float: right;margin-right: 30px; "><span style="line-height: 10px;border:1px solid #000; margin-right: 5px;vertical-align: -2px;display: inline-block; width: 10px; height: 10px; "></span>我已阅读此条款</b></p><p style="text-align: center; margin-top: 20px;"><a id="agreeBtnTagA" agree="1" style=" cursor: pointer;background-color: #ddd; padding: 5px 20px; clear: both; display: inline-block; color: #fff;">同意</a></p></div>'),
-                $("#agreeBtn").on("click", function() {
-                    "√" == $(this).children("span").html() ? ($(this).children("span").html(""),
-                        $("#agreeBtnTagA").attr("agree", "1").css({
-                            backgroundColor: "#ddd",
-                            color: "#fff"
-                        })) : ($(this).children("span").html("√"),
-                        $("#agreeBtnTagA").attr("agree", "2").css({
-                            backgroundColor: "#ff6600",
-                            color: "#fff"
-                        }))
-                }),
-                $("#agreeBtnTagA").on("click", function() {
-                    1 == $(this).attr("agree") ? alert("请仔细阅读相关条款") : ($("#agreeShade,#agreeBox").remove(),
-                        b())
-                })
-        });
+        // $("#next").on("click", function() {
+        //     $("body").append('<div id="agreeShade" style="background-color: #666; opacity: .5;position: fixed; top: 0; left:0; width: 100%; height: 100%;"></div><div id="agreeBox" style="border-radius: 5px; font-size: 14px; position: fixed; background: #fff;width: 600px; height: 400px; left: 50%; top: 50%; margin-left: -300px;margin-top: -300px; padding: 20px;"><p style="font-size: 18px; text-align: center;">活动须知</p><p style="line-height: 30px; font-size: 14px; margin-top: 10px;">近期有商家反应试客使用淘宝客、村淘下单，导致损失大量的返利赏金，在此平台特此说明：<br>1.平台所有的单子都是人工操作的，试客手机的环境不同浏览器软件劫持不一样，这也是没有办法用技术攻克的问题，请各位商家谅解。<br>2.建议商家在发布试用活动期间的商品暂停淘客推广，平台后续对淘宝客问题不予处理。<br>3.由于处理淘宝客容易引起买家商家之间的纠纷，一些买家会存在报复心理，投诉店铺、追加差评，恶意退款等问题，给商家带来无尽的麻烦，且会给添加平台客服工作量，所以淘宝下单的平台不再负责追回损失，请各位商家体谅。<br>4.关于村淘服务 淘宝所有村淘扣除的服务费都是由淘宝所得，并非试客赚取。<br>服务再次提醒：平台不再负责追回淘宝客、返利赏金及村淘问题，请商家参加试用活动商品自行关闭相应推广。<br></p><p><b id="agreeBtn" style="cursor: pointer; float: right;margin-right: 30px; "><span style="line-height: 10px;border:1px solid #000; margin-right: 5px;vertical-align: -2px;display: inline-block; width: 10px; height: 10px; "></span>我已阅读此条款</b></p><p style="text-align: center; margin-top: 20px;"><a id="agreeBtnTagA" agree="1" style=" cursor: pointer;background-color: #ddd; padding: 5px 20px; clear: both; display: inline-block; color: #fff;">同意</a></p></div>'),
+        //         $("#agreeBtn").on("click", function() {
+        //             "√" == $(this).children("span").html() ? ($(this).children("span").html(""),
+        //                 $("#agreeBtnTagA").attr("agree", "1").css({
+        //                     backgroundColor: "#ddd",
+        //                     color: "#fff"
+        //                 })) : ($(this).children("span").html("√"),
+        //                 $("#agreeBtnTagA").attr("agree", "2").css({
+        //                     backgroundColor: "#ff6600",
+        //                     color: "#fff"
+        //                 }))
+        //         }),
+        //         $("#agreeBtnTagA").on("click", function() {
+        //             1 == $(this).attr("agree") ? alert("请仔细阅读相关条款") : ($("#agreeShade,#agreeBox").remove(),
+        //                 b())
+        //         })
+        // });
     var c = request("from");
     c && "publish_mission_presell" == c && ($('dd[redirect_selected="publish_mission_presell"]').parent().parent().click(),
         $('dd[redirect_selected="publish_mission_presell"]').click())
