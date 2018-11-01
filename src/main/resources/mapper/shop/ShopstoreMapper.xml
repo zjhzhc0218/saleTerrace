@@ -186,4 +186,12 @@
       shop_feedback = #{shopFeedback,jdbcType=VARCHAR}
     where shop_id = #{shopId,jdbcType=BIGINT}
   </update>
+  
+  
+  <select id="getShopRecords" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select
+    <include refid="Base_Column_List" />
+    from shopstore
+    where shopShopkeeper = #{id,jdbcType=BIGINT}
+  </select>
 </mapper>

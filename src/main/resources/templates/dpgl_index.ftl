@@ -11,7 +11,7 @@
         <#include "//header_css.ftl">
 	</head>
 
-	<body>
+	<body ng-controller="saleterraceController">
 		<div class='contentBox' onclick='closeImg2();'>
 			<div class='content' style="width: 440px; height: 640px;">
 				<a class="sPopupImgJump" target="_blank" style=" margin: auto; display: block; ">
@@ -123,16 +123,16 @@
 				</div>
 			</div>
 			<div class="Content-Space-h"></div>
-			<div id="Content">
+			<div id="Content" >
 				<div id="Content-Left">
 					<ul class="left_menu" style="margin-bottom: 10px;">
 						<#--<li class="menu_selected">-->
 						<li class="menu_li">
-                            <a href="#grxx_div" role="tab" data-toggle="tab" ><i class="grxx"></i>
+                            <a href="#grxx_div" role="tab" data-toggle="tab"  ng-click="initParams('user')"><i class="grxx"></i>
                             <span>用户中心</span></a>
 						</li>
                         <li class="menu_li add">
-                            <a class="active"  role="tab" data-toggle="tab" href="#mainDiv" id="dpgl"><i class="dpbt"></i>
+                            <a class="active"  role="tab" data-toggle="tab" href="#mainDiv" id="dpgl" ng-click="initParams('shop')"><i class="dpbt"></i>
                             <span>店铺管理</span></a>
 						</li>
 						<li class="menu_li">

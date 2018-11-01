@@ -3,6 +3,8 @@ package deepdraw.saleterrace.dao;
 import deepdraw.saleterrace.entity.shop.Shopstore;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public interface ShopstoreMapper {
     /**
@@ -40,4 +42,7 @@ public interface ShopstoreMapper {
      * @mbggenerated 2018-10-25
      */
     int updateByPrimaryKey(Shopstore record);
+
+
+    List<Shopstore> getShopRecords(String id);
 }

@@ -45,6 +45,7 @@
 
 <!--angularJs-->
 <script type="text/javascript" src="/saleterrace/js/controller/saleterrace.js"></script>
+<script type="text/javascript" src="/saleterrace/js/controller/saleterraceController.js"></script>
 <script type="text/javascript" src="/saleterrace/js/controller/shop/shopController.js"></script>
 
 <script type="text/javascript">

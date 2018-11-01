@@ -8,7 +8,7 @@
 </style>
 
 
-<div  role="tabpanel" class="tab-pane "class="content" class="grxx_div" align="center" id="grxx_div">
+<div  ng-controller="user" role="tabpanel" class="tab-pane "class="content" class="grxx_div" align="center" id="grxx_div">
     <div class="module_div jbxx_module" align="left">
         <div class="leadBox"></div>
         <div class="lead">
