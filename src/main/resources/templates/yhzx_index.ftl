@@ -1,6 +1,3 @@
-<#include "//modal.ftl">
-<#include "//modal_js.ftl">
-
 <style type="text/css">
     .pointer{
         cursor: pointer;
@@ -24,7 +21,7 @@
                 <!-- <span class="marginLeft">剩余发布活动数：<span>10</span></span> --><br>
             <span class="marginLeft">账号：15355056891<span class="username"></span></span><span class="marginLeft">登录密码：
             <img src="/saleterrace/images/set_icon.png"><b class="setPwd">已设置</b><a onclick="searchLogin('myModal')" class="pointer">修改</a></span>
-            <span class="marginLeft">支付密码：<b class='setPaypwd'>已设置</b><a onclick="searchLogin('myModal_zf')" class="pointer">修改</a></span>
+            <span class="marginLeft">支付密码：<img src="/saleterrace/images/set_icon.png"><b class='setPaypwd'>已设置</b><a onclick="searchLogin('myModal_zf')" class="pointer">修改</a></span>
             <span class="marginLeft">QQ：287811726<span class="qqNum"></span>
                 <a onclick="searchLogin('myModal_qq')" class="pointer">修改</a>
             </span>

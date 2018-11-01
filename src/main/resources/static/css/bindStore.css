@@ -597,6 +597,7 @@ a.blue_span {
 }
 
 .tabsSwitchSeletedLi {
+    height: 40px;
     background-color: #5AC2E7;
     color: #fff
 }

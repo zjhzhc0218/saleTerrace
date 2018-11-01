@@ -12,19 +12,10 @@
 	</head>
 
 	<body>
-		<div class='contentBox' onclick='closeImg2();'>
-			<div class='content' style="width: 440px; height: 640px;">
-				<a class="sPopupImgJump" target="_blank" style=" margin: auto; display: block; ">
-					<img class='sPopup' src='' alt='' style="position: absolute; left: 0; top: 0; width: 100%;">
-				</a>
-				<span onclick='closeImg();' style='color: #999;right: 50px;'>X</span>
-			</div>
-		</div>
-
 		<a class="sImgJump" style=" margin: auto; display: block; ">
 			<img class="sTongZhi" src="/saleterrace/images/demo_01.jpg" alt="" style="display: block; width: 100%; height: 51px;">
 		</a>
-		<a class="sImgJump" href="#" style=" margin: auto; display: block;text-align: center;color: red;font-style: italic;text-decoration: underline;font-size: 17px; background-color: bisque;line-height: 40px;">本站所有赏金均由商家提供，旨在激励试客生成优质的买家秀内容，本站从中不获取任何盈利！</a>
+		<#--<a class="sImgJump" href="#" style=" margin: auto; display: block;text-align: center;color: red;font-style: italic;text-decoration: underline;font-size: 17px; background-color: bisque;line-height: 40px;">本站所有赏金均由商家提供，旨在激励试客生成优质的买家秀内容，本站从中不获取任何盈利！</a>-->
 		<div class="top">
 			<a href="#grxx_div">
 				<div class="logo"></div>
@@ -136,11 +127,11 @@
                             <span>店铺管理</span></a>
 						</li>
 						<li class="menu_li">
-                            <a href="#Content-Main-syhd" role="tab" data-toggle="tab"><i class="fbrw"></i>
+                            <a href="#hdfb_div" role="tab" data-toggle="tab"><i class="fbrw"></i>
                             <span>试用活动发布</span></a>
 						</li>
 						<li class="menu_li">
-                            <a  href="#Content-Main-syhdgl"  role="tab" data-toggle="tab" ><i class="yfbrw"></i>
+                            <a  href="#hdgl_div"  role="tab" data-toggle="tab" ><i class="yfbrw"></i>
                             <span>试用活动管理</span></a>
 						</li>
 
@@ -150,47 +141,32 @@
                             <div class="new" style="left:90px;"></div></a>
 						</li>
 
-						<#--<li  onclick="change_color(this)">-->
-                            <#--<a href="/saleterrace/ckzd_index" id="ckzd"><i class="ckzd"></i>-->
-                            <#--<span>查看账单</span></a>-->
-						<#--</li>-->
-						<#--<li>-->
-                            <#--<a href="/saleterrace/zjgl_index"><i class="zjgl"></i>-->
-                            <#--<span>资金管理</span></a-->
-						<#--</li>-->
-						<#--<li>-->
-                            <#--<a  href="/saleterrace/ptzf_index" id="ptzf"><i class="ckzz"></i>-->
-                            <#--<span>平台资费说明</span></a>-->
-						<#--</li>-->
+						<li class="menu_li">
+                            <a href="#ckzd_div" role="tab" data-toggle="tab"><i class="ckzd"></i>
+                            <span>查看账单</span></a>
+						</li>
 
-						<#--<li>-->
-                            <#--<a  href="/saleterrace/tjzjb_index" id="tjzjb"><i class="rcd"></i>-->
-							<#--<img src="/saleterrace/images/hot.gif" alt="" style="position: relative;top: -2px;left: 5px;">-->
-                            <#--<span>推荐赚金币</span></a>-->
-						<#--</li>-->
-						<#--<!--<li href="/popular/popular.htm?pg=task.pcFlow" target="_blank">&ndash;&gt;-->
-						<#--<li>-->
-                            <#--<a href="https://burenqi.com/task-pc-flow" target="_blank"><i class="i16_brq" ></i>补人气</a>-->
-							<#--<!--<span>补人气</span>&ndash;&gt;-->
-						<#--</li>-->
-						<#--<li>-->
-							<#--<a href="http://www.chapaiming.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">-->
-								<#--<i class="i16_cpm"></i>-->
-								<#--<span>查排名</span>-->
-							<#--</a>-->
-						<#--</li>-->
-						<#--<li>-->
-							<#--<a href="http://www.maijiabus.com/" target="_blank" style="overflow:hidden;display:block;margin:0;">-->
-								<#--<i class="i16_mjbs"></i>-->
-								<#--<span>流量捕手</span>-->
-							<#--</a>-->
-						<#--</li>-->
-						<#--<li>-->
-							<#--<a href="sjxy_index.ftl" style="overflow:hidden;display:block;margin:0;" id="sjxy">-->
-								<#--<i class="i16_protocol"></i>-->
-								<#--<span>商家电子协议</span>-->
-							<#--</a>-->
-						<#--</li>-->
+						<li class="menu_li">
+                            <a href="#"><i class="zjgl"></i>
+                            <span>资金管理</span></a
+						</li>
+
+						<li class="menu_li">
+                            <a  href="#ptzf_div" role="tab" data-toggle="tab"><i class="ckzz"></i>
+                            <span>平台资费说明</span></a>
+						</li>
+
+						<li>
+                            <a  href="#" id="tjzjb"><i class="rcd"></i>
+							<img src="/saleterrace/images/hot.gif" alt="" style="position: relative;top: -2px;left: 5px;">
+                            <span>推荐赚金币</span></a>
+						</li>
+						<li>
+							<a href="#" style="overflow:hidden;display:block;margin:0;" id="sjxy">
+								<i class="i16_protocol"></i>
+								<span>商家电子协议</span>
+							</a>
+						</li>
 					</ul>
 					<#--<a class="sLeftImgJump" target="_blank" style="float: left; margin: 10px 0 0 0;">-->
 						<#--<img class="sLeft " src="/saleterrace/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">-->
@@ -203,12 +179,9 @@
                     <div  ng-controller="shopController"  role="tabpanel" class="tab-pane active" class="content" class="mainDiv" id="mainDiv">
                         <div class="dp_list_div">
                             <div class="addDp_div" style="height: 60px;margin-top: 40px">
-                                ;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style="width: 360px;display: inline;margin-left: -150px"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px" href="#myModal_tb" role="tab" data-toggle="tab">添加淘宝新店铺</a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <div style="width: 360px;display: inline"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px" href="#myModal_jd" role="tab" data-toggle="tab" >添加京东新店铺</a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <div style="width: 360px;display: inline"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px"  href="#myModal_pdd" role="tab" data-toggle="tab" >添加拼多多新店铺</a></div>
-                                <#--<input type="button" class="addDp_button" value="添加京东新店铺" onclick="addStore('jd')" style="left: 95px">-->
-                                <#--<input type="button" class="addDp_button" value="添加拼多多新店铺" onclick="addStore('pdd')" style="left: 165px">-->
-                                <#--<input type="button" class="addDp_button" value="添加拼多多新店铺" onclick="addStore('pdd')" style="left: 165px">-->
+                                ;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style="width: 360px;display: inline;margin-left: -150px"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px" onclick="searchLogin('myModal_tb')" class="pointer">添加淘宝新店铺</a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div style="width: 360px;display: inline"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px" onclick="searchLogin('myModal_jd')" class="pointer" >添加京东新店铺</a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div style="width: 360px;display: inline"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px"  onclick="searchLogin('myModal_pdd')" class="pointer">添加拼多多新店铺</a></div>
                             </div>
                             <div class="dp_div" align="left">
                                 <div class="dp_title_div">
@@ -249,7 +222,7 @@
                                             <img src="/saleterrace/images/start.png">
                                             <input type="hidden" id="storeType" value="2">
                                             <div style="position: absolute;top: 23px;left: 23px;color: #59C2E6;width: 110px;height: 0px">
-                                                <a href="#myModal_dpname" role="tab" data-toggle="tab" style="color: #59C2E6;">编辑</a>
+                                                <a  onclick="searchLogin('myModal_dpname')" class="pointer"style="color: #59C2E6;">编辑</a>
                                             </div>
                                         </li>
                                         <li class="dp_hidden" column-id="status" value="1"></li>
@@ -260,15 +233,18 @@
                         </div>
                     </div>
                     <!-- center end -->
-                <#--用户中心-->
+                    <#--用户中心-->
                     <#include "//yhzx_index.ftl">
-                <#--试用活动发布-->
+                    <#--试用活动发布-->
               		<#include "//syhd_release_index.ftl">
-                <#--&lt;#&ndash;试用活动管理&ndash;&gt;-->
+                    <#--试用活动管理-->
                 	<#include "//syhd_management_index.ftl">
 					<#--试客黑名单-->
                     <#include "//black_index.ftl">
-
+                    <#--查看账单-->
+                    <#include "//ckzd_index.ftl">
+					<#--平台资费说明-->
+                    <#include "//ptzf_index.ftl">
                 </div>
             </div>
 		</div>
@@ -334,8 +310,8 @@
 
 			</div>
 		</div>
-
+    <#include "//modal.ftl">
+    <#include "//modal_js.ftl">
 	</body>
     <#include "//footer_js.ftl">
-
 </html>

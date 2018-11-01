@@ -50,11 +50,40 @@
 <script type="text/javascript">
     $(".menu_li").click(function () {
         $(".menu_li").removeClass("add");
-        // $(this).addClass("add").siblings().removeClass();
         $(this).addClass("add")
     })
+    $(".tabsUnSeletedLi").click(function () {
+        $(".tabsUnSeletedLi").removeClass('tabsSeletedLi');
+        $(this).addClass("tabsSeletedLi")
+    })
 </script>
+<script>
+    $('.zjjl_title').click(function () {
+        var bgPic = $(this).find('p').css('background-image');
+        if (bgPic.match('/saleterrace/images/i36_lmsq.png')) {
+            $(this).find('p').css('background-image', 'url(/saleterrace/images/i36_lmzk.png)');
+            $(this).siblings('.text').slideUp();
+        } else {
+            $(this).find('p').css('background-image', 'url(/saleterrace/images/i36_lmsq.png)');
+            $(this).siblings('.text').slideDown();
+        }
+    });
 
+    //选项卡
+    $(".cost-line>a").on("click",function(){
+        var index = $(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".cost > div:eq(" + index + ")").removeClass("hidden").siblings().addClass("hidden");
+    });
+    $(".cost-line>a:eq(0)").click();
+    function init() {
+        $("#Content").height($(".zjjl_div").height() + 40);
+        headerStyle(1);
+        navigatorStyle(7);
+
+    }
+
+</script>
 
 <#--<script>-->
     <#--function closeImg() {-->
