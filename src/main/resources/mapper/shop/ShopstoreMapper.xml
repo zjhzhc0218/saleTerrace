@@ -186,4 +186,13 @@
       shop_feedback = #{shopFeedback,jdbcType=VARCHAR}
     where shop_id = #{shopId,jdbcType=BIGINT}
   </update>
+  
+  
+  <select id="getShopRecords"  resultType="deepdraw.saleterrace.entity.shop.Shopstore" >
+    select
+    <include refid="Base_Column_List" />
+    from shopstore
+    where shop_shopkeeper = #{id,jdbcType=BIGINT}
+  </select>
+
 </mapper>

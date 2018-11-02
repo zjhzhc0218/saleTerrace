@@ -1,8 +1,11 @@
 package deepdraw.saleterrace.entity.shop;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Shopstore {
+public class Shopstore implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     /**
      * 店铺（自己定义一个自己系统店铺别名类型的 -程序后端赋予的用于我们自己的信息编写） 数据库字段是：shop_id  <br>
      */
