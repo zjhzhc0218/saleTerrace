@@ -176,12 +176,12 @@
                     <div>
                         <div><h4 style="margin-left: -400px">绑定店铺并认证</h4></div>
                         <#--<p>（仅接手活动的试客可以看到，不会被泄露）</p>-->
-                        <div style="font-size: 16px;height: 35px;margin-left: -26px;"><img src="/saleterrace/images/step1_icon.png">&nbsp;&nbsp;掌柜旺旺：<input type="text" ng-model="shop."  placeholder="请输入掌柜旺旺：">&nbsp;&nbsp;(*店铺名称绑定后不可更改)</div>
-                        <div style="font-size: 16px;height: 35px"><img src="/saleterrace/images/step2_icon.png">&nbsp;&nbsp;店铺名称：<input type="text" ng-model="" placeholder="请输入店铺名称：">&nbsp;&nbsp;(务必与宝贝显示的店铺名一致)</div>
-                        <div style="font-size: 16px;height: 35px;margin-left: -26px;"><img src="/saleterrace/images/step3_icon.png">&nbsp;&nbsp;店铺网址：<input type="text" ng-model="" placeholder="请输入店铺网址：">&nbsp;&nbsp;(*店铺地址绑定后不可更改)</div>
+                        <div style="font-size: 16px;height: 35px;margin-left: -26px;"><img src="/saleterrace/images/step1_icon.png">&nbsp;&nbsp;掌柜旺旺：<input type="text" ng-model="shopParams.shopShopkeepername"  placeholder="请输入掌柜旺旺：">&nbsp;&nbsp;(*店铺名称绑定后不可更改)</div>
+                        <div style="font-size: 16px;height: 35px"><img src="/saleterrace/images/step2_icon.png">&nbsp;&nbsp;店铺名称：<input type="text" ng-model="shopParams.shopStorename" placeholder="请输入店铺名称：">&nbsp;&nbsp;(务必与宝贝显示的店铺名一致)</div>
+                        <div style="font-size: 16px;height: 35px;margin-left: -26px;"><img src="/saleterrace/images/step3_icon.png">&nbsp;&nbsp;店铺网址：<input type="text" ng-model="shopParams.shopStoreUrl" placeholder="请输入店铺网址：">&nbsp;&nbsp;(*店铺地址绑定后不可更改)</div>
                         <div style="font-size: 15px;margin-left: -377px;height: 35px">
                             <img src="/saleterrace/images/step4_icon.png">店铺后台截图:
-                            <input type="file"  ng-model="" style="margin-left: 300px;margin-top: -22px;width: 180px">
+                            <input type="file"   onchange='angular.element(this).scope().shopParams.fileChanged(this)'  style="margin-left: 300px;margin-top: -22px;width: 180px">
                             <a style="font-size: 18px;margin-left: 630px">查看示例图</a>
                         </div>
                         <p style="font-size: 17px;margin-top: 20px;">提示：店铺绑定审核时间1个工作日左右，若超过一个工作日请联系客服！</p>
@@ -189,7 +189,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" ng-click="">提交审核</button>
+                <button type="button" class="btn btn-default" ng-click="shopParams.insert()">提交审核</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">取消审核</button>
             </div>
         </div>

@@ -33,7 +33,7 @@
 <script type="text/javascript" src="/saleterrace/js/dist/viewer.js"></script>
 
 <script type="text/javascript" src="/saleterrace/js/seller/bindStore.js"></script>
-<script type="text/javascript" src="/saleterrace/js/seller/bindStorePop.js"></script>
+<#--<script type="text/javascript" src="/saleterrace/js/seller/bindStorePop.js"></script>-->
 <script type="text/javascript" src="/saleterrace/js/seller/blacklist.js"></script>
 <script type="text/javascript" src="/saleterrace/js/seller/homePage.js"></script>
 <script type="text/javascript" src="/saleterrace/js/seller/jfbrw.js"></script>

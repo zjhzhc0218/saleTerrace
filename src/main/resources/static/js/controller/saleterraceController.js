@@ -13,6 +13,37 @@ _saleterrace.controller('saleterraceController',['$scope','$http','$sce','$filte
 
 
 
+     $scope.shopParams = {
+        'shopStorename':null,//店铺名称
+        'shopShopkeepername':null,//掌柜旺旺
+        'shopStoreUrl':null,//url
+        'img':null,//状态
+         'insert' : function () {
+           var param = {
+               'shopStorename':$scope.shopParams.shopStorename,//店铺名称
+               'shopShopkeepername':$scope.shopParams.shopShopkeepername,//掌柜旺旺
+               'shopStoreUrl':$scope.shopParams.shopStoreUrl,//url
+               'img':$scope.shopParams.img,//状态
+           }
+             _saleterrace.ajax({
+                 method: 'POST',
+                 url: 'saveShopRecord',
+                 data: param,
+                 success: function (response) {
+                     console.log(response);
+                 }
+             });
+
+         },
+         'fileChanged' : function(ele){
+         var fileP= ele.files;
+         $scope.shopParams.img = fileP[0].name;
+     }
+    };
+
+
+
+
 
 
 

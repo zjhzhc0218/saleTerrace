@@ -36,10 +36,10 @@
                     <form id="findCondition" action="accounthistory.htm">
                         <div class="floatLeft">起止日期：<input name="startTime" id="dateStart" type="text" value="" class="date_input_text">
                             到<input name="endTime" id="dateEnd" type="text" class="date_input_text" value=""></div>
-                        <input id="payTpyeId" type="hidden" name="payType" value="">
+                       <#-- <input id="payTpyeId" type="hidden" name="payType" value="">
                         <input id="timeTypeId" type="hidden" name="timeType" value="LAST_MONTH">
                         <input id="pageId" type="hidden" name="page.page" value="1">
-                        <input id="childTaskNum" type="hidden" name="childTaskNum" value="">
+                        <input id="childTaskNum" type="hidden" name="childTaskNum" value="">-->
 
                         <input id="transactionTypes" type="hidden" name="transactionTypes" value="BANK_CARD,INNER_CHANGE,INNER_CHANGE_TASK,BANK_CARD_RECHARGE,INNER_CHANGE_RECHARGE_BKKK,INNER_CHANGE_YU_E_JIN_BI,INNER_CHANGE_JIN_BI_YU_E,BANK_CARD_TI_XIAN,INNER_CHANGE_RETURN,INNER_CHANGE_FIRST_GIFT,INNER_CHANGE_SYSTEM,INNER_CHANGE_HBS,INNER_CHANGE_OTHER,INNER_CHANGE_RECOMMEND,INNER_CHANGE_VIP_RECHARGE_BKKK">
                     </form>

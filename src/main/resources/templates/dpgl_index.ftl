@@ -11,7 +11,7 @@
         <#include "//header_css.ftl">
 	</head>
 
-	<body>
+	<body ng-controller="saleterraceController"  >
 		<a class="sImgJump" style=" margin: auto; display: block; ">
 			<img class="sTongZhi" src="/saleterrace/images/demo_01.jpg" alt="" style="display: block; width: 100%; height: 51px;">
 		</a>
@@ -123,7 +123,7 @@
                             <span>用户中心</span></a>
 						</li>
                         <li class="menu_li add">
-                            <a class="active"  role="tab" data-toggle="tab" href="#mainDiv" id="dpgl"><i class="dpbt"></i>
+                            <a class="active"  role="tab" data-toggle="tab" href="#mainDiv" id="dpgl"  ng-click="initParams('shop')"><i class="dpbt"></i>
                             <span>店铺管理</span></a>
 						</li>
 						<li class="menu_li">
@@ -176,7 +176,7 @@
 			    <div id="Content-Space"></div>
 				<div id="Content-Main"  class="tab-content container" >
 					<!-- center begin -->
-                    <div  ng-controller="shopController"  role="tabpanel" class="tab-pane active" class="content" class="mainDiv" id="mainDiv">
+                    <div  ng-controller="shopController" ng-init="initParams('shop')" role="tabpanel" class="tab-pane active" class="content" class="mainDiv" id="mainDiv">
                         <div class="dp_list_div">
                             <div class="addDp_div" style="height: 60px;margin-top: 40px">
                                 ;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style="width: 360px;display: inline;margin-left: -150px"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px" onclick="searchLogin('myModal_tb')" class="pointer">添加淘宝新店铺</a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -249,49 +249,49 @@
             </div>
 		</div>
 
-		<script type="text/html" id="storeInfoRow">
-			<ul class="dp_info">
-				<li class="dp_li1">
-					<#--<div data-content-text="wangwangid"></div>-->
-				</li>
-				<li class="dp_li7">
-					<div data-content-text="shopName"></div>
-				</li>
-				<li class="dp_li2" data-content-text="bindtime"></li>
-				<li class="dp_li7">
-					<div data-content="repurchaseDayText" style="position: relative" data-template-bind='[{"attribute": "itemId", "value": "id"}]' class="hbsst"></div>
-				</li>
+		<#--<script type="text/html" id="storeInfoRow">-->
+			<#--<ul class="dp_info">-->
+				<#--<li class="dp_li1">-->
+					<#--&lt;#&ndash;<div data-content-text="wangwangid"></div>&ndash;&gt;-->
+				<#--</li>-->
+				<#--<li class="dp_li7">-->
+					<#--<div data-content-text="shopName"></div>-->
+				<#--</li>-->
+				<#--<li class="dp_li2" data-content-text="bindtime"></li>-->
+				<#--<li class="dp_li7">-->
+					<#--<div data-content="repurchaseDayText" style="position: relative" data-template-bind='[{"attribute": "itemId", "value": "id"}]' class="hbsst"></div>-->
+				<#--</li>-->
 
-				<li class="dp_li3" data-content="statusAlias"></li>
-				<li class="dp_li6" data-content="operator" style="position: relative"></li>
-				<li class="dp_hidden" column-id="id" data-value="id"></li>
-				<li class="dp_hidden" column-id="status" data-value="status"></li>
-				<li class="dp_hidden" column-id="version" data-value="version"></li>
-			</ul>
-		</script>
+				<#--<li class="dp_li3" data-content="statusAlias"></li>-->
+				<#--<li class="dp_li6" data-content="operator" style="position: relative"></li>-->
+				<#--<li class="dp_hidden" column-id="id" data-value="id"></li>-->
+				<#--<li class="dp_hidden" column-id="status" data-value="status"></li>-->
+				<#--<li class="dp_hidden" column-id="version" data-value="version"></li>-->
+			<#--</ul>-->
+		<#--</script>-->
 
-		<script type="text/html" id="jdstoreInfoRow">
-			<ul class="dp_info">
-				<li class="dp_li1">
-					<div data-content-text="shopName">泰嘉boy</div>
-				</li>
-				<li class="dp_li7">
-					<#--<div data-content-text="wangwangid">小算珠婴童店</div>-->
-				</li>
-				<li class="dp_li2" data-content-text="bindtime">2018-06-15</li>
-				<li class="dp_li7">
-					<div data-content="repurchaseDayText" style="position: relative" data-template-bind='[{"attribute": "itemId", "value": "id"}]' class="hbsst">30天</div>
-				</li>
-				</li>
+		<#--<script type="text/html" id="jdstoreInfoRow">-->
+			<#--<ul class="dp_info">-->
+				<#--<li class="dp_li1">-->
+					<#--<div data-content-text="shopName">泰嘉boy</div>-->
+				<#--</li>-->
+				<#--<li class="dp_li7">-->
+					<#--&lt;#&ndash;<div data-content-text="wangwangid">小算珠婴童店</div>&ndash;&gt;-->
+				<#--</li>-->
+				<#--<li class="dp_li2" data-content-text="bindtime">2018-06-15</li>-->
+				<#--<li class="dp_li7">-->
+					<#--<div data-content="repurchaseDayText" style="position: relative" data-template-bind='[{"attribute": "itemId", "value": "id"}]' class="hbsst">30天</div>-->
+				<#--</li>-->
+				<#--</li>-->
 
-				<li class="dp_li3" data-content="statusAlias">已启用</li>
-				<li class="dp_li6" data-content="operator" style="position: relative"><img src="/saleterrace/images/start.png"><input type="hidden" id="storeType" value="2">
-                    <div style="position: absolute;top: 23px;left: 23px;color: #59C2E6;width: 110px;height: 0px"><a style="color: #59C2E6" href='javascript:editSendInfo(40999,"2")'>编辑</a></div></li>
-				<li class="dp_hidden" column-id="id" data-value="id" value="40999"></li>
-				<li class="dp_hidden" column-id="status" data-value="status" value="1"></li>
-				<li class="dp_hidden" column-id="version" data-value="version" value="14"></li>
-			</ul>
-		</script>
+				<#--<li class="dp_li3" data-content="statusAlias">已启用</li>-->
+				<#--<li class="dp_li6" data-content="operator" style="position: relative"><img src="/saleterrace/images/start.png"><input type="hidden" id="storeType" value="2">-->
+                    <#--<div style="position: absolute;top: 23px;left: 23px;color: #59C2E6;width: 110px;height: 0px"><a style="color: #59C2E6" href='javascript:editSendInfo(40999,"2")'>编辑</a></div></li>-->
+				<#--<li class="dp_hidden" column-id="id" data-value="id" value="40999"></li>-->
+				<#--<li class="dp_hidden" column-id="status" data-value="status" value="1"></li>-->
+				<#--<li class="dp_hidden" column-id="version" data-value="version" value="14"></li>-->
+			<#--</ul>-->
+		<#--</script>-->
 
         <#include "//protocolTemplate.ftl">
 		<div class="Content-Space-h"></div>
@@ -311,7 +311,6 @@
 			</div>
 		</div>
     <#include "//modal.ftl">
-    <#include "//modal_js.ftl">
 	</body>
     <#include "//footer_js.ftl">
 </html>

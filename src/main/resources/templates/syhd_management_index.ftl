@@ -35,8 +35,8 @@
                 <option value="0" class="tbtm hidden">PC淘宝网taobao.com</option>
                 <option value="1" class="tbtm hidden">手机淘宝APP</option>
             </select><br>
-            <span>活动编号：</span><input type="text" class="input_text rwbh" name="childTaskNum" autocomplete="off">
-            <span>试客账号：</span><input type="text" class="input_text msww" name="buyerwwid">
+            <span>活动编号：</span><input type="text" class="input_text rwbh" autocomplete="off">
+            <span>试客账号：</span><input type="text" class="input_text msww" >
             <br>
 
             <div align="left">

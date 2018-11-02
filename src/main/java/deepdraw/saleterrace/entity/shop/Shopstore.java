@@ -37,6 +37,11 @@ public class Shopstore implements Serializable {
     private String shopStorename;
 
     /**
+     * 店铺网址
+     */
+    private String shopStoreUrl;
+
+    /**
      * 申请图片 数据库字段是：shop_img  <br>
      */
     private String shopImg;
@@ -277,5 +282,13 @@ public class Shopstore implements Serializable {
      */
     public void setShopFeedback(String shopFeedback) {
         this.shopFeedback = shopFeedback == null ? null : shopFeedback.trim();
+    }
+
+    public String getShopStoreUrl() {
+        return shopStoreUrl;
+    }
+
+    public void setShopStoreUrl(String shopStoreUrl) {
+        this.shopStoreUrl = shopStoreUrl;
     }
 }
