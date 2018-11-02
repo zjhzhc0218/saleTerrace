@@ -1,6 +1,4 @@
 <#include "//modal.ftl">
-<#include "//modal_js.ftl">
-
 <style type="text/css">
     .pointer{
         cursor: pointer;

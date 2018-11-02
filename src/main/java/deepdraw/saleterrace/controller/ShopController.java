@@ -25,8 +25,7 @@ public class ShopController {
     public String getShopRecords(HttpServletRequest request) {
 
         String id = request.getParameter("id");
-        shopService.getShopRecords(id);
-        return null;
+        return shopService.getShopRecords(id);
     }
 
 

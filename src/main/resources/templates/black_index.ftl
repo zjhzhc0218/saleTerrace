@@ -1,5 +1,4 @@
 <#--<#include "//modal.ftl">-->
-<#--<#include "//modal_js.ftl">-->
 <!-- center begin -->
 <div id="black_div" align="center"  role="tabpanel" class="tab-pane "class="content" >
     <div class="dp_list_div">

@@ -54,6 +54,14 @@
         // $(this).addClass("add").siblings().removeClass();
         $(this).addClass("add")
     })
+    var searchLogin = function (name) {
+        $('#'+name).modal('show');
+        return;
+    }
+    // var searchLogin = function (name) {
+    //     $('#'+name).modal('hide');
+    //     return;
+    // }
 </script>
 
 

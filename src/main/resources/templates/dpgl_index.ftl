@@ -239,10 +239,10 @@
                                     <li class="dp_li6" style="width: 160px;text-align: center">操作</li>
                                 </ul>
                                 <div id="storeInfo">
-                                    <ul class="dp_info">
-                                        <li class="dp_li1" style="width: 195px;padding-left: 30px"><div>泰嘉boy</div></li>
-                                        <li class="dp_li7" style="width: 180px;"><div>小算珠婴童店</div></li>
-                                        <li class="dp_li2" style="width: 125px;">2018-06-15</li>
+                                    <ul class="dp_info" ng-repeat="data in shop">
+                                        <li class="dp_li1" style="width: 195px;padding-left: 30px"><div>{{data.shopShopkeepername}}</div></li>
+                                        <li class="dp_li7" style="width: 180px;"><div>{{data.shopStorename}}</div></li>
+                                        <li class="dp_li2" style="width: 125px;">{{data.shopCreationtime}}</li>
                                         <li class="dp_li7" style="width: 180px;"><div><span>30天</span><button class="repurchaseDay" onclick="setRepurchaseDay(40999,&quot;30&quot;)">设置</button></div></li>
                                         <li class="dp_li3" style="width: 110px;"><span class="statusStart">已启用</span></li>
                                         <li class="dp_li6" style="position: relative;width: 160px;">
