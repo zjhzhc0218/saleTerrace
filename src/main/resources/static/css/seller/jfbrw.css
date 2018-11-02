@@ -104,7 +104,7 @@ select {
     border: 1px solid #E8E8E8;
     background-color: #5AC2E7;
     color: #fff;
-    height: 29px;
+    height: 38px;
     cursor: pointer
 }
 
@@ -128,13 +128,14 @@ select {
     margin-top: 20px
 }
 
-.tabsDiv ul.tabs_ul {
+.tabs_ul {
     width: 980px;
     height: 50px;
-    list-style: none
+    list-style: none;
+    margin-top: 20px;
 }
 
-.tabsDiv ul.tabs_ul li {
+.tabs_ul li {
     float: left;
     cursor: pointer;
     width: 108px;
@@ -146,16 +147,16 @@ select {
     border-bottom: 1px solid #F2F4F3
 }
 
-.tabsDiv ul.tabs_ul li#defualt {
+.tabs_ul li#defualt {
     width: 106px
 }
 
-.tabsDiv ul.tabs_ul li:hover {
+.tabs_ul li:hover {
     background-color: #08C7B5;
     color: #666
 }
 
-.tabsDiv div.content_div {
+.content_div {
     width: 980px;
     margin-top: 10px;
     border-bottom: 2px solid #F2F4F3
@@ -522,7 +523,7 @@ select {
     color: #fff
 }
 
-ul.tabs_ul li:hover span {
+.tabs_ul li:hover span {
     background-color: #08C7B5;
     color: #666
 }
@@ -824,20 +825,21 @@ span.order2 img {
     margin-left: 0
 }
 
-.tabsDiv ul.tabs_ul li.tabsSeletedLi p {
+.tabsSeletedLi p {
     background-color: #5AC2E7;
     color: #F2F4F3
 }
 
-ul.tabs_ul li:hover p {
+.tabs_ul li:hover p {
     background-color: #08C7B5!important;
     color: #666!important
 }
 
-.tabsDiv ul.tabs_ul li p {
+.tabs_ul li p {
     line-height: 10px
 }
 
 .batchAllSpan {
     cursor: pointer
 }
+

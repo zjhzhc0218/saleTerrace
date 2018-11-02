@@ -1,4 +1,4 @@
-<div id="Content-Main-syhd" role="tabpanel" class="tab-pane "class="content" >
+<div id="hdfb_div" role="tabpanel" class="tab-pane "class="content" >
     <div class="leadBox"></div>
     <div class="lead">
         <input type="hidden" id="emergency" value="13706827563">
@@ -25,7 +25,7 @@
             <h3><span>2</span>选择活动小类：</h3>
             <div style="height:1px;width:100%;background-color:#dcdcdc;"></div>
 
-            <div class="vip-select-box">
+            <div class="vip-select-box" style="display: block;">
                 <ul class="misson TASK">
                     <li IsDevelop="1">
                         <div class="tuijian-img"></div>

@@ -6,7 +6,7 @@
 .tabsSwitchDiv ul.tabsSwitch_ul {
     width: 980px;
     height: 34px;
-    list-style: none
+    /*list-style: none*/
 }
 
 .tabsSwitchDiv ul.tabsSwitch_ul li {
