@@ -22,19 +22,20 @@
 				<div class="logo"></div>
 			</a>
 			<div class="qun_for_seller qun_tip">
-				<a href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575" target="_blank">活动交流群：{y}</a>
+				<a href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575" target="_blank">活动交流群：242646224</a>
 			</div>
 			<ul class="LR_USER">
 				<li class="pos-rel menu-box">
 					<a href="#" class="menu-select-icon">
 						<img src="/saleterrace/images/menu_select_icon.png" alt="" class="pos-menu-select">
 						<p class="user-name">{y}</p>
-						<p class="user-tag" style="text-align: center; line-height:normal;">VIP {y} 天试用中</p>
+						<p class="user-tag" style="text-align: center; line-height:normal;">VIP 999 天试用中</p>
 					</a>
 					<ul class="menu-select-box">
 						<li style="background-color: #f3f3f3; padding-left: 20px">
-							货款：<b class="clfdaa29" id="top_user_money">{y}</b>元 &nbsp;&nbsp;&nbsp;金币：
-							<b class="clfdaa29" id="top_user_coin">{y}</b>个
+							货款：<b class="clfdaa29" id="top_user_money">141</b>元 &nbsp;&nbsp;&nbsp;金币：
+							<b class="clfdaa29" id="top_user_coin">25
+                            </b>个
 						</li>
 						<li style="padding-left: 20px; clear: both;">
 							<a href="/saleterrace/zjgl_index?tab=1" class="cl000 menu-select-a">充值</a>
