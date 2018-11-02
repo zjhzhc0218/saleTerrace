@@ -30,6 +30,10 @@ _saleterrace.controller('shopController',['$scope','$http','$sce','$filter', fun
             });
         });
 
+        $scope.editShop = function (data) {
+            $scope.$emit('edit-shop', data);
+            searchLogin('myModal_dpname');
+        }
 
 
 

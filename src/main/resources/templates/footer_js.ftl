@@ -7,41 +7,41 @@
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery.form.js"></script>
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery-first-event.js"></script>
 <script type="text/javascript" src="/saleterrace/js/angular/angular.js"></script>
-
+<script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/saleterrace/js/common/top.js"></script>
 <#--<script type="text/javascript" src="/saleterrace/js/verdor/datepicker/WdatePicker.js"></script>-->
 
 
 
-<script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/saleterrace/js/account/accountmanage.js"></script>
-<script type="text/javascript" src="/saleterrace/js/account/yhzx_loginpwd.js"></script>
-<script type="text/javascript" src="/saleterrace/js/account/yhzx_zfpwd.js"></script>
-<script type="text/javascript" src="https://js.users.51.la/19492995.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/common.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/cos-js-sdk-v4.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/homePage.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/page.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/popdg.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/store+json2.min.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/store.expire.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/store.min.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/task.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/taskComment.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/top.js"></script>
-<script type="text/javascript" src="/saleterrace/js/common/uploadImageCommon.js"></script>
 
-<script type="text/javascript" src="/saleterrace/js/dist/viewer.js"></script>
+<#--<script type="text/javascript" src="/saleterrace/js/account/accountmanage.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/account/yhzx_loginpwd.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/account/yhzx_zfpwd.js"></script>-->
+<#--<script type="text/javascript" src="https://js.users.51.la/19492995.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/common/common.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/common/cos-js-sdk-v4.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/common/homePage.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/common/page.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/common/popdg.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/common/store+json2.min.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/common/store.expire.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/common/store.min.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/common/task.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/common/taskComment.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/common/uploadImageCommon.js"></script>-->
 
-<script type="text/javascript" src="/saleterrace/js/seller/bindStore.js"></script>
-<#--<script type="text/javascript" src="/saleterrace/js/seller/bindStorePop.js"></script>-->
-<script type="text/javascript" src="/saleterrace/js/seller/blacklist.js"></script>
-<script type="text/javascript" src="/saleterrace/js/seller/homePage.js"></script>
-<script type="text/javascript" src="/saleterrace/js/seller/jfbrw.js"></script>
-<script type="text/javascript" src="/saleterrace/js/seller/newPrefbrw.js"></script>
+<#--<script type="text/javascript" src="/saleterrace/js/dist/viewer.js"></script>-->
 
-<script type="text/javascript" src="/saleterrace/js/verdor/zebra_dialog/zebra_dialog.js"></script>
+<#--<script type="text/javascript" src="/saleterrace/js/seller/bindStore.js"></script>-->
+<#--&lt;#&ndash;<script type="text/javascript" src="/saleterrace/js/seller/bindStorePop.js"></script>&ndash;&gt;-->
+<#--<script type="text/javascript" src="/saleterrace/js/seller/blacklist.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/seller/homePage.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/seller/jfbrw.js"></script>-->
+<#--<script type="text/javascript" src="/saleterrace/js/seller/newPrefbrw.js"></script>-->
 
-<script type="text/javascript" src="/saleterrace/js/selectize.js"></script>
+<#--<script type="text/javascript" src="/saleterrace/js/verdor/zebra_dialog/zebra_dialog.js"></script>-->
+
+<#--<script type="text/javascript" src="/saleterrace/js/selectize.js"></script>-->
 
 <!--angularJs-->
 <script type="text/javascript" src="/saleterrace/js/controller/saleterrace.js"></script>

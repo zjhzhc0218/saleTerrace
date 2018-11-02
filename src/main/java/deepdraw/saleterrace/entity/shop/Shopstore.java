@@ -9,7 +9,7 @@ public class Shopstore implements Serializable {
     /**
      * 店铺（自己定义一个自己系统店铺别名类型的 -程序后端赋予的用于我们自己的信息编写） 数据库字段是：shop_id  <br>
      */
-    private Long shopId;
+    private String shopId;
 
     /**
      * 店铺类型（1.淘宝  jquery-zclip-1.1.2.京东 3.拼多多） 数据库字段是：shop_type  <br>
@@ -80,7 +80,7 @@ public class Shopstore implements Serializable {
      * 获取店铺（自己定义一个自己系统店铺别名类型的 -程序后端赋予的用于我们自己的信息编写）
      * @return shopstore.shop_id
      */
-    public Long getShopId() {
+    public String getShopId() {
         return shopId;
     }
 
@@ -88,7 +88,7 @@ public class Shopstore implements Serializable {
      * 设置店铺（自己定义一个自己系统店铺别名类型的 -程序后端赋予的用于我们自己的信息编写）
      * @param shopId 店铺（自己定义一个自己系统店铺别名类型的 -程序后端赋予的用于我们自己的信息编写）
      */
-    public void setShopId(Long shopId) {
+    public void setShopId(String shopId) {
         this.shopId = shopId;
     }
 

@@ -2,6 +2,7 @@
 <html ng-app="saleterrace">
 	<head>
         <title>【试客多】-店铺管理</title>
+        <link rel="shortcut icon" href="/saleterrace/images/favicon.ico" type="image/x-icon"/>
 		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 		<meta http-equiv="description" content="this is my page">
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -21,19 +22,19 @@
 				<div class="logo"></div>
 			</a>
 			<div class="qun_for_seller qun_tip">
-				<a href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575" target="_blank">活动交流群：540995352</a>
+				<a href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575" target="_blank">活动交流群：{y}</a>
 			</div>
 			<ul class="LR_USER">
 				<li class="pos-rel menu-box">
 					<a href="#" class="menu-select-icon">
 						<img src="/saleterrace/images/menu_select_icon.png" alt="" class="pos-menu-select">
-						<p class="user-name">15355056891</p>
-						<p class="user-tag" style="text-align: center; line-height:normal;">VIP X 天试用中</p>
+						<p class="user-name">{y}</p>
+						<p class="user-tag" style="text-align: center; line-height:normal;">VIP {y} 天试用中</p>
 					</a>
 					<ul class="menu-select-box">
 						<li style="background-color: #f3f3f3; padding-left: 20px">
-							货款：<b class="clfdaa29" id="top_user_money">100</b>元 &nbsp;&nbsp;&nbsp;金币：100
-							<b class="clfdaa29" id="top_user_coin"></b>个
+							货款：<b class="clfdaa29" id="top_user_money">{y}</b>元 &nbsp;&nbsp;&nbsp;金币：
+							<b class="clfdaa29" id="top_user_coin">{y}</b>个
 						</li>
 						<li style="padding-left: 20px; clear: both;">
 							<a href="/saleterrace/zjgl_index?tab=1" class="cl000 menu-select-a">充值</a>
@@ -126,47 +127,47 @@
                             <a class="active"  role="tab" data-toggle="tab" href="#mainDiv" id="dpgl"  ng-click="initParams('shop')"><i class="dpbt"></i>
                             <span>店铺管理</span></a>
 						</li>
-						<li class="menu_li">
-                            <a href="#hdfb_div" role="tab" data-toggle="tab"><i class="fbrw"></i>
-                            <span>试用活动发布</span></a>
-						</li>
-						<li class="menu_li">
-                            <a  href="#hdgl_div"  role="tab" data-toggle="tab" ><i class="yfbrw"></i>
-                            <span>试用活动管理</span></a>
-						</li>
+						<#--<li class="menu_li">-->
+                            <#--<a href="#hdfb_div" role="tab" data-toggle="tab"><i class="fbrw"></i>-->
+                            <#--<span>试用活动发布</span></a>-->
+						<#--</li>-->
+						<#--<li class="menu_li">-->
+                            <#--<a  href="#hdgl_div"  role="tab" data-toggle="tab" ><i class="yfbrw"></i>-->
+                            <#--<span>试用活动管理</span></a>-->
+						<#--</li>-->
 
-						<li class="menu_li">
-                            <a href="#black_div"  role="tab" data-toggle="tab" ><i class="hmd"></i>
-                            <span>试客黑名单</span>
-                            <div class="new" style="left:90px;"></div></a>
-						</li>
+						<#--<li class="menu_li">-->
+                            <#--<a href="#black_div"  role="tab" data-toggle="tab" ><i class="hmd"></i>-->
+                            <#--<span>试客黑名单</span>-->
+                            <#--<div class="new" style="left:90px;"></div></a>-->
+						<#--</li>-->
 
-						<li class="menu_li">
-                            <a href="#ckzd_div" role="tab" data-toggle="tab"><i class="ckzd"></i>
-                            <span>查看账单</span></a>
-						</li>
+						<#--<li class="menu_li">-->
+                            <#--<a href="#ckzd_div" role="tab" data-toggle="tab"><i class="ckzd"></i>-->
+                            <#--<span>查看账单</span></a>-->
+						<#--</li>-->
 
-						<li class="menu_li">
-                            <a href="#"><i class="zjgl"></i>
-                            <span>资金管理</span></a
-						</li>
+						<#--<li class="menu_li">-->
+                            <#--<a href="#"><i class="zjgl"></i>-->
+                            <#--<span>资金管理</span></a-->
+						<#--</li>-->
 
-						<li class="menu_li">
-                            <a  href="#ptzf_div" role="tab" data-toggle="tab"><i class="ckzz"></i>
-                            <span>平台资费说明</span></a>
-						</li>
+						<#--<li class="menu_li">-->
+                            <#--<a  href="#ptzf_div" role="tab" data-toggle="tab"><i class="ckzz"></i>-->
+                            <#--<span>平台资费说明</span></a>-->
+						<#--</li>-->
 
-						<li>
-                            <a  href="#" id="tjzjb"><i class="rcd"></i>
-							<img src="/saleterrace/images/hot.gif" alt="" style="position: relative;top: -2px;left: 5px;">
-                            <span>推荐赚金币</span></a>
-						</li>
-						<li>
-							<a href="#" style="overflow:hidden;display:block;margin:0;" id="sjxy">
-								<i class="i16_protocol"></i>
-								<span>商家电子协议</span>
-							</a>
-						</li>
+						<#--<li>-->
+                            <#--<a  href="#" id="tjzjb"><i class="rcd"></i>-->
+							<#--<img src="/saleterrace/images/hot.gif" alt="" style="position: relative;top: -2px;left: 5px;">-->
+                            <#--<span>推荐赚金币</span></a>-->
+						<#--</li>-->
+						<#--<li>-->
+							<#--<a href="#" style="overflow:hidden;display:block;margin:0;" id="sjxy">-->
+								<#--<i class="i16_protocol"></i>-->
+								<#--<span>商家电子协议</span>-->
+							<#--</a>-->
+						<#--</li>-->
 					</ul>
 					<#--<a class="sLeftImgJump" target="_blank" style="float: left; margin: 10px 0 0 0;">-->
 						<#--<img class="sLeft " src="/saleterrace/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">-->
@@ -179,18 +180,14 @@
                     <div  ng-controller="shopController" ng-init="initParams('shop')" role="tabpanel" class="tab-pane active" class="content" class="mainDiv" id="mainDiv">
                         <div class="dp_list_div">
                             <div class="addDp_div" style="height: 60px;margin-top: 40px">
-                                ;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style="width: 360px;display: inline;margin-left: -150px"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px" onclick="searchLogin('myModal_tb')" class="pointer">添加淘宝新店铺</a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <div style="width: 360px;display: inline"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px" onclick="searchLogin('myModal_jd')" class="pointer" >添加京东新店铺</a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <div style="width: 360px;display: inline"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px"  onclick="searchLogin('myModal_pdd')" class="pointer">添加拼多多新店铺</a></div>
+                                <div style="width: 360px;display: inline;margin-left: -150px"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px" onclick="searchLogin('myModal_tb')" class="pointer">添加淘宝新店铺</a></div>
                             </div>
                             <div class="dp_div" align="left">
                                 <div class="dp_title_div">
                                     <div>
                                         <div id="tabsSwitch1" align="left" class="tabsSwitchDiv1" style="margin-top: 0px;height: 34px">
                                                 <ul class="tabsSwitch_ul">
-                                                    <li value="0" class="tabsSwitchSeletedLi" id="tbStore">管理淘宝店铺</li>
-                                                    <li value="1" class="tabsSwitchUnSeletedLi" id="jdStore">管理京东店铺</li>
-                                                    <li value="2" class="tabsSwitchUnSeletedLi" id="pddStore">管理拼多多店铺</li>
+                                                    <li value="0" class="tabsSwitchSeletedLi" id="tbStore" style="margin-top: -12px">管理淘宝店铺</li>
                                                 </ul>
                                         </div>
                                     </div>
@@ -222,7 +219,7 @@
                                             <img src="/saleterrace/images/start.png">
                                             <input type="hidden" id="storeType" value="2">
                                             <div style="position: absolute;top: 23px;left: 23px;color: #59C2E6;width: 110px;height: 0px">
-                                                <a  onclick="searchLogin('myModal_dpname')" class="pointer"style="color: #59C2E6;">编辑</a>
+                                                <a  ng-click="editShop(data)" class="pointer"style="color: #59C2E6;">编辑</a>
                                             </div>
                                         </li>
                                         <li class="dp_hidden" column-id="status" value="1"></li>
@@ -236,62 +233,18 @@
                     <#--用户中心-->
                     <#include "//yhzx_index.ftl">
                     <#--试用活动发布-->
-              		<#include "//syhd_release_index.ftl">
-                    <#--试用活动管理-->
-                	<#include "//syhd_management_index.ftl">
-					<#--试客黑名单-->
-                    <#include "//black_index.ftl">
-                    <#--查看账单-->
-                    <#include "//ckzd_index.ftl">
-					<#--平台资费说明-->
-                    <#include "//ptzf_index.ftl">
+              		<#--<#include "//syhd_release_index.ftl">-->
+                    <#--&lt;#&ndash;试用活动管理&ndash;&gt;-->
+                	<#--<#include "//syhd_management_index.ftl">-->
+					<#--&lt;#&ndash;试客黑名单&ndash;&gt;-->
+                    <#--<#include "//black_index.ftl">-->
+                    <#--&lt;#&ndash;查看账单&ndash;&gt;-->
+                    <#--<#include "//ckzd_index.ftl">-->
+					<#--&lt;#&ndash;平台资费说明&ndash;&gt;-->
+                    <#--<#include "//ptzf_index.ftl">-->
                 </div>
             </div>
 		</div>
-
-		<#--<script type="text/html" id="storeInfoRow">-->
-			<#--<ul class="dp_info">-->
-				<#--<li class="dp_li1">-->
-					<#--&lt;#&ndash;<div data-content-text="wangwangid"></div>&ndash;&gt;-->
-				<#--</li>-->
-				<#--<li class="dp_li7">-->
-					<#--<div data-content-text="shopName"></div>-->
-				<#--</li>-->
-				<#--<li class="dp_li2" data-content-text="bindtime"></li>-->
-				<#--<li class="dp_li7">-->
-					<#--<div data-content="repurchaseDayText" style="position: relative" data-template-bind='[{"attribute": "itemId", "value": "id"}]' class="hbsst"></div>-->
-				<#--</li>-->
-
-				<#--<li class="dp_li3" data-content="statusAlias"></li>-->
-				<#--<li class="dp_li6" data-content="operator" style="position: relative"></li>-->
-				<#--<li class="dp_hidden" column-id="id" data-value="id"></li>-->
-				<#--<li class="dp_hidden" column-id="status" data-value="status"></li>-->
-				<#--<li class="dp_hidden" column-id="version" data-value="version"></li>-->
-			<#--</ul>-->
-		<#--</script>-->
-
-		<#--<script type="text/html" id="jdstoreInfoRow">-->
-			<#--<ul class="dp_info">-->
-				<#--<li class="dp_li1">-->
-					<#--<div data-content-text="shopName">泰嘉boy</div>-->
-				<#--</li>-->
-				<#--<li class="dp_li7">-->
-					<#--&lt;#&ndash;<div data-content-text="wangwangid">小算珠婴童店</div>&ndash;&gt;-->
-				<#--</li>-->
-				<#--<li class="dp_li2" data-content-text="bindtime">2018-06-15</li>-->
-				<#--<li class="dp_li7">-->
-					<#--<div data-content="repurchaseDayText" style="position: relative" data-template-bind='[{"attribute": "itemId", "value": "id"}]' class="hbsst">30天</div>-->
-				<#--</li>-->
-				<#--</li>-->
-
-				<#--<li class="dp_li3" data-content="statusAlias">已启用</li>-->
-				<#--<li class="dp_li6" data-content="operator" style="position: relative"><img src="/saleterrace/images/start.png"><input type="hidden" id="storeType" value="2">-->
-                    <#--<div style="position: absolute;top: 23px;left: 23px;color: #59C2E6;width: 110px;height: 0px"><a style="color: #59C2E6" href='javascript:editSendInfo(40999,"2")'>编辑</a></div></li>-->
-				<#--<li class="dp_hidden" column-id="id" data-value="id" value="40999"></li>-->
-				<#--<li class="dp_hidden" column-id="status" data-value="status" value="1"></li>-->
-				<#--<li class="dp_hidden" column-id="version" data-value="version" value="14"></li>-->
-			<#--</ul>-->
-		<#--</script>-->
 
         <#include "//protocolTemplate.ftl">
 		<div class="Content-Space-h"></div>

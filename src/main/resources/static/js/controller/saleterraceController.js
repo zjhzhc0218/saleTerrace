@@ -10,9 +10,10 @@ _saleterrace.controller('saleterraceController',['$scope','$http','$sce','$filte
     };
 
 
-
-
-
+    /**
+     * 店铺
+     * @type {{shopStorename: null, shopShopkeepername: null, shopStoreUrl: null, img: null, insert: insert, fileChanged: fileChanged}}
+     */
      $scope.shopParams = {
         'shopStorename':null,//店铺名称
         'shopShopkeepername':null,//掌柜旺旺
@@ -24,6 +25,7 @@ _saleterrace.controller('saleterraceController',['$scope','$http','$sce','$filte
                'shopShopkeepername':$scope.shopParams.shopShopkeepername,//掌柜旺旺
                'shopStoreUrl':$scope.shopParams.shopStoreUrl,//url
                'img':$scope.shopParams.img,//状态
+               'shopShopkeeper' :1
            }
              _saleterrace.ajax({
                  method: 'POST',
@@ -31,18 +33,33 @@ _saleterrace.controller('saleterraceController',['$scope','$http','$sce','$filte
                  data: param,
                  success: function (response) {
                      console.log(response);
+                     $('#myModal_tb').modal('hide');
                  }
              });
 
-         },
+         }, //新增
          'fileChanged' : function(ele){
          var fileP= ele.files;
          $scope.shopParams.img = fileP[0].name;
-     }
+        },
+         'editShop' : function () { //修改
+            // console.log( $scope.editshopParams);
+             _saleterrace.ajax({
+                 method: 'POST',
+                 url: 'editShopRecord',
+                 data: {'params':angular.toJson($scope.editshopParams)},
+                 success: function (response) {
+                     console.log(response);
+                     $('#myModal_dpname').modal('hide');
+                 }
+             });
+         }
     };
 
 
-
+    $scope.$on('edit-shop', function(d,data) {
+        $scope.editshopParams = data;
+    });
 
 
 
