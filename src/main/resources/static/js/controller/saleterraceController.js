@@ -1,4 +1,4 @@
-_saleterrace.controller('saleterraceController',['$scope','$http','$sce','$filter', function ($scope,$http,$sce,$filter) {
+_saleterrace.controller('saleterraceController',['$scope','$http','$sce','$filter', function ($scope,$http,$sce,$filter,Upload) {
 
 
 
@@ -17,10 +17,28 @@ _saleterrace.controller('saleterraceController',['$scope','$http','$sce','$filte
      $scope.shopParams = {
         'shopStorename':null,//店铺名称
         'shopShopkeepername':null,//掌柜旺旺
+        'reader':new FileReader(), //创建一个FileReader接口
+         'form' : { //用于绑定提交内容，图片或其他数据
+             image: {},
+         },
+        'thumb':null, //用于存放图片的base64
         'shopStoreUrl':null,//url
+        'imgSrc':null,//imgSrc
+        'file':null,//file
         'img':null,//状态
+         'uploadFiles' : function (file, errorFile) {
+             if ( file ) {
+                 $scope.shopParams.reader.onload = function(ev) {
+                     $scope.$apply(function() {
+                         $scope.shopParams.thumb = ev.target.result; //接收base64
+                     });
+                     $scope.shopParams.imgSrc = $scope.shopParams.thumb;
+                 };
+             }
+             $scope.shopParams.reader.readAsDataURL(file); //FileReader的方法，把图片转成base64
+         },
          'insert' : function () {
-           var param = {
+           /*var param = {
                'shopStorename':$scope.shopParams.shopStorename,//店铺名称
                'shopShopkeepername':$scope.shopParams.shopShopkeepername,//掌柜旺旺
                'shopStoreUrl':$scope.shopParams.shopStoreUrl,//url
@@ -30,17 +48,43 @@ _saleterrace.controller('saleterraceController',['$scope','$http','$sce','$filte
              _saleterrace.ajax({
                  method: 'POST',
                  url: 'saveShopRecord',
+                 enctype:"multipart/form-data",
                  data: param,
                  success: function (response) {
                      console.log(response);
                      $('#myModal_tb').modal('hide');
                  }
-             });
+             });*/
+             var data = new FormData();
+             data.append("shopStorename", $scope.shopParams.shopStorename);
+             data.append("shopShopkeepername", $scope.shopParams.shopShopkeepername);
+             data.append("shopStoreUrl", $scope.shopParams.shopStoreUrl);
+             data.append("shopShopkeeper", 1);
+             data.append("img", $scope.shopParams.file);
+
+             $http({
+                 method: "POST",
+                 url: "saveShopRecord",
+                 data: data,
+                 headers: {
+                     'Content-Type': undefined
+                 },
+                 transformRequest: angular.identity
+
+             }).then(function successCallback(response) {
+                     console.log(response.data)
+                     $('#myModal_tb').modal('hide');
+                 },
+                 function errorCallback(response) {
+                     console.log("error")
+                     console.log(response);
+                     $('#myModal_tb').modal('hide');
+                 });
 
          }, //新增
          'fileChanged' : function(ele){
          var fileP= ele.files;
-         $scope.shopParams.img = fileP[0].name;
+         $scope.shopParams.img = fileP;//[0].name;
         },
          'editShop' : function () { //修改
             // console.log( $scope.editshopParams);

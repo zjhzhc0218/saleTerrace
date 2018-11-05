@@ -3,6 +3,7 @@ package deepdraw.saleterrace.controller;
 import deepdraw.saleterrace.entity.shop.Shopstore;
 import deepdraw.saleterrace.service.MerchantService;
 import deepdraw.saleterrace.service.ShopService;
+import deepdraw.saleterrace.util.ExportUtil;
 import deepdraw.saleterrace.util.JsonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,7 +40,11 @@ public class ShopController {
         shopstore.setShopId(uuid);
         shopstore.setShopCreationtime(new Date());
         shopstore.setShopShopkeepername(request.getParameter("shopShopkeepername"));
-        shopstore.setShopImg(request.getParameter("img"));
+        //if(request.getParameter("img") != null) {
+            //shopstore.setShopImg();
+            ExportUtil.handleFileUpload(request);
+        //}
+
         shopstore.setShopStorename(request.getParameter("shopStorename"));
         shopstore.setShopStoreUrl(request.getParameter("shopStoreUrl"));
 

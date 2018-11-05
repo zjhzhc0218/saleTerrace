@@ -178,8 +178,16 @@
                         <div style="font-size: 16px;height: 35px;margin-left: 50px;margin-top: 10px;margin-bottom: 5px;"><img src="/saleterrace/images/step1_icon.png">&nbsp;&nbsp;掌柜旺旺：<input type="text" ng-model="shopParams.shopShopkeepername"   placeholder="请输入掌柜旺旺：">&nbsp;&nbsp;(*店铺名称绑定后不可更改)</div>
                         <div style="font-size: 16px;height: 35px;margin-left: 50px;margin-top: 5px;margin-bottom: 5px;"><img src="/saleterrace/images/step2_icon.png">&nbsp;&nbsp;店铺名称：<input type="text" ng-model="shopParams.shopStorename" placeholder="请输入店铺名称：">&nbsp;&nbsp;(务必与宝贝显示的店铺名一致)</div>
                         <div style="font-size: 16px;height: 35px;margin-left: 50px;margin-top: 5px;margin-bottom: 5px;"><img src="/saleterrace/images/step3_icon.png">&nbsp;&nbsp;店铺网址：<input type="text" ng-model="shopParams.shopStoreUrl" placeholder="请输入店铺网址：">&nbsp;&nbsp;(*店铺地址绑定后不可更改)</div>
-                        <div style="font-size: 15px;height: 35px;margin-left: 50px;">
-                            <p>店铺后台截图:<input type="file"  onchange='angular.element(this).scope().shopParams.fileChanged(this)'  style="margin-top: -22px;width: 180px;margin-left: 100px"><a style="font-size: 18px;margin-top: -25px;margin-left: 300px">查看示例图</a></p>
+                        <div style="font-size: 15px;height: 185px;margin-left: 50px;">
+                            <p>店铺后台截图:
+
+                                <#--<input type="file"  onchange='angular.element(this).scope().shopParams.fileChanged(this)'  style="margin-top: -22px;width: 180px;margin-left: 100px"><a style="font-size: 18px;margin-top: -25px;margin-left: 300px">查看示例图</a>-->
+                                <div class="upload-button" type="file" capture="camera" ngf-select="shopParams.uploadFiles($file,$errorfile)" ng-model="shopParams.file" accept="image/jpg,image/JPG,image/jpeg,image/gif,image/png" ngf-max-height="2000" ngf-max-size="3MB">
+                                    <img  style="height: 150px;width: 150px" class="uploadpic img-rounded" src="{{shopParams.imgSrc}}" ng-model="shopParams.img"/>
+                                    <div class="glyphicon glyphicon-camera uploadpic-label">点击上传照片</div>
+                                </div>
+
+                            </p>
                         </div>
                         <p style="font-size: 14px;margin-top: 20px;margin-left: 50px">提示：店铺绑定审核时间1个工作日左右，若超过一个工作日请联系客服！</p>
                     </div>

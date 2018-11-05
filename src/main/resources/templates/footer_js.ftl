@@ -9,6 +9,11 @@
 <script type="text/javascript" src="/saleterrace/js/angular/angular.js"></script>
 <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/saleterrace/js/common/top.js"></script>
+
+<script type="text/javascript" src="/saleterrace/js/angular/ng-file-upload.js"></script>
+<script type="text/javascript" src="/saleterrace/js/angular/ng-file-upload-shim.min.js"></script>
+
+
 <#--<script type="text/javascript" src="/saleterrace/js/verdor/datepicker/WdatePicker.js"></script>-->
 
 

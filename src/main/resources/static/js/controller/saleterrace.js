@@ -3,7 +3,7 @@
  * @type {module}
  * @private
  */
-var _saleterrace=angular.module('saleterrace',[])
+var _saleterrace=angular.module('saleterrace',['ngFileUpload'])
 
 
 
