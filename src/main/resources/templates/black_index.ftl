@@ -1,5 +1,4 @@
 <#--<#include "//modal.ftl">-->
-<#--<#include "//modal_js.ftl">-->
 <!-- center begin -->
 <div id="black_div" align="center"  role="tabpanel" class="tab-pane "class="content" >
     <div class="dp_list_div">
@@ -162,7 +161,7 @@
     </div>
 
     <div class="add_black_wwid_left taobaoke hidden">子活动编号：</div>
-    <div class="add_black_wwid_right taobaoke hidden" ><input type="text" id="childTaskNum" name="childTaskNum"></div>
+    <div class="add_black_wwid_right taobaoke hidden" ></div>
 
     <div class="add_black_wwid_left taobaoke hidden">淘宝订单编号：</div>
     <div class="add_black_wwid_right taobaoke hidden" ><input type="text" id="payOrder" name="payOrder"></div>

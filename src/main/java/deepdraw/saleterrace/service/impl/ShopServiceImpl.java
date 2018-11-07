@@ -20,4 +20,14 @@ public class ShopServiceImpl implements ShopService {
         List<Shopstore> shopRecords = shopstoreMapper.getShopRecords(Long.valueOf(id));
         return JsonUtil.object2Json(shopRecords);
     }
+
+    @Override
+    public int saveShopRecord(Shopstore shopstore) {
+        return shopstoreMapper.insert(shopstore);
+    }
+
+    @Override
+    public int editShopRecord(Shopstore shopstore) {
+        return shopstoreMapper.updateByPrimaryKey(shopstore);
+    }
 }

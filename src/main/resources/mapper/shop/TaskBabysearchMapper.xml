@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="deepdraw.saleterrace.dao.TaskBabysearchMapper" >
+  <resultMap id="BaseResultMap" type="deepdraw.saleterrace.entity.shop.TaskBabysearch" >
+    <id column="babySearchId" property="babysearchid" jdbcType="BIGINT" />
+    <result column="task_id" property="taskId" jdbcType="BIGINT" />
+    <result column="pre_deputy_keyword1" property="preDeputyKeyword1" jdbcType="VARCHAR" />
+    <result column="order" property="order" jdbcType="INTEGER" />
+    <result column="filter" property="filter" jdbcType="VARCHAR" />
+    <result column="price_before" property="priceBefore" jdbcType="DECIMAL" />
+    <result column="price_after" property="priceAfter" jdbcType="DECIMAL" />
+    <result column="palce_of_dispatch" property="palceOfDispatch" jdbcType="VARCHAR" />
+    <result column="browse_the_requirements" property="browseTheRequirements" jdbcType="VARCHAR" />
+    <result column="add_competing_goods" property="addCompetingGoods" jdbcType="INTEGER" />
+    <result column="pre_deputy_keyword2" property="preDeputyKeyword2" jdbcType="VARCHAR" />
+    <result column="main_photo_baby" property="mainPhotoBaby" jdbcType="VARCHAR" />
+    <result column="search_keywords" property="searchKeywords" jdbcType="VARCHAR" />
+    <result column="search_price" property="searchPrice" jdbcType="DECIMAL" />
+    <result column="baby location" property="babyLocation" jdbcType="INTEGER" />
+    <result column="platform_agreement" property="platformAgreement" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    babySearchId, task_id, pre_deputy_keyword1, order, filter, price_before, price_after, 
+    palce_of_dispatch, browse_the_requirements, add_competing_goods, pre_deputy_keyword2, 
+    main_photo_baby, search_keywords, search_price, "baby location", platform_agreement
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from task_babySearch
+    where babySearchId = #{babysearchid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from task_babySearch
+    where babySearchId = #{babysearchid,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="deepdraw.saleterrace.entity.shop.TaskBabysearch" >
+    insert into task_babySearch (babySearchId, task_id, pre_deputy_keyword1, 
+      order, filter, price_before, 
+      price_after, palce_of_dispatch, browse_the_requirements, 
+      add_competing_goods, pre_deputy_keyword2, main_photo_baby, 
+      search_keywords, search_price, "baby location", 
+      platform_agreement)
+    values (#{babysearchid,jdbcType=BIGINT}, #{taskId,jdbcType=BIGINT}, #{preDeputyKeyword1,jdbcType=VARCHAR}, 
+      #{order,jdbcType=INTEGER}, #{filter,jdbcType=VARCHAR}, #{priceBefore,jdbcType=DECIMAL}, 
+      #{priceAfter,jdbcType=DECIMAL}, #{palceOfDispatch,jdbcType=VARCHAR}, #{browseTheRequirements,jdbcType=VARCHAR}, 
+      #{addCompetingGoods,jdbcType=INTEGER}, #{preDeputyKeyword2,jdbcType=VARCHAR}, #{mainPhotoBaby,jdbcType=VARCHAR}, 
+      #{searchKeywords,jdbcType=VARCHAR}, #{searchPrice,jdbcType=DECIMAL}, #{babyLocation,jdbcType=INTEGER}, 
+      #{platformAgreement,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="deepdraw.saleterrace.entity.shop.TaskBabysearch" >
+    insert into task_babySearch
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="babysearchid != null" >
+        babySearchId,
+      </if>
+      <if test="taskId != null" >
+        task_id,
+      </if>
+      <if test="preDeputyKeyword1 != null" >
+        pre_deputy_keyword1,
+      </if>
+      <if test="order != null" >
+        order,
+      </if>
+      <if test="filter != null" >
+        filter,
+      </if>
+      <if test="priceBefore != null" >
+        price_before,
+      </if>
+      <if test="priceAfter != null" >
+        price_after,
+      </if>
+      <if test="palceOfDispatch != null" >
+        palce_of_dispatch,
+      </if>
+      <if test="browseTheRequirements != null" >
+        browse_the_requirements,
+      </if>
+      <if test="addCompetingGoods != null" >
+        add_competing_goods,
+      </if>
+      <if test="preDeputyKeyword2 != null" >
+        pre_deputy_keyword2,
+      </if>
+      <if test="mainPhotoBaby != null" >
+        main_photo_baby,
+      </if>
+      <if test="searchKeywords != null" >
+        search_keywords,
+      </if>
+      <if test="searchPrice != null" >
+        search_price,
+      </if>
+      <if test="babyLocation != null" >
+        "baby location",
+      </if>
+      <if test="platformAgreement != null" >
+        platform_agreement,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="babysearchid != null" >
+        #{babysearchid,jdbcType=BIGINT},
+      </if>
+      <if test="taskId != null" >
+        #{taskId,jdbcType=BIGINT},
+      </if>
+      <if test="preDeputyKeyword1 != null" >
+        #{preDeputyKeyword1,jdbcType=VARCHAR},
+      </if>
+      <if test="order != null" >
+        #{order,jdbcType=INTEGER},
+      </if>
+      <if test="filter != null" >
+        #{filter,jdbcType=VARCHAR},
+      </if>
+      <if test="priceBefore != null" >
+        #{priceBefore,jdbcType=DECIMAL},
+      </if>
+      <if test="priceAfter != null" >
+        #{priceAfter,jdbcType=DECIMAL},
+      </if>
+      <if test="palceOfDispatch != null" >
+        #{palceOfDispatch,jdbcType=VARCHAR},
+      </if>
+      <if test="browseTheRequirements != null" >
+        #{browseTheRequirements,jdbcType=VARCHAR},
+      </if>
+      <if test="addCompetingGoods != null" >
+        #{addCompetingGoods,jdbcType=INTEGER},
+      </if>
+      <if test="preDeputyKeyword2 != null" >
+        #{preDeputyKeyword2,jdbcType=VARCHAR},
+      </if>
+      <if test="mainPhotoBaby != null" >
+        #{mainPhotoBaby,jdbcType=VARCHAR},
+      </if>
+      <if test="searchKeywords != null" >
+        #{searchKeywords,jdbcType=VARCHAR},
+      </if>
+      <if test="searchPrice != null" >
+        #{searchPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="babyLocation != null" >
+        #{babyLocation,jdbcType=INTEGER},
+      </if>
+      <if test="platformAgreement != null" >
+        #{platformAgreement,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="deepdraw.saleterrace.entity.shop.TaskBabysearch" >
+    update task_babySearch
+    <set >
+      <if test="taskId != null" >
+        task_id = #{taskId,jdbcType=BIGINT},
+      </if>
+      <if test="preDeputyKeyword1 != null" >
+        pre_deputy_keyword1 = #{preDeputyKeyword1,jdbcType=VARCHAR},
+      </if>
+      <if test="order != null" >
+        order = #{order,jdbcType=INTEGER},
+      </if>
+      <if test="filter != null" >
+        filter = #{filter,jdbcType=VARCHAR},
+      </if>
+      <if test="priceBefore != null" >
+        price_before = #{priceBefore,jdbcType=DECIMAL},
+      </if>
+      <if test="priceAfter != null" >
+        price_after = #{priceAfter,jdbcType=DECIMAL},
+      </if>
+      <if test="palceOfDispatch != null" >
+        palce_of_dispatch = #{palceOfDispatch,jdbcType=VARCHAR},
+      </if>
+      <if test="browseTheRequirements != null" >
+        browse_the_requirements = #{browseTheRequirements,jdbcType=VARCHAR},
+      </if>
+      <if test="addCompetingGoods != null" >
+        add_competing_goods = #{addCompetingGoods,jdbcType=INTEGER},
+      </if>
+      <if test="preDeputyKeyword2 != null" >
+        pre_deputy_keyword2 = #{preDeputyKeyword2,jdbcType=VARCHAR},
+      </if>
+      <if test="mainPhotoBaby != null" >
+        main_photo_baby = #{mainPhotoBaby,jdbcType=VARCHAR},
+      </if>
+      <if test="searchKeywords != null" >
+        search_keywords = #{searchKeywords,jdbcType=VARCHAR},
+      </if>
+      <if test="searchPrice != null" >
+        search_price = #{searchPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="babyLocation != null" >
+        "baby location" = #{babyLocation,jdbcType=INTEGER},
+      </if>
+      <if test="platformAgreement != null" >
+        platform_agreement = #{platformAgreement,jdbcType=INTEGER},
+      </if>
+    </set>
+    where babySearchId = #{babysearchid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="deepdraw.saleterrace.entity.shop.TaskBabysearch" >
+    update task_babySearch
+    set task_id = #{taskId,jdbcType=BIGINT},
+      pre_deputy_keyword1 = #{preDeputyKeyword1,jdbcType=VARCHAR},
+      order = #{order,jdbcType=INTEGER},
+      filter = #{filter,jdbcType=VARCHAR},
+      price_before = #{priceBefore,jdbcType=DECIMAL},
+      price_after = #{priceAfter,jdbcType=DECIMAL},
+      palce_of_dispatch = #{palceOfDispatch,jdbcType=VARCHAR},
+      browse_the_requirements = #{browseTheRequirements,jdbcType=VARCHAR},
+      add_competing_goods = #{addCompetingGoods,jdbcType=INTEGER},
+      pre_deputy_keyword2 = #{preDeputyKeyword2,jdbcType=VARCHAR},
+      main_photo_baby = #{mainPhotoBaby,jdbcType=VARCHAR},
+      search_keywords = #{searchKeywords,jdbcType=VARCHAR},
+      search_price = #{searchPrice,jdbcType=DECIMAL},
+      "baby location" = #{babyLocation,jdbcType=INTEGER},
+      platform_agreement = #{platformAgreement,jdbcType=INTEGER}
+    where babySearchId = #{babysearchid,jdbcType=BIGINT}
+  </update>
+</mapper>

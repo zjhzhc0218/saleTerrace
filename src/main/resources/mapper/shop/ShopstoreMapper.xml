@@ -9,6 +9,7 @@
     <result column="shop_shopkeeperName" property="shopShopkeepername" jdbcType="VARCHAR" />
     <result column="shop_storeName" property="shopStorename" jdbcType="VARCHAR" />
     <result column="shop_img" property="shopImg" jdbcType="VARCHAR" />
+    <result column="shop_storeurl" property="shopStoreUrl" jdbcType="VARCHAR" />
     <result column="shop_creationTime" property="shopCreationtime" jdbcType="TIMESTAMP" />
     <result column="shop_changeTime" property="shopChangetime" jdbcType="TIMESTAMP" />
     <result column="shop_trialInterval" property="shopTrialinterval" jdbcType="INTEGER" />
