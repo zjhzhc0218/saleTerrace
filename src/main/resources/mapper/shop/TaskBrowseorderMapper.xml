@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="deepdraw.saleterrace.dao.TaskBrowseorderMapper" >
+  <resultMap id="BaseResultMap" type="deepdraw.saleterrace.entity.shop.TaskBrowseorder" >
+    <id column="browseOrder_id" property="browseorderId" jdbcType="BIGINT" />
+    <result column="task_id" property="taskId" jdbcType="BIGINT" />
+    <result column="browse_the_requirements_jp" property="browseTheRequirementsJp" jdbcType="VARCHAR" />
+    <result column="browse_the_requirements_baby" property="browseTheRequirementsBaby" jdbcType="VARCHAR" />
+    <result column="payment_delay_time" property="paymentDelayTime" jdbcType="INTEGER" />
+    <result column="take_the_price" property="takeThePrice" jdbcType="DECIMAL" />
+    <result column="number" property="number" jdbcType="INTEGER" />
+    <result column="package_mai" property="packageMai" jdbcType="INTEGER" />
+    <result column="terms_of_payment" property="termsOfPayment" jdbcType="INTEGER" />
+    <result column="add_ons_one" property="addOnsOne" jdbcType="VARCHAR" />
+    <result column="add_ons_two" property="addOnsTwo" jdbcType="VARCHAR" />
+    <result column="activity_order" property="activityOrder" jdbcType="INTEGER" />
+    <result column="publish_interval" property="publishInterval" jdbcType="INTEGER" />
+    <result column="active_failure_time" property="activeFailureTime" jdbcType="TIMESTAMP" />
+    <result column="event_notes" property="eventNotes" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    browseOrder_id, task_id, browse_the_requirements_jp, browse_the_requirements_baby, 
+    payment_delay_time, take_the_price, number, package_mai, terms_of_payment, add_ons_one, 
+    add_ons_two, activity_order, publish_interval, active_failure_time, event_notes
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from task_browseOrder
+    where browseOrder_id = #{browseorderId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from task_browseOrder
+    where browseOrder_id = #{browseorderId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="deepdraw.saleterrace.entity.shop.TaskBrowseorder" >
+    insert into task_browseOrder (browseOrder_id, task_id, browse_the_requirements_jp, 
+      browse_the_requirements_baby, payment_delay_time, 
+      take_the_price, number, package_mai, 
+      terms_of_payment, add_ons_one, add_ons_two, 
+      activity_order, publish_interval, active_failure_time, 
+      event_notes)
+    values (#{browseorderId,jdbcType=BIGINT}, #{taskId,jdbcType=BIGINT}, #{browseTheRequirementsJp,jdbcType=VARCHAR}, 
+      #{browseTheRequirementsBaby,jdbcType=VARCHAR}, #{paymentDelayTime,jdbcType=INTEGER}, 
+      #{takeThePrice,jdbcType=DECIMAL}, #{number,jdbcType=INTEGER}, #{packageMai,jdbcType=INTEGER}, 
+      #{termsOfPayment,jdbcType=INTEGER}, #{addOnsOne,jdbcType=VARCHAR}, #{addOnsTwo,jdbcType=VARCHAR}, 
+      #{activityOrder,jdbcType=INTEGER}, #{publishInterval,jdbcType=INTEGER}, #{activeFailureTime,jdbcType=TIMESTAMP}, 
+      #{eventNotes,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="deepdraw.saleterrace.entity.shop.TaskBrowseorder" >
+    insert into task_browseOrder
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="browseorderId != null" >
+        browseOrder_id,
+      </if>
+      <if test="taskId != null" >
+        task_id,
+      </if>
+      <if test="browseTheRequirementsJp != null" >
+        browse_the_requirements_jp,
+      </if>
+      <if test="browseTheRequirementsBaby != null" >
+        browse_the_requirements_baby,
+      </if>
+      <if test="paymentDelayTime != null" >
+        payment_delay_time,
+      </if>
+      <if test="takeThePrice != null" >
+        take_the_price,
+      </if>
+      <if test="number != null" >
+        number,
+      </if>
+      <if test="packageMai != null" >
+        package_mai,
+      </if>
+      <if test="termsOfPayment != null" >
+        terms_of_payment,
+      </if>
+      <if test="addOnsOne != null" >
+        add_ons_one,
+      </if>
+      <if test="addOnsTwo != null" >
+        add_ons_two,
+      </if>
+      <if test="activityOrder != null" >
+        activity_order,
+      </if>
+      <if test="publishInterval != null" >
+        publish_interval,
+      </if>
+      <if test="activeFailureTime != null" >
+        active_failure_time,
+      </if>
+      <if test="eventNotes != null" >
+        event_notes,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="browseorderId != null" >
+        #{browseorderId,jdbcType=BIGINT},
+      </if>
+      <if test="taskId != null" >
+        #{taskId,jdbcType=BIGINT},
+      </if>
+      <if test="browseTheRequirementsJp != null" >
+        #{browseTheRequirementsJp,jdbcType=VARCHAR},
+      </if>
+      <if test="browseTheRequirementsBaby != null" >
+        #{browseTheRequirementsBaby,jdbcType=VARCHAR},
+      </if>
+      <if test="paymentDelayTime != null" >
+        #{paymentDelayTime,jdbcType=INTEGER},
+      </if>
+      <if test="takeThePrice != null" >
+        #{takeThePrice,jdbcType=DECIMAL},
+      </if>
+      <if test="number != null" >
+        #{number,jdbcType=INTEGER},
+      </if>
+      <if test="packageMai != null" >
+        #{packageMai,jdbcType=INTEGER},
+      </if>
+      <if test="termsOfPayment != null" >
+        #{termsOfPayment,jdbcType=INTEGER},
+      </if>
+      <if test="addOnsOne != null" >
+        #{addOnsOne,jdbcType=VARCHAR},
+      </if>
+      <if test="addOnsTwo != null" >
+        #{addOnsTwo,jdbcType=VARCHAR},
+      </if>
+      <if test="activityOrder != null" >
+        #{activityOrder,jdbcType=INTEGER},
+      </if>
+      <if test="publishInterval != null" >
+        #{publishInterval,jdbcType=INTEGER},
+      </if>
+      <if test="activeFailureTime != null" >
+        #{activeFailureTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="eventNotes != null" >
+        #{eventNotes,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="deepdraw.saleterrace.entity.shop.TaskBrowseorder" >
+    update task_browseOrder
+    <set >
+      <if test="taskId != null" >
+        task_id = #{taskId,jdbcType=BIGINT},
+      </if>
+      <if test="browseTheRequirementsJp != null" >
+        browse_the_requirements_jp = #{browseTheRequirementsJp,jdbcType=VARCHAR},
+      </if>
+      <if test="browseTheRequirementsBaby != null" >
+        browse_the_requirements_baby = #{browseTheRequirementsBaby,jdbcType=VARCHAR},
+      </if>
+      <if test="paymentDelayTime != null" >
+        payment_delay_time = #{paymentDelayTime,jdbcType=INTEGER},
+      </if>
+      <if test="takeThePrice != null" >
+        take_the_price = #{takeThePrice,jdbcType=DECIMAL},
+      </if>
+      <if test="number != null" >
+        number = #{number,jdbcType=INTEGER},
+      </if>
+      <if test="packageMai != null" >
+        package_mai = #{packageMai,jdbcType=INTEGER},
+      </if>
+      <if test="termsOfPayment != null" >
+        terms_of_payment = #{termsOfPayment,jdbcType=INTEGER},
+      </if>
+      <if test="addOnsOne != null" >
+        add_ons_one = #{addOnsOne,jdbcType=VARCHAR},
+      </if>
+      <if test="addOnsTwo != null" >
+        add_ons_two = #{addOnsTwo,jdbcType=VARCHAR},
+      </if>
+      <if test="activityOrder != null" >
+        activity_order = #{activityOrder,jdbcType=INTEGER},
+      </if>
+      <if test="publishInterval != null" >
+        publish_interval = #{publishInterval,jdbcType=INTEGER},
+      </if>
+      <if test="activeFailureTime != null" >
+        active_failure_time = #{activeFailureTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="eventNotes != null" >
+        event_notes = #{eventNotes,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where browseOrder_id = #{browseorderId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="deepdraw.saleterrace.entity.shop.TaskBrowseorder" >
+    update task_browseOrder
+    set task_id = #{taskId,jdbcType=BIGINT},
+      browse_the_requirements_jp = #{browseTheRequirementsJp,jdbcType=VARCHAR},
+      browse_the_requirements_baby = #{browseTheRequirementsBaby,jdbcType=VARCHAR},
+      payment_delay_time = #{paymentDelayTime,jdbcType=INTEGER},
+      take_the_price = #{takeThePrice,jdbcType=DECIMAL},
+      number = #{number,jdbcType=INTEGER},
+      package_mai = #{packageMai,jdbcType=INTEGER},
+      terms_of_payment = #{termsOfPayment,jdbcType=INTEGER},
+      add_ons_one = #{addOnsOne,jdbcType=VARCHAR},
+      add_ons_two = #{addOnsTwo,jdbcType=VARCHAR},
+      activity_order = #{activityOrder,jdbcType=INTEGER},
+      publish_interval = #{publishInterval,jdbcType=INTEGER},
+      active_failure_time = #{activeFailureTime,jdbcType=TIMESTAMP},
+      event_notes = #{eventNotes,jdbcType=VARCHAR}
+    where browseOrder_id = #{browseorderId,jdbcType=BIGINT}
+  </update>
+</mapper>

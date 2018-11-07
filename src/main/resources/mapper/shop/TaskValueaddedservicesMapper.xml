@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="deepdraw.saleterrace.dao.TaskValueaddedservicesMapper" >
+  <resultMap id="BaseResultMap" type="deepdraw.saleterrace.entity.shop.TaskValueaddedservices" >
+    <id column="try_the_gurst_tag" property="tryTheGurstTag" jdbcType="INTEGER" />
+    <result column="regional_restrictions" property="regionalRestrictions" jdbcType="VARCHAR" />
+    <result column="age_limit" property="ageLimit" jdbcType="INTEGER" />
+    <result column="gender_restrictions" property="genderRestrictions" jdbcType="INTEGER" />
+    <result column="category_limits" property="categoryLimits" jdbcType="VARCHAR" />
+    <result column="naughty_limit" property="naughtyLimit" jdbcType="INTEGER" />
+    <result column="huabei" property="huabei" jdbcType="INTEGER" />
+    <result column="account_level" property="accountLevel" jdbcType="INTEGER" />
+    <result column="evaluation" property="evaluation" jdbcType="INTEGER" />
+    <result column="evaluation_detail" property="evaluationDetail" jdbcType="VARCHAR" />
+    <result column="additional_evaluation" property="additionalEvaluation" jdbcType="INTEGER" />
+    <result column="completion" property="completion" jdbcType="INTEGER" />
+    <result column="additonal_bounty" property="additonalBounty" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    try_the_gurst_tag, regional_restrictions, age_limit, gender_restrictions, category_limits, 
+    naughty_limit, huabei, account_level, evaluation, evaluation_detail, additional_evaluation, 
+    completion, additonal_bounty
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from task_valueAddedServices
+    where try_the_gurst_tag = #{tryTheGurstTag,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from task_valueAddedServices
+    where try_the_gurst_tag = #{tryTheGurstTag,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="deepdraw.saleterrace.entity.shop.TaskValueaddedservices" >
+    insert into task_valueAddedServices (try_the_gurst_tag, regional_restrictions, 
+      age_limit, gender_restrictions, category_limits, 
+      naughty_limit, huabei, account_level, 
+      evaluation, evaluation_detail, additional_evaluation, 
+      completion, additonal_bounty)
+    values (#{tryTheGurstTag,jdbcType=INTEGER}, #{regionalRestrictions,jdbcType=VARCHAR}, 
+      #{ageLimit,jdbcType=INTEGER}, #{genderRestrictions,jdbcType=INTEGER}, #{categoryLimits,jdbcType=VARCHAR}, 
+      #{naughtyLimit,jdbcType=INTEGER}, #{huabei,jdbcType=INTEGER}, #{accountLevel,jdbcType=INTEGER}, 
+      #{evaluation,jdbcType=INTEGER}, #{evaluationDetail,jdbcType=VARCHAR}, #{additionalEvaluation,jdbcType=INTEGER}, 
+      #{completion,jdbcType=INTEGER}, #{additonalBounty,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="deepdraw.saleterrace.entity.shop.TaskValueaddedservices" >
+    insert into task_valueAddedServices
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="tryTheGurstTag != null" >
+        try_the_gurst_tag,
+      </if>
+      <if test="regionalRestrictions != null" >
+        regional_restrictions,
+      </if>
+      <if test="ageLimit != null" >
+        age_limit,
+      </if>
+      <if test="genderRestrictions != null" >
+        gender_restrictions,
+      </if>
+      <if test="categoryLimits != null" >
+        category_limits,
+      </if>
+      <if test="naughtyLimit != null" >
+        naughty_limit,
+      </if>
+      <if test="huabei != null" >
+        huabei,
+      </if>
+      <if test="accountLevel != null" >
+        account_level,
+      </if>
+      <if test="evaluation != null" >
+        evaluation,
+      </if>
+      <if test="evaluationDetail != null" >
+        evaluation_detail,
+      </if>
+      <if test="additionalEvaluation != null" >
+        additional_evaluation,
+      </if>
+      <if test="completion != null" >
+        completion,
+      </if>
+      <if test="additonalBounty != null" >
+        additonal_bounty,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="tryTheGurstTag != null" >
+        #{tryTheGurstTag,jdbcType=INTEGER},
+      </if>
+      <if test="regionalRestrictions != null" >
+        #{regionalRestrictions,jdbcType=VARCHAR},
+      </if>
+      <if test="ageLimit != null" >
+        #{ageLimit,jdbcType=INTEGER},
+      </if>
+      <if test="genderRestrictions != null" >
+        #{genderRestrictions,jdbcType=INTEGER},
+      </if>
+      <if test="categoryLimits != null" >
+        #{categoryLimits,jdbcType=VARCHAR},
+      </if>
+      <if test="naughtyLimit != null" >
+        #{naughtyLimit,jdbcType=INTEGER},
+      </if>
+      <if test="huabei != null" >
+        #{huabei,jdbcType=INTEGER},
+      </if>
+      <if test="accountLevel != null" >
+        #{accountLevel,jdbcType=INTEGER},
+      </if>
+      <if test="evaluation != null" >
+        #{evaluation,jdbcType=INTEGER},
+      </if>
+      <if test="evaluationDetail != null" >
+        #{evaluationDetail,jdbcType=VARCHAR},
+      </if>
+      <if test="additionalEvaluation != null" >
+        #{additionalEvaluation,jdbcType=INTEGER},
+      </if>
+      <if test="completion != null" >
+        #{completion,jdbcType=INTEGER},
+      </if>
+      <if test="additonalBounty != null" >
+        #{additonalBounty,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="deepdraw.saleterrace.entity.shop.TaskValueaddedservices" >
+    update task_valueAddedServices
+    <set >
+      <if test="regionalRestrictions != null" >
+        regional_restrictions = #{regionalRestrictions,jdbcType=VARCHAR},
+      </if>
+      <if test="ageLimit != null" >
+        age_limit = #{ageLimit,jdbcType=INTEGER},
+      </if>
+      <if test="genderRestrictions != null" >
+        gender_restrictions = #{genderRestrictions,jdbcType=INTEGER},
+      </if>
+      <if test="categoryLimits != null" >
+        category_limits = #{categoryLimits,jdbcType=VARCHAR},
+      </if>
+      <if test="naughtyLimit != null" >
+        naughty_limit = #{naughtyLimit,jdbcType=INTEGER},
+      </if>
+      <if test="huabei != null" >
+        huabei = #{huabei,jdbcType=INTEGER},
+      </if>
+      <if test="accountLevel != null" >
+        account_level = #{accountLevel,jdbcType=INTEGER},
+      </if>
+      <if test="evaluation != null" >
+        evaluation = #{evaluation,jdbcType=INTEGER},
+      </if>
+      <if test="evaluationDetail != null" >
+        evaluation_detail = #{evaluationDetail,jdbcType=VARCHAR},
+      </if>
+      <if test="additionalEvaluation != null" >
+        additional_evaluation = #{additionalEvaluation,jdbcType=INTEGER},
+      </if>
+      <if test="completion != null" >
+        completion = #{completion,jdbcType=INTEGER},
+      </if>
+      <if test="additonalBounty != null" >
+        additonal_bounty = #{additonalBounty,jdbcType=INTEGER},
+      </if>
+    </set>
+    where try_the_gurst_tag = #{tryTheGurstTag,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="deepdraw.saleterrace.entity.shop.TaskValueaddedservices" >
+    update task_valueAddedServices
+    set regional_restrictions = #{regionalRestrictions,jdbcType=VARCHAR},
+      age_limit = #{ageLimit,jdbcType=INTEGER},
+      gender_restrictions = #{genderRestrictions,jdbcType=INTEGER},
+      category_limits = #{categoryLimits,jdbcType=VARCHAR},
+      naughty_limit = #{naughtyLimit,jdbcType=INTEGER},
+      huabei = #{huabei,jdbcType=INTEGER},
+      account_level = #{accountLevel,jdbcType=INTEGER},
+      evaluation = #{evaluation,jdbcType=INTEGER},
+      evaluation_detail = #{evaluationDetail,jdbcType=VARCHAR},
+      additional_evaluation = #{additionalEvaluation,jdbcType=INTEGER},
+      completion = #{completion,jdbcType=INTEGER},
+      additonal_bounty = #{additonalBounty,jdbcType=INTEGER}
+    where try_the_gurst_tag = #{tryTheGurstTag,jdbcType=INTEGER}
+  </update>
+</mapper>
