@@ -202,12 +202,7 @@ select {
     padding-left: 8px
 }
 
-.checkbox {
-    cursor: pointer;
-    position: relative;
-    top: 1px;
-    margin-right: 5px
-}
+
 
 .list_div {
     width: 980px;
@@ -336,7 +331,8 @@ select {
 .mission_ul li.mission_li10 {
     text-align: center;
     line-height: 22px;
-    width: 75px
+    width: 75px;
+    margin-top: 15px;
 }
 
 #cg_mission .mission_ul li.mission_li10,#sb_mission .mission_ul li.mission_li10,#yfk_mission .mission_ul li.mission_li10 {
@@ -371,6 +367,28 @@ select {
     background-color: transparent
 }
 
+ .copy_button {
+     width: 47px;
+     font-size: 14px;
+     /*background-image: url(../../images/copy_bg.png);*/
+     /*background-size:contain;*/
+     height: 50px;
+     border: 0;
+     cursor: pointer;
+     margin-right: 15px;
+     margin-left: 10px;
+     background-color: #5AC2E7;
+     color: #E8E8E8;
+ }
+.checkbox {
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-right: 5px;
+    margin-left: 30px;
+    margin-top: 16px;
+}
+
 .flagImg {
     margin-left: 5px;
     margin-right: 10px;
@@ -387,15 +405,16 @@ select {
     top: -8px
 }
 
-.copy_button {
-    width: 47px;
-    font-size: 14px;
-    background-image: url(../../images/copy_bg.png);
-    border: 0;
-    cursor: pointer;
-    margin-right: 15px;
-    margin-left: 10px
-}
+/*.copy_button {*/
+    /*width: 47px;*/
+    /*font-size: 14px;*/
+    /*background-image: url(../../images/copy_bg.png);*/
+    /*background-size:contain;*/
+    /*border: 0;*/
+    /*cursor: pointer;*/
+    /*margin-right: 15px;*/
+    /*margin-left: 10px*/
+/*}*/
 
 .operation_button {
     width: 61px;

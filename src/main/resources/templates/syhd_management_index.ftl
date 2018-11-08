@@ -1,21 +1,22 @@
+
 <div id="hdgl_div" role="tabpanel" class="tab-pane " class="content" >
     <div>
         <div id="tabsSwitch" align="left" class="tabsSwitchDiv" style="margin-top: 0px">
             <ul class="tabsSwitch_ul" style="margin-bottom: 0px">
-                <li value="0" class="tabsSwitchSeletedLi">已发布活动</li>
-                <li value="1" class="tabsSwitchUnSeletedLi">未发布活动</li>
-                <li value="2" class="tabsSwitchUnSeletedLi">发布记录</li>
-                <li value="3" class="tabsSwitchUnSeletedLi">发布模板</li>
+                <a  class="active"  role="tab" data-toggle="tab" href="#wdrw_div" style="color: #fff"><li class="tabsSwitchSeletedLi">已发布活动</li></a>
+                <a  href="#wfbrw_div" role="tab" data-toggle="tab"><li class="tabsSwitchUnSeletedLi">未发布活动</li></a>
+                <a  href="#fbjl_div" role="tab" data-toggle="tab"><li class="tabsSwitchUnSeletedLi">发布记录</li></a>
+                <a  href="#fbjl_div" role="tab" data-toggle="tab"><li class="tabsSwitchUnSeletedLi">发布模板</li></a>
             </ul>
         </div>
     </div>
-    <div class="wdrw_div" align="center">
-        <div class="search_options" align="left" style="height: auto">
+    <div class="wdrw_div" align="center"  role="tabpanel" class="tab-pane active" class="content" id="wdrw_div">
+        <div class="search_options" align="left" style="height: auto;margin-left: -20px">
             <div class="space_div"></div>
             <span>店铺名称：</span>
             <select name="ww_id" id="ww_id">
                 <option value="" selected>全部</option>
-                <option value="thinklittle旗舰店">thinklittle旗舰店</option>
+                <option value="thinklittle旗舰店">1111111旗舰店</option>
             </select>
             <span>发布时间：</span>
             <input type="text" class="input_text jsTime1" id="taskBeginTimestart" name="taskBeginTimestart">&nbsp;到&nbsp;
@@ -34,13 +35,14 @@
                 <option value="" selected>全部</option>
                 <option value="0" class="tbtm hidden">PC淘宝网taobao.com</option>
                 <option value="1" class="tbtm hidden">手机淘宝APP</option>
-            </select><br>
-            <span>活动编号：</span><input type="text" class="input_text rwbh" autocomplete="off">
-            <span>试客账号：</span><input type="text" class="input_text msww" >
+            </select>
+            <br>
+            <span>活动编号：</span><input type="text" class="input_text rwbh" name="childTaskNum" autocomplete="off">
+            <span>试客账号：</span><input type="text" class="input_text msww" name="buyerwwid">
             <br>
 
             <div align="left">
-                <input type="button" class="search_button" value="搜索" style="text-align: center">
+                <input type="button" class="search_button" value="搜索" style="text-align: center;margin-top: 10px;margin-bottom: 10px;">
                 <input type="hidden" id="childTaskCount" value="0">
                 <input type="hidden" id="jobType" name="jobType" value="TASK">
                 <input type="hidden" id="taskStatusflag" name="taskStatusflag" value="-1">
@@ -53,7 +55,7 @@
         </div>
         <div id="tabs" align="left">
             <input type="hidden" id="systemTime" name="systemTime" value="1540190741463"/>
-            <ul class="tabs_ul" style="color: ">
+            <ul class="tabs_ul" style="color: ;margin-top: 20px;margin-left: 15px;">
                 <li value="-1" id="defualt" class="tabsUnSeletedLi tabsSeletedLi" style="line-height: 30px;">近三月<p>(<span id="threeMonthTask">1</span>)</li>
                 <li value="0" class="tabsUnSeletedLi" style="line-height: 30px;">待接手<p>(<span  id="waitReceiveTask">2</span>)</li>
                 <li value="1" class="tabsUnSeletedLi" style="line-height: 30px;">进行中<p>(<span id="going">3</span>)</li>
@@ -76,12 +78,12 @@
                         <div class="mission_head">
                             <div class="floatLeft shalfDiv">
                                 <img src="/saleterrace/images/checkbox_selected.png" class="checkbox" value="0" id="6456939">
-                                <div><b>子活动编号：162036-1536043819001-02201</b>
-                                <b id="taskTypeTime">发布时间：2018-09-04 14:52:38</b>
+                                <div style="width: 520px;margin-left: 55px;margin-top: -40px;"><b>子活动编号：111111-1111111111111-11111</b>
+                                <b id="taskTypeTime">发布时间：1111-11-11 11:11:11</b>
                                 </div>
                             </div>
                             <div class="floatLeft fhalfDiv" align="right">
-                                <span><b>订单编号：<span>212299761238037050</span></b>
+                                <span><b>订单编号：<span>111111111111111111</span></b>
                                 <input type="button" value="复制" class="copy_button" style="">
                                 <img src="/saleterrace/images/flag.png" class="flagImg" title="添加弹框">
                                 </span>
@@ -95,30 +97,30 @@
                             </li>
                             <li class="mission_li5">
                                 <div class="space_div"></div>
-                                <img src="/saleterrace/images/mobile_icon2.png">手机端<br>手机淘宝
+                                <img src="/saleterrace/images/mobile_icon2.png" style="margin-top: -4;margin-right: 4px;">手机端<br>手机淘宝
                             </li>
                             <li class="mission_li7">
                                 <div class="space_div"></div>
                                 店铺名称<br>
-                                <a title="thinklittle旗舰店" style="color: #7b8da0;">thinklittle旗...</a>
-                                <img src="/saleterrace/images/tmail_icon.png" class="sjTypeImg">
+                                <a title="thinklittle旗舰店" style="color: #7b8da0;">111111</a>
+                                <img src="/saleterrace/images/tmail_icon.png" class="sjTypeImg" style="top: 0px;">
                             </li>
                             <li class="mission_li4">
                                 <div class="space_div"></div>
-                                下单数量<br>1
+                                下单数量<br>11
                             </li>
-                            <li class="mission_li8" style="width:100px;">
+                            <li class="mission_li8" style="width:100px;margin-top: 10px">
                                 <div class="space_div"></div>
-                                垫付货款<br>39.9<br>
+                                垫付货款<br>11.1<br>
                             </li>
                             <li class="mission_li9">
                                 <div class="space_div"></div>
-                                活动总赏金<br>17.20
+                                活动总赏金<br>11.11
                             </li>
                             <li class="mission_li3">
                                 <div class="space_div"></div>
                                 买号要求<br>
-                                <img src="/saleterrace/images/b_blue_1.gif" alt="买家信誉">
+                                <img src="/saleterrace/images/b_blue_1.gif" alt="买家信誉" style="margin-top: 5px">
                             </li>
                             <li class="mission_li8" style="width:128px;">
                                 <div class="space_div"></div>
@@ -132,12 +134,12 @@
                             <li class="mission_li6">
                                 <div class="space_div"></div>
                                 试客旺旺<br>
-                                <span style="color: red">cradlekl</span>
+                                <span style="color: red">111111</span>
                                 <br><img src="/saleterrace/images/b_blue_3.gif" alt="买家信誉">
                             </li>
                             <li class="mission_li10">
                                 交易成功<br>
-                                <a class="aOpeara" href="/seller/sellerTaskDetails.htm?id=6456939">查看详情</a>
+                                <a class="aOpeara" href="#">查看详情</a>
                             </li>
                         </ul>
                     </div>
@@ -151,9 +153,9 @@
                 </div>
             </div>
     </div>
-    </div>
 </div>
-<!-- center end -->
+</div>
+
 
 <div class="floatLeft fk_outside_div_again" align="left" id="payAgainPub">
     <div class="fk_div_again" style="width: 350px;height: 150px;">
@@ -214,3 +216,4 @@
     </div>
 </div>
 
+<#include "//syhd_management_failure.ftl">
