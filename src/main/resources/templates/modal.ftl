@@ -144,7 +144,12 @@
             <div class="modal-body" style="">
                 <div style="font-size: 16px;height: 35px;margin-left: 50px;margin-top: 10px;margin-bottom: 5px;"><img src="/saleterrace/images/step1_icon.png">&nbsp;&nbsp;掌柜旺旺：&nbsp;&nbsp;&nbsp;<b class="dp_account" >{{editshopParams.shopShopkeepername}}</b></div>
                 <div style="font-size: 16px;height: 35px;margin-left: 50px;margin-top: 20px"><img src="/saleterrace/images/step2_icon.png">&nbsp;&nbsp;店铺名称：<input type="text" placeholder="请输入店铺名称：" ng-model="editshopParams.shopStorename">&nbsp;&nbsp;(务必与宝贝显示的店铺名一致)</div>
-                <p style="margin-top: 20px;margin-left: 50px">店铺后台截图:<input type="file" ng-model="editshopParams.img" style="margin-top: -22px;width: 180px;margin-left: 100px"></p>
+                <p style="margin-top: 20px;margin-left: 50px">店铺后台截图:
+                <div class="upload-button" type="file" capture="camera" ngf-select="editshopParams.uploadFiles($file,$errorfile)" ng-model="editshopParams.file" accept="image/jpg,image/JPG,image/jpeg,image/gif,image/png" ngf-max-height="2000" ngf-max-size="3MB">
+                    <img  style="height: 150px;width: 150px" class="uploadpic img-rounded" ng-src="{{editshopParams.imgSrc}}" ng-model="editshopParams.img"/>
+                    <div class="glyphicon glyphicon-camera uploadpic-label">点击上传照片</div>
+                </div>
+                </p>
                 <p style="margin-left: 50px">1、这里设置的发货地址将做为平台空包时的默认发货地址<br/>
                     2、您也可在发送平台快递的时候更改</p>
             </div>
@@ -183,7 +188,7 @@
 
                                 <#--<input type="file"  onchange='angular.element(this).scope().shopParams.fileChanged(this)'  style="margin-top: -22px;width: 180px;margin-left: 100px"><a style="font-size: 18px;margin-top: -25px;margin-left: 300px">查看示例图</a>-->
                                 <div class="upload-button" type="file" capture="camera" ngf-select="shopParams.uploadFiles($file,$errorfile)" ng-model="shopParams.file" accept="image/jpg,image/JPG,image/jpeg,image/gif,image/png" ngf-max-height="2000" ngf-max-size="3MB">
-                                    <img  style="height: 150px;width: 150px" class="uploadpic img-rounded" src="{{shopParams.imgSrc}}" ng-model="shopParams.img"/>
+                                    <img  style="height: 150px;width: 150px" class="uploadpic img-rounded" ng-src="{{shopParams.imgSrc}}" ng-model="shopParams.img"/>
                                     <div class="glyphicon glyphicon-camera uploadpic-label">点击上传照片</div>
                                 </div>
 
