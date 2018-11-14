@@ -20,4 +20,34 @@ public class TaskChangeServiceImpl implements TaskChangeService{
         taskChangeMapper.insertSelective(taskChange);
         return null;
     }
+
+    @Override
+    public int deleteByPrimaryKey(Long taskId) {
+        return taskChangeMapper.deleteByPrimaryKey(taskId);
+    }
+
+    @Override
+    public int insert(TaskChange record) {
+        return taskChangeMapper.insert(record);
+    }
+
+    @Override
+    public int insertSelective(TaskChange record) {
+        return taskChangeMapper.insertSelective(record);
+    }
+
+    @Override
+    public TaskChange selectByPrimaryKey(Long taskId) {
+        return taskChangeMapper.selectByPrimaryKey(taskId);
+    }
+
+    @Override
+    public int updateByPrimaryKeySelective(TaskChange record) {
+        return taskChangeMapper.updateByPrimaryKeySelective(record);
+    }
+
+    @Override
+    public int updateByPrimaryKey(TaskChange record) {
+        return taskChangeMapper.updateByPrimaryKey(record);
+    }
 }

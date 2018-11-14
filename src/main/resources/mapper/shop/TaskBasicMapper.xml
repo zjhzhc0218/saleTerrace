@@ -161,4 +161,11 @@
       task_remark = #{taskRemark,jdbcType=VARCHAR}
     where task_id = #{taskId,jdbcType=BIGINT}
   </update>
+
+  <update id="updateState"  >
+    update task_basic
+    set task_state = #{taskState,jdbcType=INTEGER}
+    where task_id = #{taskId,jdbcType=BIGINT}
+  </update>
+
 </mapper>

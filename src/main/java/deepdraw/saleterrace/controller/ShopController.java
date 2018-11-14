@@ -38,13 +38,13 @@ public class ShopController {
         Shopstore shopstore = new Shopstore();
         String uuid =UUID.randomUUID().toString().replace("-", "").toLowerCase();
         shopstore.setShopId(uuid);
+        shopstore.setShopShopkeeper(1l);
         shopstore.setShopCreationtime(new Date());
         shopstore.setShopShopkeepername(request.getParameter("shopShopkeepername"));
         //if(request.getParameter("img") != null) {
             //shopstore.setShopImg();
-            ExportUtil.handleFileUpload(request);
-        //}
-
+        String pathName = ExportUtil.handleFileUpload(request);
+        shopstore.setShopImg(pathName);
         shopstore.setShopStorename(request.getParameter("shopStorename"));
         shopstore.setShopStoreUrl(request.getParameter("shopStoreUrl"));
 

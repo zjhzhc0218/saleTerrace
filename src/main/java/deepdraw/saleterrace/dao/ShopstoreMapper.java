@@ -45,5 +45,5 @@ public interface ShopstoreMapper {
     int updateByPrimaryKey(Shopstore record);
 
 
-    List<Shopstore> getShopRecords(@Param("shopShopkeeper") Long shopShopkeeper);
+    List<Shopstore> getShopRecords(@Param("id") Long shopShopkeeper);
 }

@@ -54,7 +54,7 @@ public class ExportUtil {
                         + " because the file was empty.";
             }
         }
-        return "200";
+        return file.getOriginalFilename();
     }
 
 

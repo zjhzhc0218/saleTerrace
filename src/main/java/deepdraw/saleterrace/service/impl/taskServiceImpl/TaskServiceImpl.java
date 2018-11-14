@@ -19,6 +19,35 @@ public class TaskServiceImpl implements TaskService{
     private TaskBasicMapper taskBasicMapper;
 
 
+    @Override
+    public int deleteByPrimaryKey(Long taskId) {
+        return taskBasicMapper.deleteByPrimaryKey(taskId);
+    }
+
+    @Override
+    public int insert(TaskBasic record) {
+        return taskBasicMapper.insert(record);
+    }
+
+    @Override
+    public int insertSelective(TaskBasic record) {
+        return taskBasicMapper.insertSelective(record);
+    }
+
+    @Override
+    public TaskBasic selectByPrimaryKey(Long taskId) {
+        return taskBasicMapper.selectByPrimaryKey(taskId);
+    }
+
+    @Override
+    public int updateByPrimaryKeySelective(TaskBasic record) {
+        return taskBasicMapper.updateByPrimaryKeySelective(record);
+    }
+
+    @Override
+    public int updateByPrimaryKey(TaskBasic record) {
+        return taskBasicMapper.updateByPrimaryKeySelective(record);
+    }
 
     /**
      * 任务基本表创建完成【同时回返回对应的任务编号】
@@ -38,9 +67,6 @@ public class TaskServiceImpl implements TaskService{
         }
         taskBasic.setTaskState(1);
         taskBasicMapper.insertSelective(taskBasic);
-
-
-
         return taskId;
     }
 }
