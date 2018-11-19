@@ -1,5 +1,5 @@
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="/saleterrace/js/verdor/jquery-zclip/jquery.zclip.js"></script>
+<#--<script type="text/javascript" src="/saleterrace/js/verdor/jquery-zclip/jquery.zclip.js"></script>-->
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery-jqPaginator/jqPaginator.js"></script>
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery-loadTemplate/jquery.loadTemplate-1.4.4.js"></script>
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery.form.js"></script>
@@ -37,10 +37,10 @@
 <#--<script type="text/javascript" src="/saleterrace/js/seller/jfbrw.js"></script>-->
 <#--<script type="text/javascript" src="/saleterrace/js/seller/newPrefbrw.js"></script>-->
 
-<#--<script type="text/javascript" src="/saleterrace/js/selectize.js"></script>-->
 
 <!--angularJs-->
-<#--<script type="text/javascript" src="/saleterrace/js/controller/saleterrace.js"></script>-->
+<script type="text/javascript" src="/saleterrace/js/angular/ng-file-upload.js"></script>
+<script type="text/javascript" src="/saleterrace/js/controller/saleterrace.js"></script>
 <#--<script type="text/javascript" src="/saleterrace/js/controller/saleterraceController.js"></script>-->
 <#--<script type="text/javascript" src="/saleterrace/js/controller/shop/shopController.js"></script>-->
 
@@ -111,14 +111,14 @@
         var b = randomNum(min,max);
         return "rgb("+r+","+g+","+b+")";
     }
-    drawPic();
-    document.getElementById("changeImg").onclick = function(e){
+  //  drawPic();
+    /*document.getElementById("changeImg").onclick = function(e){
         e.preventDefault();
         drawPic();
-    }
+    }*/
 
     /**绘制验证码图片**/
-    function drawPic(){
+    /*function drawPic(){
         var canvas=document.getElementById("canvas");
         // var canvas=document.getElementsByClassName("canvas");
         // var canvas=document.getElementsByTagName("canvas");
@@ -127,10 +127,10 @@
         var ctx = canvas.getContext('2d');
         ctx.textBaseline = 'bottom';
 
-        /**绘制背景色**/
+        /!**绘制背景色**!/
         ctx.fillStyle = randomColor(180,240); //颜色若太深可能导致看不清
         ctx.fillRect(0,0,width,height);
-        /**绘制文字**/
+        /!**绘制文字**!/
         var str = 'ABCEFGHJKLMNPQRSTWXY123456789';
         for(var i=0; i<4; i++){
             var txt = str[randomNum(0,str.length)];
@@ -147,7 +147,7 @@
             ctx.rotate(-deg*Math.PI/180);
             ctx.translate(-x,-y);
         }
-        /**绘制干扰线**/
+        /!**绘制干扰线**!/
         for(var i=0; i<8; i++){
             ctx.strokeStyle = randomColor(40,180);
             ctx.beginPath();
@@ -155,12 +155,12 @@
             ctx.lineTo( randomNum(0,width), randomNum(0,height) );
             ctx.stroke();
         }
-        /**绘制干扰点**/
+        /!**绘制干扰点**!/
         for(var i=0; i<100; i++){
             ctx.fillStyle = randomColor(0,255);
             ctx.beginPath();
             ctx.arc(randomNum(0,width),randomNum(0,height), 1, 0, 2*Math.PI);
             ctx.fill();
         }
-    }
+    }*/
 </script>
