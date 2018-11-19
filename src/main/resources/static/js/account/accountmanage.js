@@ -233,10 +233,7 @@ $(function() {
     function a() {
         var a = this;
         a.init = function() {
-            a.paySelect(),
-                a.weChart(),
-                a.closePop(),
-                a.popNext(),
+            a.paySelect(), a.weChart(), a.closePop(), a.popNext(),
                 $(".pay-select>a:first").click()
         }
             ,

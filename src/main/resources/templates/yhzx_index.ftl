@@ -1,4 +1,4 @@
-<div  role="tabpanel" class="tab-pane "class="content" class="grxx_div" align="center" id="grxx_div">
+<div role="tabpanel" class="tab-pane content grxx_div" align="center" id="grxx_div">
     <div class="module_div jbxx_module" align="left">
         <div class="leadBox"></div>
         <div class="module_head">
@@ -24,14 +24,10 @@
         </div>
         <div class="content_div">
             <div class="space_div2"></div>
-            <a href="/saleterrace/syhd_management_index?n=1" class="marginLeft number_a"  class="pointer">待接手活动（<span class="number_span waitPay">1</span>）
-            </a>
-            <a href="/saleterrace/syhd_management_index?n=3" class="marginLeft number_a" class="pointer">待发货（<span class="number_span waitSendGood">1</span>）
-            </a>
-            <a href="/saleterrace/syhd_management_index?n=5" class="marginLeft number_a" class="pointer">待返款（<span class="number_span waitBack">1</span>）
-            </a>
-            <a href="/saleterrace/syhd_management_index?n=7" class="marginLeft number_a" class="pointer">失败活动（<span class="number_span failTask">1</span>）
-            </a>
+            <a href="/saleterrace/syhd" target="_blank" class="marginLeft number_a"  class="pointer">待接手活动（<span class="number_span waitPay">1</span>）</a>
+            <a href="/saleterrace/syhd" target="_blank" class="marginLeft number_a" class="pointer">待发货（<span class="number_span waitSendGood">1</span>）</a>
+            <a href="/saleterrace/syhd" target="_blank" class="marginLeft number_a" class="pointer">待返款（<span class="number_span waitBack">1</span>）</a>
+            <a href="/saleterrace/syhd" target="_blank" class="marginLeft number_a" class="pointer">失败活动（<span class="number_span failTask">1</span>）</a>
             <div class="space_div2"></div>
         </div>
     </div>

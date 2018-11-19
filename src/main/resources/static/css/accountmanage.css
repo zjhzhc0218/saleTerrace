@@ -268,9 +268,9 @@
     padding: 0
 }
 
-input,select {
-    border: none
-}
+/*input,select {*/
+    /*border: none*/
+/*}*/
 
 a {
     text-decoration: none
