@@ -5,6 +5,7 @@ package deepdraw.saleterrace.controller;/**
 import deepdraw.saleterrace.entity.shop.Merchant;
 import deepdraw.saleterrace.entity.shop.TaskBasic;
 import deepdraw.saleterrace.entity.shop.TaskChange;
+import deepdraw.saleterrace.enums.ConstantEnums;
 import deepdraw.saleterrace.service.MerchantService;
 import deepdraw.saleterrace.service.taskService.TaskChangeService;
 import deepdraw.saleterrace.service.taskService.TaskService;
@@ -47,8 +48,12 @@ public class TaskController {
        /* 在对应的session中存放我们该任务的任务id*/
         session.setAttribute("taskId",taskId);
 
-        /*任务表的建立*/
+        /*任务状态表的建立*/
         TaskChange taskChange =  new TaskChange();
+        taskChange.setTaskId(taskId);
+        /*任务表状态*/
+        taskChange.setTaskState(ConstantEnums.task_state.TASK_STATE_1);
+
         /*这部分具体内容填写,根据上面的内容*/
         taskChangeService.addTaskChange(taskChange);
 
