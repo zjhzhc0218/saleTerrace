@@ -1,0 +1,364 @@
+.tabs_ul li {
+    float: left;
+    cursor: pointer;
+    width: 108px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-right: 1px solid #F2F4F3;
+    border-top: 1px solid #F2F4F3;
+    border-bottom: 1px solid #F2F4F3
+}
+
+.tabs_ul li#defualt {
+    width: 106px
+}
+
+.tabs_ul li:hover {
+    background-color: #08C7B5;
+    color: #666
+}
+
+.floatLeft {
+    float: left;
+}
+
+.zjjl_title {
+    width: 980px;
+    background-color: #ffffff;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    top: 10px;
+    border: 1px solid #F5F5F5;
+}
+
+.zjjl_title p {
+    font-size: 18px;
+    color: #1d1d26;
+    margin-left: 20px;
+}
+
+.tabsDiv ul.tabs_ul li {
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    border-style: solid;
+    border-color: #EFF0F2;
+    border-width: 1px 1px 0 1px;
+    display: none;
+}
+
+.tabsDiv ul.tabs_ul li:hover {
+    background-color: #08C7B5;
+    color: #666666;
+}
+
+.datechooser {
+    color: #1d1d26;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    border-bottom: 1px solid #EFF0F2;
+}
+
+.date_input_text {
+    width: 150px;
+    height: 29px;
+    border: 1px solid #E8E8E8;
+    line-height: 29px;
+    color: #1d1d26;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.options_ul {
+    padding-left: 40px;
+    margin-bottom: 0px;
+}
+
+.options_ul li {
+    float: left;
+    list-style-type: none;
+    margin-left: 5px;
+    /*color: #7b8da0;*/
+    height: 50px;
+}
+
+.options_ul li input {
+    border: none;
+    height: 27px;
+    line-height: 27px;
+}
+
+ul.jylx_ul {
+    clear: both;
+    padding-left: 0px;
+    margin-left: 12px;
+    position: relative;
+}
+
+.options_div {
+    height: 50px;
+    line-height: 50px;
+}
+.options_div>dl>dt{
+    float: left;
+}
+.options_div>dl>dd{
+    float: left;
+}
+.jyjl_table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    width: 980px;
+    margin-top: 10px;
+}
+
+.jyjl_table td {
+    color: #7b8da0;
+    height: 50px;
+    text-align: left;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #EFF0F4;
+    padding-left: 20px;
+
+}
+
+.jyjl_table .head_tr td {
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.minute_label, .lsh_label {
+    color: #C0C0C0;
+}
+
+.detail_label {
+    color: #59c2e6;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    position: relative;
+}
+
+.detail_label img {
+    position: relative;
+    top: -3px;
+    left: 3px;
+}
+
+.paging {
+    height: 50px;
+    line-height: 50px;
+    width: 980px;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+.paging_button {
+    width: 55px;
+    height: 27px;
+    border: 0px;
+    background-image: url("/saleterrace/images/paging_button.png");
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#finalPage {
+    margin-right: 10px;
+}
+
+.txjl_div .options_div {
+    height: 50px;
+    line-height: 50px;
+}
+
+.txjl_div .jylx_ul {
+    top: 0px;
+}
+
+.txjl_div .jylx_ul li {
+    margin-left: 20px;
+}
+
+.options_div .jylx_ul li {
+    height: 20px;
+}
+
+.txjl_div .jyzt_ul li {
+    margin-left: 20px;
+}
+
+.jyjl_table .operation_td a {
+    margin-left: 0px;
+}
+
+.left_menu img {
+    position: relative;
+    top: 8px;
+}
+
+.jyjl_ul {
+    overflow: hidden;
+    background-color: #fff;
+    height: 50px;
+    border-bottom: 1px solid #EFF0F4;
+    width: 100%;
+}
+
+.jyjl_ul li {
+    float: left;
+    display: table-cell;
+    color: #7b8da0;
+}
+
+.wd27 {
+    width: 20%;
+}
+.wd28 {
+    width: 28%;
+}
+
+.trade_info {
+    display: none;
+    text-align: center;
+    width: 100%;
+    margin: 20px auto 30px auto;
+    border: 1px solid #EFF0F4;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.trade_info_head {
+    border-bottom: 1px solid #EFF0F4;
+    overflow: hidden;
+    line-height: 50px;
+}
+
+.trade_info_head, .trade_info_value {
+    background-color: #fff;
+    height: 50px;
+
+    text-align: left;
+}
+
+.trade_info_head li, .trade_info_value li {
+    float: left;
+    font-size: 14px;
+    width: 20%;
+    color: #C0C0C0;
+}
+
+.trade_info_value, .trade_info_head {
+    padding-left: 10px;
+}
+
+.trade_info_value li {
+    font-size: 12px;
+}
+
+.pdl12 {
+    padding-left: 12px;
+}
+
+.height50 {
+    height: 50px;
+    line-height: 50px;
+}
+
+.mgt5 {
+    margin-top: 5px;
+}
+
+.clC0C0C0 {
+    color: #C0C0C0;
+}
+
+.search_button{
+    width: 80px;
+    height: 29px;
+    border: 1px solid #E8E8E8;
+    background-color: #5AC2E7;
+    color: #ffffff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.options_div dl.dl_two dd {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100px;
+    float: left;
+}
+
+.dl_two dt i{
+    width:14px;
+    height: 12px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    float: left;
+    margin: 19px 8px 0 0;
+}
+
+.dl_two dd i{
+    width:14px;
+    height: 12px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    float: left;
+    margin: 19px 8px 0 0;
+}
+
+.dl_two dd {
+    height: 50px;
+    line-height: 50px;
+}
+
+.dl_two dd label {
+    color: #1d1d26;
+}
+
+.current{
+    background: url(/saleterrace/images/dt_icon_point.png) no-repeat 1px 0;
+}
+
+.options_div  dl dd label{
+    cursor: pointer;
+}
+.moneyBgA{
+    color:#ff3300;
+}
+.moneyBgS{
+    color:#008800;
+}
+
+.tabsSeletedLi {
+    background-color: #5AC2E7;
+    color: #ffffff;
+    font-size: 18px;
+}
+.tabs2 {
+    color: #ffffff;
+    background-color: #5AC2E7;
+}
+.tab_title {
+    border: 1px solid #EFF0F4;
+}
+.content_div span {
+    font-size: 12px;
+}

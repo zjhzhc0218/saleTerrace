@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="/saleterrace/css/seller/blacklist.css"/>
 <link rel="stylesheet" type="text/css" href="/saleterrace/css/accountmanage.css"/>
 <link rel="stylesheet" type="text/css" href="/saleterrace/css/selectize.default.css"/>
+<link rel="stylesheet" type="text/css" href="/saleterrace/css/ckzd_index.css"/>
 <#--<link rel="stylesheet" type="text/css" href="/saleterrace/css/index_store.css"/>-->
 <link rel="stylesheet" type="text/css" href="/saleterrace/css/seller/newPrefbrw.css"/>
 
