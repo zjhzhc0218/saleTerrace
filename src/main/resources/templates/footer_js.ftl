@@ -1,5 +1,5 @@
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="/saleterrace/js/verdor/jquery-zclip/jquery.zclip.js"></script>
+<#--<script type="text/javascript" src="/saleterrace/js/verdor/jquery-zclip/jquery.zclip.js"></script>-->
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery-jqPaginator/jqPaginator.js"></script>
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery-loadTemplate/jquery.loadTemplate-1.4.4.js"></script>
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery.form.js"></script>
@@ -40,8 +40,9 @@
 <#--<script type="text/javascript" src="/saleterrace/js/selectize.js"></script>-->
 
 <!--angularJs-->
-<#--<script type="text/javascript" src="/saleterrace/js/controller/saleterrace.js"></script>-->
-<#--<script type="text/javascript" src="/saleterrace/js/controller/saleterraceController.js"></script>-->
+<script type="text/javascript" src="/saleterrace/js/angular/ng-file-upload.js"></script>
+<script type="text/javascript" src="/saleterrace/js/controller/saleterrace.js"></script>
+<script type="text/javascript" src="/saleterrace/js/controller/saleterraceController.js"></script>
 <#--<script type="text/javascript" src="/saleterrace/js/controller/shop/shopController.js"></script>-->
 
 <script type="text/javascript">

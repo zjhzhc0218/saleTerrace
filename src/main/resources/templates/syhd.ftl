@@ -6,7 +6,7 @@
     <#include "//header_css.ftl">
 </head>
 
-<body ng-controller="saleterraceController">
+<body ng-controller="syhdController">
 <a class="sImgJump" style=" margin: auto; display: block; ">
     <img class="sTongZhi" src="/saleterrace/images/demo_01.jpg" alt=""
          style="display: block; width: 100%; height: 51px;">
@@ -502,4 +502,6 @@
 <#--<#include "//modal_js.ftl">-->
 </body>
     <#include "//footer_js.ftl">
+<script type="text/javascript" src="/saleterrace/js/controller/syhd/syhdController.js"></script>
+
 </html>

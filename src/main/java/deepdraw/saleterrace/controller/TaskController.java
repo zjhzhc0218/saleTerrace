@@ -31,7 +31,6 @@ import java.util.Map;
 @RequestMapping("/task")
 public class TaskController {
 
-    @Autowired
     private TaskService taskService;
 
     private TaskChangeService taskChangeService;
@@ -57,7 +56,7 @@ public class TaskController {
 
 
     /*2.任务状态的改变  改变基础表内容跟状态表内容  这个不是单独出来，而是很多是掺杂在其他业务中除了特殊几个状态*/
-    @RequestMapping("/addTask")
+    //@RequestMapping("/addTask")
     @ResponseBody
     public String changeTask(HttpServletRequest request, Long  taskId,Integer taskState ,HttpSession session){
         String message = null ;

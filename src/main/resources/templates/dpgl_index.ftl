@@ -283,6 +283,8 @@
     <#--<#include "//modal_js.ftl">-->
 	</body>
     <#include "//footer_js.ftl">
+	<#--<script type="text/javascript" src="/saleterrace/js/controller/saleterraceController.js"></script>-->
+	<script type="text/javascript" src="/saleterrace/js/controller/shop/shopController.js"></script>
 	<script type="text/javascript" src="/saleterrace/js/dist/viewer.js"></script>
 
 

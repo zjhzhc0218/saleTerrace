@@ -87,5 +87,12 @@ public class SalePageController {
         return mv;
     }
 
+    @RequestMapping("/syhd")
+    public ModelAndView syhd(ModelAndView mv) {
+        mv.setViewName("syhd");
+        return mv;
+    }
+
+
 }
 
