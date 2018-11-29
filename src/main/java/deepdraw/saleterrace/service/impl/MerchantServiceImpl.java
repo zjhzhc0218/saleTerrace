@@ -93,4 +93,11 @@ public class MerchantServiceImpl implements MerchantService{
         merchantMapper.updataUser(merchant);
         return null;
     }
+
+    @Override
+    public Integer updataUserCode(Merchant merchant) {
+        return merchantMapper.updataUserCode(merchant);
+    }
+
+
 }

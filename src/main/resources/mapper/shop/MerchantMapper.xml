@@ -164,15 +164,7 @@
       <if test="merchantSalt != null" >
         merchant_salt = #{merchantSalt,jdbcType=VARCHAR},
       </if>
-      <if test="merchantInvitecode != null" >
-        merchant_inviteCode = #{merchantInvitecode,jdbcType=VARCHAR},
-      </if>
-      <if test="merchantInvitecodeOne != null" >
-        merchant_inviteCode_One = #{merchantInvitecodeOne,jdbcType=VARCHAR},
-      </if>
-      <if test="merchantInvitecodeTwo != null" >
-        merchant_inviteCode_Two = #{merchantInvitecodeTwo,jdbcType=VARCHAR},
-      </if>
+
       <if test="merchantBan != null" >
         merchant_ban = #{merchantBan,jdbcType=INTEGER},
       </if>
@@ -192,9 +184,6 @@
       merchant_logintime = #{merchantLogintime,jdbcType=TIMESTAMP},
       merchant_logincount = #{merchantLogincount,jdbcType=INTEGER},
       merchant_salt = #{merchantSalt,jdbcType=VARCHAR},
-      merchant_inviteCode = #{merchantInvitecode,jdbcType=VARCHAR},
-      merchant_inviteCode_One = #{merchantInvitecodeOne,jdbcType=VARCHAR},
-      merchant_inviteCode_Two = #{merchantInvitecodeTwo,jdbcType=VARCHAR},
       merchant_ban = #{merchantBan,jdbcType=INTEGER},
       merchant_level = #{merchantLevel,jdbcType=INTEGER}
     where merchant_account = #{merchantAccount,jdbcType=VARCHAR}
@@ -226,15 +215,6 @@
       <if test="merchantSalt != null" >
         merchant_salt = #{merchantSalt,jdbcType=VARCHAR},
       </if>
-      <if test="merchantInvitecode != null" >
-        merchant_inviteCode = #{merchantInvitecode,jdbcType=VARCHAR},
-      </if>
-      <if test="merchantInvitecodeOne != null" >
-        merchant_inviteCode_One = #{merchantInvitecodeOne,jdbcType=VARCHAR},
-      </if>
-      <if test="merchantInvitecodeTwo != null" >
-        merchant_inviteCode_Two = #{merchantInvitecodeTwo,jdbcType=VARCHAR},
-      </if>
       <if test="merchantBan != null" >
         merchant_ban = #{merchantBan,jdbcType=INTEGER},
       </if>
@@ -244,4 +224,13 @@
     </set>
     where merchant_account = #{merchantAccount,jdbcType=VARCHAR}
   </update>
+
+  <update id="updataUserCode" parameterType="deepdraw.saleterrace.entity.shop.Merchant" >
+    update merchant
+    <set >
+        merchant_inviteCode_One = #{merchantInvitecodeOne,jdbcType=VARCHAR},
+    </set>
+    where merchant_account = #{merchantAccount,jdbcType=VARCHAR}
+  </update>
+
 </mapper>

@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * 对商家表的操作
@@ -39,7 +40,7 @@ public class MerchantController {
      */
     @RequestMapping("/userLogin")
     @ResponseBody
-    public String passwordToLogin(HttpServletRequest request, String id, String password,HttpSession session) throws IOException{
+    public Object passwordToLogin(HttpServletRequest request, String id, String password,HttpSession session) throws IOException{
         Map<String,Object> map = merchantService.selectMerchantUser(id);
         if(map.get("Merchant")!=null){
             Merchant merchant = (Merchant) map.get("Merchant");
@@ -66,7 +67,10 @@ public class MerchantController {
      */
     @RequestMapping("/userRegistered")
     @ResponseBody
-    public String registered(HttpServletRequest request, Merchant merchant ) throws IOException {
+    public Object registered(HttpServletRequest request, Merchant merchant ) throws IOException {
+        /*商家的邀请码用uuid去生成*/
+        String uuid = UUID.randomUUID().toString().replace("-", "").toLowerCase();
+        merchant.setMerchantInvitecode(uuid);
         String salt = SixNumberRadom.getSixNumberRadom();
         String passwords = MD5Util.inputPassToDbPass("123456abc",salt);
         merchant.setMerchantSalt(salt);
@@ -85,7 +89,7 @@ public class MerchantController {
      */
     @RequestMapping("/ban")
     @ResponseBody
-    public String ban(HttpServletRequest request,String id,Integer ban){
+    public Object ban(HttpServletRequest request,String id,Integer ban){
         String message =  "";
         /*传入用户手机号，以及跟禁用还是恢复 登录*/
         message = merchantService.banChange(id, ban);
@@ -95,8 +99,18 @@ public class MerchantController {
 /*    修改商家数据*/
     @RequestMapping("/updateMerchant")
     @ResponseBody
-    public String updateMerchant(HttpServletRequest request, Merchant merchant){
+    public Object updateMerchant(HttpServletRequest request, Merchant merchant){
         String message = merchantService.update(merchant);
         return JsonUtil.object2Json(ResultUtil.success(message));
+    }
+
+    /*商家的邀请码修改*/
+    @RequestMapping("/updateMerchant")
+    @ResponseBody
+    public Object updateMerchant(HttpServletRequest request, String code,HttpSession session){
+        Merchant merchant = (Merchant) session.getAttribute("Merchant");
+        merchant.setMerchantInvitecodeOne(code);
+        merchantService.updataUserCode(merchant);
+        return JsonUtil.object2Json(ResultUtil.success());
     }
 }

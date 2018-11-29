@@ -24,7 +24,7 @@
   <insert id="insert" parameterType="deepdraw.saleterrace.entity.shop.TaskChange" >
     insert into task_change (task_id, task_state, task_changeTime, 
       task_people, task_remark)
-    values (#{taskId,jdbcType=BIGINT}, #{taskState,jdbcType=INTEGER}, #{taskChangetime,jdbcType=TIMESTAMP}, 
+    values (#{taskId,jdbcType=BIGINT}, #{taskState,jdbcType=INTEGER}, now(),
       #{taskPeople,jdbcType=VARCHAR}, #{taskRemark,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="deepdraw.saleterrace.entity.shop.TaskChange" >
@@ -36,9 +36,7 @@
       <if test="taskState != null" >
         task_state,
       </if>
-      <if test="taskChangetime != null" >
         task_changeTime,
-      </if>
       <if test="taskPeople != null" >
         task_people,
       </if>
@@ -53,9 +51,7 @@
       <if test="taskState != null" >
         #{taskState,jdbcType=INTEGER},
       </if>
-      <if test="taskChangetime != null" >
-        #{taskChangetime,jdbcType=TIMESTAMP},
-      </if>
+      now(),
       <if test="taskPeople != null" >
         #{taskPeople,jdbcType=VARCHAR},
       </if>
@@ -70,9 +66,7 @@
       <if test="taskState != null" >
         task_state = #{taskState,jdbcType=INTEGER},
       </if>
-      <if test="taskChangetime != null" >
-        task_changeTime = #{taskChangetime,jdbcType=TIMESTAMP},
-      </if>
+        task_changeTime = now(),
       <if test="taskPeople != null" >
         task_people = #{taskPeople,jdbcType=VARCHAR},
       </if>
@@ -85,7 +79,7 @@
   <update id="updateByPrimaryKey" parameterType="deepdraw.saleterrace.entity.shop.TaskChange" >
     update task_change
     set task_state = #{taskState,jdbcType=INTEGER},
-      task_changeTime = #{taskChangetime,jdbcType=TIMESTAMP},
+      task_changeTime = now(),
       task_people = #{taskPeople,jdbcType=VARCHAR},
       task_remark = #{taskRemark,jdbcType=VARCHAR}
     where task_id = #{taskId,jdbcType=BIGINT}

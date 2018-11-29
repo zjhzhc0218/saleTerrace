@@ -53,4 +53,11 @@ public interface MerchantMapper {
      */
     Integer updataUser(Merchant merchant);
 
+    /**
+     * 修改商家表数据中的一级邀请码
+     * @param merchant 对应数据
+     * @return
+     */
+    Integer updataUserCode(Merchant merchant);
+
 }

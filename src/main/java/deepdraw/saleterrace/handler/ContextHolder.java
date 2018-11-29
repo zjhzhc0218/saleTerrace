@@ -2,6 +2,7 @@ package deepdraw.saleterrace.handler;/**
  * Created by hasee on 2018/9/21.
  */
 
+import deepdraw.saleterrace.entity.shop.Merchant;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -35,6 +36,24 @@ public class ContextHolder {
         HttpSession session = getRequest().getSession();
         return session;
 
+    }
+
+    /**
+     * 获取当前Merchant登录用户（商家）
+     * @return
+     */
+    public static final Merchant getSessionMerchant() {
+        HttpSession session = ContextHolder.getSession();
+        return (Merchant) session.getAttribute("Merchant");
+    }
+
+    /**
+     * 获取当前活动总编号（用于任务创建之后的处理跟修改）
+     * @return
+     */
+    public static final Long getSessionTaskId() {
+        HttpSession session = ContextHolder.getSession();
+        return  (Long)session.getAttribute("taskId");
     }
 
 }

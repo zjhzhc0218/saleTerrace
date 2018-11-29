@@ -2,6 +2,16 @@ package deepdraw.saleterrace.entity.shop;
 
 public class TaskValueaddedservices {
     /**
+     *  数据库字段是：task_valueId  <br>
+     */
+    private Long taskValueid;
+
+    /**
+     *  数据库字段是：task_id  <br>
+     */
+    private Long taskId;
+
+    /**
      * 试客标签 需要？【5金币一单】 数据库字段是：try_the_gurst_tag  <br>
      */
     private Integer tryTheGurstTag;
@@ -65,6 +75,38 @@ public class TaskValueaddedservices {
      * 每单加赏金（0-5） 数据库字段是：additonal_bounty  <br>
      */
     private Integer additonalBounty;
+
+    /**
+     * 获取
+     * @return task_valueAddedServices.task_valueId
+     */
+    public Long getTaskValueid() {
+        return taskValueid;
+    }
+
+    /**
+     * 设置
+     * @param taskValueid 
+     */
+    public void setTaskValueid(Long taskValueid) {
+        this.taskValueid = taskValueid;
+    }
+
+    /**
+     * 获取
+     * @return task_valueAddedServices.task_id
+     */
+    public Long getTaskId() {
+        return taskId;
+    }
+
+    /**
+     * 设置
+     * @param taskId 
+     */
+    public void setTaskId(Long taskId) {
+        this.taskId = taskId;
+    }
 
     /**
      * 获取试客标签 需要？【5金币一单】
