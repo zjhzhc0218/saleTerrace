@@ -50,14 +50,13 @@ input,span {
 .addDp_button {
     width: 145px;
     height: 40px;
-    background-image: url(/saleterrace/images/addDp_bg.png);
+    /*background-image: url(/saleterrace/images/addDp_bg.png);*/
     border: 0;
     background-color: transparent;
     position: relative;
-    left: 30px;
-    top: 30px;
     color: #384655;
-    padding-left: 30px
+    top: 32px;
+    margin-left: -123px
 }
 
 .dp_div,.dp_title_div {

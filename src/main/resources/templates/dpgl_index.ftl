@@ -1,7 +1,7 @@
 <!DOCTYPE >
 <html ng-app="saleterrace">
 	<head>
-        <title>【试客多】-店铺管理</title>
+        <title>【试客多】</title>
         <link rel="shortcut icon" href="/saleterrace/images/favicon.ico" type="image/x-icon"/>
 		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 		<meta http-equiv="description" content="this is my page">
@@ -12,30 +12,29 @@
         <#include "//header_css.ftl">
 	</head>
 
-	<body ng-controller="saleterraceController"  >
+	<body ng-controller="saleterraceController">
+
 		<a class="sImgJump" style=" margin: auto; display: block; ">
 			<img class="sTongZhi" src="/saleterrace/images/demo_01.jpg" alt="" style="display: block; width: 100%; height: 51px;">
 		</a>
-		<#--<a class="sImgJump" href="#" style=" margin: auto; display: block;text-align: center;color: red;font-style: italic;text-decoration: underline;font-size: 17px; background-color: bisque;line-height: 40px;">本站所有赏金均由商家提供，旨在激励试客生成优质的买家秀内容，本站从中不获取任何盈利！</a>-->
 		<div class="top">
 			<a href="#grxx_div">
 				<div class="logo"></div>
 			</a>
 			<div class="qun_for_seller qun_tip">
-				<a href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575" target="_blank">活动交流群：242646224</a>
+				<a href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575" target="_blank">活动交流群：111111111</a>
 			</div>
 			<ul class="LR_USER">
 				<li class="pos-rel menu-box">
 					<a href="#" class="menu-select-icon">
 						<img src="/saleterrace/images/menu_select_icon.png" alt="" class="pos-menu-select">
-						<p class="user-name">{y}</p>
-						<p class="user-tag" style="text-align: center; line-height:normal;">VIP 999 天试用中</p>
+						<p class="user-name">15355056891</p>
+						<p class="user-tag" style="text-align: center; line-height:normal;">VIP 111 天试用中</p>
 					</a>
 					<ul class="menu-select-box">
 						<li style="background-color: #f3f3f3; padding-left: 20px">
-							货款：<b class="clfdaa29" id="top_user_money">141</b>元 &nbsp;&nbsp;&nbsp;金币：
-							<b class="clfdaa29" id="top_user_coin">25
-                            </b>个
+							货款：<b class="clfdaa29" id="top_user_money">1</b>元 &nbsp;&nbsp;&nbsp;金币：1
+							<b class="clfdaa29" id="top_user_coin">1</b>个
 						</li>
 						<li style="padding-left: 20px; clear: both;">
 							<a href="/saleterrace/zjgl_index?tab=1" class="cl000 menu-select-a">充值</a>
@@ -57,58 +56,58 @@
 			<a href="javascript:void(0);" id="offKfqq">
 				<img src="/saleterrace/images/colsed-kfqq.png" alt="">
 			</a>
-			<div class="bg">
-				<img class="bg-img" src="/saleterrace/images/kfqq.png" alt="">
-				<div class="right-menu-content">
-					<a href="syhd_release_index.ftl">
-						<img src="/saleterrace/images/sjscfd.png" class="right-menu-content-top-img" alt="">
-					</a>
-					<span class="menuTitleTwo">客服问题找我</span>
-					<div class="right-menu-two">
-						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368872">
-							<img src="/saleterrace/images/yckf_03.png" alt=""> 宝宝
-						</a>
-						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852365086">
-							<img src="/saleterrace/images/yckf_03.png" alt=""> 贝贝
-						</a>
-					</div>
-					<span class="menuTitleOne">活动发布找我</span>
-					<div class="right-menu-one">
-						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852368900">
-							&nbsp;&nbsp;&nbsp;<img src="/saleterrace/images/yckf_03.png" alt=""> 高经理
-						</a>
-						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852356150">
-							<img src="/saleterrace/images/yckf_03.png" alt=""> 安娜老师
-						</a>
+			<#--<div class="bg">-->
+				<#--<img class="bg-img" src="/saleterrace/images/kfqq.png" alt="">-->
+				<#--<div class="right-menu-content">-->
+					<#--<a href="syhd_release_index.ftl">-->
+						<#--<img src="/saleterrace/images/sjscfd.png" class="right-menu-content-top-img" alt="">-->
+					<#--</a>-->
+					<#--<span class="menuTitleTwo">客服问题找我</span>-->
+					<#--<div class="right-menu-two">-->
+						<#--<a target="_blank" href="#">-->
+							<#--<img src="/saleterrace/images/yckf_03.png" alt=""> 宝宝-->
+						<#--</a>-->
+						<#--<a target="_blank" href="#">-->
+							<#--<img src="/saleterrace/images/yckf_03.png" alt=""> 贝贝-->
+						<#--</a>-->
+					<#--</div>-->
+					<#--<span class="menuTitleOne">活动发布找我</span>-->
+					<#--<div class="right-menu-one">-->
+						<#--<a target="_blank" href="#">-->
+							<#--&nbsp;&nbsp;&nbsp;<img src="/saleterrace/images/yckf_03.png" alt=""> 高经理-->
+						<#--</a>-->
+						<#--<a target="_blank" href="#">-->
+							<#--<img src="/saleterrace/images/yckf_03.png" alt=""> 安娜老师-->
+						<#--</a>-->
 
-						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852365085">
-							<img src="/saleterrace/images/yckf_03.png" alt=""> 周华老师
-						</a>
-						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852366295">
-							<img src="/saleterrace/images/yckf_03.png" alt=""> 毛经理
-						</a>
-					</div>
-					<span class="menuTitleOne">上班时间</span>
-					<div class="right-menu-one">
-						<p style="font-size: 12px;">周一至周日<br> 9:00-18:00</p>
-					</div>
-				</div>
-				<div class="right-menu-content" style="padding-top: 0px;margin-top: 2px;">
-					<span>商家交流群</span>
-					<div class="right-menu-two">
-						<img src="/saleterrace/images/er.jpg" class="QRCode" style="width: 105px;">
-					</div>
-					<a class="clickAdd" target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=96519ab8b4c99204d736e67685b5354a45c8fbeae3a38df059a1ef4bd8f53575">点击加入</a>
-				</div>
-			</div>
+						<#--<a target="_blank" href="#">-->
+							<#--<img src="/saleterrace/images/yckf_03.png" alt=""> 周华老师-->
+						<#--</a>-->
+						<#--<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&site=qq&menu=yes&uin=2852366295">-->
+							<#--<img src="/saleterrace/images/yckf_03.png" alt=""> 毛经理-->
+						<#--</a>-->
+					<#--</div>-->
+					<#--<span class="menuTitleOne">上班时间</span>-->
+					<#--<div class="right-menu-one">-->
+						<#--<p style="font-size: 12px;">周一至周日<br> 9:00-18:00</p>-->
+					<#--</div>-->
+				<#--</div>-->
+				<#--<div class="right-menu-content" style="padding-top: 0px;margin-top: 2px;">-->
+					<#--<span>商家交流群</span>-->
+					<#--<div class="right-menu-two">-->
+						<#--<img src="/saleterrace/images/er.jpg" class="QRCode" style="width: 105px;">-->
+					<#--</div>-->
+					<#--<a class="clickAdd" target="_blank" href="#">点击加入</a>-->
+				<#--</div>-->
+			<#--</div>-->
 		</div>
 		<a href="javascript:void(0);" id="onKfqq"><img src="/saleterrace/images/kfqqsmall.png" alt=""></a>
-		<input type="hidden" id="imageRootPath" value="http://image-1254237507.image.myqcloud.com">
-		<input type="hidden" id="cosAppId" value="1254237507">
-		<input type="hidden" id="cosBucketName" value="image">
-		<input type="hidden" id="cosDownRootPath" value="http://image-1254237507.cosgz.myqcloud.com">
-		<input type="hidden" id="currentDate" value="20181021">
-		<input type="hidden" id="userRole" value="true">
+		<#--<input type="hidden" id="imageRootPath" value="http://image-1254237507.image.myqcloud.com">-->
+		<#--<input type="hidden" id="cosAppId" value="1254237507">-->
+		<#--<input type="hidden" id="cosBucketName" value="image">-->
+		<#--<input type="hidden" id="cosDownRootPath" value="http://image-1254237507.cosgz.myqcloud.com">-->
+		<#--<input type="hidden" id="currentDate" value="20181021">-->
+		<#--<input type="hidden" id="userRole" value="true">-->
 
 		<div id="Container" align="center">
 			<div id="Header">
@@ -116,37 +115,52 @@
 				</div>
 			</div>
 			<div class="Content-Space-h"></div>
-			<div id="Content">
+			<div id="Content" >
 				<div id="Content-Left">
 					<ul class="left_menu" style="margin-bottom: 10px;">
-						<#--<li class="menu_selected">-->
-						<li class="menu_li">
-                            <a href="#grxx_div" role="tab" data-toggle="tab" ><i class="grxx"></i>
-                            <span>用户中心</span></a>
-						</li>
-                        <li class="menu_li add">
-                            <a class="active"  role="tab" data-toggle="tab" href="#mainDiv" id="dpgl"  ng-click="initParams('shop')"><i class="dpbt"></i>
-                            <span>店铺管理</span></a>
-						</li>
-						<#--<li class="menu_li">-->
-                            <#--<a href="#hdfb_div" role="tab" data-toggle="tab"><i class="fbrw"></i>-->
-                            <#--<span>试用活动发布</span></a>-->
-						<#--</li>-->
-						<#--<li class="menu_li">-->
-                            <#--<a  href="#hdgl_div"  role="tab" data-toggle="tab" ><i class="yfbrw"></i>-->
-                            <#--<span>试用活动管理</span></a>-->
-						<#--</li>-->
 
-						<#--<li class="menu_li">-->
-                            <#--<a href="#black_div"  role="tab" data-toggle="tab" ><i class="hmd"></i>-->
-                            <#--<span>试客黑名单</span>-->
-                            <#--<div class="new" style="left:90px;"></div></a>-->
-						<#--</li>-->
+                        <a href="#grxx_div" role="tab" data-toggle="tab"  ng-click="initParams('user')">
+							<li class="menu_li">
+								<i class="grxx"></i>
+								<span>用户中心</span>
+							</li>
+                        </a>
 
-						<#--<li class="menu_li">-->
-                            <#--<a href="#ckzd_div" role="tab" data-toggle="tab"><i class="ckzd"></i>-->
-                            <#--<span>查看账单</span></a>-->
-						<#--</li>-->
+                        <a class="active"  role="tab" data-toggle="tab" href="#mainDiv" id="dpgl" ng-click="initParams('shop')">
+							<li class="menu_li add">
+								<i class="dpbt"></i>
+								<span>店铺管理</span>
+							</li>
+                        </a>
+
+                        <a href="#hdfb_div" role="tab" data-toggle="tab">
+							<li class="menu_li">
+								<i class="fbrw"></i>
+								<span>试用活动发布</span>
+							</li>
+                        </a>
+
+                        <a href="/saleterrace/syhd" target="_blank">
+							<li class="menu_li">
+								<i class="yfbrw"></i>
+								<span>试用活动管理</span>
+							</li>
+                        </a>
+
+                        <a href="#black_div"  role="tab" data-toggle="tab">
+							<li class="menu_li">
+								<i class="hmd"></i>
+								<span>试客黑名单</span>
+								<div class="new" style="left:90px;"></div>
+							</li>
+                        </a>
+
+                        <a href="#ckzd_div" role="tab" data-toggle="tab">
+							<li class="menu_li">
+								<i class="ckzd"></i>
+								<span>查看账单</span>
+							</li>
+						</a>
 
 						<#--<li class="menu_li">-->
                             <#--<a href="#"><i class="zjgl"></i>-->
@@ -173,15 +187,18 @@
 					<#--<a class="sLeftImgJump" target="_blank" style="float: left; margin: 10px 0 0 0;">-->
 						<#--<img class="sLeft " src="/saleterrace/images/lwds.jpg" alt="" style="width: 190px; height: 62px;">-->
 					<#--</a>-->
-					<input type="hidden" id="nav_hidden" value="1" />
+					<#--<input type="hidden" id="nav_hidden" value="1" />-->
 				</div>
 			    <div id="Content-Space"></div>
-				<div id="Content-Main"  class="tab-content container" >
+				<div id="Content-Main"  class="tab-content container">
 					<!-- center begin -->
                     <div  ng-controller="shopController" ng-init="initParams('shop')" role="tabpanel" class="tab-pane active" class="content" class="mainDiv" id="mainDiv">
                         <div class="dp_list_div">
                             <div class="addDp_div" style="height: 60px;margin-top: 40px">
-                                <div style="width: 360px;display: inline;margin-left: -150px"><img src="/saleterrace/images/addDp_bg.png"><a style="font-size: 12px;margin-left: -100px" onclick="searchLogin('myModal_tb')" class="pointer">添加淘宝新店铺</a></div>
+                                <div style="width: 360px;display: inline;margin-left: -150px">
+									<img src="/saleterrace/images/addDp_bg.png">
+                                    <a style="font-size: 12px;margin-left: -100px" onclick="searchLogin('myModal_tb')" class="pointer">添加淘宝新店铺</a>
+                                </div>
                             </div>
                             <div class="dp_div" align="left">
                                 <div class="dp_title_div">
@@ -234,40 +251,41 @@
                     <#--用户中心-->
                     <#include "//yhzx_index.ftl">
                     <#--试用活动发布-->
-              		<#--<#include "//syhd_release_index.ftl">-->
-                    <#--&lt;#&ndash;试用活动管理&ndash;&gt;-->
-                	<#--<#include "//syhd_management_index.ftl">-->
-					<#--&lt;#&ndash;试客黑名单&ndash;&gt;-->
-                    <#--<#include "//black_index.ftl">-->
-                    <#--&lt;#&ndash;查看账单&ndash;&gt;-->
-                    <#--<#include "//ckzd_index.ftl">-->
-					<#--&lt;#&ndash;平台资费说明&ndash;&gt;-->
+              		<#include "//syhd_release_index.ftl">
+					<#--试客黑名单-->
+                    <#include "//black_index.ftl">
+                    <#--查看账单-->
+                    <#include "//ckzd_index.ftl">
+					<#--平台资费说明-->
                     <#--<#include "//ptzf_index.ftl">-->
                 </div>
             </div>
 		</div>
 
-        <#include "//protocolTemplate.ftl">
+        <#--<#include "//protocolTemplate.ftl">-->
 		<div class="Content-Space-h"></div>
 		<div class="Clear">
 			<!--如何你上面用到float,下面布局开始前最好清除一下。-->
 		</div>
-		<div id="Footer">
-			<div class="foot_div">
+		<#--<div id="Footer">-->
+			<#--<div class="foot_div">-->
 
-				<div class="foot_div_div1">
-					<a class="foot_div_div1_a1"></a>
-				</div>
-				<div style="text-align: center;">
+				<#--<div class="foot_div_div1">-->
+					<#--<a class="foot_div_div1_a1"></a>-->
+				<#--</div>-->
+				<#--<div style="text-align: center;">-->
 
-				</div>
+				<#--</div>-->
 
-			</div>
+			<#--</div>-->
 		</div>
     <#include "//modal.ftl">
+    <#--<#include "//modal_js.ftl">-->
 	</body>
     <#include "//footer_js.ftl">
+	<#--<script type="text/javascript" src="/saleterrace/js/controller/saleterraceController.js"></script>-->
+	<script type="text/javascript" src="/saleterrace/js/controller/shop/shopController.js"></script>
+	<script type="text/javascript" src="/saleterrace/js/dist/viewer.js"></script>
 
-    <script type="text/javascript" src="/saleterrace/js/controller/saleterraceController.js"></script>
-    <script type="text/javascript" src="/saleterrace/js/controller/shop/shopController.js"></script>
+
 </html>

@@ -1,5 +1,5 @@
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="/saleterrace/js/verdor/jquery-zclip/jquery.zclip.js"></script>
+<#--<script type="text/javascript" src="/saleterrace/js/verdor/jquery-zclip/jquery.zclip.js"></script>-->
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery-jqPaginator/jqPaginator.js"></script>
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery-loadTemplate/jquery.loadTemplate-1.4.4.js"></script>
 <script type="text/javascript" src="/saleterrace/js/verdor/jquery.form.js"></script>
@@ -40,8 +40,9 @@
 <#--<script type="text/javascript" src="/saleterrace/js/selectize.js"></script>-->
 
 <!--angularJs-->
-<#--<script type="text/javascript" src="/saleterrace/js/controller/saleterrace.js"></script>-->
-<#--<script type="text/javascript" src="/saleterrace/js/controller/saleterraceController.js"></script>-->
+<script type="text/javascript" src="/saleterrace/js/angular/ng-file-upload.js"></script>
+<script type="text/javascript" src="/saleterrace/js/controller/saleterrace.js"></script>
+<script type="text/javascript" src="/saleterrace/js/controller/saleterraceController.js"></script>
 <#--<script type="text/javascript" src="/saleterrace/js/controller/shop/shopController.js"></script>-->
 
 <script type="text/javascript">
@@ -62,44 +63,22 @@
     });
     $(".tabsUnSeletedLi").click(function () {
         $(this).addClass("tabsSeletedLi").siblings().removeClass("tabsSeletedLi")
-    })
+    });
     $(".activity").click(function () {
-        $(this).addClass("activity1").removeClass().siblings().removeClass("activity1")
-    })
+        $(this).addClass("activity1").siblings().removeClass("activity1")
+    });
     var eleInner = $(".inner_div .inner_div_item");
     $(".tabsSwitch_ul").on("click",'li',function () {
         var index = $(this).index();
         eleInner.eq(index).show().siblings().hide()
-    })
-</script>
-<#--<script>-->
-    <#--$('.zjjl_title').click(function () {-->
-        <#--var bgPic = $(this).find('p').css('background-image');-->
-        <#--if (bgPic.match('/saleterrace/images/i36_lmsq.png')) {-->
-            <#--$(this).find('p').css('background-image', 'url(/saleterrace/images/i36_lmzk.png)');-->
-            <#--$(this).siblings('.text').slideUp();-->
-        <#--} else {-->
-            <#--$(this).find('p').css('background-image', 'url(/saleterrace/images/i36_lmsq.png)');-->
-            <#--$(this).siblings('.text').slideDown();-->
-        <#--}-->
-    <#--});-->
+    });
 
-    <#--//选项卡-->
-    <#--$(".cost-line>a").on("click",function(){-->
-        <#--var index = $(this).index();-->
-        <#--$(this).addClass("active").siblings().removeClass("active");-->
-        <#--$(".cost > div:eq(" + index + ")").removeClass("hidden").siblings().addClass("hidden");-->
-    <#--});-->
-    <#--$(".cost-line>a:eq(0)").click();-->
-    <#--function init() {-->
-        <#--$("#Content").height($(".zjjl_div").height() + 40);-->
-        <#--headerStyle(1);-->
-        <#--navigatorStyle(7);-->
 
-    <#--}-->
+    $(".tabs1").click(function () {
+        $(this).addClass("tabs2").siblings().removeClass("tabs2")
+    });
 
-<#--</script>-->
-<script>
+
     /**生成一个随机数**/
     function randomNum(min,max){
         return Math.floor( Math.random()*(max-min)+min);

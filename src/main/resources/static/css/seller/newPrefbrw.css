@@ -100,8 +100,7 @@ b,h2,h3 {
     /*margin-top: 10px;*/
     margin-bottom: 0px;
     /*float: left;*/
-    margin-left: -750px;
-    width: 220px;
+    text-align: left;
 }
 
 .missonType,.shopType {

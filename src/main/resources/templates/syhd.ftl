@@ -6,7 +6,7 @@
     <#include "//header_css.ftl">
 </head>
 
-<body ng-controller="saleterraceController">
+<body ng-controller="syhdController">
 <a class="sImgJump" style=" margin: auto; display: block; ">
     <img class="sTongZhi" src="/saleterrace/images/demo_01.jpg" alt=""
          style="display: block; width: 100%; height: 51px;">
@@ -76,8 +76,8 @@
                             <option value="thinklittle旗舰店">1111111旗舰店</option>
                         </select>
                         <span>发布时间：</span>
-                        <input type="text" class="input_text jsTime1" id="taskBeginTimestart" name="taskBeginTimestart">&nbsp;到&nbsp;
-                        <input type="text" class="input_text jsTime2" id="taskBeginTimeend" name="taskBeginTimeend"><br>
+                        <input type="text" class="input_text jsTime1">&nbsp;到&nbsp;
+                        <input type="text" class="input_text jsTime2"><br>
                         <span>订单编号：</span><input type="text" class="input_text ddbh" name="payOrderNum">
                         <span>活动类型：</span>
                         <select name="saleTaskTypePlat" id="saleTaskTypePlat"
@@ -502,4 +502,6 @@
 <#--<#include "//modal_js.ftl">-->
 </body>
     <#include "//footer_js.ftl">
+<script type="text/javascript" src="/saleterrace/js/controller/syhd/syhdController.js"></script>
+
 </html>

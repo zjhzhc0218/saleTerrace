@@ -28,8 +28,7 @@ import java.util.Map;
 @Controller
 @RequestMapping("/task")
 public class TaskController {
-
-    @Autowired
+    
     private TaskService taskService;
 
     private TaskChangeService taskChangeService;

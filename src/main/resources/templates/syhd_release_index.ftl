@@ -1,4 +1,4 @@
-<div id="hdfb_div" role="tabpanel" class="tab-pane "class="content" >
+<div id="hdfb_div" role="tabpanel" class="tab-pane content" >
     <div class="leadBox"></div>
     <div class="lead">
         <input type="hidden" id="emergency" value="13706827563">
@@ -21,40 +21,30 @@
                 <img src="/saleterrace/images/i16_sm.png" alt="">
                 友情提示：本平台为拍A发A的试用平台，禁止一切虚假刷单行为。
             </p>
-            <div style="height:1px;width:100%;background-color:#dcdcdc;"></div>
             <h3><span>2</span>选择活动小类：</h3>
-            <div style="height:1px;width:100%;background-color:#dcdcdc;"></div>
 
-            <div class="vip-select-box" style="display: block;">
-                <ul class="misson TASK">
-                    <li IsDevelop="1">
+            <div class="vip-select-box">
+                <ul class="misson TASK" style="display: block;margin-left: 150px">
+                    <li style="display: block;">
                         <div class="tuijian-img"></div>
                         <div class="diamond-img" style="margin-left: -62px;"></div>
-                        <i saleTaskType="3"></i>淘宝/天猫<em>深度试用</em>活动<span>（多个关键词进行竞品深度货比，再通过目标关键词进店）</span>
-                        <em>仅限优质花呗试客！</em>
-                        <dl>
-                            <dd data="1"><i platform="1" task_type="1" style="margin-top: 3px"></i>手机淘宝APP</dd>
-                        </dl>
+                        <i></i><p style="width: 800px;margin-left: -900">淘宝/天猫<em>手机APP</em>活动<span>（<em>仅限优质花呗试客！</em>）</span></p>
                     </li>
                 </ul>
-                <input id="nowTime" type="hidden" value="Mon Oct 22 12:00:27 CST 2018">
-                <input id="endTime" type="hidden" value="Thu Oct 25 15:22:09 CST 2018">
-                <input id="vipLevel" type="hidden" value="0">
-                <input id="firstPubTaskDate" type="hidden" value="Wed May 23 17:29:50 CST 2018">
             </div>
         </div>
         <div class="store_select_div">
             <h2>第二步：选择店铺</h2>
             <ul class="store">
                 <li>
-                    <a style="color: #5bbff3;text-decoration: underline;font-size: 15px;"
-                       href="/saleterrace/dpgl_index?rt=n" target="_self">去店铺管理绑定店铺</a>
+                    <a style="color: #5bbff3;text-decoration: underline;font-size: 15px;float: left" href="/saleterrace/dpgl_index?rt=n" target="_self">去店铺管理绑定店铺</a>
                 </li>
-                <div id="shopList" class="shopType" style="display: none">
+                <#--<div id="shopList" class="shopType" style="display: none">-->
+                <div id="shopList" class="shopType">
                     <ul class="shop">
                         <li style="margin-bottom: 0px;" class="shopList">
                             <div>
-                                <img src="/saleterrace/images/tmail_icon.png">
+                                <img src="/saleterrace/images/tmail_icon.png" style="margin-left: -730px">
                                 <i shopName="thinklittle旗舰店" style="margin-top: 12px"></i><span>thinklittle旗舰店</span>
                             </div>
                         </li>
@@ -65,16 +55,16 @@
                     <ul class="shop">
                         <li style="margin-bottom: 0px;" class="shopList">
                             <div>
-                                <img src="/saleterrace/images/tmail_icon.png">
+                                <img src="/saleterrace/images/tmail_icon.png" style="margin-left: -770px;margin-top: -10px">
                                 <i shopName="thinklittle旗舰店"></i><span>thinklittle旗舰店</span>
                             </div>
                         </li>
-                    </ul>
+                    </ul>ß
                 </div>
 
                 <li style="margin-top:25px;">
                     <h3 id="itemLinkShow">宝贝链接：</h3>
-                    <input type="text" id="itemUrl" placeholder="请将宝贝的链接地址粘贴于此" class="show_item_detail" style="margin-top: 10px">
+                    <input type="text" id="itemUrl" placeholder="请将宝贝的链接地址粘贴于此" class="show_item_detail" style="margin-top: 10px;margin-left: -250px">
                     <br>
                     <#--<span style="color: red;margin-left: 20px;font-size: 13px;">高级引流活动此处填写链接为进店宝贝链接，其他活动为下单宝贝链接，拼多多活动无需填写宝贝链接！</span>-->
                 </li>
@@ -98,11 +88,9 @@
                 店铺绑定申请已提交，客服审核需要1个工作日左右~</p>
             <p style='width:100%;margin-top:15px;font-size:20px;color:#969BAB;text-align: center;'>需要马上发布活动“<a
                     href="javascript:goCodeCheck()"></a>验证码绑定”方式绑定店铺，无需等待！</p>
-            <div id='contact_service'
-                 style='float: left;cursor: pointer;margin-top: 60px;background-color: #59C2E6;width: 220px;height: 50px;border-radius: 5px;margin-left: 111px;'>
+            <div id='contact_service' style='float: left;cursor: pointer;margin-top: 60px;background-color: #59C2E6;width: 220px;height: 50px;border-radius: 5px;margin-left: 111px;'>
                 <p style='font-size: 18px;line-height: 50px;text-align: center;color: #FFFFFF'>联系客服</p></div>
-            <div id='store_manage'
-                 style='float: left;cursor: pointer;margin-top: 60px;background-color: #59C2E6;width: 220px;height: 50px;border-radius: 5px;margin-left: 57px;'>
+            <div id='store_manage' style='float: left;cursor: pointer;margin-top: 60px;background-color: #59C2E6;width: 220px;height: 50px;border-radius: 5px;margin-left: 57px;'>
                 <p style='font-size: 18px;line-height: 50px;text-align: center;color: #FFFFFF'>店铺管理</p></div>
         </div>
 
